@@ -1,0 +1,18 @@
+(kicad_sch (version 20230121) (generator eeschema)
+
+  (uuid 7794878f-0ef3-46d5-a3b2-c714cd7773de)
+
+  (paper "A4")
+
+  (title_block
+    (title "Water Temperature Sensor")
+    (date "2023-05-16")
+    (rev "${REVISION}")
+    (company "Author: I. Kajdan")
+    (comment 1 "Reviewer:")
+  )
+
+  (lib_symbols
+  )
+
+)
