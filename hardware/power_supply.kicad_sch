@@ -5,7 +5,7 @@
   (paper "A4")
 
   (title_block
-    (date "2023-06-06")
+    (date "2023-07-01")
     (rev "${REVISION}")
     (company "Author: I. Kajdan")
     (comment 1 "Reviewer:")
@@ -118,6 +118,153 @@
         )
         (pin passive line (at 0 -2.54 90) (length 2.032)
           (name "~" (effects (font (size 1.27 1.27))))
+          (number "2" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
+    (symbol "Device:L_Ferrite" (pin_numbers hide) (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
+      (property "Reference" "L" (at -1.27 0 90)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Value" "L_Ferrite" (at 2.794 0 90)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "~" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_keywords" "inductor choke coil reactor magnetic" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_description" "Inductor with ferrite core" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_fp_filters" "Choke_* *Coil* Inductor_* L_*" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "L_Ferrite_0_1"
+        (arc (start 0 -2.54) (mid 0.6323 -1.905) (end 0 -1.27)
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (arc (start 0 -1.27) (mid 0.6323 -0.635) (end 0 0)
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 1.016 -2.794)
+            (xy 1.016 -2.286)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 1.016 -1.778)
+            (xy 1.016 -1.27)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 1.016 -0.762)
+            (xy 1.016 -0.254)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 1.016 0.254)
+            (xy 1.016 0.762)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 1.016 1.27)
+            (xy 1.016 1.778)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 1.016 2.286)
+            (xy 1.016 2.794)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 1.524 -2.286)
+            (xy 1.524 -2.794)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 1.524 -1.27)
+            (xy 1.524 -1.778)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 1.524 -0.254)
+            (xy 1.524 -0.762)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 1.524 0.762)
+            (xy 1.524 0.254)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 1.524 1.778)
+            (xy 1.524 1.27)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 1.524 2.794)
+            (xy 1.524 2.286)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (arc (start 0 0) (mid 0.6323 0.635) (end 0 1.27)
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (arc (start 0 1.27) (mid 0.6323 1.905) (end 0 2.54)
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+      )
+      (symbol "L_Ferrite_1_1"
+        (pin passive line (at 0 3.81 270) (length 1.27)
+          (name "1" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 0 -3.81 90) (length 1.27)
+          (name "2" (effects (font (size 1.27 1.27))))
           (number "2" (effects (font (size 1.27 1.27))))
         )
       )
@@ -420,6 +567,58 @@
         )
       )
     )
+    (symbol "POWER_7V:+7V" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
+      (property "Reference" "#PWR041" (at 0 -3.81 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Value" "+7V" (at 0 3.81 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_keywords" "global power" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_description" "Power symbol creates a global label with name \"+7.5V\"" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "+7V_0_1"
+        (polyline
+          (pts
+            (xy -0.762 1.27)
+            (xy 0 2.54)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy 0 2.54)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 2.54)
+            (xy 0.762 1.27)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+      )
+      (symbol "+7V_1_1"
+        (pin power_in line (at 0 0 90) (length 0) hide
+          (name "+7.5V" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
     (symbol "Regulator_Linear:BD50FC0FP" (in_bom yes) (on_board yes)
       (property "Reference" "U" (at 0 7.62 0)
         (effects (font (size 1.27 1.27)))
@@ -512,147 +711,6 @@
         )
       )
     )
-    (symbol "Traction_Control_System-rescue:L_Core_Ferrite-Device" (pin_numbers hide) (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
-      (property "Reference" "L" (at -1.27 0 90)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Value" "Device_L_Core_Ferrite" (at 2.794 0 90)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_fp_filters" "Choke_* *Coil* Inductor_* L_*" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "L_Core_Ferrite-Device_0_1"
-        (arc (start 0 -2.54) (mid 0.6323 -1.905) (end 0 -1.27)
-          (stroke (width 0) (type solid))
-          (fill (type none))
-        )
-        (arc (start 0 -1.27) (mid 0.6323 -0.635) (end 0 0)
-          (stroke (width 0) (type solid))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 1.016 -2.794)
-            (xy 1.016 -2.286)
-          )
-          (stroke (width 0) (type solid))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 1.016 -1.778)
-            (xy 1.016 -1.27)
-          )
-          (stroke (width 0) (type solid))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 1.016 -0.762)
-            (xy 1.016 -0.254)
-          )
-          (stroke (width 0) (type solid))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 1.016 0.254)
-            (xy 1.016 0.762)
-          )
-          (stroke (width 0) (type solid))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 1.016 1.27)
-            (xy 1.016 1.778)
-          )
-          (stroke (width 0) (type solid))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 1.016 2.286)
-            (xy 1.016 2.794)
-          )
-          (stroke (width 0) (type solid))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 1.524 -2.286)
-            (xy 1.524 -2.794)
-          )
-          (stroke (width 0) (type solid))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 1.524 -1.27)
-            (xy 1.524 -1.778)
-          )
-          (stroke (width 0) (type solid))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 1.524 -0.254)
-            (xy 1.524 -0.762)
-          )
-          (stroke (width 0) (type solid))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 1.524 0.762)
-            (xy 1.524 0.254)
-          )
-          (stroke (width 0) (type solid))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 1.524 1.778)
-            (xy 1.524 1.27)
-          )
-          (stroke (width 0) (type solid))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 1.524 2.794)
-            (xy 1.524 2.286)
-          )
-          (stroke (width 0) (type solid))
-          (fill (type none))
-        )
-        (arc (start 0 0) (mid 0.6323 0.635) (end 0 1.27)
-          (stroke (width 0) (type solid))
-          (fill (type none))
-        )
-        (arc (start 0 1.27) (mid 0.6323 1.905) (end 0 2.54)
-          (stroke (width 0) (type solid))
-          (fill (type none))
-        )
-      )
-      (symbol "L_Core_Ferrite-Device_1_1"
-        (pin passive line (at 0 3.81 270) (length 1.27)
-          (name "1" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 0 -3.81 90) (length 1.27)
-          (name "2" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
     (symbol "power:+24V" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
       (property "Reference" "#PWR" (at 0 -3.81 0)
         (effects (font (size 1.27 1.27)) hide)
@@ -701,6 +759,58 @@
       (symbol "+24V_1_1"
         (pin power_in line (at 0 0 90) (length 0) hide
           (name "+24V" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
+    (symbol "power:+3.3V" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
+      (property "Reference" "#PWR" (at 0 -3.81 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Value" "+3.3V" (at 0 3.556 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_keywords" "global power" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_description" "Power symbol creates a global label with name \"+3.3V\"" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "+3.3V_0_1"
+        (polyline
+          (pts
+            (xy -0.762 1.27)
+            (xy 0 2.54)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy 0 2.54)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 2.54)
+            (xy 0.762 1.27)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+      )
+      (symbol "+3.3V_1_1"
+        (pin power_in line (at 0 0 90) (length 0) hide
+          (name "+3.3V" (effects (font (size 1.27 1.27))))
           (number "1" (effects (font (size 1.27 1.27))))
         )
       )
@@ -757,58 +867,6 @@
         )
       )
     )
-    (symbol "power:+3V3" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
-      (property "Reference" "#PWR" (at 0 -3.81 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Value" "+3V3" (at 0 3.556 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "global power" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Power symbol creates a global label with name \"+3V3\"" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "+3V3_0_1"
-        (polyline
-          (pts
-            (xy -0.762 1.27)
-            (xy 0 2.54)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0 0)
-            (xy 0 2.54)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0 2.54)
-            (xy 0.762 1.27)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-      )
-      (symbol "+3V3_1_1"
-        (pin power_in line (at 0 0 90) (length 0) hide
-          (name "+3V3" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
     (symbol "power:+5V" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
       (property "Reference" "#PWR" (at 0 -3.81 0)
         (effects (font (size 1.27 1.27)) hide)
@@ -857,58 +915,6 @@
       (symbol "+5V_1_1"
         (pin power_in line (at 0 0 90) (length 0) hide
           (name "+5V" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "power:+7V" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
-      (property "Reference" "#PWR" (at 0 -3.81 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Value" "+7V" (at 0 3.556 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "global power" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Power symbol creates a global label with name \"+7.5V\"" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "+7V_0_1"
-        (polyline
-          (pts
-            (xy -0.762 1.27)
-            (xy 0 2.54)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0 0)
-            (xy 0 2.54)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0 2.54)
-            (xy 0.762 1.27)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-      )
-      (symbol "+7V_1_1"
-        (pin power_in line (at 0 0 90) (length 0) hide
-          (name "+7.5V" (effects (font (size 1.27 1.27))))
           (number "1" (effects (font (size 1.27 1.27))))
         )
       )
@@ -1196,10 +1202,6 @@
     (stroke (width 0) (type default))
     (uuid 4c7d864d-3fb9-47d2-bcc2-28c88bc570df)
   )
-  (wire (pts (xy 186.69 116.84) (xy 185.42 116.84))
-    (stroke (width 0) (type default))
-    (uuid 4d1cd801-3d66-4c13-80f2-685914eb7cc5)
-  )
   (wire (pts (xy 184.15 66.04) (xy 184.15 64.77))
     (stroke (width 0) (type default))
     (uuid 4e603395-4744-44e8-b312-891e5e6bec91)
@@ -1211,10 +1213,6 @@
   (wire (pts (xy 220.98 116.84) (xy 223.52 116.84))
     (stroke (width 0) (type default))
     (uuid 507f7db1-3004-4e0a-b152-09bfbaae390f)
-  )
-  (wire (pts (xy 137.16 158.75) (xy 137.16 161.29))
-    (stroke (width 0) (type default))
-    (uuid 52ea63f2-6fd7-4ea7-8ad7-7a505abf2b40)
   )
   (wire (pts (xy 86.36 53.34) (xy 86.36 54.61))
     (stroke (width 0) (type default))
@@ -1243,6 +1241,10 @@
   (wire (pts (xy 160.02 118.11) (xy 160.02 116.84))
     (stroke (width 0) (type default))
     (uuid 6694b9ea-4df4-4f9b-b725-291ed87eca3e)
+  )
+  (wire (pts (xy 137.16 161.29) (xy 139.7 161.29))
+    (stroke (width 0) (type default))
+    (uuid 697a38e7-1d0e-4c44-a13b-fcfed0c09f45)
   )
   (wire (pts (xy 104.14 160.02) (xy 104.14 161.29))
     (stroke (width 0) (type default))
@@ -1482,10 +1484,10 @@
     (uuid c1aa6218-b2c1-4f97-b779-f9162fe0933b)
   )
 
-  (global_label "5V_AUX" (shape output) (at 137.16 158.75 90) (fields_autoplaced)
+  (global_label "5V_AUX" (shape output) (at 139.7 161.29 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 22c4055b-9645-46e2-a106-2a13b5dd6a96)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 137.16 148.9499 90)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 149.5001 161.29 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
@@ -1733,10 +1735,10 @@
     )
   )
 
-  (symbol (lib_id "power:+7V") (at 184.15 64.77 0) (unit 1)
+  (symbol (lib_id "POWER_7V:+7V") (at 184.15 64.77 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 1d1f544d-ddbf-457c-8f58-9a4fdf98e975)
-    (property "Reference" "#PWR041" (at 184.15 68.58 0)
+    (property "Reference" "#PWR0212" (at 184.15 68.58 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+7V" (at 184.15 60.96 0)
@@ -1752,7 +1754,7 @@
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/7045152e-d7a2-42d7-9b15-138e7f2928ca"
-          (reference "#PWR041") (unit 1)
+          (reference "#PWR0212") (unit 1)
         )
       )
     )
@@ -1836,13 +1838,13 @@
     )
   )
 
-  (symbol (lib_id "power:+3V3") (at 185.42 115.57 0) (unit 1)
+  (symbol (lib_id "power:+3.3V") (at 185.42 115.57 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 240b522d-6d22-4948-9675-9e07c1cbf106)
     (property "Reference" "#PWR010" (at 185.42 119.38 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "+3V3" (at 185.42 111.76 0)
+    (property "Value" "+3.3V" (at 185.42 112.014 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "" (at 185.42 115.57 0)
@@ -1851,7 +1853,7 @@
     (property "Datasheet" "" (at 185.42 115.57 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 3e6be432-cd2d-4865-8060-5b3109e95c94))
+    (pin "1" (uuid bdc2cf10-0097-4f3f-afb3-3e8d32d51d54))
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45"
@@ -2076,13 +2078,13 @@
     )
   )
 
-  (symbol (lib_id "power:+3V3") (at 210.82 115.57 0) (unit 1)
+  (symbol (lib_id "power:+3.3V") (at 210.82 115.57 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 4ddc068c-8019-45f4-aa01-8632d8990835)
     (property "Reference" "#PWR010" (at 210.82 119.38 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "+3V3" (at 210.82 111.76 0)
+    (property "Value" "+3.3V" (at 210.82 112.014 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "" (at 210.82 115.57 0)
@@ -2091,7 +2093,7 @@
     (property "Datasheet" "" (at 210.82 115.57 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 14581dd1-09ed-44b6-963e-99bcef21398e))
+    (pin "1" (uuid 12520ddf-2198-4e13-9025-837baa9f46f3))
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45"
@@ -2265,10 +2267,10 @@
     )
   )
 
-  (symbol (lib_id "power:+7V") (at 83.82 115.57 0) (unit 1)
+  (symbol (lib_id "POWER_7V:+7V") (at 83.82 115.57 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 6d8a862a-9393-4ee7-a8cf-73de66ae4360)
-    (property "Reference" "#PWR020" (at 83.82 119.38 0)
+    (property "Reference" "#PWR0214" (at 83.82 119.38 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+7V" (at 83.82 111.76 0)
@@ -2284,7 +2286,7 @@
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/7045152e-d7a2-42d7-9b15-138e7f2928ca"
-          (reference "#PWR020") (unit 1)
+          (reference "#PWR0214") (unit 1)
         )
       )
     )
@@ -2395,10 +2397,10 @@
     )
   )
 
-  (symbol (lib_id "power:+7V") (at 83.82 160.02 0) (unit 1)
+  (symbol (lib_id "POWER_7V:+7V") (at 83.82 160.02 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 7eaf3f76-e5d4-4efa-a85b-e8835ac09401)
-    (property "Reference" "#PWR021" (at 83.82 163.83 0)
+    (property "Reference" "#PWR0213" (at 83.82 163.83 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+7V" (at 83.82 156.21 0)
@@ -2414,7 +2416,7 @@
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/7045152e-d7a2-42d7-9b15-138e7f2928ca"
-          (reference "#PWR021") (unit 1)
+          (reference "#PWR0213") (unit 1)
         )
       )
     )
@@ -2553,7 +2555,7 @@
   (symbol (lib_id "power:PWR_FLAG") (at 185.42 90.17 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 9406ea8c-0536-4e9c-be95-22f642efdf5d)
-    (property "Reference" "#FLG08" (at 187.325 90.17 0)
+    (property "Reference" "#FLG06" (at 187.325 90.17 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "PWR_FLAG" (at 189.23 90.805 90)
@@ -2569,7 +2571,7 @@
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/7045152e-d7a2-42d7-9b15-138e7f2928ca"
-          (reference "#FLG08") (unit 1)
+          (reference "#FLG06") (unit 1)
         )
       )
     )
@@ -2738,7 +2740,7 @@
   (symbol (lib_id "power:PWR_FLAG") (at 224.79 116.84 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid b794f070-a639-4561-82f3-625ad99a23d2)
-    (property "Reference" "#FLG06" (at 226.695 116.84 0)
+    (property "Reference" "#FLG07" (at 226.695 116.84 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "PWR_FLAG" (at 228.6 116.84 90)
@@ -2754,7 +2756,7 @@
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/7045152e-d7a2-42d7-9b15-138e7f2928ca"
-          (reference "#FLG06") (unit 1)
+          (reference "#FLG07") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45"
           (reference "#FLG?") (unit 1)
@@ -2904,6 +2906,32 @@
     )
   )
 
+  (symbol (lib_id "Device:L_Ferrite") (at 217.17 116.84 90) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid ce22a446-0a3a-44b4-aef7-4d4d8cc34afc)
+    (property "Reference" "L2" (at 217.17 110.49 90)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "6u8" (at 217.17 113.03 90)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 217.17 116.84 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 217.17 116.84 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid a69cbe07-72c3-431c-a6c0-4e7775d49d37))
+    (pin "2" (uuid 82e5a015-475a-48da-a485-18331d9f1546))
+    (instances
+      (project "rearbox"
+        (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/7045152e-d7a2-42d7-9b15-138e7f2928ca"
+          (reference "L2") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "Regulator_Linear:BD50FC0FP") (at 114.3 161.29 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid d7325168-8e14-4e2c-9e4a-2d22a036739f)
@@ -2926,34 +2954,6 @@
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/7045152e-d7a2-42d7-9b15-138e7f2928ca"
           (reference "U3") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:PWR_FLAG") (at 186.69 116.84 270) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid d7a38fe4-905f-496f-80ba-ce74363e848f)
-    (property "Reference" "#FLG07" (at 188.595 116.84 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "PWR_FLAG" (at 190.5 116.84 90)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "" (at 186.69 116.84 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 186.69 116.84 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 2a1e841a-937a-45d9-a7b6-1ddc7eca6095))
-    (instances
-      (project "rearbox"
-        (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/7045152e-d7a2-42d7-9b15-138e7f2928ca"
-          (reference "#FLG07") (unit 1)
-        )
-        (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45"
-          (reference "#FLG?") (unit 1)
         )
       )
     )
@@ -3123,40 +3123,6 @@
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/7045152e-d7a2-42d7-9b15-138e7f2928ca"
           (reference "C22") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Traction_Control_System-rescue:L_Core_Ferrite-Device") (at 217.17 116.84 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid fffe9468-3ea8-4535-b95d-fee0b17d48b5)
-    (property "Reference" "L?" (at 218.44 113.03 90)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "6u8" (at 217.17 119.38 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Inductor_SMD:L_Vishay_IHLP-1616" (at 217.17 116.84 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 217.17 116.84 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 5d6e94ad-85dc-4713-8a36-71c84fd5364d))
-    (pin "2" (uuid 104907bf-5732-4319-b475-a944a1a2a987))
-    (instances
-      (project "rearbox"
-        (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45"
-          (reference "L?") (unit 1)
-        )
-        (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/7045152e-d7a2-42d7-9b15-138e7f2928ca"
-          (reference "L2") (unit 1)
-        )
-      )
-      (project "Traction_Control_System"
-        (path "/f20670e0-69c0-4042-a790-cde4391abff4/00000000-0000-0000-0000-0000621459db"
-          (reference "L?") (unit 1)
         )
       )
     )

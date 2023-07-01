@@ -1,0 +1,159 @@
+/* USER CODE BEGIN Header */
+/**
+ ******************************************************************************
+ * @file           : main.h
+ * @brief          : Header for main.c file.
+ *                   This file contains the common defines of the application.
+ ******************************************************************************
+ * @attention
+ *
+ * Copyright (c) 2023 STMicroelectronics.
+ * All rights reserved.
+ *
+ * This software is licensed under terms that can be found in the LICENSE file
+ * in the root directory of this software component.
+ * If no LICENSE file comes with this software, it is provided AS-IS.
+ *
+ ******************************************************************************
+ */
+/* USER CODE END Header */
+
+/* Define to prevent recursive inclusion -------------------------------------*/
+#ifndef __MAIN_H
+#define __MAIN_H
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+/* Includes ------------------------------------------------------------------*/
+#include "stm32g4xx_hal.h"
+
+/* Private includes ----------------------------------------------------------*/
+/* USER CODE BEGIN Includes */
+
+/* USER CODE END Includes */
+
+/* Exported types ------------------------------------------------------------*/
+/* USER CODE BEGIN ET */
+
+/* USER CODE END ET */
+
+/* Exported constants --------------------------------------------------------*/
+/* USER CODE BEGIN EC */
+
+/* USER CODE END EC */
+
+/* Exported macro ------------------------------------------------------------*/
+/* USER CODE BEGIN EM */
+
+/* USER CODE END EM */
+
+/* Exported functions prototypes ---------------------------------------------*/
+void Error_Handler(void);
+
+/* USER CODE BEGIN EFP */
+
+/* USER CODE END EFP */
+
+/* Private defines -----------------------------------------------------------*/
+#define ASSI_LED_R_Pin GPIO_PIN_13
+#define ASSI_LED_R_GPIO_Port GPIOC
+#define ASSI_LED_G_Pin GPIO_PIN_14
+#define ASSI_LED_G_GPIO_Port GPIOC
+#define ASSI_LED_B_Pin GPIO_PIN_15
+#define ASSI_LED_B_GPIO_Port GPIOC
+#define HSE_IN_Pin GPIO_PIN_0
+#define HSE_IN_GPIO_Port GPIOF
+#define HSE_OUT_Pin GPIO_PIN_1
+#define HSE_OUT_GPIO_Port GPIOF
+#define WATER_TEMPERATURE1_Pin GPIO_PIN_0
+#define WATER_TEMPERATURE1_GPIO_Port GPIOC
+#define WATER_TEMPERATURE2_Pin GPIO_PIN_1
+#define WATER_TEMPERATURE2_GPIO_Port GPIOC
+#define MONO_TEMPERATURE_Pin GPIO_PIN_2
+#define MONO_TEMPERATURE_GPIO_Port GPIOC
+#define WATER_PRESSURE1_Pin GPIO_PIN_3
+#define WATER_PRESSURE1_GPIO_Port GPIOC
+#define WATER_PRESSURE2_Pin GPIO_PIN_0
+#define WATER_PRESSURE2_GPIO_Port GPIOA
+#define SUSPENSION_POT1_Pin GPIO_PIN_1
+#define SUSPENSION_POT1_GPIO_Port GPIOA
+#define SUSPENSION_POT2_Pin GPIO_PIN_2
+#define SUSPENSION_POT2_GPIO_Port GPIOA
+#define ASSI_BUZZER_Pin GPIO_PIN_3
+#define ASSI_BUZZER_GPIO_Port GPIOA
+#define ANALOG_OFFSET1_Pin GPIO_PIN_4
+#define ANALOG_OFFSET1_GPIO_Port GPIOA
+#define ANALOG_OFFSET2_Pin GPIO_PIN_5
+#define ANALOG_OFFSET2_GPIO_Port GPIOA
+#define ANALOG_INPUT1_Pin GPIO_PIN_6
+#define ANALOG_INPUT1_GPIO_Port GPIOA
+#define ANALOG_INPUT2_Pin GPIO_PIN_7
+#define ANALOG_INPUT2_GPIO_Port GPIOA
+#define ANALOG_INPUT3_Pin GPIO_PIN_4
+#define ANALOG_INPUT3_GPIO_Port GPIOC
+#define ANALOG_INPUT4_Pin GPIO_PIN_5
+#define ANALOG_INPUT4_GPIO_Port GPIOC
+#define RTDS_Pin GPIO_PIN_0
+#define RTDS_GPIO_Port GPIOB
+#define BRAKE_LIGHT_Pin GPIO_PIN_1
+#define BRAKE_LIGHT_GPIO_Port GPIOB
+#define BUZZER_Pin GPIO_PIN_2
+#define BUZZER_GPIO_Port GPIOB
+#define PUMP_R_Pin GPIO_PIN_10
+#define PUMP_R_GPIO_Port GPIOB
+#define PUMP_L_Pin GPIO_PIN_13
+#define PUMP_L_GPIO_Port GPIOB
+#define FAN_R_Pin GPIO_PIN_14
+#define FAN_R_GPIO_Port GPIOB
+#define FAN_L_Pin GPIO_PIN_15
+#define FAN_L_GPIO_Port GPIOB
+#define SAFETY_RESET_Pin GPIO_PIN_6
+#define SAFETY_RESET_GPIO_Port GPIOC
+#define SAFETY_INT_Pin GPIO_PIN_7
+#define SAFETY_INT_GPIO_Port GPIOC
+#define SAFETY_SCL_Pin GPIO_PIN_8
+#define SAFETY_SCL_GPIO_Port GPIOC
+#define SAFETY_SDA_Pin GPIO_PIN_9
+#define SAFETY_SDA_GPIO_Port GPIOC
+#define I2C_SDA_Pin GPIO_PIN_8
+#define I2C_SDA_GPIO_Port GPIOA
+#define I2C_SCL_Pin GPIO_PIN_9
+#define I2C_SCL_GPIO_Port GPIOA
+#define USB_D__Pin GPIO_PIN_11
+#define USB_D__GPIO_Port GPIOA
+#define USB_D_A12_Pin GPIO_PIN_12
+#define USB_D_A12_GPIO_Port GPIOA
+#define SWDIO_Pin GPIO_PIN_13
+#define SWDIO_GPIO_Port GPIOA
+#define SWCLK_Pin GPIO_PIN_14
+#define SWCLK_GPIO_Port GPIOA
+#define UART_TX_Pin GPIO_PIN_10
+#define UART_TX_GPIO_Port GPIOC
+#define UART_RX_Pin GPIO_PIN_11
+#define UART_RX_GPIO_Port GPIOC
+#define SPI_MOSI_Pin GPIO_PIN_12
+#define SPI_MOSI_GPIO_Port GPIOC
+#define SPI_SCLK_Pin GPIO_PIN_3
+#define SPI_SCLK_GPIO_Port GPIOB
+#define SPI_MISO_Pin GPIO_PIN_4
+#define SPI_MISO_GPIO_Port GPIOB
+#define CAN2_RX_Pin GPIO_PIN_5
+#define CAN2_RX_GPIO_Port GPIOB
+#define CAN2_TX_Pin GPIO_PIN_6
+#define CAN2_TX_GPIO_Port GPIOB
+#define CAN_RX_Pin GPIO_PIN_8
+#define CAN_RX_GPIO_Port GPIOB
+#define CAN_TX_Pin GPIO_PIN_9
+#define CAN_TX_GPIO_Port GPIOB
+
+/* USER CODE BEGIN Private defines */
+
+/* USER CODE END Private defines */
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif /* __MAIN_H */

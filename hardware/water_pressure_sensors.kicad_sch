@@ -5,8 +5,8 @@
   (paper "A4")
 
   (title_block
-    (title "Water Pressure Sensor")
-    (date "2023-06-06")
+    (title "Water Pressure Sensors")
+    (date "2023-07-01")
     (rev "${REVISION}")
     (company "Author: I. Kajdan")
     (comment 1 "Reviewer:")

@@ -6,7 +6,7 @@
 
   (title_block
     (title "Fans")
-    (date "2023-06-06")
+    (date "2023-07-01")
     (rev "${REVISION}")
     (company "Author: I. Kajdan")
     (comment 1 "Reviewer:")
@@ -440,7 +440,7 @@
           (reference "R?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/12f12a63-cabc-40cf-a64b-d1bd8b3dd459"
-          (reference "R42") (unit 1)
+          (reference "R41") (unit 1)
         )
       )
     )
@@ -480,7 +480,7 @@
           (reference "R?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/12f12a63-cabc-40cf-a64b-d1bd8b3dd459"
-          (reference "R39") (unit 1)
+          (reference "R38") (unit 1)
         )
       )
     )
@@ -520,7 +520,7 @@
           (reference "R?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/12f12a63-cabc-40cf-a64b-d1bd8b3dd459"
-          (reference "R40") (unit 1)
+          (reference "R39") (unit 1)
         )
       )
     )
@@ -560,7 +560,7 @@
           (reference "R?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/12f12a63-cabc-40cf-a64b-d1bd8b3dd459"
-          (reference "R43") (unit 1)
+          (reference "R42") (unit 1)
         )
       )
     )
@@ -633,7 +633,7 @@
           (reference "R?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/12f12a63-cabc-40cf-a64b-d1bd8b3dd459"
-          (reference "R41") (unit 1)
+          (reference "R40") (unit 1)
         )
       )
     )
@@ -676,7 +676,7 @@
           (reference "R?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/12f12a63-cabc-40cf-a64b-d1bd8b3dd459"
-          (reference "R44") (unit 1)
+          (reference "R43") (unit 1)
         )
       )
     )
