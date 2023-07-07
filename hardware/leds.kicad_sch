@@ -198,6 +198,58 @@
         )
       )
     )
+    (symbol "Power_Ports:+5VAUX" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
+      (property "Reference" "#PWR042" (at 0 -3.81 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Value" "+5VAUX" (at 0 3.81 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_keywords" "global power" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_description" "Power symbol creates a global label with name \"+5VAUX\"" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "+5VAUX_0_1"
+        (polyline
+          (pts
+            (xy -0.762 1.27)
+            (xy 0 2.54)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy 0 2.54)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 2.54)
+            (xy 0.762 1.27)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+      )
+      (symbol "+5VAUX_1_1"
+        (pin power_in line (at 0 0 90) (length 0) hide
+          (name "+5VAUX" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
     (symbol "Simulation_SPICE:NMOS" (pin_numbers hide) (pin_names (offset 0)) (in_bom yes) (on_board yes)
       (property "Reference" "Q" (at 5.08 1.27 0)
         (effects (font (size 1.27 1.27)) (justify left))
@@ -498,16 +550,16 @@
     )
   )
 
-  (junction (at 210.82 114.3) (diameter 0) (color 0 0 0 0)
+  (junction (at 210.82 125.73) (diameter 0) (color 0 0 0 0)
     (uuid 1b48a943-9935-46e7-b9eb-717df4e87ace)
   )
-  (junction (at 200.66 106.68) (diameter 0) (color 0 0 0 0)
+  (junction (at 200.66 118.11) (diameter 0) (color 0 0 0 0)
     (uuid 70cca33c-9160-40fa-9b72-9d9d24054cf6)
   )
 
-  (wire (pts (xy 133.35 73.66) (xy 134.62 73.66))
+  (wire (pts (xy 134.62 76.2) (xy 134.62 77.47))
     (stroke (width 0) (type default))
-    (uuid 0b9b7e28-79d6-4c92-a683-9e90a5729421)
+    (uuid 074a3b74-c85e-497a-a0bb-2cfdf44da304)
   )
   (wire (pts (xy 83.82 82.55) (xy 83.82 83.82))
     (stroke (width 0) (type default))
@@ -517,7 +569,7 @@
     (stroke (width 0) (type default))
     (uuid 11b0f0a3-2dc1-40c6-85b6-557791f3dd3e)
   )
-  (wire (pts (xy 210.82 111.76) (xy 210.82 114.3))
+  (wire (pts (xy 210.82 123.19) (xy 210.82 125.73))
     (stroke (width 0) (type default))
     (uuid 1a096203-22e6-427b-bc8c-123778cc95ca)
   )
@@ -525,7 +577,7 @@
     (stroke (width 0) (type default))
     (uuid 1bbf2724-1fd3-445b-bbc7-7f4400f5165e)
   )
-  (wire (pts (xy 210.82 93.98) (xy 210.82 92.71))
+  (wire (pts (xy 210.82 105.41) (xy 210.82 104.14))
     (stroke (width 0) (type default))
     (uuid 2565d613-6771-4f47-908f-77bab9c7e14e)
   )
@@ -549,7 +601,7 @@
     (stroke (width 0) (type default))
     (uuid 7593f650-f992-4ca8-bef3-4cfd89e1a55b)
   )
-  (wire (pts (xy 190.5 106.68) (xy 193.04 106.68))
+  (wire (pts (xy 190.5 118.11) (xy 193.04 118.11))
     (stroke (width 0) (type default))
     (uuid 77c2cfc9-c02f-4c9a-bdbe-4f40dbe34bbd)
   )
@@ -557,7 +609,7 @@
     (stroke (width 0) (type default))
     (uuid 79ea8956-d695-49fe-8820-921956a9a020)
   )
-  (wire (pts (xy 210.82 99.06) (xy 210.82 101.6))
+  (wire (pts (xy 210.82 110.49) (xy 210.82 113.03))
     (stroke (width 0) (type default))
     (uuid 7b64505e-d8b6-48e4-8aa8-ce8e7ded6187)
   )
@@ -593,11 +645,11 @@
     (stroke (width 0) (type default))
     (uuid 90ceb3fb-a2e1-4070-a78b-62a06fbe59a8)
   )
-  (wire (pts (xy 210.82 114.3) (xy 210.82 115.57))
+  (wire (pts (xy 210.82 125.73) (xy 210.82 127))
     (stroke (width 0) (type default))
     (uuid 962e949e-03f9-47a3-8e4e-94c2468f52c0)
   )
-  (wire (pts (xy 212.09 93.98) (xy 210.82 93.98))
+  (wire (pts (xy 212.09 105.41) (xy 210.82 105.41))
     (stroke (width 0) (type default))
     (uuid 99bdc0e5-64fd-4b51-9b20-d6522313b4d3)
   )
@@ -605,11 +657,11 @@
     (stroke (width 0) (type default))
     (uuid 9c558a1c-4ea8-4840-9d74-dd9498de141f)
   )
-  (wire (pts (xy 200.66 114.3) (xy 210.82 114.3))
+  (wire (pts (xy 200.66 125.73) (xy 210.82 125.73))
     (stroke (width 0) (type default))
     (uuid c063b533-fe49-4894-9ed4-c545d730bb36)
   )
-  (wire (pts (xy 200.66 106.68) (xy 203.2 106.68))
+  (wire (pts (xy 200.66 118.11) (xy 203.2 118.11))
     (stroke (width 0) (type default))
     (uuid c2fbec36-01d1-4eb0-909e-8f425d95257b)
   )
@@ -617,7 +669,7 @@
     (stroke (width 0) (type default))
     (uuid c71bf011-6187-4d06-8eff-db50696cef19)
   )
-  (wire (pts (xy 198.12 106.68) (xy 200.66 106.68))
+  (wire (pts (xy 198.12 118.11) (xy 200.66 118.11))
     (stroke (width 0) (type default))
     (uuid c73f81b7-1d5b-4e76-a2a6-b1fc5cef9b00)
   )
@@ -633,7 +685,7 @@
     (stroke (width 0) (type default))
     (uuid e2e38ce2-396a-4c57-a7bd-772839cf0e31)
   )
-  (wire (pts (xy 200.66 106.68) (xy 200.66 107.95))
+  (wire (pts (xy 200.66 118.11) (xy 200.66 119.38))
     (stroke (width 0) (type default))
     (uuid e3da9a54-079f-47c6-9e58-83e0b0e51e5c)
   )
@@ -641,36 +693,24 @@
     (stroke (width 0) (type default))
     (uuid e5f6194c-f484-4388-bf9a-5d274c478ded)
   )
-  (wire (pts (xy 134.62 73.66) (xy 134.62 77.47))
-    (stroke (width 0) (type default))
-    (uuid e738a162-a0a9-43a5-adea-7685491233d9)
-  )
   (wire (pts (xy 83.82 76.2) (xy 83.82 77.47))
     (stroke (width 0) (type default))
     (uuid ecfff397-eff6-46d1-91bb-432eb2a40155)
   )
-  (wire (pts (xy 200.66 113.03) (xy 200.66 114.3))
+  (wire (pts (xy 200.66 124.46) (xy 200.66 125.73))
     (stroke (width 0) (type default))
     (uuid ef986196-c33c-4cf7-9b35-f0ce0ab249ad)
   )
-  (wire (pts (xy 210.82 99.06) (xy 212.09 99.06))
+  (wire (pts (xy 210.82 110.49) (xy 212.09 110.49))
     (stroke (width 0) (type default))
     (uuid f6170da6-a053-4655-a2a9-496204f106dc)
-  )
-
-  (global_label "5V_AUX" (shape input) (at 133.35 73.66 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right))
-    (uuid 913e18a5-350a-4acc-923e-e3d301770326)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 123.5499 73.66 0)
-      (effects (font (size 1.27 1.27)) (justify right) hide)
-    )
   )
 
   (hierarchical_label "CAN" (shape input) (at 81.28 110.49 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid 39a3ec83-d98b-4786-a15e-9c0884baaffa)
   )
-  (hierarchical_label "BUZZER" (shape input) (at 190.5 106.68 180) (fields_autoplaced)
+  (hierarchical_label "BUZZER" (shape input) (at 190.5 118.11 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid 4b77b32c-93f7-46b2-8a85-02322fd96fff)
   )
@@ -696,21 +736,21 @@
     (property "Value" "Yellow" (at 86.36 124.46 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "LED_SMD:LED_0201_0603Metric" (at 83.82 123.19 90)
+    (property "Footprint" "LED_SMD:LED_0603_1608Metric" (at 83.82 123.19 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 83.82 123.19 90)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 0ae7ac8f-bf25-4fdb-8d63-148a820b2754))
-    (pin "2" (uuid 9e7bf6bd-b5b3-437f-b5ce-201b30c8a87d))
+    (pin "1" (uuid f358f47a-17f2-4a91-8282-9e4048b12082))
+    (pin "2" (uuid 5bde661e-f771-4213-bfd6-4cc1e73a5587))
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45"
           (reference "D?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/6999686b-4026-4ea7-9227-634603a79198"
-          (reference "D5") (unit 1)
+          (reference "D8") (unit 1)
         )
       )
     )
@@ -731,14 +771,14 @@
     (property "Datasheet" "" (at 83.82 127 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid f9cf8e8a-c387-43b2-b3e7-91999abc4082))
+    (pin "1" (uuid 1f76e503-71c1-45b9-aa79-bddc62228bca))
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45"
           (reference "#PWR?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/6999686b-4026-4ea7-9227-634603a79198"
-          (reference "#PWR0139") (unit 1)
+          (reference "#PWR0150") (unit 1)
         )
       )
       (project "suspension_tension_meter"
@@ -764,7 +804,7 @@
     (property "Datasheet" "" (at 83.82 90.17 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid dac9caf9-cc30-48c4-b65e-f9b5adf1b0ee))
+    (pin "1" (uuid 8f0b9744-51e6-4d9b-9c26-589346f0e8b5))
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/7045152e-d7a2-42d7-9b15-138e7f2928ca"
@@ -774,7 +814,7 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/6999686b-4026-4ea7-9227-634603a79198"
-          (reference "#PWR0138") (unit 1)
+          (reference "#PWR0149") (unit 1)
         )
       )
     )
@@ -795,19 +835,47 @@
     (property "Datasheet" "" (at 160.02 127 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid ff64644a-a4d8-4de5-bd5f-36c13efe15e3))
+    (pin "1" (uuid 194bd7df-eceb-4785-bf3d-658a2c10df99))
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45"
           (reference "#PWR?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/6999686b-4026-4ea7-9227-634603a79198"
-          (reference "#PWR0145") (unit 1)
+          (reference "#PWR0157") (unit 1)
         )
       )
       (project "suspension_tension_meter"
         (path "/d29c2854-1cff-48df-9335-a3932490d817"
           (reference "#PWR?") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Power_Ports:+5VAUX") (at 134.62 76.2 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 2de1f855-c3d7-4c2f-ad0c-b02c2faad018)
+    (property "Reference" "#PWR042" (at 134.62 80.01 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "+5VAUX" (at 134.62 71.12 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 134.62 76.2 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 134.62 76.2 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 966b5e73-384f-40c4-9c3d-dae7b7b54389))
+    (instances
+      (project "rearbox"
+        (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/7045152e-d7a2-42d7-9b15-138e7f2928ca"
+          (reference "#PWR042") (unit 1)
+        )
+        (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/6999686b-4026-4ea7-9227-634603a79198"
+          (reference "#PWR0154") (unit 1)
         )
       )
     )
@@ -828,14 +896,14 @@
     (property "Datasheet" "" (at 83.82 76.2 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 3b6fe9f0-9423-4435-b371-ce305f4ef061))
+    (pin "1" (uuid fec7db70-beb7-4a36-b765-6081dd99781e))
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45"
           (reference "#PWR?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/6999686b-4026-4ea7-9227-634603a79198"
-          (reference "#PWR0137") (unit 1)
+          (reference "#PWR0148") (unit 1)
         )
       )
     )
@@ -850,21 +918,21 @@
     (property "Value" "82R" (at 90.17 81.28 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 83.82 80.01 0)
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 83.82 80.01 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 83.82 80.01 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 432672a2-db1b-4c84-83f4-77d642f5cbb5))
-    (pin "2" (uuid c385de98-dda0-4c50-b89a-ad354a806a1f))
+    (pin "1" (uuid 3339e4c5-d86e-4edf-afcb-2e616528760e))
+    (pin "2" (uuid 08f3116b-e6d6-45f9-af0c-3fe292f30fbe))
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45"
           (reference "R?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/6999686b-4026-4ea7-9227-634603a79198"
-          (reference "R96") (unit 1)
+          (reference "R109") (unit 1)
         )
       )
     )
@@ -885,14 +953,14 @@
     (property "Datasheet" "" (at 109.22 127 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid ae315fc4-823e-4ded-8c8c-9f72278d15a5))
+    (pin "1" (uuid 280fca9c-ac63-43f1-a9b9-0d2a580c60cb))
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45"
           (reference "#PWR?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/6999686b-4026-4ea7-9227-634603a79198"
-          (reference "#PWR0142") (unit 1)
+          (reference "#PWR0153") (unit 1)
         )
       )
       (project "suspension_tension_meter"
@@ -903,23 +971,23 @@
     )
   )
 
-  (symbol (lib_id "Device:R_Small") (at 195.58 106.68 270) (unit 1)
+  (symbol (lib_id "Device:R_Small") (at 195.58 118.11 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 4c7c9237-c055-448d-8df8-f5d78dd53948)
-    (property "Reference" "R?" (at 195.58 103.9622 90)
+    (property "Reference" "R?" (at 195.58 115.3922 90)
       (effects (font (size 1.27 1.27)) (justify top))
     )
-    (property "Value" "100R" (at 195.58 108.8136 90)
+    (property "Value" "100R" (at 195.58 120.2436 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 195.58 106.68 0)
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 195.58 118.11 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (at 195.58 106.68 0)
+    (property "Datasheet" "~" (at 195.58 118.11 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 5cc059b0-c575-43da-b7e7-88a6d78475db))
-    (pin "2" (uuid 1d36820c-bfc6-4b30-a0cc-291b185bf72e))
+    (pin "1" (uuid e9d8e80c-68f8-4c0d-8126-f3afc789f638))
+    (pin "2" (uuid 92c57ba7-717e-4d26-a0af-c6e81d7289f1))
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/91248db3-ac16-4fb7-9cfe-25145bb94249"
@@ -932,7 +1000,7 @@
           (reference "R90") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/6999686b-4026-4ea7-9227-634603a79198"
-          (reference "R103") (unit 1)
+          (reference "R116") (unit 1)
         )
       )
       (project "Traction_Control_System"
@@ -961,7 +1029,7 @@
     (property "Datasheet" "" (at 134.62 90.17 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 5208867c-943b-4069-a3fc-f7e4597c51b0))
+    (pin "1" (uuid ce7b862c-a486-4303-8608-c86536d033c1))
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/7045152e-d7a2-42d7-9b15-138e7f2928ca"
@@ -971,7 +1039,7 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/6999686b-4026-4ea7-9227-634603a79198"
-          (reference "#PWR0143") (unit 1)
+          (reference "#PWR0155") (unit 1)
         )
       )
     )
@@ -986,21 +1054,21 @@
     (property "Value" "Red" (at 111.76 124.46 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "LED_SMD:LED_0201_0603Metric" (at 109.22 123.19 90)
+    (property "Footprint" "LED_SMD:LED_0603_1608Metric" (at 109.22 123.19 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 109.22 123.19 90)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid ecb6c818-3925-4b61-a2d7-ff28b4466f0d))
-    (pin "2" (uuid 6b4637c5-3eb3-4f98-905b-47e01834ffa9))
+    (pin "1" (uuid a61002f8-b9db-432d-8965-1d6cb0c8c77f))
+    (pin "2" (uuid 10e7ba1c-07d1-4d75-b98a-34d49015ea96))
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45"
           (reference "D?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/6999686b-4026-4ea7-9227-634603a79198"
-          (reference "D7") (unit 1)
+          (reference "D10") (unit 1)
         )
       )
     )
@@ -1015,21 +1083,21 @@
     (property "Value" "120R" (at 111.76 118.11 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 109.22 116.84 0)
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 109.22 116.84 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 109.22 116.84 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 7dfd4c5a-bf6a-4521-a840-300bf305531e))
-    (pin "2" (uuid 1ad71486-82db-4a35-8061-a7750ace6c36))
+    (pin "1" (uuid 309ab3c8-b2e5-4a9a-bc71-f3eede607128))
+    (pin "2" (uuid f94deb77-3e4e-436f-a49d-bccf54ac72ea))
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45"
           (reference "R?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/6999686b-4026-4ea7-9227-634603a79198"
-          (reference "R99") (unit 1)
+          (reference "R112") (unit 1)
         )
       )
       (project "suspension_tension_meter"
@@ -1055,14 +1123,14 @@
     (property "Datasheet" "" (at 134.62 127 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 7b8cb716-a518-4a7b-8868-38853b37bd96))
+    (pin "1" (uuid efec3d2e-bea8-454f-9059-0f06f8fb17ae))
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45"
           (reference "#PWR?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/6999686b-4026-4ea7-9227-634603a79198"
-          (reference "#PWR0144") (unit 1)
+          (reference "#PWR0156") (unit 1)
         )
       )
       (project "suspension_tension_meter"
@@ -1073,23 +1141,23 @@
     )
   )
 
-  (symbol (lib_id "Device:Buzzer") (at 214.63 96.52 0) (unit 1)
+  (symbol (lib_id "Device:Buzzer") (at 214.63 107.95 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 5d0a5b43-9c02-4b34-8137-1db1edbfb527)
-    (property "Reference" "BZ1" (at 218.44 95.25 0)
+    (property "Reference" "BZ1" (at 218.44 106.68 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "Buzzer" (at 218.44 97.79 0)
+    (property "Value" "Buzzer" (at 218.44 109.22 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 213.995 93.98 90)
+    (property "Footprint" "Buzzer_Beeper:Buzzer_12x9.5RM7.6" (at 213.995 105.41 90)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (at 213.995 93.98 90)
+    (property "Datasheet" "~" (at 213.995 105.41 90)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid a0c53f43-80e0-40dd-90ec-c4a1666cd845))
-    (pin "2" (uuid 83f54901-c5f6-49cf-89c6-25430d77f42f))
+    (pin "1" (uuid 7ff1ae08-6035-455d-80be-c72e21988c56))
+    (pin "2" (uuid 76621487-0e6f-4adc-ab9c-7c9deb5e9239))
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45"
@@ -1111,21 +1179,21 @@
     (property "Value" "120R" (at 86.36 118.11 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 83.82 116.84 0)
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 83.82 116.84 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 83.82 116.84 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 02c1b9f4-c80a-4a39-992e-ecc0ca687673))
-    (pin "2" (uuid 53478116-5470-473c-a870-8f0014743b22))
+    (pin "1" (uuid c297d9fa-06be-4a12-b739-4200a445e258))
+    (pin "2" (uuid bf003395-0a9d-423d-82bd-e45dfdad9c1a))
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45"
           (reference "R?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/6999686b-4026-4ea7-9227-634603a79198"
-          (reference "R97") (unit 1)
+          (reference "R110") (unit 1)
         )
       )
       (project "suspension_tension_meter"
@@ -1145,21 +1213,21 @@
     (property "Value" "270R" (at 142.24 81.28 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 134.62 80.01 0)
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 134.62 80.01 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 134.62 80.01 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 28a4cf82-96f9-4769-8650-1ee8af896eae))
-    (pin "2" (uuid c3373069-b6fb-49b5-9bd7-37430cab72a3))
+    (pin "1" (uuid b5cd1652-0d95-4bb9-a981-a01edbbe93f9))
+    (pin "2" (uuid a0f01bea-339f-4fe5-8ffe-44bc8928afc2))
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45"
           (reference "R?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/6999686b-4026-4ea7-9227-634603a79198"
-          (reference "R100") (unit 1)
+          (reference "R113") (unit 1)
         )
       )
     )
@@ -1174,21 +1242,21 @@
     (property "Value" "Green" (at 86.36 87.63 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "LED_SMD:LED_0201_0603Metric" (at 83.82 86.36 90)
+    (property "Footprint" "LED_SMD:LED_0603_1608Metric" (at 83.82 86.36 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 83.82 86.36 90)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 521efd02-fc17-4fc3-a461-2d8070a860be))
-    (pin "2" (uuid 8779ae28-9dd9-4fbf-b887-25ff1b2d3aed))
+    (pin "1" (uuid 8ffa025e-cf0d-4f64-8f9a-6c293f34c002))
+    (pin "2" (uuid b5bc6918-9663-4c46-86d3-c416f87377c8))
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45"
           (reference "D?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/6999686b-4026-4ea7-9227-634603a79198"
-          (reference "D4") (unit 1)
+          (reference "D7") (unit 1)
         )
       )
     )
@@ -1203,21 +1271,21 @@
     (property "Value" "120R" (at 162.56 118.11 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 160.02 116.84 0)
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 160.02 116.84 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 160.02 116.84 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid ca8a0c5e-74f3-4c96-81d9-e4589ff06d42))
-    (pin "2" (uuid d395827a-77e1-4023-9a67-e3e0f033076b))
+    (pin "1" (uuid ce8c3c74-01fa-46df-9ff9-7483a6005e8d))
+    (pin "2" (uuid 22c16395-9786-46e5-ac03-0dcf4177deed))
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45"
           (reference "R?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/6999686b-4026-4ea7-9227-634603a79198"
-          (reference "R102") (unit 1)
+          (reference "R115") (unit 1)
         )
       )
       (project "suspension_tension_meter"
@@ -1237,21 +1305,21 @@
     (property "Value" "Green" (at 111.76 87.63 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "LED_SMD:LED_0201_0603Metric" (at 109.22 86.36 90)
+    (property "Footprint" "LED_SMD:LED_0603_1608Metric" (at 109.22 86.36 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 109.22 86.36 90)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid ce180b02-906b-45c6-9bed-a7566c735d68))
-    (pin "2" (uuid bb3dcbea-71ad-439d-a210-5a56ed8ca47f))
+    (pin "1" (uuid aae5c0a4-baf4-44c6-aff4-a6d5245935f7))
+    (pin "2" (uuid caee72b9-cdd2-47e8-a248-d57882e3e8aa))
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45"
           (reference "D?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/6999686b-4026-4ea7-9227-634603a79198"
-          (reference "D6") (unit 1)
+          (reference "D9") (unit 1)
         )
       )
     )
@@ -1266,21 +1334,21 @@
     (property "Value" "120R" (at 137.16 118.11 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 134.62 116.84 0)
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 134.62 116.84 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 134.62 116.84 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 09aae8c6-87e5-46d6-8824-a45e7fbf790e))
-    (pin "2" (uuid e68a5d20-c13d-490c-81d2-6cf2e21a075f))
+    (pin "1" (uuid 1770b8b8-925b-4d86-9729-bdd3ed312c57))
+    (pin "2" (uuid cba6d3de-37c4-4baa-b413-45145f0adc90))
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45"
           (reference "R?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/6999686b-4026-4ea7-9227-634603a79198"
-          (reference "R101") (unit 1)
+          (reference "R114") (unit 1)
         )
       )
       (project "suspension_tension_meter"
@@ -1300,21 +1368,21 @@
     (property "Value" "Red" (at 137.16 124.46 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "LED_SMD:LED_0201_0603Metric" (at 134.62 123.19 90)
+    (property "Footprint" "LED_SMD:LED_0603_1608Metric" (at 134.62 123.19 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 134.62 123.19 90)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid f82bb35a-b73b-4ee2-8103-9aacb28eab18))
-    (pin "2" (uuid 7a15226e-ce19-485d-af8f-07d40493fca7))
+    (pin "1" (uuid 5e11509d-81e3-4d2e-985d-6195bdc19db0))
+    (pin "2" (uuid 878bbf55-e436-406b-824d-b515379b5100))
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45"
           (reference "D?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/6999686b-4026-4ea7-9227-634603a79198"
-          (reference "D9") (unit 1)
+          (reference "D12") (unit 1)
         )
       )
     )
@@ -1329,42 +1397,42 @@
     (property "Value" "270R" (at 116.84 81.28 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 109.22 80.01 0)
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 109.22 80.01 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 109.22 80.01 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid f300a3f4-eeb1-4593-a25f-e2f9559a328d))
-    (pin "2" (uuid f631e32e-a965-4950-b319-bea8aabd0aa0))
+    (pin "1" (uuid 79a471be-f335-4a55-b45a-1c3e71980b14))
+    (pin "2" (uuid 92507083-6201-40cd-bf57-40f10204014e))
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45"
           (reference "R?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/6999686b-4026-4ea7-9227-634603a79198"
-          (reference "R98") (unit 1)
+          (reference "R111") (unit 1)
         )
       )
     )
   )
 
-  (symbol (lib_id "power:GND") (at 210.82 115.57 0) (unit 1)
+  (symbol (lib_id "power:GND") (at 210.82 127 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid c333f8ea-6323-472b-8824-3911f3f64efd)
-    (property "Reference" "#PWR?" (at 210.82 121.92 0)
+    (property "Reference" "#PWR?" (at 210.82 133.35 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "GND" (at 210.947 119.9642 0)
+    (property "Value" "GND" (at 210.947 132.6642 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 210.82 115.57 0)
+    (property "Footprint" "" (at 210.82 127 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 210.82 115.57 0)
+    (property "Datasheet" "" (at 210.82 127 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid aa80529a-7a81-41ec-ae3d-8e0accd6e944))
+    (pin "1" (uuid 2a1c1711-9e15-43bd-a351-9b3628eb633d))
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/91248db3-ac16-4fb7-9cfe-25145bb94249"
@@ -1377,7 +1445,7 @@
           (reference "#PWR0131") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/6999686b-4026-4ea7-9227-634603a79198"
-          (reference "#PWR0147") (unit 1)
+          (reference "#PWR0159") (unit 1)
         )
       )
       (project "Traction_Control_System"
@@ -1391,24 +1459,24 @@
     )
   )
 
-  (symbol (lib_id "Simulation_SPICE:NMOS") (at 208.28 106.68 0) (unit 1)
+  (symbol (lib_id "Simulation_SPICE:NMOS") (at 208.28 118.11 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid c64904ce-132d-4acc-b8bc-adc9daa2f1cb)
-    (property "Reference" "Q5" (at 214.63 105.41 0)
+    (property "Reference" "Q5" (at 214.63 116.84 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "PMV450ENEA" (at 214.63 107.95 0)
+    (property "Value" "PMV450ENEA" (at 214.63 119.38 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 213.36 104.14 0)
+    (property "Footprint" "" (at 213.36 115.57 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/PMV450ENEA.pdf" (at 208.28 119.38 0)
+    (property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/PMV450ENEA.pdf" (at 208.28 130.81 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 00821b38-7183-40d0-8605-29e9bb4a8b8c))
-    (pin "2" (uuid 36e08cba-3772-46e0-b9a3-0d178b6e6f43))
-    (pin "3" (uuid e5435ca6-215b-4da9-9c66-398ef5eb2dda))
+    (pin "1" (uuid 929cf979-df69-4332-853b-f851416cca82))
+    (pin "2" (uuid d1efa972-f5c1-40b8-be45-5aa56c5b945c))
+    (pin "3" (uuid 189902af-d78f-4caf-9770-68ff48507bb1))
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/91248db3-ac16-4fb7-9cfe-25145bb94249"
@@ -1433,21 +1501,21 @@
     (property "Value" "Red" (at 162.56 124.46 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "LED_SMD:LED_0201_0603Metric" (at 160.02 123.19 90)
+    (property "Footprint" "LED_SMD:LED_0603_1608Metric" (at 160.02 123.19 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 160.02 123.19 90)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 21ded7c9-8041-409c-af0c-6ce24ad87532))
-    (pin "2" (uuid cc21783d-99cb-48a8-900c-33ff1af96437))
+    (pin "1" (uuid 906eb60d-59f9-4385-9a7c-1969c326c613))
+    (pin "2" (uuid ea9fe0f8-01b1-4a43-95fa-9d7a8ac6d9f3))
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45"
           (reference "D?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/6999686b-4026-4ea7-9227-634603a79198"
-          (reference "D10") (unit 1)
+          (reference "D13") (unit 1)
         )
       )
     )
@@ -1468,7 +1536,7 @@
     (property "Datasheet" "" (at 109.22 90.17 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid dd67beee-0236-4ec2-a3ef-8a04a06f42cb))
+    (pin "1" (uuid ac8d6e7b-0f7e-4abf-aafc-5f8e7babb082))
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/7045152e-d7a2-42d7-9b15-138e7f2928ca"
@@ -1478,29 +1546,29 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/6999686b-4026-4ea7-9227-634603a79198"
-          (reference "#PWR0141") (unit 1)
+          (reference "#PWR0152") (unit 1)
         )
       )
     )
   )
 
-  (symbol (lib_id "Device:R_Small") (at 200.66 110.49 180) (unit 1)
+  (symbol (lib_id "Device:R_Small") (at 200.66 121.92 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid d6f88afd-9ad8-43a8-94cc-467cbfe815f4)
-    (property "Reference" "R?" (at 202.1078 109.22 0)
+    (property "Reference" "R?" (at 202.1078 120.65 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Value" "10k" (at 202.3364 111.76 0)
+    (property "Value" "10k" (at 202.3364 123.19 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 200.66 110.49 0)
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 200.66 121.92 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (at 200.66 110.49 0)
+    (property "Datasheet" "~" (at 200.66 121.92 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 216a32d1-4348-4d04-88ba-b656150dad30))
-    (pin "2" (uuid 59fbc37e-f787-4668-8426-2ab57cd52fc2))
+    (pin "1" (uuid 77355e83-bb03-4b20-a172-613d97a46679))
+    (pin "2" (uuid d3c0f82f-fbfc-442f-a441-94abae9f51cb))
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/91248db3-ac16-4fb7-9cfe-25145bb94249"
@@ -1513,7 +1581,7 @@
           (reference "R91") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/6999686b-4026-4ea7-9227-634603a79198"
-          (reference "R104") (unit 1)
+          (reference "R117") (unit 1)
         )
       )
       (project "Traction_Control_System"
@@ -1536,21 +1604,21 @@
     (property "Value" "Green" (at 137.16 87.63 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "LED_SMD:LED_0201_0603Metric" (at 134.62 86.36 90)
+    (property "Footprint" "LED_SMD:LED_0603_1608Metric" (at 134.62 86.36 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 134.62 86.36 90)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid f282d805-3d88-4970-b733-a99e0d23eeeb))
-    (pin "2" (uuid 673a9353-ece2-4052-8a72-7d4d62cfd693))
+    (pin "1" (uuid 1c6085d4-6e58-4d4d-be22-cc23c0456ce0))
+    (pin "2" (uuid e6a04700-e053-41d0-b8dc-c73b8f8c504f))
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45"
           (reference "D?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/6999686b-4026-4ea7-9227-634603a79198"
-          (reference "D8") (unit 1)
+          (reference "D11") (unit 1)
         )
       )
     )
@@ -1571,42 +1639,42 @@
     (property "Datasheet" "" (at 109.22 76.2 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 4fa8a898-db91-483b-9fe6-d3a2bf143ee2))
+    (pin "1" (uuid 34c04690-99f3-438a-ad88-f3ffadc1232b))
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45"
           (reference "#PWR?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/6999686b-4026-4ea7-9227-634603a79198"
-          (reference "#PWR0140") (unit 1)
+          (reference "#PWR0151") (unit 1)
         )
       )
     )
   )
 
-  (symbol (lib_id "power:+3.3V") (at 210.82 92.71 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+  (symbol (lib_id "power:+3.3V") (at 210.82 104.14 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
     (uuid fd93e883-bf17-40df-8fbc-58cab95e720c)
-    (property "Reference" "#PWR?" (at 210.82 96.52 0)
+    (property "Reference" "#PWR?" (at 210.82 107.95 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "+3.3V" (at 210.82 88.9 0)
+    (property "Value" "+3.3V" (at 210.82 99.06 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 210.82 92.71 0)
+    (property "Footprint" "" (at 210.82 104.14 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 210.82 92.71 0)
+    (property "Datasheet" "" (at 210.82 104.14 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid b9bc2846-1054-4250-9481-b5c33ffbdae5))
+    (pin "1" (uuid 5d1ed4d4-acf8-459f-ba46-8ed1a9fecba8))
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45"
           (reference "#PWR?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/6999686b-4026-4ea7-9227-634603a79198"
-          (reference "#PWR0146") (unit 1)
+          (reference "#PWR0158") (unit 1)
         )
       )
     )
