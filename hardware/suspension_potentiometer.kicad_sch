@@ -5,6 +5,7 @@
   (paper "A4")
 
   (title_block
+    (title "Suspension Potentiometer")
     (date "2023-07-01")
     (rev "${REVISION}")
     (company "Author: I. Kajdan")
@@ -895,7 +896,7 @@
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid 0da805ba-7ed0-42a2-af47-02516639e003)
   )
-  (text "f_{c} ≈ TBD" (at 156.21 125.73 0)
+  (text "f_{c} = TBD" (at 156.21 125.73 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 611f84fe-e09e-4ddd-8698-e046ff272f33)
   )
@@ -1016,10 +1017,10 @@
           (reference "R?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/620acd23-76d3-49a1-9dab-637cd753e552/d07b630f-4126-4aee-9634-5a26ef1ba4a0"
-          (reference "R139") (unit 1)
+          (reference "R141") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/620acd23-76d3-49a1-9dab-637cd753e552/748a5b35-762a-4e72-b9b9-898b09e1f3d2"
-          (reference "R148") (unit 1)
+          (reference "R150") (unit 1)
         )
       )
     )
@@ -1105,10 +1106,10 @@
           (reference "R?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/620acd23-76d3-49a1-9dab-637cd753e552/d07b630f-4126-4aee-9634-5a26ef1ba4a0"
-          (reference "R140") (unit 1)
+          (reference "R142") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/620acd23-76d3-49a1-9dab-637cd753e552/748a5b35-762a-4e72-b9b9-898b09e1f3d2"
-          (reference "R149") (unit 1)
+          (reference "R151") (unit 1)
         )
       )
     )
@@ -1293,13 +1294,13 @@
   (symbol (lib_id "Device:R_Small") (at 161.29 97.79 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 3a733e18-476f-46e0-8137-0a6fb51f8a4e)
-    (property "Reference" "R141" (at 161.29 95.25 90)
+    (property "Reference" "R143" (at 161.29 95.25 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "TBD" (at 161.29 100.33 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" (at 161.29 97.79 0)
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 161.29 97.79 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 161.29 97.79 0)
@@ -1310,10 +1311,10 @@
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/620acd23-76d3-49a1-9dab-637cd753e552/d07b630f-4126-4aee-9634-5a26ef1ba4a0"
-          (reference "R141") (unit 1)
+          (reference "R143") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/620acd23-76d3-49a1-9dab-637cd753e552/748a5b35-762a-4e72-b9b9-898b09e1f3d2"
-          (reference "R150") (unit 1)
+          (reference "R152") (unit 1)
         )
       )
       (project "apps"
@@ -1404,10 +1405,10 @@
           (reference "R?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/620acd23-76d3-49a1-9dab-637cd753e552/d07b630f-4126-4aee-9634-5a26ef1ba4a0"
-          (reference "R137") (unit 1)
+          (reference "R139") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/620acd23-76d3-49a1-9dab-637cd753e552/748a5b35-762a-4e72-b9b9-898b09e1f3d2"
-          (reference "R146") (unit 1)
+          (reference "R148") (unit 1)
         )
       )
     )
@@ -1416,13 +1417,13 @@
   (symbol (lib_id "Device:R_Small") (at 173.99 97.79 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 51ab81c0-6cc5-402b-b4d9-567b57ded3c3)
-    (property "Reference" "R142" (at 173.99 95.25 90)
+    (property "Reference" "R144" (at 173.99 95.25 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "TBD" (at 173.99 100.33 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" (at 173.99 97.79 0)
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 173.99 97.79 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 173.99 97.79 0)
@@ -1433,10 +1434,10 @@
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/620acd23-76d3-49a1-9dab-637cd753e552/d07b630f-4126-4aee-9634-5a26ef1ba4a0"
-          (reference "R142") (unit 1)
+          (reference "R144") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/620acd23-76d3-49a1-9dab-637cd753e552/748a5b35-762a-4e72-b9b9-898b09e1f3d2"
-          (reference "R151") (unit 1)
+          (reference "R153") (unit 1)
         )
       )
       (project "apps"
@@ -1478,10 +1479,10 @@
           (reference "C?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/620acd23-76d3-49a1-9dab-637cd753e552/d07b630f-4126-4aee-9634-5a26ef1ba4a0"
-          (reference "C55") (unit 1)
+          (reference "C56") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/620acd23-76d3-49a1-9dab-637cd753e552/748a5b35-762a-4e72-b9b9-898b09e1f3d2"
-          (reference "C58") (unit 1)
+          (reference "C59") (unit 1)
         )
       )
     )
@@ -1493,7 +1494,7 @@
     (property "Reference" "R?" (at 62.738 92.8116 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "5k" (at 62.738 95.123 0)
+    (property "Value" "50k" (at 62.738 95.123 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 60.96 95.25 0)
@@ -1533,10 +1534,10 @@
           (reference "R?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/620acd23-76d3-49a1-9dab-637cd753e552/d07b630f-4126-4aee-9634-5a26ef1ba4a0"
-          (reference "R135") (unit 1)
+          (reference "R137") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/620acd23-76d3-49a1-9dab-637cd753e552/748a5b35-762a-4e72-b9b9-898b09e1f3d2"
-          (reference "R144") (unit 1)
+          (reference "R146") (unit 1)
         )
       )
     )
@@ -1585,10 +1586,10 @@
           (reference "R?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/620acd23-76d3-49a1-9dab-637cd753e552/d07b630f-4126-4aee-9634-5a26ef1ba4a0"
-          (reference "R138") (unit 1)
+          (reference "R140") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/620acd23-76d3-49a1-9dab-637cd753e552/748a5b35-762a-4e72-b9b9-898b09e1f3d2"
-          (reference "R147") (unit 1)
+          (reference "R149") (unit 1)
         )
       )
     )
@@ -1877,10 +1878,10 @@
           (reference "R?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/620acd23-76d3-49a1-9dab-637cd753e552/d07b630f-4126-4aee-9634-5a26ef1ba4a0"
-          (reference "R136") (unit 1)
+          (reference "R138") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/620acd23-76d3-49a1-9dab-637cd753e552/748a5b35-762a-4e72-b9b9-898b09e1f3d2"
-          (reference "R145") (unit 1)
+          (reference "R147") (unit 1)
         )
       )
     )
@@ -1963,13 +1964,13 @@
   (symbol (lib_id "Device:C_Small") (at 182.88 104.14 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 934577d8-b10a-4d89-a456-513f6322f9bc)
-    (property "Reference" "C53" (at 180.34 103.5113 0)
+    (property "Reference" "C54" (at 180.34 103.5113 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "TBD" (at 180.34 106.0513 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" (at 182.88 104.14 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 182.88 104.14 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 182.88 104.14 0)
@@ -1980,10 +1981,10 @@
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/620acd23-76d3-49a1-9dab-637cd753e552/d07b630f-4126-4aee-9634-5a26ef1ba4a0"
-          (reference "C53") (unit 1)
+          (reference "C54") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/620acd23-76d3-49a1-9dab-637cd753e552/748a5b35-762a-4e72-b9b9-898b09e1f3d2"
-          (reference "C56") (unit 1)
+          (reference "C57") (unit 1)
         )
       )
       (project "apps"
@@ -2157,13 +2158,13 @@
   (symbol (lib_id "Device:C_Small") (at 187.96 86.36 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid f5dbeadc-f3d5-4824-be0c-c81ee5297715)
-    (property "Reference" "C54" (at 189.8713 82.55 90)
+    (property "Reference" "C55" (at 189.8713 82.55 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "TBD" (at 189.8713 90.17 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" (at 187.96 86.36 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 187.96 86.36 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 187.96 86.36 0)
@@ -2174,10 +2175,10 @@
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/620acd23-76d3-49a1-9dab-637cd753e552/d07b630f-4126-4aee-9634-5a26ef1ba4a0"
-          (reference "C54") (unit 1)
+          (reference "C55") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/620acd23-76d3-49a1-9dab-637cd753e552/748a5b35-762a-4e72-b9b9-898b09e1f3d2"
-          (reference "C57") (unit 1)
+          (reference "C58") (unit 1)
         )
       )
       (project "apps"
@@ -2194,7 +2195,7 @@
     (property "Reference" "R?" (at 43.942 92.8116 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "5k" (at 43.942 95.123 0)
+    (property "Value" "50k" (at 43.942 95.123 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 45.72 95.25 0)
@@ -2234,10 +2235,10 @@
           (reference "R?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/620acd23-76d3-49a1-9dab-637cd753e552/d07b630f-4126-4aee-9634-5a26ef1ba4a0"
-          (reference "R134") (unit 1)
+          (reference "R136") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/620acd23-76d3-49a1-9dab-637cd753e552/748a5b35-762a-4e72-b9b9-898b09e1f3d2"
-          (reference "R143") (unit 1)
+          (reference "R145") (unit 1)
         )
       )
     )

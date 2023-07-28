@@ -5850,8 +5850,8 @@
     )
   )
 
-  (text_box "Sensor: Bosch 0 261 230 340\nOEM ID: SH01-18-541\nRange: -40 °C to 140 °C\n\nhttps://www.efisolutions.com.au/bosch-fluid-pressure-and-temperature-sensor-pst-f1\n\nExpected range: 0 to 70 °C"
-    (at 22.86 115.57 0) (size 90.17 16.51)
+  (text_box "Sensor: Bosch 0 261 230 340\nOEM ID: SH01-18-541\nRange: -40 °C to 140 °C\n\nhttps://www.efisolutions.com.au/bosch-fluid-pressure-and-temperature-sensor-pst-f1"
+    (at 22.86 115.57 0) (size 90.17 11.43)
     (stroke (width -0.0001) (type default))
     (fill (type none))
     (effects (font (size 1.27 1.27)) (justify left top))

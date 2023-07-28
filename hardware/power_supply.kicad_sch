@@ -1676,7 +1676,7 @@
           (reference "R140") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/7045152e-d7a2-42d7-9b15-138e7f2928ca"
-          (reference "R23") (unit 1)
+          (reference "R24") (unit 1)
         )
       )
       (project "apps"
@@ -1975,7 +1975,7 @@
   (symbol (lib_id "Device:R_Small") (at 92.71 105.41 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 218a9446-f2fc-45c6-bda2-5ecab727fdbc)
-    (property "Reference" "R19" (at 94.615 104.775 0)
+    (property "Reference" "R20" (at 94.615 104.775 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "0R" (at 94.615 107.315 0)
@@ -1992,7 +1992,7 @@
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/7045152e-d7a2-42d7-9b15-138e7f2928ca"
-          (reference "R19") (unit 1)
+          (reference "R20") (unit 1)
         )
       )
     )
@@ -2001,7 +2001,7 @@
   (symbol (lib_id "Device:R_Small") (at 119.38 106.68 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 22422a40-7161-4356-b9a4-97ae85f46fb9)
-    (property "Reference" "R20" (at 121.285 106.045 0)
+    (property "Reference" "R21" (at 121.285 106.045 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100k" (at 121.285 108.585 0)
@@ -2018,7 +2018,7 @@
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/7045152e-d7a2-42d7-9b15-138e7f2928ca"
-          (reference "R20") (unit 1)
+          (reference "R21") (unit 1)
         )
       )
     )
@@ -2618,7 +2618,7 @@
           (reference "R140") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/7045152e-d7a2-42d7-9b15-138e7f2928ca"
-          (reference "R18") (unit 1)
+          (reference "R19") (unit 1)
         )
       )
       (project "apps"
@@ -2756,7 +2756,7 @@
           (reference "R140") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/7045152e-d7a2-42d7-9b15-138e7f2928ca"
-          (reference "R22") (unit 1)
+          (reference "R23") (unit 1)
         )
       )
       (project "apps"
@@ -3356,7 +3356,7 @@
   (symbol (lib_id "Device:R_Small") (at 119.38 114.3 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid be753f8b-dde0-4cd5-bb5a-901b7612aaaa)
-    (property "Reference" "R21" (at 121.285 113.665 0)
+    (property "Reference" "R22" (at 121.285 113.665 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "16k7" (at 121.285 116.205 0)
@@ -3373,7 +3373,7 @@
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/7045152e-d7a2-42d7-9b15-138e7f2928ca"
-          (reference "R21") (unit 1)
+          (reference "R22") (unit 1)
         )
       )
     )

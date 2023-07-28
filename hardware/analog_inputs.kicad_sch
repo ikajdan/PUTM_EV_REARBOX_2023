@@ -327,13 +327,13 @@
   (symbol (lib_id "Device:R_Small") (at 153.67 107.95 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 0456675c-e3a4-410b-bf50-2700fa1cdf42)
-    (property "Reference" "R51" (at 155.1686 106.7816 0)
+    (property "Reference" "R53" (at 155.1686 106.7816 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "TBD" (at 155.1686 109.093 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" (at 153.67 107.95 0)
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 153.67 107.95 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 153.67 107.95 0)
@@ -344,7 +344,7 @@
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/264ec557-c33b-4d6e-8249-7c546f6f500a"
-          (reference "R51") (unit 1)
+          (reference "R53") (unit 1)
         )
       )
       (project "apps"
@@ -388,13 +388,13 @@
   (symbol (lib_id "Device:R_Small") (at 212.09 95.25 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 349b08c0-b42d-43fe-badd-11951666a025)
-    (property "Reference" "R52" (at 213.5886 94.0816 0)
+    (property "Reference" "R54" (at 213.5886 94.0816 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "TBD" (at 213.5886 96.393 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" (at 212.09 95.25 0)
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 212.09 95.25 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 212.09 95.25 0)
@@ -402,6 +402,37 @@
     )
     (pin "1" (uuid 8e1387fc-556c-4380-8661-d455784419c9))
     (pin "2" (uuid 36876cc8-43f7-43a1-8241-1096c536de56))
+    (instances
+      (project "rearbox"
+        (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/264ec557-c33b-4d6e-8249-7c546f6f500a"
+          (reference "R54") (unit 1)
+        )
+      )
+      (project "apps"
+        (path "/fc4ad874-c922-4070-89f9-7262080469d8/00000000-0000-0000-0000-00006068dc5c"
+          (reference "R7") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Device:R_Small") (at 153.67 95.25 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 45a277c3-495b-428c-84cb-2cf2d90d8fb9)
+    (property "Reference" "R52" (at 155.1686 94.0816 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "TBD" (at 155.1686 96.393 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 153.67 95.25 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 153.67 95.25 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 8cfe1759-7b57-4a62-8578-48e8cf46d3bf))
+    (pin "2" (uuid b08711fc-96c2-460d-87eb-336e9c1b8a65))
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/264ec557-c33b-4d6e-8249-7c546f6f500a"
@@ -416,47 +447,16 @@
     )
   )
 
-  (symbol (lib_id "Device:R_Small") (at 153.67 95.25 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 45a277c3-495b-428c-84cb-2cf2d90d8fb9)
-    (property "Reference" "R50" (at 155.1686 94.0816 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "TBD" (at 155.1686 96.393 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" (at 153.67 95.25 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 153.67 95.25 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 8cfe1759-7b57-4a62-8578-48e8cf46d3bf))
-    (pin "2" (uuid b08711fc-96c2-460d-87eb-336e9c1b8a65))
-    (instances
-      (project "rearbox"
-        (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/264ec557-c33b-4d6e-8249-7c546f6f500a"
-          (reference "R50") (unit 1)
-        )
-      )
-      (project "apps"
-        (path "/fc4ad874-c922-4070-89f9-7262080469d8/00000000-0000-0000-0000-00006068dc5c"
-          (reference "R7") (unit 1)
-        )
-      )
-    )
-  )
-
   (symbol (lib_id "Device:R_Small") (at 212.09 107.95 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 4cd9f148-ef4e-41ec-8158-f6c744d8009d)
-    (property "Reference" "R53" (at 213.5886 106.7816 0)
+    (property "Reference" "R55" (at 213.5886 106.7816 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "TBD" (at 213.5886 109.093 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" (at 212.09 107.95 0)
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 212.09 107.95 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 212.09 107.95 0)
@@ -467,7 +467,7 @@
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/264ec557-c33b-4d6e-8249-7c546f6f500a"
-          (reference "R53") (unit 1)
+          (reference "R55") (unit 1)
         )
       )
       (project "apps"

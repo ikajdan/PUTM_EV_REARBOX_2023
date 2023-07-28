@@ -1054,7 +1054,7 @@
     (property "Reference" "FB?" (at 148.59 74.93 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "60R@100MHz" (at 148.59 77.47 0)
+    (property "Value" "600R@100MHz" (at 148.59 77.47 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Inductor_SMD:L_0603_1608Metric" (at 144.272 77.47 90)
@@ -1230,11 +1230,11 @@
   (symbol (lib_id "Device:FerriteBead_Small") (at 133.35 77.47 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid b1fde337-093c-4bb3-b4f6-05d6bb3b08a9)
-    (property "Reference" "FB?" (at 127 74.93 0)
-      (effects (font (size 1.27 1.27)) (justify left))
+    (property "Reference" "FB?" (at 130.81 74.93 0)
+      (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Value" "60R@100MHz" (at 118.11 77.47 0)
-      (effects (font (size 1.27 1.27)) (justify left))
+    (property "Value" "600R@100MHz" (at 130.81 77.47 0)
+      (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Footprint" "Inductor_SMD:L_0603_1608Metric" (at 131.572 77.47 90)
       (effects (font (size 1.27 1.27)) hide)
@@ -1242,8 +1242,8 @@
     (property "Datasheet" "~" (at 133.35 77.47 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 3b4cbe14-5483-4014-b984-3717f2272900))
-    (pin "2" (uuid 7e8446e2-8b93-4a2c-9dc7-86a8c2f4e6e1))
+    (pin "1" (uuid 2c71f0a7-fe71-41fa-afeb-78833b3bb1e9))
+    (pin "2" (uuid 0cbd7501-4c43-4a8a-aa39-63658563f5e0))
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/38408e41-dfb1-4c27-acb0-3f1224cc8789"
@@ -1359,10 +1359,10 @@
           (reference "R140") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/38408e41-dfb1-4c27-acb0-3f1224cc8789/f1ed15a3-9302-436f-b25a-713477aeadf3"
-          (reference "R35") (unit 1)
+          (reference "R36") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/38408e41-dfb1-4c27-acb0-3f1224cc8789/eec2c93a-0fce-4d3a-ab43-9e1e0481c06c"
-          (reference "R36") (unit 1)
+          (reference "R37") (unit 1)
         )
       )
       (project "apps"
