@@ -524,14 +524,6 @@
       ""
     ],
     [
-      "23ffbfb4-d932-48bb-a16b-e7ed705895f1",
-      "ASSI"
-    ],
-    [
-      "91248db3-ac16-4fb7-9cfe-25145bb94249",
-      "Brake Light"
-    ],
-    [
       "7045152e-d7a2-42d7-9b15-138e7f2928ca",
       "Power Supply"
     ],
@@ -540,60 +532,36 @@
       "Autosport"
     ],
     [
-      "620acd23-76d3-49a1-9dab-637cd753e552",
-      "Suspension Potentiometers"
-    ],
-    [
-      "f1ed15a3-9302-436f-b25a-713477aeadf3",
-      "CAN Transceiver 2"
-    ],
-    [
-      "eec2c93a-0fce-4d3a-ab43-9e1e0481c06c",
-      "CAN Transceiver"
-    ],
-    [
-      "2f82735d-d185-44cc-bb86-fc399780134d",
-      "Pumps"
-    ],
-    [
-      "12f12a63-cabc-40cf-a64b-d1bd8b3dd459",
-      "Fans"
-    ],
-    [
-      "51f74603-8853-4882-b7b4-9b70ddeac7c4",
-      "Temperature Sensors"
-    ],
-    [
-      "a7dfb715-9f45-42ac-b5d4-81823a559192",
-      "Water Pressure Sensors"
-    ],
-    [
-      "264ec557-c33b-4d6e-8249-7c546f6f500a",
-      "Analog Inputs"
-    ],
-    [
-      "5d9671f9-6e77-4376-b4d6-afe9f66a07c2",
-      "Safety Inputs"
+      "1a71c66a-e6f2-4e7d-92f3-10826884049d",
+      "USB"
     ],
     [
       "38408e41-dfb1-4c27-acb0-3f1224cc8789",
       "CAN Transceivers"
     ],
     [
-      "1a71c66a-e6f2-4e7d-92f3-10826884049d",
-      "USB"
+      "eec2c93a-0fce-4d3a-ab43-9e1e0481c06c",
+      "CAN Transceiver"
     ],
     [
-      "f6ea7d10-0c05-48d9-9218-1c4a1227d4b0",
-      "Mono Temperature Sensor"
+      "f1ed15a3-9302-436f-b25a-713477aeadf3",
+      "CAN Transceiver 2"
     ],
     [
-      "bbf2356b-39e7-4843-a611-6965568db40a",
-      "Water Temperature Sensor"
+      "91248db3-ac16-4fb7-9cfe-25145bb94249",
+      "Brake Light"
     ],
     [
-      "389a4886-cca6-4d53-87c9-d070d0aa8509",
-      "Water Temperature Sensor 2"
+      "12f12a63-cabc-40cf-a64b-d1bd8b3dd459",
+      "Fans"
+    ],
+    [
+      "2f82735d-d185-44cc-bb86-fc399780134d",
+      "Pumps"
+    ],
+    [
+      "23ffbfb4-d932-48bb-a16b-e7ed705895f1",
+      "ASSI"
     ],
     [
       "562e38ba-d94a-4627-8fa0-e9eb7b5e4e9a",
@@ -604,24 +572,12 @@
       "LEDs & Buzzer"
     ],
     [
-      "11cc5ff4-99cc-4853-9d22-3407318a6be6",
-      "Water Pressure Sensor"
+      "5d9671f9-6e77-4376-b4d6-afe9f66a07c2",
+      "Safety Inputs"
     ],
     [
-      "5cbe8555-08c7-444e-ade6-12694b993d08",
-      "Water Pressure Sensor 2"
-    ],
-    [
-      "d07b630f-4126-4aee-9634-5a26ef1ba4a0",
-      "Suspension Potentiometer (Left)"
-    ],
-    [
-      "748a5b35-762a-4e72-b9b9-898b09e1f3d2",
-      "Suspension Potentiometer (Right)"
-    ],
-    [
-      "9a3952bc-ba1a-479d-9d14-4da8b4d44a0f",
-      "Analog Input 4"
+      "264ec557-c33b-4d6e-8249-7c546f6f500a",
+      "Analog Inputs"
     ],
     [
       "2ebbc597-c328-4a79-a9b9-9ad195d56b16",
@@ -634,6 +590,50 @@
     [
       "388565cf-56d9-4d05-bbee-ba12b3a092d4",
       "Analog Input 3"
+    ],
+    [
+      "9a3952bc-ba1a-479d-9d14-4da8b4d44a0f",
+      "Analog Input 4"
+    ],
+    [
+      "a7dfb715-9f45-42ac-b5d4-81823a559192",
+      "Water Pressure Sensors"
+    ],
+    [
+      "11cc5ff4-99cc-4853-9d22-3407318a6be6",
+      "Water Pressure Sensor"
+    ],
+    [
+      "5cbe8555-08c7-444e-ade6-12694b993d08",
+      "Water Pressure Sensor 2"
+    ],
+    [
+      "51f74603-8853-4882-b7b4-9b70ddeac7c4",
+      "Temperature Sensors"
+    ],
+    [
+      "bbf2356b-39e7-4843-a611-6965568db40a",
+      "Water Temperature Sensor"
+    ],
+    [
+      "389a4886-cca6-4d53-87c9-d070d0aa8509",
+      "Water Temperature Sensor 2"
+    ],
+    [
+      "f6ea7d10-0c05-48d9-9218-1c4a1227d4b0",
+      "Mono Temperature Sensor"
+    ],
+    [
+      "620acd23-76d3-49a1-9dab-637cd753e552",
+      "Suspension Potentiometers"
+    ],
+    [
+      "d07b630f-4126-4aee-9634-5a26ef1ba4a0",
+      "Suspension Potentiometer (Left)"
+    ],
+    [
+      "748a5b35-762a-4e72-b9b9-898b09e1f3d2",
+      "Suspension Potentiometer (Right)"
     ]
   ],
   "text_variables": {
