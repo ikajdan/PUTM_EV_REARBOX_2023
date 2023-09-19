@@ -1622,7 +1622,7 @@
           (reference "R?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "R61") (unit 1)
+          (reference "R65") (unit 1)
         )
       )
     )
@@ -1650,7 +1650,7 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "#PWR0106") (unit 1)
+          (reference "#PWR0112") (unit 1)
         )
       )
     )
@@ -1681,7 +1681,7 @@
           (reference "#PWR0119") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "#PWR089") (unit 1)
+          (reference "#PWR095") (unit 1)
         )
       )
     )
@@ -1709,7 +1709,7 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "#PWR0111") (unit 1)
+          (reference "#PWR0117") (unit 1)
         )
       )
     )
@@ -1737,7 +1737,7 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "#PWR088") (unit 1)
+          (reference "#PWR094") (unit 1)
         )
       )
     )
@@ -1746,7 +1746,7 @@
   (symbol (lib_id "Isolator:TLP291-4") (at 250.19 146.05 0) (unit 4)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 0bcce60c-faa8-4823-af42-8721caebef10)
-    (property "Reference" "U12" (at 250.19 137.16 0)
+    (property "Reference" "U11" (at 250.19 137.16 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "TLP291-4" (at 250.19 139.7 0)
@@ -1777,7 +1777,7 @@
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "U12") (unit 4)
+          (reference "U11") (unit 4)
         )
       )
     )
@@ -1806,7 +1806,7 @@
           (reference "R?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "R75") (unit 1)
+          (reference "R79") (unit 1)
         )
       )
     )
@@ -1834,7 +1834,7 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "#PWR0116") (unit 1)
+          (reference "#PWR0122") (unit 1)
         )
       )
     )
@@ -1846,7 +1846,7 @@
     (property "Reference" "FB?" (at 88.9 40.64 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Value" "600R@100MHz" (at 88.9 43.18 0)
+    (property "Value" "470R" (at 88.9 43.18 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Footprint" "Inductor_SMD:L_0603_1608Metric" (at 89.662 43.18 90)
@@ -1869,7 +1869,7 @@
           (reference "FB1") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "FB6") (unit 1)
+          (reference "FB7") (unit 1)
         )
       )
     )
@@ -1878,7 +1878,7 @@
   (symbol (lib_id "Isolator:TLP291-4") (at 185.42 110.49 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 17a5df02-c15d-4494-9ff6-3ad67f1b01d5)
-    (property "Reference" "U12" (at 185.42 101.6 0)
+    (property "Reference" "U11" (at 185.42 101.6 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "TLP291-4" (at 185.42 104.14 0)
@@ -1909,7 +1909,7 @@
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "U12") (unit 1)
+          (reference "U11") (unit 1)
         )
       )
     )
@@ -1918,7 +1918,7 @@
   (symbol (lib_id "Isolator:TLP291-4") (at 125.73 181.61 0) (unit 4)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 1c4935ea-6c34-4af7-9439-032bbdfa6eab)
-    (property "Reference" "U9" (at 125.73 172.72 0)
+    (property "Reference" "U8" (at 125.73 172.72 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "TLP291-4" (at 125.73 175.26 0)
@@ -1949,7 +1949,7 @@
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "U9") (unit 4)
+          (reference "U8") (unit 4)
         )
       )
     )
@@ -1977,7 +1977,7 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "#PWR0114") (unit 1)
+          (reference "#PWR0120") (unit 1)
         )
       )
     )
@@ -2006,7 +2006,7 @@
           (reference "R?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "R57") (unit 1)
+          (reference "R61") (unit 1)
         )
       )
     )
@@ -2034,7 +2034,7 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "#PWR093") (unit 1)
+          (reference "#PWR099") (unit 1)
         )
       )
     )
@@ -2063,7 +2063,7 @@
           (reference "R?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "R80") (unit 1)
+          (reference "R84") (unit 1)
         )
       )
     )
@@ -2092,7 +2092,7 @@
           (reference "R?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "R67") (unit 1)
+          (reference "R71") (unit 1)
         )
       )
     )
@@ -2123,7 +2123,7 @@
           (reference "#FLG010") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "#FLG013") (unit 1)
+          (reference "#FLG014") (unit 1)
         )
       )
     )
@@ -2152,7 +2152,7 @@
           (reference "R?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "R70") (unit 1)
+          (reference "R74") (unit 1)
         )
       )
     )
@@ -2180,7 +2180,7 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "#PWR086") (unit 1)
+          (reference "#PWR092") (unit 1)
         )
       )
     )
@@ -2214,7 +2214,7 @@
           (reference "TP1") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "TP29") (unit 1)
+          (reference "TP24") (unit 1)
         )
       )
     )
@@ -2242,7 +2242,7 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "#PWR0112") (unit 1)
+          (reference "#PWR0118") (unit 1)
         )
       )
     )
@@ -2271,7 +2271,7 @@
           (reference "R?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "R78") (unit 1)
+          (reference "R82") (unit 1)
         )
       )
     )
@@ -2309,7 +2309,7 @@
           (reference "C34") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "C35") (unit 1)
+          (reference "C34") (unit 1)
         )
       )
     )
@@ -2338,7 +2338,7 @@
           (reference "R?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "R62") (unit 1)
+          (reference "R66") (unit 1)
         )
       )
     )
@@ -2367,7 +2367,7 @@
           (reference "R?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "R66") (unit 1)
+          (reference "R70") (unit 1)
         )
       )
     )
@@ -2396,7 +2396,7 @@
           (reference "R?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "R63") (unit 1)
+          (reference "R67") (unit 1)
         )
       )
     )
@@ -2405,7 +2405,7 @@
   (symbol (lib_id "Isolator:TLP291-4") (at 59.69 146.05 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 5c099088-e496-4b95-b59d-388112b9f3b3)
-    (property "Reference" "U9" (at 59.69 137.16 0)
+    (property "Reference" "U8" (at 59.69 137.16 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "TLP291-4" (at 59.69 139.7 0)
@@ -2436,7 +2436,7 @@
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "U9") (unit 1)
+          (reference "U8") (unit 1)
         )
       )
     )
@@ -2464,7 +2464,7 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "#PWR098") (unit 1)
+          (reference "#PWR0104") (unit 1)
         )
       )
     )
@@ -2493,7 +2493,7 @@
           (reference "R?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "R56") (unit 1)
+          (reference "R60") (unit 1)
         )
       )
     )
@@ -2521,7 +2521,7 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "#PWR0108") (unit 1)
+          (reference "#PWR0114") (unit 1)
         )
       )
     )
@@ -2564,7 +2564,7 @@
           (reference "U?") (unit 3)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "U11") (unit 3)
+          (reference "U10") (unit 3)
         )
       )
     )
@@ -2592,7 +2592,7 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "#PWR094") (unit 1)
+          (reference "#PWR0100") (unit 1)
         )
       )
     )
@@ -2620,7 +2620,7 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "#PWR0101") (unit 1)
+          (reference "#PWR0107") (unit 1)
         )
       )
     )
@@ -2648,7 +2648,7 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "#PWR0119") (unit 1)
+          (reference "#PWR0125") (unit 1)
         )
       )
     )
@@ -2677,7 +2677,7 @@
           (reference "R?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "R59") (unit 1)
+          (reference "R63") (unit 1)
         )
       )
     )
@@ -2705,7 +2705,7 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "#PWR0102") (unit 1)
+          (reference "#PWR0108") (unit 1)
         )
       )
     )
@@ -2734,7 +2734,7 @@
           (reference "R?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "R72") (unit 1)
+          (reference "R76") (unit 1)
         )
       )
     )
@@ -2762,7 +2762,7 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "#PWR095") (unit 1)
+          (reference "#PWR0101") (unit 1)
         )
       )
     )
@@ -2791,7 +2791,7 @@
           (reference "R?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "R74") (unit 1)
+          (reference "R78") (unit 1)
         )
       )
     )
@@ -2819,7 +2819,7 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "#PWR0104") (unit 1)
+          (reference "#PWR0110") (unit 1)
         )
       )
     )
@@ -2848,7 +2848,7 @@
           (reference "R?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "R65") (unit 1)
+          (reference "R69") (unit 1)
         )
       )
     )
@@ -2876,7 +2876,7 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "#PWR0118") (unit 1)
+          (reference "#PWR0124") (unit 1)
         )
       )
     )
@@ -2904,7 +2904,7 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "#PWR0109") (unit 1)
+          (reference "#PWR0115") (unit 1)
         )
       )
     )
@@ -2933,7 +2933,7 @@
           (reference "R?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "R60") (unit 1)
+          (reference "R64") (unit 1)
         )
       )
     )
@@ -2961,7 +2961,7 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "#PWR084") (unit 1)
+          (reference "#PWR090") (unit 1)
         )
       )
     )
@@ -2989,7 +2989,7 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "#PWR096") (unit 1)
+          (reference "#PWR0102") (unit 1)
         )
       )
     )
@@ -3017,7 +3017,7 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "#PWR081") (unit 1)
+          (reference "#PWR087") (unit 1)
         )
       )
     )
@@ -3046,7 +3046,7 @@
           (reference "R?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "R73") (unit 1)
+          (reference "R77") (unit 1)
         )
       )
     )
@@ -3055,7 +3055,7 @@
   (symbol (lib_id "Isolator:TLP291-4") (at 125.73 146.05 0) (unit 2)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 96ff19ed-acd7-4f2e-995b-5d17b2e1a0db)
-    (property "Reference" "U9" (at 125.73 137.16 0)
+    (property "Reference" "U8" (at 125.73 137.16 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "TLP291-4" (at 125.73 139.7 0)
@@ -3086,7 +3086,7 @@
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "U9") (unit 2)
+          (reference "U8") (unit 2)
         )
       )
     )
@@ -3115,7 +3115,7 @@
           (reference "R?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "R69") (unit 1)
+          (reference "R73") (unit 1)
         )
       )
     )
@@ -3143,7 +3143,7 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "#PWR0115") (unit 1)
+          (reference "#PWR0121") (unit 1)
         )
       )
     )
@@ -3171,7 +3171,7 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "#PWR085") (unit 1)
+          (reference "#PWR091") (unit 1)
         )
       )
     )
@@ -3199,7 +3199,7 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "#PWR092") (unit 1)
+          (reference "#PWR098") (unit 1)
         )
       )
     )
@@ -3227,7 +3227,7 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "#PWR090") (unit 1)
+          (reference "#PWR096") (unit 1)
         )
       )
     )
@@ -3261,7 +3261,7 @@
           (reference "TP1") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "TP32") (unit 1)
+          (reference "TP27") (unit 1)
         )
       )
     )
@@ -3289,7 +3289,7 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "#PWR0105") (unit 1)
+          (reference "#PWR0111") (unit 1)
         )
       )
     )
@@ -3317,7 +3317,7 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "#PWR0110") (unit 1)
+          (reference "#PWR0116") (unit 1)
         )
       )
     )
@@ -3345,7 +3345,7 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "#PWR099") (unit 1)
+          (reference "#PWR0105") (unit 1)
         )
       )
     )
@@ -3373,7 +3373,7 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "#PWR083") (unit 1)
+          (reference "#PWR089") (unit 1)
         )
       )
     )
@@ -3401,7 +3401,7 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "#PWR0113") (unit 1)
+          (reference "#PWR0119") (unit 1)
         )
       )
     )
@@ -3429,7 +3429,7 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "#PWR0117") (unit 1)
+          (reference "#PWR0123") (unit 1)
         )
       )
     )
@@ -3458,7 +3458,7 @@
           (reference "R?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "R77") (unit 1)
+          (reference "R81") (unit 1)
         )
       )
     )
@@ -3467,7 +3467,7 @@
   (symbol (lib_id "Isolator:TLP291-4") (at 59.69 181.61 0) (unit 3)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid b6965cbf-7507-4061-b0b5-cdf7aebcca0f)
-    (property "Reference" "U9" (at 59.69 172.72 0)
+    (property "Reference" "U8" (at 59.69 172.72 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "TLP291-4" (at 59.69 175.26 0)
@@ -3498,7 +3498,7 @@
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "U9") (unit 3)
+          (reference "U8") (unit 3)
         )
       )
     )
@@ -3532,7 +3532,7 @@
           (reference "TP1") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "TP31") (unit 1)
+          (reference "TP26") (unit 1)
         )
       )
     )
@@ -3561,7 +3561,7 @@
           (reference "R?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "R71") (unit 1)
+          (reference "R75") (unit 1)
         )
       )
     )
@@ -3589,7 +3589,7 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "#PWR0103") (unit 1)
+          (reference "#PWR0109") (unit 1)
         )
       )
     )
@@ -3598,7 +3598,7 @@
   (symbol (lib_id "Isolator:TLP291-4") (at 250.19 74.93 0) (unit 4)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid c29d96dd-baf2-4d15-b5b0-83af52a5a177)
-    (property "Reference" "U11" (at 250.19 66.04 0)
+    (property "Reference" "U10" (at 250.19 66.04 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "TLP291-4" (at 250.19 68.58 0)
@@ -3629,7 +3629,7 @@
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "U11") (unit 4)
+          (reference "U10") (unit 4)
         )
       )
     )
@@ -3658,7 +3658,7 @@
           (reference "R?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "R76") (unit 1)
+          (reference "R80") (unit 1)
         )
       )
     )
@@ -3686,7 +3686,7 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "#PWR097") (unit 1)
+          (reference "#PWR0103") (unit 1)
         )
       )
     )
@@ -3695,7 +3695,7 @@
   (symbol (lib_id "Isolator:TLP291-4") (at 250.19 110.49 0) (unit 2)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid cca1585a-20ad-44ca-9f5a-b240faa0a2f9)
-    (property "Reference" "U12" (at 250.19 101.6 0)
+    (property "Reference" "U11" (at 250.19 101.6 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "TLP291-4" (at 250.19 104.14 0)
@@ -3726,7 +3726,7 @@
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "U12") (unit 2)
+          (reference "U11") (unit 2)
         )
       )
     )
@@ -3754,7 +3754,7 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "#PWR091") (unit 1)
+          (reference "#PWR097") (unit 1)
         )
       )
     )
@@ -3783,7 +3783,7 @@
           (reference "R?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "R58") (unit 1)
+          (reference "R62") (unit 1)
         )
       )
     )
@@ -3792,7 +3792,7 @@
   (symbol (lib_id "TCA6416ARTWR:TCA6416ARTWR") (at 91.44 78.74 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid d508c486-e2e5-4c3a-87d5-5b23d527e604)
-    (property "Reference" "U10" (at 81.28 54.61 0)
+    (property "Reference" "U9" (at 81.28 54.61 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "TCA6416ARTWR" (at 91.44 78.74 0)
@@ -3832,7 +3832,7 @@
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "U10") (unit 1)
+          (reference "U9") (unit 1)
         )
       )
     )
@@ -3841,7 +3841,7 @@
   (symbol (lib_id "Isolator:TLP291-4") (at 250.19 39.37 0) (unit 2)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid dc1f3b96-915f-4809-8161-e019462ef634)
-    (property "Reference" "U11" (at 250.19 30.48 0)
+    (property "Reference" "U10" (at 250.19 30.48 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "TLP291-4" (at 250.19 33.02 0)
@@ -3872,7 +3872,7 @@
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "U11") (unit 2)
+          (reference "U10") (unit 2)
         )
       )
     )
@@ -3901,7 +3901,7 @@
           (reference "R?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "R79") (unit 1)
+          (reference "R83") (unit 1)
         )
       )
     )
@@ -3930,7 +3930,7 @@
           (reference "R?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "R64") (unit 1)
+          (reference "R68") (unit 1)
         )
       )
     )
@@ -3958,7 +3958,7 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "#PWR0107") (unit 1)
+          (reference "#PWR0113") (unit 1)
         )
       )
     )
@@ -3986,7 +3986,7 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "#PWR0100") (unit 1)
+          (reference "#PWR0106") (unit 1)
         )
       )
     )
@@ -3995,7 +3995,7 @@
   (symbol (lib_id "Isolator:TLP291-4") (at 185.42 146.05 0) (unit 3)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid eb317f8e-2b7b-4ee7-b956-0c91203d0a6b)
-    (property "Reference" "U12" (at 185.42 137.16 0)
+    (property "Reference" "U11" (at 185.42 137.16 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "TLP291-4" (at 185.42 139.7 0)
@@ -4026,7 +4026,7 @@
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "U12") (unit 3)
+          (reference "U11") (unit 3)
         )
       )
     )
@@ -4054,7 +4054,7 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "#PWR087") (unit 1)
+          (reference "#PWR093") (unit 1)
         )
       )
     )
@@ -4082,7 +4082,7 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "#PWR080") (unit 1)
+          (reference "#PWR086") (unit 1)
         )
       )
     )
@@ -4110,7 +4110,7 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "#PWR082") (unit 1)
+          (reference "#PWR088") (unit 1)
         )
       )
     )
@@ -4119,7 +4119,7 @@
   (symbol (lib_id "Isolator:TLP291-4") (at 185.42 39.37 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid f4b284b1-8bdc-421d-9c79-2e434a3239ec)
-    (property "Reference" "U11" (at 185.42 30.48 0)
+    (property "Reference" "U10" (at 185.42 30.48 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "TLP291-4" (at 185.42 33.02 0)
@@ -4150,7 +4150,7 @@
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "U11") (unit 1)
+          (reference "U10") (unit 1)
         )
       )
     )
@@ -4179,7 +4179,7 @@
           (reference "R?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "R68") (unit 1)
+          (reference "R72") (unit 1)
         )
       )
     )
@@ -4213,7 +4213,7 @@
           (reference "TP1") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "TP30") (unit 1)
+          (reference "TP25") (unit 1)
         )
       )
     )

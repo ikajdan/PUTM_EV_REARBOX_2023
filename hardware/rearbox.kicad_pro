@@ -569,7 +569,7 @@
     ],
     [
       "6999686b-4026-4ea7-9227-634603a79198",
-      "LEDs & Buzzer"
+      "LEDs"
     ],
     [
       "5d9671f9-6e77-4376-b4d6-afe9f66a07c2",
@@ -584,16 +584,8 @@
       "Analog Input 1"
     ],
     [
-      "acf20b0b-50d6-4d63-bbe2-c63bd425de64",
-      "Analog Input 2"
-    ],
-    [
       "388565cf-56d9-4d05-bbee-ba12b3a092d4",
-      "Analog Input 3"
-    ],
-    [
-      "9a3952bc-ba1a-479d-9d14-4da8b4d44a0f",
-      "Analog Input 4"
+      "Analog Input 2"
     ],
     [
       "a7dfb715-9f45-42ac-b5d4-81823a559192",
