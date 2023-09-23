@@ -1517,7 +1517,7 @@
   (symbol (lib_id "Device:R_Small") (at 137.16 110.49 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 22422a40-7161-4356-b9a4-97ae85f46fb9)
-    (property "Reference" "R10" (at 138.43 109.22 0)
+    (property "Reference" "R3" (at 138.43 109.22 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100k" (at 138.43 111.76 0)
@@ -1534,7 +1534,7 @@
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/7045152e-d7a2-42d7-9b15-138e7f2928ca"
-          (reference "R10") (unit 1)
+          (reference "R3") (unit 1)
         )
       )
     )
@@ -2689,7 +2689,7 @@
   (symbol (lib_id "Device:R_Small") (at 137.16 118.11 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid be753f8b-dde0-4cd5-bb5a-901b7612aaaa)
-    (property "Reference" "R11" (at 138.43 116.84 0)
+    (property "Reference" "R4" (at 138.43 116.84 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "24k9" (at 138.43 119.38 0)
@@ -2706,7 +2706,7 @@
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/7045152e-d7a2-42d7-9b15-138e7f2928ca"
-          (reference "R11") (unit 1)
+          (reference "R4") (unit 1)
         )
       )
     )
@@ -2927,7 +2927,7 @@
   (symbol (lib_id "Device:R_Small") (at 147.32 110.49 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid e8b00528-1999-4e9e-9e94-74d2b9b88bf9)
-    (property "Reference" "R12" (at 149.86 110.49 0)
+    (property "Reference" "R5" (at 149.86 110.49 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1k" (at 149.86 113.03 0)
@@ -2944,7 +2944,7 @@
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/7045152e-d7a2-42d7-9b15-138e7f2928ca"
-          (reference "R12") (unit 1)
+          (reference "R5") (unit 1)
         )
       )
     )

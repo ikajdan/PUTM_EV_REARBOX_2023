@@ -1309,7 +1309,7 @@
   (symbol (lib_id "Device:R_Small") (at 139.7 85.09 270) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp yes)
     (uuid 00fcfc62-ec72-44b0-b0c7-fdfd9759dcce)
-    (property "Reference" "R6" (at 139.7 85.09 90)
+    (property "Reference" "R7" (at 139.7 85.09 90)
       (effects (font (size 0.9 0.9)))
     )
     (property "Value" "0R" (at 139.7 87.63 90)
@@ -1326,7 +1326,7 @@
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/cf65c657-8245-46fb-8929-d241bd579513"
-          (reference "R6") (unit 1)
+          (reference "R7") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45"
           (reference "R6") (unit 1)
@@ -1338,7 +1338,7 @@
   (symbol (lib_id "Device:R_Small") (at 160.02 123.19 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp yes)
     (uuid 39ed73cf-851e-4e31-8837-297694803fef)
-    (property "Reference" "R8" (at 160.02 123.19 90)
+    (property "Reference" "R13" (at 160.02 123.19 90)
       (effects (font (size 0.9 0.9)))
     )
     (property "Value" "0R" (at 160.02 125.73 90)
@@ -1355,7 +1355,7 @@
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/cf65c657-8245-46fb-8929-d241bd579513"
-          (reference "R8") (unit 1)
+          (reference "R13") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45"
           (reference "R8") (unit 1)
@@ -1496,7 +1496,7 @@
   (symbol (lib_id "Device:R_Small") (at 139.7 82.55 270) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp yes)
     (uuid 98a31a4e-d541-42e9-9ee2-61e252ea5193)
-    (property "Reference" "R5" (at 139.7 82.55 90)
+    (property "Reference" "R6" (at 139.7 82.55 90)
       (effects (font (size 0.9 0.9)))
     )
     (property "Value" "0R" (at 139.7 85.09 90)
@@ -1513,7 +1513,7 @@
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/cf65c657-8245-46fb-8929-d241bd579513"
-          (reference "R5") (unit 1)
+          (reference "R6") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45"
           (reference "R5") (unit 1)
@@ -1525,7 +1525,7 @@
   (symbol (lib_id "Device:R_Small") (at 160.02 115.57 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp yes)
     (uuid a67533ca-81c5-441b-877d-5c01d23f95e9)
-    (property "Reference" "R7" (at 160.02 115.57 90)
+    (property "Reference" "R12" (at 160.02 115.57 90)
       (effects (font (size 0.9 0.9)))
     )
     (property "Value" "0R" (at 160.02 118.11 90)
@@ -1542,7 +1542,7 @@
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/cf65c657-8245-46fb-8929-d241bd579513"
-          (reference "R7") (unit 1)
+          (reference "R12") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45"
           (reference "R7") (unit 1)
@@ -1579,7 +1579,7 @@
   (symbol (lib_id "Device:R_Small") (at 139.7 110.49 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp yes)
     (uuid bd117066-a7c0-48af-a33d-65af6c0d0a49)
-    (property "Reference" "R14" (at 139.7 110.49 90)
+    (property "Reference" "R9" (at 139.7 110.49 90)
       (effects (font (size 0.9 0.9)))
     )
     (property "Value" "0R" (at 139.7 113.03 90)
@@ -1596,7 +1596,7 @@
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/cf65c657-8245-46fb-8929-d241bd579513"
-          (reference "R14") (unit 1)
+          (reference "R9") (unit 1)
         )
       )
     )
@@ -1605,7 +1605,7 @@
   (symbol (lib_id "Device:R_Small") (at 139.7 115.57 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp yes)
     (uuid c10acc5a-57e1-4427-805f-9e5450c7a726)
-    (property "Reference" "R3" (at 139.7 115.57 90)
+    (property "Reference" "R11" (at 139.7 115.57 90)
       (effects (font (size 0.9 0.9)))
     )
     (property "Value" "0R" (at 139.7 113.03 90)
@@ -1622,7 +1622,7 @@
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/cf65c657-8245-46fb-8929-d241bd579513"
-          (reference "R3") (unit 1)
+          (reference "R11") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45"
           (reference "R3") (unit 1)
@@ -1659,7 +1659,7 @@
   (symbol (lib_id "Device:R_Small") (at 139.7 107.95 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp yes)
     (uuid d5c0b7a0-53d6-41fe-b774-de3896519fd5)
-    (property "Reference" "R13" (at 139.7 107.95 90)
+    (property "Reference" "R8" (at 139.7 107.95 90)
       (effects (font (size 0.9 0.9)))
     )
     (property "Value" "0R" (at 139.7 110.49 90)
@@ -1676,7 +1676,7 @@
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/cf65c657-8245-46fb-8929-d241bd579513"
-          (reference "R13") (unit 1)
+          (reference "R8") (unit 1)
         )
       )
     )
@@ -1685,7 +1685,7 @@
   (symbol (lib_id "Device:R_Small") (at 160.02 125.73 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp yes)
     (uuid dc66bee5-2567-41e3-854a-9768e687c8d0)
-    (property "Reference" "R9" (at 160.02 125.73 90)
+    (property "Reference" "R14" (at 160.02 125.73 90)
       (effects (font (size 0.9 0.9)))
     )
     (property "Value" "0R" (at 160.02 128.27 90)
@@ -1702,7 +1702,7 @@
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/cf65c657-8245-46fb-8929-d241bd579513"
-          (reference "R9") (unit 1)
+          (reference "R14") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45"
           (reference "R9") (unit 1)
@@ -1714,7 +1714,7 @@
   (symbol (lib_id "Device:R_Small") (at 139.7 113.03 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp yes)
     (uuid e194e0f7-9236-44f8-8ad4-a7ae0965aa58)
-    (property "Reference" "R4" (at 139.7 113.03 90)
+    (property "Reference" "R10" (at 139.7 113.03 90)
       (effects (font (size 0.9 0.9)))
     )
     (property "Value" "0R" (at 139.7 110.49 90)
@@ -1731,7 +1731,7 @@
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/cf65c657-8245-46fb-8929-d241bd579513"
-          (reference "R4") (unit 1)
+          (reference "R10") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45"
           (reference "R4") (unit 1)
