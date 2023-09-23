@@ -6,7 +6,7 @@
 
   (title_block
     (title "LEDs")
-    (date "2023-07-01")
+    (date "2023-09-20")
     (rev "${REVISION}")
     (company "Author: I. Kajdan")
     (comment 1 "Reviewer:")
@@ -474,7 +474,7 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/6999686b-4026-4ea7-9227-634603a79198"
-          (reference "#PWR082") (unit 1)
+          (reference "#PWR099") (unit 1)
         )
       )
       (project "suspension_tension_meter"
@@ -507,7 +507,7 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/6999686b-4026-4ea7-9227-634603a79198"
-          (reference "#PWR078") (unit 1)
+          (reference "#PWR095") (unit 1)
         )
       )
     )
@@ -538,7 +538,7 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/6999686b-4026-4ea7-9227-634603a79198"
-          (reference "#PWR081") (unit 1)
+          (reference "#PWR098") (unit 1)
         )
       )
     )
@@ -567,7 +567,7 @@
           (reference "R?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/6999686b-4026-4ea7-9227-634603a79198"
-          (reference "R56") (unit 1)
+          (reference "R68") (unit 1)
         )
       )
       (project "suspension_tension_meter"
@@ -601,7 +601,7 @@
           (reference "R?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/6999686b-4026-4ea7-9227-634603a79198"
-          (reference "R55") (unit 1)
+          (reference "R67") (unit 1)
         )
       )
     )
@@ -630,7 +630,7 @@
           (reference "D?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/6999686b-4026-4ea7-9227-634603a79198"
-          (reference "D5") (unit 1)
+          (reference "D9") (unit 1)
         )
       )
     )
@@ -659,7 +659,7 @@
           (reference "D?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/6999686b-4026-4ea7-9227-634603a79198"
-          (reference "D6") (unit 1)
+          (reference "D10") (unit 1)
         )
       )
     )
@@ -688,7 +688,7 @@
           (reference "R?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/6999686b-4026-4ea7-9227-634603a79198"
-          (reference "R53") (unit 1)
+          (reference "R65") (unit 1)
         )
       )
     )
@@ -716,7 +716,7 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/6999686b-4026-4ea7-9227-634603a79198"
-          (reference "#PWR076") (unit 1)
+          (reference "#PWR093") (unit 1)
         )
       )
     )
@@ -745,7 +745,7 @@
           (reference "R?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/6999686b-4026-4ea7-9227-634603a79198"
-          (reference "R54") (unit 1)
+          (reference "R66") (unit 1)
         )
       )
     )
@@ -773,7 +773,7 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/6999686b-4026-4ea7-9227-634603a79198"
-          (reference "#PWR085") (unit 1)
+          (reference "#PWR0102") (unit 1)
         )
       )
       (project "suspension_tension_meter"
@@ -806,7 +806,7 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/6999686b-4026-4ea7-9227-634603a79198"
-          (reference "#PWR083") (unit 1)
+          (reference "#PWR0100") (unit 1)
         )
       )
       (project "suspension_tension_meter"
@@ -840,7 +840,7 @@
           (reference "D?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/6999686b-4026-4ea7-9227-634603a79198"
-          (reference "D7") (unit 1)
+          (reference "D11") (unit 1)
         )
       )
     )
@@ -871,7 +871,7 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/6999686b-4026-4ea7-9227-634603a79198"
-          (reference "#PWR077") (unit 1)
+          (reference "#PWR094") (unit 1)
         )
       )
     )
@@ -900,7 +900,7 @@
           (reference "R?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/6999686b-4026-4ea7-9227-634603a79198"
-          (reference "R59") (unit 1)
+          (reference "R71") (unit 1)
         )
       )
       (project "suspension_tension_meter"
@@ -933,7 +933,7 @@
           (reference "#PWR042") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/6999686b-4026-4ea7-9227-634603a79198"
-          (reference "#PWR080") (unit 1)
+          (reference "#PWR097") (unit 1)
         )
       )
     )
@@ -962,7 +962,7 @@
           (reference "R?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/6999686b-4026-4ea7-9227-634603a79198"
-          (reference "R57") (unit 1)
+          (reference "R69") (unit 1)
         )
       )
       (project "suspension_tension_meter"
@@ -996,7 +996,7 @@
           (reference "R?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/6999686b-4026-4ea7-9227-634603a79198"
-          (reference "R58") (unit 1)
+          (reference "R70") (unit 1)
         )
       )
       (project "suspension_tension_meter"
@@ -1030,7 +1030,7 @@
           (reference "D?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/6999686b-4026-4ea7-9227-634603a79198"
-          (reference "D3") (unit 1)
+          (reference "D7") (unit 1)
         )
       )
     )
@@ -1059,7 +1059,7 @@
           (reference "D?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/6999686b-4026-4ea7-9227-634603a79198"
-          (reference "D4") (unit 1)
+          (reference "D8") (unit 1)
         )
       )
     )
@@ -1087,7 +1087,7 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/6999686b-4026-4ea7-9227-634603a79198"
-          (reference "#PWR084") (unit 1)
+          (reference "#PWR0101") (unit 1)
         )
       )
       (project "suspension_tension_meter"
@@ -1121,7 +1121,7 @@
           (reference "D?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/6999686b-4026-4ea7-9227-634603a79198"
-          (reference "D8") (unit 1)
+          (reference "D12") (unit 1)
         )
       )
     )
@@ -1152,7 +1152,7 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/6999686b-4026-4ea7-9227-634603a79198"
-          (reference "#PWR079") (unit 1)
+          (reference "#PWR096") (unit 1)
         )
       )
     )
@@ -1181,7 +1181,7 @@
           (reference "D?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/6999686b-4026-4ea7-9227-634603a79198"
-          (reference "D9") (unit 1)
+          (reference "D13") (unit 1)
         )
       )
     )

@@ -5,7 +5,7 @@
   (paper "A4")
 
   (title_block
-    (date "2023-07-01")
+    (date "2023-09-20")
     (rev "${REVISION}")
     (company "Author: I. Kajdan")
     (comment 1 "Reviewer:")
@@ -1082,7 +1082,7 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/1a71c66a-e6f2-4e7d-92f3-10826884049d"
-          (reference "#PWR050") (unit 1)
+          (reference "#PWR051") (unit 1)
         )
       )
     )
@@ -1113,7 +1113,7 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/1a71c66a-e6f2-4e7d-92f3-10826884049d"
-          (reference "#PWR052") (unit 1)
+          (reference "#PWR053") (unit 1)
         )
       )
     )
@@ -1209,7 +1209,7 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/1a71c66a-e6f2-4e7d-92f3-10826884049d"
-          (reference "#PWR049") (unit 1)
+          (reference "#PWR050") (unit 1)
         )
       )
     )
@@ -1218,7 +1218,7 @@
   (symbol (lib_id "power:GND") (at 200.66 137.16 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid b4ff9dc2-2c06-461e-9d25-24060d4fc7a8)
-    (property "Reference" "#PWR053" (at 200.66 143.51 0)
+    (property "Reference" "#PWR054" (at 200.66 143.51 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 200.66 142.24 0)
@@ -1234,7 +1234,7 @@
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/1a71c66a-e6f2-4e7d-92f3-10826884049d"
-          (reference "#PWR053") (unit 1)
+          (reference "#PWR054") (unit 1)
         )
       )
     )
@@ -1262,7 +1262,7 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/1a71c66a-e6f2-4e7d-92f3-10826884049d"
-          (reference "#PWR051") (unit 1)
+          (reference "#PWR052") (unit 1)
         )
       )
     )
