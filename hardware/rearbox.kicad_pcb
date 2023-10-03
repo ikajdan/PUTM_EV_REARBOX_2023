@@ -161,17 +161,118 @@
     (pad "1" thru_hole circle locked (at 2.25 0) (size 0.8 0.8) (drill 0.5) (layers "*.Cu" "*.Mask") (tstamp 4975ac46-efac-4210-8a57-97593736c40e))
   )
 
-  (footprint "Local_Library:PUTM_TEXT_30MM" (layer "F.Cu")
-    (tstamp 71c17fe5-9afe-4592-92ab-69cc7a832474)
-    (at 203 103 90)
+  (footprint "MountingHole:MountingHole_3mm_Pad_Via" locked (layer "F.Cu")
+    (tstamp 838a4d0e-f261-4cfd-8acf-3ab0b87cb847)
+    (at 93 129)
+    (descr "Mounting Hole 3mm")
+    (tags "mounting hole 3mm")
     (attr board_only exclude_from_pos_files exclude_from_bom)
+    (fp_text reference "REF**" (at 0 -4) (layer "F.SilkS") hide
+        (effects (font (size 1 1) (thickness 0.15)))
+      (tstamp 56ae9b8b-5be6-40ca-9924-86fd856ba466)
+    )
+    (fp_text value "MountingHole_3mm_Pad_Via" (at 0 4) (layer "F.Fab")
+        (effects (font (size 1 1) (thickness 0.15)))
+      (tstamp 4816f7f8-520b-4205-8bb1-68cdedf32545)
+    )
+    (fp_text user "${REFERENCE}" (at 0 0) (layer "F.Fab")
+        (effects (font (size 1 1) (thickness 0.15)))
+      (tstamp ff05c448-45ec-4a0a-93d9-77f0ccd5a13c)
+    )
+    (fp_circle (center 0 0) (end 3 0)
+      (stroke (width 0.15) (type solid)) (fill none) (layer "Cmts.User") (tstamp 0cc974c3-3b59-4440-8d14-ff665af59083))
+    (fp_circle (center 0 0) (end 3.25 0)
+      (stroke (width 0.05) (type solid)) (fill none) (layer "F.CrtYd") (tstamp ae555648-553a-4af1-ac9e-340f2e8009af))
+    (pad "1" thru_hole circle locked (at -2.25 0) (size 0.8 0.8) (drill 0.5) (layers "*.Cu" "*.Mask") (tstamp 6706bf2b-bab4-4483-95fb-508c4fd653d5))
+    (pad "1" thru_hole circle locked (at -1.59099 -1.59099) (size 0.8 0.8) (drill 0.5) (layers "*.Cu" "*.Mask") (tstamp 3fcacbf5-fd60-415a-9394-596e302c7ba9))
+    (pad "1" thru_hole circle locked (at -1.59099 1.59099) (size 0.8 0.8) (drill 0.5) (layers "*.Cu" "*.Mask") (tstamp 84f956d0-b9fb-41fe-a17d-f7d3f5fe9ec1))
+    (pad "1" thru_hole circle locked (at 0 -2.25) (size 0.8 0.8) (drill 0.5) (layers "*.Cu" "*.Mask") (tstamp 5059b93d-ff00-4d4f-aef3-9211fac330d8))
+    (pad "1" thru_hole circle locked (at 0 0) (size 6 6) (drill 3) (layers "*.Cu" "*.Mask") (tstamp 067b49c8-3470-43cb-a333-7f3a4263aa17))
+    (pad "1" thru_hole circle locked (at 0 2.25) (size 0.8 0.8) (drill 0.5) (layers "*.Cu" "*.Mask") (tstamp 3a7ec767-76bf-4479-8365-8c19d7416cf8))
+    (pad "1" thru_hole circle locked (at 1.59099 -1.59099) (size 0.8 0.8) (drill 0.5) (layers "*.Cu" "*.Mask") (tstamp 13007449-9555-40ba-a94f-ef2fca68aa7e))
+    (pad "1" thru_hole circle locked (at 1.59099 1.59099) (size 0.8 0.8) (drill 0.5) (layers "*.Cu" "*.Mask") (tstamp 0e34390c-b05a-4881-93cf-44245e5386ed))
+    (pad "1" thru_hole circle locked (at 2.25 0) (size 0.8 0.8) (drill 0.5) (layers "*.Cu" "*.Mask") (tstamp 87065648-aa56-4e1c-a417-9be832c2716c))
+  )
+
+  (footprint "MountingHole:MountingHole_3mm_Pad_Via" locked (layer "F.Cu")
+    (tstamp a80e7363-ef7e-4d32-a6b5-9acef3f9558f)
+    (at 93 79)
+    (descr "Mounting Hole 3mm")
+    (tags "mounting hole 3mm")
+    (attr board_only exclude_from_pos_files exclude_from_bom)
+    (fp_text reference "REF**" (at 0 -4) (layer "F.SilkS") hide
+        (effects (font (size 1 1) (thickness 0.15)))
+      (tstamp 2f3afaf3-8a4d-4588-b8e0-2caf2feb2491)
+    )
+    (fp_text value "MountingHole_3mm_Pad_Via" (at 0 4) (layer "F.Fab")
+        (effects (font (size 1 1) (thickness 0.15)))
+      (tstamp 981fb80d-cfdd-400e-9e62-e51fa5e3b01f)
+    )
+    (fp_text user "${REFERENCE}" (at 0 0) (layer "F.Fab")
+        (effects (font (size 1 1) (thickness 0.15)))
+      (tstamp 82dbc038-47b0-480f-a0f0-0ed6cc88939e)
+    )
+    (fp_circle (center 0 0) (end 3 0)
+      (stroke (width 0.15) (type solid)) (fill none) (layer "Cmts.User") (tstamp a3134007-65f9-4fa4-9540-c3947e47e1fc))
+    (fp_circle (center 0 0) (end 3.25 0)
+      (stroke (width 0.05) (type solid)) (fill none) (layer "F.CrtYd") (tstamp 9a3ba7cd-2785-4e02-915f-d3b562f586b7))
+    (pad "1" thru_hole circle locked (at -2.25 0) (size 0.8 0.8) (drill 0.5) (layers "*.Cu" "*.Mask") (tstamp 69fd98ea-c732-47bc-b947-473301d140d4))
+    (pad "1" thru_hole circle locked (at -1.59099 -1.59099) (size 0.8 0.8) (drill 0.5) (layers "*.Cu" "*.Mask") (tstamp 97d851c4-6d5e-4bec-9906-0b7855ad1007))
+    (pad "1" thru_hole circle locked (at -1.59099 1.59099) (size 0.8 0.8) (drill 0.5) (layers "*.Cu" "*.Mask") (tstamp 4798ec9b-e1dc-4fd6-9bee-90417c2d5c91))
+    (pad "1" thru_hole circle locked (at 0 -2.25) (size 0.8 0.8) (drill 0.5) (layers "*.Cu" "*.Mask") (tstamp b5c6e062-9708-46c4-99ec-3097ad85b4e8))
+    (pad "1" thru_hole circle locked (at 0 0) (size 6 6) (drill 3) (layers "*.Cu" "*.Mask") (tstamp 3104573c-cc67-45be-97bf-81a49a74ed71))
+    (pad "1" thru_hole circle locked (at 0 2.25) (size 0.8 0.8) (drill 0.5) (layers "*.Cu" "*.Mask") (tstamp 0b4c4e02-da12-49ac-a9e4-4f13e586662b))
+    (pad "1" thru_hole circle locked (at 1.59099 -1.59099) (size 0.8 0.8) (drill 0.5) (layers "*.Cu" "*.Mask") (tstamp 47e963d1-1782-4f8d-b284-fa2b0e3ccd39))
+    (pad "1" thru_hole circle locked (at 1.59099 1.59099) (size 0.8 0.8) (drill 0.5) (layers "*.Cu" "*.Mask") (tstamp b1d85ec3-7055-47cd-ab67-9b5811a8af4a))
+    (pad "1" thru_hole circle locked (at 2.25 0) (size 0.8 0.8) (drill 0.5) (layers "*.Cu" "*.Mask") (tstamp 279fdd85-8f52-4a12-98ba-214c119e5ee6))
+  )
+
+  (footprint "MountingHole:MountingHole_3mm_Pad_Via" locked (layer "F.Cu")
+    (tstamp dd00c18e-f66a-46da-a2e6-55ea8ec40ed5)
+    (at 148 79)
+    (descr "Mounting Hole 3mm")
+    (tags "mounting hole 3mm")
+    (attr exclude_from_pos_files exclude_from_bom)
+    (fp_text reference "REF**" (at 0 -4) (layer "F.SilkS") hide
+        (effects (font (size 1 1) (thickness 0.15)))
+      (tstamp 27554361-0584-42d0-9c97-ee44bd45e681)
+    )
+    (fp_text value "MountingHole_3mm_Pad_Via" (at 0 4) (layer "F.Fab")
+        (effects (font (size 1 1) (thickness 0.15)))
+      (tstamp 21744289-f4be-4e48-b923-c529220567d9)
+    )
+    (fp_text user "${REFERENCE}" (at 0 0) (layer "F.Fab")
+        (effects (font (size 1 1) (thickness 0.15)))
+      (tstamp 5647c22a-d1a1-4705-a121-7c50ceffa953)
+    )
+    (fp_circle (center 0 0) (end 3 0)
+      (stroke (width 0.15) (type solid)) (fill none) (layer "Cmts.User") (tstamp 53797570-8e7c-4959-871f-a2507457fcde))
+    (fp_circle (center 0 0) (end 3.25 0)
+      (stroke (width 0.05) (type solid)) (fill none) (layer "F.CrtYd") (tstamp 2f3fb4ac-a728-4550-95db-7d439e9339a7))
+    (pad "1" thru_hole circle locked (at -2.25 0) (size 0.8 0.8) (drill 0.5) (layers "*.Cu" "*.Mask") (tstamp 0c6611fa-3dd6-430a-b7db-9d2c166e7a73))
+    (pad "1" thru_hole circle locked (at -1.59099 -1.59099) (size 0.8 0.8) (drill 0.5) (layers "*.Cu" "*.Mask") (tstamp e2286803-2ad3-419b-9737-31ea807119ad))
+    (pad "1" thru_hole circle locked (at -1.59099 1.59099) (size 0.8 0.8) (drill 0.5) (layers "*.Cu" "*.Mask") (tstamp ffa95119-82dd-42f4-94e3-705ade1611e5))
+    (pad "1" thru_hole circle locked (at 0 -2.25) (size 0.8 0.8) (drill 0.5) (layers "*.Cu" "*.Mask") (tstamp 7acf4f0f-3c78-404b-bfb1-03490252428e))
+    (pad "1" thru_hole circle locked (at 0 0) (size 6 6) (drill 3) (layers "*.Cu" "*.Mask") (tstamp cfa71c01-6ddb-42cc-860e-546bd667b0d7))
+    (pad "1" thru_hole circle locked (at 0 2.25) (size 0.8 0.8) (drill 0.5) (layers "*.Cu" "*.Mask") (tstamp 6c77d6db-1543-451e-9bdd-58fe83ea895c))
+    (pad "1" thru_hole circle locked (at 1.59099 -1.59099) (size 0.8 0.8) (drill 0.5) (layers "*.Cu" "*.Mask") (tstamp 4eedd423-e46f-480e-81d2-6ef07acd3aaf))
+    (pad "1" thru_hole circle locked (at 1.59099 1.59099) (size 0.8 0.8) (drill 0.5) (layers "*.Cu" "*.Mask") (tstamp e503aead-be71-45d8-9bad-43283b1f0f5a))
+    (pad "1" thru_hole circle locked (at 2.25 0) (size 0.8 0.8) (drill 0.5) (layers "*.Cu" "*.Mask") (tstamp a3ed3b1c-a96b-432d-a2ca-a4b28fd11680))
+  )
+
+  (footprint "Local_Library:PUTM_Logo_Text_30mm" (layer "F.Cu")
+    (tstamp df94a053-14cd-41a5-ab49-99358ab71cbe)
+    (at 203 103 90)
+    (descr "PUT Motorsport logo with a text 30 mm")
+    (tags "putm logo")
+    (attr board_only exclude_from_pos_files exclude_from_bom allow_missing_courtyard)
     (fp_text reference "G***" (at 0 0 90) (layer "F.SilkS") hide
         (effects (font (size 1.524 1.524) (thickness 0.3)))
-      (tstamp c15c0ce7-a707-4fbc-b352-82389aa0ef45)
+      (tstamp d01a77dd-24af-46d6-a88b-b8693bdf4c1c)
     )
     (fp_text value "LOGO" (at 0.75 0 90) (layer "F.SilkS") hide
         (effects (font (size 1.524 1.524) (thickness 0.3)))
-      (tstamp a0bac893-c38d-4cde-8c3a-bca62339b75e)
+      (tstamp b4f2688a-7a09-40fc-adbc-fb5461b7210a)
     )
     (fp_poly
       (pts
@@ -223,7 +324,7 @@
         (xy 14.12758 0.590908)
       )
 
-      (stroke (width 0) (type solid)) (fill solid) (layer "F.SilkS") (tstamp 184707a7-59e8-4954-a12e-4f1328cc32c1))
+      (stroke (width 0) (type solid)) (fill solid) (layer "F.SilkS") (tstamp 300752e7-b060-4bc7-9677-617f598795fd))
     (fp_poly
       (pts
         (xy 5.285166 0.591356)
@@ -280,7 +381,7 @@
         (xy 4.860013 0.590894)
       )
 
-      (stroke (width 0) (type solid)) (fill solid) (layer "F.SilkS") (tstamp 74228514-9385-446c-80d4-6755bfcfa628))
+      (stroke (width 0) (type solid)) (fill solid) (layer "F.SilkS") (tstamp 68f27279-b19b-41b7-a0cb-d7613840e37e))
     (fp_poly
       (pts
         (xy 9.994373 -2.44676)
@@ -347,7 +448,7 @@
         (xy 9.85722 -2.446851)
       )
 
-      (stroke (width 0) (type solid)) (fill solid) (layer "F.SilkS") (tstamp a9d44500-bd0f-44b9-ad8b-fc8235045b51))
+      (stroke (width 0) (type solid)) (fill solid) (layer "F.SilkS") (tstamp 254a29a1-680e-431f-a120-77d9c3f767ef))
     (fp_poly
       (pts
         (xy 10.60554 0.591042)
@@ -447,7 +548,7 @@
         (xy 10.513616 0.590373)
       )
 
-      (stroke (width 0) (type solid)) (fill solid) (layer "F.SilkS") (tstamp 7e73d82a-d237-42bc-8c9d-f5bd4b174d36))
+      (stroke (width 0) (type solid)) (fill solid) (layer "F.SilkS") (tstamp 2db602cc-74c9-42b5-804e-3128740606c5))
     (fp_poly
       (pts
         (xy 6.412224 0.571706)
@@ -549,7 +650,7 @@
         (xy 6.301823 0.564315)
       )
 
-      (stroke (width 0) (type solid)) (fill solid) (layer "F.SilkS") (tstamp 878c9914-197b-4630-8c01-e15563f422bf))
+      (stroke (width 0) (type solid)) (fill solid) (layer "F.SilkS") (tstamp 75aefbd3-33b4-48e6-96ed-3ae5d286c699))
     (fp_poly
       (pts
         (xy 12.161946 0.569328)
@@ -653,7 +754,7 @@
         (xy 12.052967 0.562939)
       )
 
-      (stroke (width 0) (type solid)) (fill solid) (layer "F.SilkS") (tstamp 6048bd9d-02ef-4cbb-9a70-8450f9827110))
+      (stroke (width 0) (type solid)) (fill solid) (layer "F.SilkS") (tstamp a28faa5d-2272-4ff7-a6a6-fdf2f33672d8))
     (fp_poly
       (pts
         (xy 5.125246 -2.44152)
@@ -759,7 +860,7 @@
         (xy 2.917522 -2.450876)
       )
 
-      (stroke (width 0) (type solid)) (fill solid) (layer "F.SilkS") (tstamp c37380b2-45c3-4624-9326-7c314965dee8))
+      (stroke (width 0) (type solid)) (fill solid) (layer "F.SilkS") (tstamp 00689c78-e415-4cd7-b9e7-180a1486f177))
     (fp_poly
       (pts
         (xy 4.32542 0.574578)
@@ -873,7 +974,7 @@
         (xy 4.212531 0.569705)
       )
 
-      (stroke (width 0) (type solid)) (fill solid) (layer "F.SilkS") (tstamp 97b60306-5aad-475a-8be5-95133b360217))
+      (stroke (width 0) (type solid)) (fill solid) (layer "F.SilkS") (tstamp 4b63f03b-744c-47ca-807b-d459c5bf586e))
     (fp_poly
       (pts
         (xy 6.559316 -2.414404)
@@ -991,7 +1092,7 @@
         (xy 6.570531 -2.449508)
       )
 
-      (stroke (width 0) (type solid)) (fill solid) (layer "F.SilkS") (tstamp 877c22bb-d105-4505-ba0f-01fab3f782e4))
+      (stroke (width 0) (type solid)) (fill solid) (layer "F.SilkS") (tstamp 657fc4b7-168d-4204-9664-61178b3a40fd))
     (fp_poly
       (pts
         (xy 2.305823 0.589516)
@@ -1112,7 +1213,7 @@
         (xy 2.245659 0.588474)
       )
 
-      (stroke (width 0) (type solid)) (fill solid) (layer "F.SilkS") (tstamp f573bb96-d68f-4706-b74d-642d0910441b))
+      (stroke (width 0) (type solid)) (fill solid) (layer "F.SilkS") (tstamp 11ee9dfd-e8b9-4962-b3f9-2af7d63da61a))
     (fp_poly
       (pts
         (xy 13.111022 0.590677)
@@ -1244,7 +1345,7 @@
         (xy 13.005056 0.590624)
       )
 
-      (stroke (width 0) (type solid)) (fill solid) (layer "F.SilkS") (tstamp b671594b-3d60-4aff-a6fd-e52ec5ed69dc))
+      (stroke (width 0) (type solid)) (fill solid) (layer "F.SilkS") (tstamp 0115a4ff-1cc6-4376-8cee-30894d0fea8c))
     (fp_poly
       (pts
         (xy 7.499124 0.592093)
@@ -1378,7 +1479,7 @@
         (xy 7.428771 0.591937)
       )
 
-      (stroke (width 0) (type solid)) (fill solid) (layer "F.SilkS") (tstamp 42afc820-210e-423b-8c6f-831fa3bbb48b))
+      (stroke (width 0) (type solid)) (fill solid) (layer "F.SilkS") (tstamp fb35c43f-5ffa-419a-b83c-ea0d9ebb6269))
     (fp_poly
       (pts
         (xy 9.571572 0.585109)
@@ -1520,7 +1621,7 @@
         (xy 9.415787 0.585074)
       )
 
-      (stroke (width 0) (type solid)) (fill solid) (layer "F.SilkS") (tstamp c343a327-4613-4b87-9861-e8787cd8636f))
+      (stroke (width 0) (type solid)) (fill solid) (layer "F.SilkS") (tstamp 090f81b4-bba0-4eeb-ae52-3dc6e3abcca7))
     (fp_poly
       (pts
         (xy -12.582757 -2.043401)
@@ -1744,7 +1845,7 @@
         (xy -12.698533 -2.043857)
       )
 
-      (stroke (width 0) (type solid)) (fill solid) (layer "F.SilkS") (tstamp cb48d210-0e0e-4836-ad1d-64830b713584))
+      (stroke (width 0) (type solid)) (fill solid) (layer "F.SilkS") (tstamp 66b111b9-94f7-4617-a828-c069590cd83d))
     (fp_poly
       (pts
         (xy -7.341796 -3.194223)
@@ -1983,106 +2084,7 @@
         (xy -12.741149 -3.199007)
       )
 
-      (stroke (width 0) (type solid)) (fill solid) (layer "F.SilkS") (tstamp 9edfb6ff-85fd-40be-b705-4f30ce710634))
-  )
-
-  (footprint "MountingHole:MountingHole_3mm_Pad_Via" locked (layer "F.Cu")
-    (tstamp 838a4d0e-f261-4cfd-8acf-3ab0b87cb847)
-    (at 93 129)
-    (descr "Mounting Hole 3mm")
-    (tags "mounting hole 3mm")
-    (attr board_only exclude_from_pos_files exclude_from_bom)
-    (fp_text reference "REF**" (at 0 -4) (layer "F.SilkS") hide
-        (effects (font (size 1 1) (thickness 0.15)))
-      (tstamp 56ae9b8b-5be6-40ca-9924-86fd856ba466)
-    )
-    (fp_text value "MountingHole_3mm_Pad_Via" (at 0 4) (layer "F.Fab")
-        (effects (font (size 1 1) (thickness 0.15)))
-      (tstamp 4816f7f8-520b-4205-8bb1-68cdedf32545)
-    )
-    (fp_text user "${REFERENCE}" (at 0 0) (layer "F.Fab")
-        (effects (font (size 1 1) (thickness 0.15)))
-      (tstamp ff05c448-45ec-4a0a-93d9-77f0ccd5a13c)
-    )
-    (fp_circle (center 0 0) (end 3 0)
-      (stroke (width 0.15) (type solid)) (fill none) (layer "Cmts.User") (tstamp 0cc974c3-3b59-4440-8d14-ff665af59083))
-    (fp_circle (center 0 0) (end 3.25 0)
-      (stroke (width 0.05) (type solid)) (fill none) (layer "F.CrtYd") (tstamp ae555648-553a-4af1-ac9e-340f2e8009af))
-    (pad "1" thru_hole circle locked (at -2.25 0) (size 0.8 0.8) (drill 0.5) (layers "*.Cu" "*.Mask") (tstamp 6706bf2b-bab4-4483-95fb-508c4fd653d5))
-    (pad "1" thru_hole circle locked (at -1.59099 -1.59099) (size 0.8 0.8) (drill 0.5) (layers "*.Cu" "*.Mask") (tstamp 3fcacbf5-fd60-415a-9394-596e302c7ba9))
-    (pad "1" thru_hole circle locked (at -1.59099 1.59099) (size 0.8 0.8) (drill 0.5) (layers "*.Cu" "*.Mask") (tstamp 84f956d0-b9fb-41fe-a17d-f7d3f5fe9ec1))
-    (pad "1" thru_hole circle locked (at 0 -2.25) (size 0.8 0.8) (drill 0.5) (layers "*.Cu" "*.Mask") (tstamp 5059b93d-ff00-4d4f-aef3-9211fac330d8))
-    (pad "1" thru_hole circle locked (at 0 0) (size 6 6) (drill 3) (layers "*.Cu" "*.Mask") (tstamp 067b49c8-3470-43cb-a333-7f3a4263aa17))
-    (pad "1" thru_hole circle locked (at 0 2.25) (size 0.8 0.8) (drill 0.5) (layers "*.Cu" "*.Mask") (tstamp 3a7ec767-76bf-4479-8365-8c19d7416cf8))
-    (pad "1" thru_hole circle locked (at 1.59099 -1.59099) (size 0.8 0.8) (drill 0.5) (layers "*.Cu" "*.Mask") (tstamp 13007449-9555-40ba-a94f-ef2fca68aa7e))
-    (pad "1" thru_hole circle locked (at 1.59099 1.59099) (size 0.8 0.8) (drill 0.5) (layers "*.Cu" "*.Mask") (tstamp 0e34390c-b05a-4881-93cf-44245e5386ed))
-    (pad "1" thru_hole circle locked (at 2.25 0) (size 0.8 0.8) (drill 0.5) (layers "*.Cu" "*.Mask") (tstamp 87065648-aa56-4e1c-a417-9be832c2716c))
-  )
-
-  (footprint "MountingHole:MountingHole_3mm_Pad_Via" locked (layer "F.Cu")
-    (tstamp a80e7363-ef7e-4d32-a6b5-9acef3f9558f)
-    (at 93 79)
-    (descr "Mounting Hole 3mm")
-    (tags "mounting hole 3mm")
-    (attr board_only exclude_from_pos_files exclude_from_bom)
-    (fp_text reference "REF**" (at 0 -4) (layer "F.SilkS") hide
-        (effects (font (size 1 1) (thickness 0.15)))
-      (tstamp 2f3afaf3-8a4d-4588-b8e0-2caf2feb2491)
-    )
-    (fp_text value "MountingHole_3mm_Pad_Via" (at 0 4) (layer "F.Fab")
-        (effects (font (size 1 1) (thickness 0.15)))
-      (tstamp 981fb80d-cfdd-400e-9e62-e51fa5e3b01f)
-    )
-    (fp_text user "${REFERENCE}" (at 0 0) (layer "F.Fab")
-        (effects (font (size 1 1) (thickness 0.15)))
-      (tstamp 82dbc038-47b0-480f-a0f0-0ed6cc88939e)
-    )
-    (fp_circle (center 0 0) (end 3 0)
-      (stroke (width 0.15) (type solid)) (fill none) (layer "Cmts.User") (tstamp a3134007-65f9-4fa4-9540-c3947e47e1fc))
-    (fp_circle (center 0 0) (end 3.25 0)
-      (stroke (width 0.05) (type solid)) (fill none) (layer "F.CrtYd") (tstamp 9a3ba7cd-2785-4e02-915f-d3b562f586b7))
-    (pad "1" thru_hole circle locked (at -2.25 0) (size 0.8 0.8) (drill 0.5) (layers "*.Cu" "*.Mask") (tstamp 69fd98ea-c732-47bc-b947-473301d140d4))
-    (pad "1" thru_hole circle locked (at -1.59099 -1.59099) (size 0.8 0.8) (drill 0.5) (layers "*.Cu" "*.Mask") (tstamp 97d851c4-6d5e-4bec-9906-0b7855ad1007))
-    (pad "1" thru_hole circle locked (at -1.59099 1.59099) (size 0.8 0.8) (drill 0.5) (layers "*.Cu" "*.Mask") (tstamp 4798ec9b-e1dc-4fd6-9bee-90417c2d5c91))
-    (pad "1" thru_hole circle locked (at 0 -2.25) (size 0.8 0.8) (drill 0.5) (layers "*.Cu" "*.Mask") (tstamp b5c6e062-9708-46c4-99ec-3097ad85b4e8))
-    (pad "1" thru_hole circle locked (at 0 0) (size 6 6) (drill 3) (layers "*.Cu" "*.Mask") (tstamp 3104573c-cc67-45be-97bf-81a49a74ed71))
-    (pad "1" thru_hole circle locked (at 0 2.25) (size 0.8 0.8) (drill 0.5) (layers "*.Cu" "*.Mask") (tstamp 0b4c4e02-da12-49ac-a9e4-4f13e586662b))
-    (pad "1" thru_hole circle locked (at 1.59099 -1.59099) (size 0.8 0.8) (drill 0.5) (layers "*.Cu" "*.Mask") (tstamp 47e963d1-1782-4f8d-b284-fa2b0e3ccd39))
-    (pad "1" thru_hole circle locked (at 1.59099 1.59099) (size 0.8 0.8) (drill 0.5) (layers "*.Cu" "*.Mask") (tstamp b1d85ec3-7055-47cd-ab67-9b5811a8af4a))
-    (pad "1" thru_hole circle locked (at 2.25 0) (size 0.8 0.8) (drill 0.5) (layers "*.Cu" "*.Mask") (tstamp 279fdd85-8f52-4a12-98ba-214c119e5ee6))
-  )
-
-  (footprint "MountingHole:MountingHole_3mm_Pad_Via" locked (layer "F.Cu")
-    (tstamp dd00c18e-f66a-46da-a2e6-55ea8ec40ed5)
-    (at 148 79)
-    (descr "Mounting Hole 3mm")
-    (tags "mounting hole 3mm")
-    (attr exclude_from_pos_files exclude_from_bom)
-    (fp_text reference "REF**" (at 0 -4) (layer "F.SilkS") hide
-        (effects (font (size 1 1) (thickness 0.15)))
-      (tstamp 27554361-0584-42d0-9c97-ee44bd45e681)
-    )
-    (fp_text value "MountingHole_3mm_Pad_Via" (at 0 4) (layer "F.Fab")
-        (effects (font (size 1 1) (thickness 0.15)))
-      (tstamp 21744289-f4be-4e48-b923-c529220567d9)
-    )
-    (fp_text user "${REFERENCE}" (at 0 0) (layer "F.Fab")
-        (effects (font (size 1 1) (thickness 0.15)))
-      (tstamp 5647c22a-d1a1-4705-a121-7c50ceffa953)
-    )
-    (fp_circle (center 0 0) (end 3 0)
-      (stroke (width 0.15) (type solid)) (fill none) (layer "Cmts.User") (tstamp 53797570-8e7c-4959-871f-a2507457fcde))
-    (fp_circle (center 0 0) (end 3.25 0)
-      (stroke (width 0.05) (type solid)) (fill none) (layer "F.CrtYd") (tstamp 2f3fb4ac-a728-4550-95db-7d439e9339a7))
-    (pad "1" thru_hole circle locked (at -2.25 0) (size 0.8 0.8) (drill 0.5) (layers "*.Cu" "*.Mask") (tstamp 0c6611fa-3dd6-430a-b7db-9d2c166e7a73))
-    (pad "1" thru_hole circle locked (at -1.59099 -1.59099) (size 0.8 0.8) (drill 0.5) (layers "*.Cu" "*.Mask") (tstamp e2286803-2ad3-419b-9737-31ea807119ad))
-    (pad "1" thru_hole circle locked (at -1.59099 1.59099) (size 0.8 0.8) (drill 0.5) (layers "*.Cu" "*.Mask") (tstamp ffa95119-82dd-42f4-94e3-705ade1611e5))
-    (pad "1" thru_hole circle locked (at 0 -2.25) (size 0.8 0.8) (drill 0.5) (layers "*.Cu" "*.Mask") (tstamp 7acf4f0f-3c78-404b-bfb1-03490252428e))
-    (pad "1" thru_hole circle locked (at 0 0) (size 6 6) (drill 3) (layers "*.Cu" "*.Mask") (tstamp cfa71c01-6ddb-42cc-860e-546bd667b0d7))
-    (pad "1" thru_hole circle locked (at 0 2.25) (size 0.8 0.8) (drill 0.5) (layers "*.Cu" "*.Mask") (tstamp 6c77d6db-1543-451e-9bdd-58fe83ea895c))
-    (pad "1" thru_hole circle locked (at 1.59099 -1.59099) (size 0.8 0.8) (drill 0.5) (layers "*.Cu" "*.Mask") (tstamp 4eedd423-e46f-480e-81d2-6ef07acd3aaf))
-    (pad "1" thru_hole circle locked (at 1.59099 1.59099) (size 0.8 0.8) (drill 0.5) (layers "*.Cu" "*.Mask") (tstamp e503aead-be71-45d8-9bad-43283b1f0f5a))
-    (pad "1" thru_hole circle locked (at 2.25 0) (size 0.8 0.8) (drill 0.5) (layers "*.Cu" "*.Mask") (tstamp a3ed3b1c-a96b-432d-a2ca-a4b28fd11680))
+      (stroke (width 0) (type solid)) (fill solid) (layer "F.SilkS") (tstamp 5205fa97-dc5f-469d-a9fa-40066e9ce75d))
   )
 
   (footprint "MountingHole:MountingHole_3mm_Pad_Via" locked (layer "F.Cu")
@@ -2138,14 +2140,17 @@
     (stroke (width 0.1) (type default)) (layer "Edge.Cuts") (tstamp c8564518-fb31-44e3-bd09-9ffac4829823))
   (gr_arc (start 206 74) (mid 207.414214 74.585786) (end 208 76)
     (stroke (width 0.1) (type default)) (layer "Edge.Cuts") (tstamp cacf977d-3987-4730-9f9e-ebaf1e9fd86c))
-  (gr_text "JLCJLCJLCJLC" (at 90 106 90) (layer "F.SilkS") (tstamp 036d5529-03c4-4151-a2b0-e3f6f968c394)
+  (gr_text "JLCJLCJLCJLC" (at 91 94 90) (layer "F.SilkS") (tstamp 036d5529-03c4-4151-a2b0-e3f6f968c394)
     (effects (font (size 1 1) (thickness 0.15)) (justify left bottom))
   )
-  (gr_text "Author: I. Kajdan" (at 90 125 90) (layer "F.SilkS") (tstamp 543f121e-b86b-489e-adda-0cfdf7f5e4b5)
+  (gr_text "Author: I. Kajdan" (at 91 124 90) (layer "F.SilkS") (tstamp 543f121e-b86b-489e-adda-0cfdf7f5e4b5)
     (effects (font (size 1 1) (thickness 0.15)) (justify left bottom))
   )
-  (gr_text "v${REVISION}" (at 90 86 90) (layer "F.SilkS") (tstamp 7aec6c76-b5f7-446f-9417-fb725641127b)
-    (effects (font (size 1 1) (thickness 0.15)) (justify left bottom))
+  (gr_text "v${REVISION}" (at 93.07675 102.42325 90) (layer "F.SilkS") (tstamp 9f7008a8-4839-4e02-bb93-c86c7139897d)
+    (effects (font (size 1 1) (thickness 0.15)) (justify bottom))
+  )
+  (gr_text "Rearbox" (at 91.07675 102.42325 90) (layer "F.SilkS") (tstamp f216c9b3-7db2-4c7e-bb6b-595ff3ec7986)
+    (effects (font (size 1.5 1.5) (thickness 0.3) bold) (justify bottom))
   )
   (dimension (type aligned) (layer "Dwgs.User") (tstamp 3cbe8ec4-7568-4757-b842-a71f9ec257dd)
     (pts (xy 88 76) (xy 208 76))
@@ -2166,4 +2171,10 @@
     (style (thickness 0.15) (arrow_length 1.27) (text_position_mode 1) (extension_height 0.58642) (extension_offset 0.5) keep_text_aligned)
   )
 
+  (group "" (id 06c7f4e6-732c-431a-922a-66b81d7f2203)
+    (members
+      9f7008a8-4839-4e02-bb93-c86c7139897d
+      f216c9b3-7db2-4c7e-bb6b-595ff3ec7986
+    )
+  )
 )

@@ -189,7 +189,7 @@ void HAL_ADC_MspInit(ADC_HandleTypeDef* adcHandle)
     GPIO_InitStruct.Pull = GPIO_NOPULL;
     HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
 
-    GPIO_InitStruct.Pin = WATER_PRESSURE2_Pin|SUSPENSION_POT1_Pin|SUSPENSION_POT2_Pin;
+    GPIO_InitStruct.Pin = WATER_PRESSURE2_Pin|POTENTIOMETER_L_Pin|POTENTIOMETER_R_Pin;
     GPIO_InitStruct.Mode = GPIO_MODE_ANALOG;
     GPIO_InitStruct.Pull = GPIO_NOPULL;
     HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
@@ -225,17 +225,16 @@ void HAL_ADC_MspInit(ADC_HandleTypeDef* adcHandle)
     PA6     ------> ADC2_IN3
     PA7     ------> ADC2_IN4
     PC4     ------> ADC2_IN5
-    PC5     ------> ADC2_IN11
     */
     GPIO_InitStruct.Pin = ANALOG_INPUT1_Pin|ANALOG_INPUT2_Pin;
     GPIO_InitStruct.Mode = GPIO_MODE_ANALOG;
     GPIO_InitStruct.Pull = GPIO_NOPULL;
     HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
-    GPIO_InitStruct.Pin = ANALOG_INPUT3_Pin|ANALOG_INPUT4_Pin;
+    GPIO_InitStruct.Pin = SENSE_OUT_Pin;
     GPIO_InitStruct.Mode = GPIO_MODE_ANALOG;
     GPIO_InitStruct.Pull = GPIO_NOPULL;
-    HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
+    HAL_GPIO_Init(SENSE_OUT_GPIO_Port, &GPIO_InitStruct);
 
   /* USER CODE BEGIN ADC2_MspInit 1 */
 
@@ -268,7 +267,7 @@ void HAL_ADC_MspDeInit(ADC_HandleTypeDef* adcHandle)
     */
     HAL_GPIO_DeInit(GPIOC, WATER_TEMPERATURE1_Pin|WATER_TEMPERATURE2_Pin|MONO_TEMPERATURE_Pin|WATER_PRESSURE1_Pin);
 
-    HAL_GPIO_DeInit(GPIOA, WATER_PRESSURE2_Pin|SUSPENSION_POT1_Pin|SUSPENSION_POT2_Pin);
+    HAL_GPIO_DeInit(GPIOA, WATER_PRESSURE2_Pin|POTENTIOMETER_L_Pin|POTENTIOMETER_R_Pin);
 
   /* USER CODE BEGIN ADC1_MspDeInit 1 */
 
@@ -289,11 +288,10 @@ void HAL_ADC_MspDeInit(ADC_HandleTypeDef* adcHandle)
     PA6     ------> ADC2_IN3
     PA7     ------> ADC2_IN4
     PC4     ------> ADC2_IN5
-    PC5     ------> ADC2_IN11
     */
     HAL_GPIO_DeInit(GPIOA, ANALOG_INPUT1_Pin|ANALOG_INPUT2_Pin);
 
-    HAL_GPIO_DeInit(GPIOC, ANALOG_INPUT3_Pin|ANALOG_INPUT4_Pin);
+    HAL_GPIO_DeInit(SENSE_OUT_GPIO_Port, SENSE_OUT_Pin);
 
   /* USER CODE BEGIN ADC2_MspDeInit 1 */
 

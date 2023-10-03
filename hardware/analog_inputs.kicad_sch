@@ -6,7 +6,7 @@
 
   (title_block
     (title "Analog Inputs")
-    (date "2023-09-20")
+    (date "2023-10-01")
     (rev "${REVISION}")
     (company "Author: I. Kajdan")
     (comment 1 "Reviewer:")
@@ -90,7 +90,7 @@
     )
     (instances
       (project "rearbox"
-        (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/264ec557-c33b-4d6e-8249-7c546f6f500a" (page "16"))
+        (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/264ec557-c33b-4d6e-8249-7c546f6f500a" (page "18"))
       )
     )
   )
@@ -119,7 +119,7 @@
     )
     (instances
       (project "rearbox"
-        (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/264ec557-c33b-4d6e-8249-7c546f6f500a" (page "18"))
+        (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/264ec557-c33b-4d6e-8249-7c546f6f500a" (page "19"))
       )
     )
   )

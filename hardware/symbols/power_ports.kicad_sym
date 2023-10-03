@@ -1,9 +1,9 @@
 (kicad_symbol_lib (version 20220914) (generator kicad_symbol_editor)
-  (symbol "+7V" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
-    (property "Reference" "#PWR041" (at 0 -3.81 0)
+  (symbol "+3V_EXT" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
+    (property "Reference" "#PWR" (at 6.35 0 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "+7V" (at 0 3.81 0)
+    (property "Value" "+3V_EXT" (at 0 5.08 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "" (at 0 0 0)
@@ -15,10 +15,10 @@
     (property "ki_keywords" "global power" (at 0 0 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "ki_description" "Power symbol creates a global label with name \"+7V\"" (at 0 0 0)
+    (property "ki_description" "Power symbol creates a global label with name \"+3V_EXT\"" (at 0 0 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (symbol "+7V_0_1"
+    (symbol "+3V_EXT_0_1"
       (polyline
         (pts
           (xy -0.762 1.27)
@@ -44,18 +44,18 @@
         (fill (type none))
       )
     )
-    (symbol "+7V_1_1"
+    (symbol "+3V_EXT_1_1"
       (pin power_in line (at 0 0 90) (length 0) hide
-        (name "+7V" (effects (font (size 1.27 1.27))))
+        (name "+3V_EXT" (effects (font (size 1.27 1.27))))
         (number "1" (effects (font (size 1.27 1.27))))
       )
     )
   )
-  (symbol "+5VAUX" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
-    (property "Reference" "#PWR042" (at 0 -3.81 0)
+  (symbol "+5V_EXT" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
+    (property "Reference" "#PWR" (at 6.35 0 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "+5VAUX" (at 0 3.81 0)
+    (property "Value" "+5V_EXT" (at 0 5.08 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "" (at 0 0 0)
@@ -67,10 +67,10 @@
     (property "ki_keywords" "global power" (at 0 0 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "ki_description" "Power symbol creates a global label with name \"+5VAUX\"" (at 0 0 0)
+    (property "ki_description" "Power symbol creates a global label with name \"+5V_EXT\"" (at 0 0 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (symbol "+5VAUX_0_1"
+    (symbol "+5V_EXT_0_1"
       (polyline
         (pts
           (xy -0.762 1.27)
@@ -96,9 +96,9 @@
         (fill (type none))
       )
     )
-    (symbol "+5VAUX_1_1"
+    (symbol "+5V_EXT_1_1"
       (pin power_in line (at 0 0 90) (length 0) hide
-        (name "+5VAUX" (effects (font (size 1.27 1.27))))
+        (name "+5V_EXT" (effects (font (size 1.27 1.27))))
         (number "1" (effects (font (size 1.27 1.27))))
       )
     )

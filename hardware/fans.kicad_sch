@@ -6,7 +6,7 @@
 
   (title_block
     (title "Fans")
-    (date "2023-09-20")
+    (date "2023-10-01")
     (rev "${REVISION}")
     (company "Author: I. Kajdan")
     (comment 1 "Reviewer:")
@@ -966,10 +966,6 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid be6381a6-4d5e-4954-ab30-d06ef824dff4)
   )
-  (text "TODO" (at 71.12 81.28 0)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid ebfd8bfa-d52a-4f03-a5a7-ea071e2c8d25)
-  )
 
   (label "FAN_R+" (at 234.95 76.2 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right bottom))
@@ -1032,7 +1028,7 @@
   (symbol (lib_id "VND7020AJTR:VND7020AJTR") (at 95.25 95.25 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 05cfc257-cc0a-4bc5-bbc2-83dfbac58d81)
-    (property "Reference" "U8" (at 83.82 80.01 0)
+    (property "Reference" "U7" (at 83.82 80.01 0)
       (effects (font (size 1.524 1.524)) (justify left))
     )
     (property "Value" "VND7020AJTR" (at 97.79 95.25 0)
@@ -1064,7 +1060,7 @@
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/12f12a63-cabc-40cf-a64b-d1bd8b3dd459"
-          (reference "U8") (unit 1)
+          (reference "U7") (unit 1)
         )
       )
     )
@@ -1092,7 +1088,7 @@
           (reference "#PWR020") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/12f12a63-cabc-40cf-a64b-d1bd8b3dd459"
-          (reference "#PWR068") (unit 1)
+          (reference "#PWR071") (unit 1)
         )
       )
     )
@@ -1129,7 +1125,7 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/12f12a63-cabc-40cf-a64b-d1bd8b3dd459"
-          (reference "#PWR075") (unit 1)
+          (reference "#PWR078") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/2f82735d-d185-44cc-bb86-fc399780134d"
           (reference "#PWR069") (unit 1)
@@ -1214,7 +1210,7 @@
           (reference "R?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/12f12a63-cabc-40cf-a64b-d1bd8b3dd459"
-          (reference "R33") (unit 1)
+          (reference "R28") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/2f82735d-d185-44cc-bb86-fc399780134d"
           (reference "R30") (unit 1)
@@ -1262,7 +1258,7 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/12f12a63-cabc-40cf-a64b-d1bd8b3dd459"
-          (reference "#PWR069") (unit 1)
+          (reference "#PWR072") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/2f82735d-d185-44cc-bb86-fc399780134d"
           (reference "#PWR069") (unit 1)
@@ -1282,13 +1278,13 @@
   (symbol (lib_id "Device:R_Small") (at 73.66 92.71 90) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 28b1546b-f071-4990-8839-0219bc99dd28)
-    (property "Reference" "R22" (at 69.85 91.44 90)
+    (property "Reference" "R17" (at 69.85 91.44 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "100R" (at 78.74 91.44 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 73.66 92.71 0)
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 73.66 92.71 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 73.66 92.71 0)
@@ -1299,7 +1295,7 @@
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/12f12a63-cabc-40cf-a64b-d1bd8b3dd459"
-          (reference "R22") (unit 1)
+          (reference "R17") (unit 1)
         )
       )
     )
@@ -1308,13 +1304,13 @@
   (symbol (lib_id "Device:R_Small") (at 73.66 95.25 90) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 3b9eac7b-58aa-43cc-b147-69ae60a30889)
-    (property "Reference" "R23" (at 69.85 93.98 90)
+    (property "Reference" "R18" (at 69.85 93.98 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "100R" (at 78.74 93.98 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 73.66 95.25 0)
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 73.66 95.25 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 73.66 95.25 0)
@@ -1325,7 +1321,7 @@
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/12f12a63-cabc-40cf-a64b-d1bd8b3dd459"
-          (reference "R23") (unit 1)
+          (reference "R18") (unit 1)
         )
       )
     )
@@ -1334,24 +1330,27 @@
   (symbol (lib_id "Device:R_Small") (at 111.76 111.76 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 44476b49-c53b-4fcd-9383-0465094cc14e)
-    (property "Reference" "R26" (at 113.03 110.49 0)
+    (property "Reference" "R21" (at 113.03 109.22 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "TBD" (at 113.03 113.03 0)
+    (property "Value" "TBD" (at 113.03 111.76 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 111.76 111.76 0)
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 111.76 111.76 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 111.76 111.76 0)
       (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Tolerance" "1%" (at 113.03 114.3 0)
+      (effects (font (size 1.27 1.27)) (justify left))
     )
     (pin "1" (uuid 6b488f72-76fc-41e1-ae61-863a3993c538))
     (pin "2" (uuid 77b1a374-9dfb-409e-9b92-74eb75537ecb))
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/12f12a63-cabc-40cf-a64b-d1bd8b3dd459"
-          (reference "R26") (unit 1)
+          (reference "R21") (unit 1)
         )
       )
     )
@@ -1388,7 +1387,7 @@
           (reference "TP43") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/12f12a63-cabc-40cf-a64b-d1bd8b3dd459"
-          (reference "TP16") (unit 1)
+          (reference "TP17") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/2f82735d-d185-44cc-bb86-fc399780134d"
           (reference "TP17") (unit 1)
@@ -1419,7 +1418,7 @@
           (reference "#PWR020") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/12f12a63-cabc-40cf-a64b-d1bd8b3dd459"
-          (reference "#PWR072") (unit 1)
+          (reference "#PWR075") (unit 1)
         )
       )
     )
@@ -1456,7 +1455,7 @@
           (reference "TP43") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/12f12a63-cabc-40cf-a64b-d1bd8b3dd459"
-          (reference "TP17") (unit 1)
+          (reference "TP18") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/2f82735d-d185-44cc-bb86-fc399780134d"
           (reference "TP18") (unit 1)
@@ -1496,7 +1495,7 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/12f12a63-cabc-40cf-a64b-d1bd8b3dd459"
-          (reference "#PWR076") (unit 1)
+          (reference "#PWR079") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/2f82735d-d185-44cc-bb86-fc399780134d"
           (reference "#PWR069") (unit 1)
@@ -1547,7 +1546,7 @@
           (reference "R29") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/12f12a63-cabc-40cf-a64b-d1bd8b3dd459"
-          (reference "R28") (unit 1)
+          (reference "R23") (unit 1)
         )
       )
     )
@@ -1587,7 +1586,7 @@
           (reference "TP1") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/12f12a63-cabc-40cf-a64b-d1bd8b3dd459"
-          (reference "TP15") (unit 1)
+          (reference "TP16") (unit 1)
         )
       )
     )
@@ -1625,7 +1624,7 @@
           (reference "R?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/12f12a63-cabc-40cf-a64b-d1bd8b3dd459"
-          (reference "R34") (unit 1)
+          (reference "R29") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/2f82735d-d185-44cc-bb86-fc399780134d"
           (reference "R30") (unit 1)
@@ -1674,7 +1673,7 @@
           (reference "R?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/12f12a63-cabc-40cf-a64b-d1bd8b3dd459"
-          (reference "R31") (unit 1)
+          (reference "R26") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/2f82735d-d185-44cc-bb86-fc399780134d"
           (reference "R32") (unit 1)
@@ -1723,7 +1722,7 @@
           (reference "R?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/12f12a63-cabc-40cf-a64b-d1bd8b3dd459"
-          (reference "R27") (unit 1)
+          (reference "R22") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/2f82735d-d185-44cc-bb86-fc399780134d"
           (reference "R28") (unit 1)
@@ -1774,7 +1773,7 @@
           (reference "R33") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/12f12a63-cabc-40cf-a64b-d1bd8b3dd459"
-          (reference "R32") (unit 1)
+          (reference "R27") (unit 1)
         )
       )
     )
@@ -1811,7 +1810,7 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/12f12a63-cabc-40cf-a64b-d1bd8b3dd459"
-          (reference "#PWR074") (unit 1)
+          (reference "#PWR077") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/2f82735d-d185-44cc-bb86-fc399780134d"
           (reference "#PWR069") (unit 1)
@@ -1834,7 +1833,7 @@
     (property "Reference" "#PWR010" (at 67.31 88.9 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "+3.3V" (at 67.31 80.264 0)
+    (property "Value" "+3.3V" (at 67.31 80.01 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "" (at 67.31 85.09 0)
@@ -1850,7 +1849,7 @@
           (reference "#PWR010") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/12f12a63-cabc-40cf-a64b-d1bd8b3dd459"
-          (reference "#PWR070") (unit 1)
+          (reference "#PWR073") (unit 1)
         )
       )
     )
@@ -1887,7 +1886,7 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/12f12a63-cabc-40cf-a64b-d1bd8b3dd459"
-          (reference "#PWR077") (unit 1)
+          (reference "#PWR080") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/2f82735d-d185-44cc-bb86-fc399780134d"
           (reference "#PWR070") (unit 1)
@@ -1970,7 +1969,7 @@
           (reference "R?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/12f12a63-cabc-40cf-a64b-d1bd8b3dd459"
-          (reference "R30") (unit 1)
+          (reference "R25") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/2f82735d-d185-44cc-bb86-fc399780134d"
           (reference "R30") (unit 1)
@@ -2019,7 +2018,7 @@
           (reference "R?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/12f12a63-cabc-40cf-a64b-d1bd8b3dd459"
-          (reference "R29") (unit 1)
+          (reference "R24") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/2f82735d-d185-44cc-bb86-fc399780134d"
           (reference "R30") (unit 1)
@@ -2039,13 +2038,13 @@
   (symbol (lib_id "Device:R_Small") (at 77.47 111.76 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid b4faf3c0-c713-4e56-bc18-cded482c32b7)
-    (property "Reference" "R25" (at 78.74 110.49 0)
+    (property "Reference" "R20" (at 78.74 110.49 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "15k" (at 78.74 113.03 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 77.47 111.76 0)
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 77.47 111.76 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 77.47 111.76 0)
@@ -2056,7 +2055,7 @@
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/12f12a63-cabc-40cf-a64b-d1bd8b3dd459"
-          (reference "R25") (unit 1)
+          (reference "R20") (unit 1)
         )
       )
     )
@@ -2111,7 +2110,7 @@
     (property "Datasheet" "~" (at 38.1 95.25 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Voltage" "35V" (at 40.64 97.79 0)
+    (property "Rated Voltage" "35V" (at 40.64 97.79 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (pin "1" (uuid 53b7a7a5-b30c-45b0-a92e-144722080637))
@@ -2122,7 +2121,7 @@
           (reference "C12") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/12f12a63-cabc-40cf-a64b-d1bd8b3dd459"
-          (reference "C30") (unit 1)
+          (reference "C31") (unit 1)
         )
       )
     )
@@ -2131,13 +2130,13 @@
   (symbol (lib_id "Device:R_Small") (at 73.66 86.36 90) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid c5b145ca-5f72-44bf-9353-78dea7fb520d)
-    (property "Reference" "R20" (at 69.85 85.09 90)
+    (property "Reference" "R15" (at 69.85 85.09 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "10k" (at 78.74 85.09 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 73.66 86.36 0)
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 73.66 86.36 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 73.66 86.36 0)
@@ -2148,7 +2147,7 @@
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/12f12a63-cabc-40cf-a64b-d1bd8b3dd459"
-          (reference "R20") (unit 1)
+          (reference "R15") (unit 1)
         )
       )
     )
@@ -2185,7 +2184,7 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/12f12a63-cabc-40cf-a64b-d1bd8b3dd459"
-          (reference "#PWR073") (unit 1)
+          (reference "#PWR076") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/2f82735d-d185-44cc-bb86-fc399780134d"
           (reference "#PWR069") (unit 1)
@@ -2205,13 +2204,13 @@
   (symbol (lib_id "Device:R_Small") (at 73.66 97.79 90) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid d441cabe-bcc0-4c96-a322-7c20aed232d1)
-    (property "Reference" "R24" (at 69.85 96.52 90)
+    (property "Reference" "R19" (at 69.85 96.52 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "100R" (at 78.74 96.52 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 73.66 97.79 0)
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 73.66 97.79 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 73.66 97.79 0)
@@ -2222,7 +2221,7 @@
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/12f12a63-cabc-40cf-a64b-d1bd8b3dd459"
-          (reference "R24") (unit 1)
+          (reference "R19") (unit 1)
         )
       )
     )
@@ -2259,7 +2258,7 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/12f12a63-cabc-40cf-a64b-d1bd8b3dd459"
-          (reference "#PWR071") (unit 1)
+          (reference "#PWR074") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/2f82735d-d185-44cc-bb86-fc399780134d"
           (reference "#PWR069") (unit 1)
@@ -2315,13 +2314,13 @@
   (symbol (lib_id "Device:C_Small") (at 120.65 111.76 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid f8910b22-31ed-4678-ab6c-4b2b74097cfe)
-    (property "Reference" "C31" (at 123.19 110.4963 0)
+    (property "Reference" "C32" (at 123.19 110.4963 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10n" (at 123.19 113.0363 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 120.65 111.76 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 120.65 111.76 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 120.65 111.76 0)
@@ -2332,7 +2331,7 @@
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/12f12a63-cabc-40cf-a64b-d1bd8b3dd459"
-          (reference "C31") (unit 1)
+          (reference "C32") (unit 1)
         )
       )
     )
@@ -2341,13 +2340,13 @@
   (symbol (lib_id "Device:R_Small") (at 73.66 88.9 90) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid f91b2cc4-5b4e-46af-9312-c24eb5f1a688)
-    (property "Reference" "R21" (at 69.85 87.63 90)
+    (property "Reference" "R16" (at 69.85 87.63 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "10k" (at 78.74 87.63 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 73.66 88.9 0)
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 73.66 88.9 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 73.66 88.9 0)
@@ -2358,7 +2357,7 @@
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/12f12a63-cabc-40cf-a64b-d1bd8b3dd459"
-          (reference "R21") (unit 1)
+          (reference "R16") (unit 1)
         )
       )
     )

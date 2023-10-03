@@ -6,7 +6,7 @@
 
   (title_block
     (title "Ready to Drive Sound")
-    (date "2023-09-20")
+    (date "2023-10-01")
     (rev "${REVISION}")
     (company "Author: I. Kajdan")
     (comment 1 "Reviewer:")
@@ -423,7 +423,7 @@
           (reference "R29") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/562e38ba-d94a-4627-8fa0-e9eb7b5e4e9a"
-          (reference "R63") (unit 1)
+          (reference "R58") (unit 1)
         )
       )
     )
@@ -491,7 +491,7 @@
           (reference "R?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/562e38ba-d94a-4627-8fa0-e9eb7b5e4e9a"
-          (reference "R62") (unit 1)
+          (reference "R57") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/6999686b-4026-4ea7-9227-634603a79198"
           (reference "R?") (unit 1)
@@ -539,7 +539,7 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/562e38ba-d94a-4627-8fa0-e9eb7b5e4e9a"
-          (reference "#PWR092") (unit 1)
+          (reference "#PWR095") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/6999686b-4026-4ea7-9227-634603a79198"
           (reference "#PWR?") (unit 1)
@@ -588,7 +588,7 @@
           (reference "R?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/562e38ba-d94a-4627-8fa0-e9eb7b5e4e9a"
-          (reference "R64") (unit 1)
+          (reference "R59") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/6999686b-4026-4ea7-9227-634603a79198"
           (reference "R?") (unit 1)
@@ -639,7 +639,7 @@
           (reference "TP1") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/562e38ba-d94a-4627-8fa0-e9eb7b5e4e9a"
-          (reference "TP25") (unit 1)
+          (reference "TP26") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/12f12a63-cabc-40cf-a64b-d1bd8b3dd459"
           (reference "TP64") (unit 1)

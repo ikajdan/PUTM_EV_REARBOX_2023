@@ -6,4 +6,5 @@
   (lib (name "Power_Ports")(type "KiCad")(uri "${KIPRJMOD}/symbols/power_ports.kicad_sym")(options "")(descr ""))
   (lib (name "TCA6416ARTWR")(type "KiCad")(uri "${KIPRJMOD}/symbols/TCA6416ARTWR.kicad_sym")(options "")(descr ""))
   (lib (name "VND7020AJTR")(type "KiCad")(uri "${KIPRJMOD}/symbols/VND7020AJTR.kicad_sym")(options "")(descr ""))
+  (lib (name "NAU7802SGI")(type "KiCad")(uri "${KIPRJMOD}/symbols/NAU7802SGI.kicad_sym")(options "")(descr ""))
 )

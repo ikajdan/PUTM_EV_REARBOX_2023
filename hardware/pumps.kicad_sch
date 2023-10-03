@@ -6,7 +6,7 @@
 
   (title_block
     (title "Pumps")
-    (date "2023-09-20")
+    (date "2023-10-01")
     (rev "${REVISION}")
     (company "Author: I. Kajdan")
     (comment 1 "Reviewer:")
@@ -956,10 +956,6 @@
     (uuid fd798cc9-f72d-4e9a-bcf2-5b6eef38b254)
   )
 
-  (text "TODO" (at 104.14 114.3 0)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid 072abdfa-e9a0-4072-a1c8-0f42196e7a0e)
-  )
   (text "90W" (at 199.39 93.345 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 25f14c4a-aa4d-4337-9e83-916e30fdc9ea)
@@ -979,10 +975,6 @@
   (text "90W" (at 260.35 93.345 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid e7c16556-4fee-4a1f-8c1d-05d3dc7afd96)
-  )
-  (text "TODO" (at 71.12 81.28 0)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid ff58bb34-c8d0-4592-9928-99ebd80c20be)
   )
 
   (label "PUMP_L+" (at 173.99 76.2 180) (fields_autoplaced)
@@ -1077,7 +1069,7 @@
           (reference "TP16") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/2f82735d-d185-44cc-bb86-fc399780134d"
-          (reference "TP19") (unit 1)
+          (reference "TP20") (unit 1)
         )
       )
     )
@@ -1118,7 +1110,7 @@
           (reference "R34") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/2f82735d-d185-44cc-bb86-fc399780134d"
-          (reference "R49") (unit 1)
+          (reference "R44") (unit 1)
         )
       )
       (project "Traction_Control_System"
@@ -1157,7 +1149,7 @@
           (reference "#PWR071") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/2f82735d-d185-44cc-bb86-fc399780134d"
-          (reference "#PWR082") (unit 1)
+          (reference "#PWR085") (unit 1)
         )
       )
     )
@@ -1198,7 +1190,7 @@
           (reference "R31") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/2f82735d-d185-44cc-bb86-fc399780134d"
-          (reference "R46") (unit 1)
+          (reference "R41") (unit 1)
         )
       )
       (project "Traction_Control_System"
@@ -1280,7 +1272,7 @@
           (reference "R22") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/2f82735d-d185-44cc-bb86-fc399780134d"
-          (reference "R47") (unit 1)
+          (reference "R42") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/12f12a63-cabc-40cf-a64b-d1bd8b3dd459"
           (reference "R32") (unit 1)
@@ -1326,7 +1318,7 @@
           (reference "TP15") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/2f82735d-d185-44cc-bb86-fc399780134d"
-          (reference "TP18") (unit 1)
+          (reference "TP19") (unit 1)
         )
       )
     )
@@ -1363,7 +1355,7 @@
           (reference "R22") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/2f82735d-d185-44cc-bb86-fc399780134d"
-          (reference "R43") (unit 1)
+          (reference "R38") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/12f12a63-cabc-40cf-a64b-d1bd8b3dd459"
           (reference "R28") (unit 1)
@@ -1406,7 +1398,7 @@
           (reference "#PWR069") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/2f82735d-d185-44cc-bb86-fc399780134d"
-          (reference "#PWR079") (unit 1)
+          (reference "#PWR082") (unit 1)
         )
       )
       (project "Traction_Control_System"
@@ -1435,7 +1427,7 @@
     (property "Datasheet" "~" (at 38.1 95.25 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Voltage" "35V" (at 40.64 97.79 0)
+    (property "Rated Voltage" "35V" (at 40.64 97.79 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (pin "1" (uuid 28eb747e-43e2-40a2-b6df-1d6e833d66f9))
@@ -1449,7 +1441,7 @@
           (reference "C30") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/2f82735d-d185-44cc-bb86-fc399780134d"
-          (reference "C32") (unit 1)
+          (reference "C33") (unit 1)
         )
       )
     )
@@ -1464,7 +1456,7 @@
     (property "Value" "10k" (at 78.74 87.63 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 73.66 88.9 0)
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 73.66 88.9 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 73.66 88.9 0)
@@ -1478,7 +1470,7 @@
           (reference "R21") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/2f82735d-d185-44cc-bb86-fc399780134d"
-          (reference "R36") (unit 1)
+          (reference "R31") (unit 1)
         )
       )
     )
@@ -1493,7 +1485,7 @@
     (property "Value" "100R" (at 78.74 93.98 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 73.66 95.25 0)
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 73.66 95.25 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 73.66 95.25 0)
@@ -1507,7 +1499,7 @@
           (reference "R23") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/2f82735d-d185-44cc-bb86-fc399780134d"
-          (reference "R38") (unit 1)
+          (reference "R33") (unit 1)
         )
       )
     )
@@ -1547,7 +1539,7 @@
           (reference "#PWR075") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/2f82735d-d185-44cc-bb86-fc399780134d"
-          (reference "#PWR086") (unit 1)
+          (reference "#PWR089") (unit 1)
         )
       )
       (project "Traction_Control_System"
@@ -1599,7 +1591,7 @@
           (reference "U8") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/2f82735d-d185-44cc-bb86-fc399780134d"
-          (reference "U9") (unit 1)
+          (reference "U8") (unit 1)
         )
       )
     )
@@ -1639,7 +1631,7 @@
           (reference "TP17") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/2f82735d-d185-44cc-bb86-fc399780134d"
-          (reference "TP20") (unit 1)
+          (reference "TP21") (unit 1)
         )
       )
     )
@@ -1679,7 +1671,7 @@
           (reference "#PWR072") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/2f82735d-d185-44cc-bb86-fc399780134d"
-          (reference "#PWR083") (unit 1)
+          (reference "#PWR086") (unit 1)
         )
       )
       (project "Traction_Control_System"
@@ -1728,7 +1720,7 @@
           (reference "R27") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/2f82735d-d185-44cc-bb86-fc399780134d"
-          (reference "R42") (unit 1)
+          (reference "R37") (unit 1)
         )
       )
       (project "Traction_Control_System"
@@ -1784,7 +1776,7 @@
     (property "Reference" "#PWR010" (at 67.31 88.9 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "+3.3V" (at 67.31 80.264 0)
+    (property "Value" "+3.3V" (at 67.31 80.01 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "" (at 67.31 85.09 0)
@@ -1803,7 +1795,7 @@
           (reference "#PWR0203") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/2f82735d-d185-44cc-bb86-fc399780134d"
-          (reference "#PWR080") (unit 1)
+          (reference "#PWR083") (unit 1)
         )
       )
     )
@@ -1854,7 +1846,7 @@
     (property "Value" "100R" (at 78.74 96.52 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 73.66 97.79 0)
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 73.66 97.79 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 73.66 97.79 0)
@@ -1868,7 +1860,7 @@
           (reference "R24") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/2f82735d-d185-44cc-bb86-fc399780134d"
-          (reference "R39") (unit 1)
+          (reference "R34") (unit 1)
         )
       )
     )
@@ -1920,7 +1912,7 @@
     (property "Value" "100R" (at 78.74 91.44 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 73.66 92.71 0)
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 73.66 92.71 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 73.66 92.71 0)
@@ -1934,7 +1926,7 @@
           (reference "R22") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/2f82735d-d185-44cc-bb86-fc399780134d"
-          (reference "R37") (unit 1)
+          (reference "R32") (unit 1)
         )
       )
     )
@@ -1975,7 +1967,7 @@
           (reference "R33") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/2f82735d-d185-44cc-bb86-fc399780134d"
-          (reference "R48") (unit 1)
+          (reference "R43") (unit 1)
         )
       )
       (project "Traction_Control_System"
@@ -2023,7 +2015,7 @@
           (reference "#PWR074") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/2f82735d-d185-44cc-bb86-fc399780134d"
-          (reference "#PWR085") (unit 1)
+          (reference "#PWR088") (unit 1)
         )
       )
       (project "Traction_Control_System"
@@ -2032,6 +2024,38 @@
         )
         (path "/f20670e0-69c0-4042-a790-cde4391abff4/00000000-0000-0000-0000-000061a904fc"
           (reference "#PWR?") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Device:R_Small") (at 111.76 111.76 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid b7ac16ee-46c1-4781-93df-d4c3e61e3f9a)
+    (property "Reference" "R19" (at 113.03 109.22 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "TBD" (at 113.03 111.76 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 111.76 111.76 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 111.76 111.76 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Tolerance" "1%" (at 113.03 114.3 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (pin "1" (uuid e44861e1-3b23-488c-aa95-3ef9f6578744))
+    (pin "2" (uuid 0b2e220e-7f16-4758-a8fd-6672807859ca))
+    (instances
+      (project "rearbox"
+        (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/12f12a63-cabc-40cf-a64b-d1bd8b3dd459"
+          (reference "R19") (unit 1)
+        )
+        (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/2f82735d-d185-44cc-bb86-fc399780134d"
+          (reference "R36") (unit 1)
         )
       )
     )
@@ -2072,7 +2096,7 @@
           (reference "R30") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/2f82735d-d185-44cc-bb86-fc399780134d"
-          (reference "R45") (unit 1)
+          (reference "R40") (unit 1)
         )
       )
       (project "Traction_Control_System"
@@ -2111,7 +2135,7 @@
           (reference "#PWR068") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/2f82735d-d185-44cc-bb86-fc399780134d"
-          (reference "#PWR078") (unit 1)
+          (reference "#PWR081") (unit 1)
         )
       )
     )
@@ -2126,7 +2150,7 @@
     (property "Value" "15k" (at 78.74 113.03 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 77.47 111.76 0)
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 77.47 111.76 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 77.47 111.76 0)
@@ -2140,7 +2164,7 @@
           (reference "R25") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/2f82735d-d185-44cc-bb86-fc399780134d"
-          (reference "R40") (unit 1)
+          (reference "R35") (unit 1)
         )
       )
     )
@@ -2180,7 +2204,7 @@
           (reference "#PWR073") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/2f82735d-d185-44cc-bb86-fc399780134d"
-          (reference "#PWR084") (unit 1)
+          (reference "#PWR087") (unit 1)
         )
       )
       (project "Traction_Control_System"
@@ -2229,7 +2253,7 @@
           (reference "R29") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/2f82735d-d185-44cc-bb86-fc399780134d"
-          (reference "R44") (unit 1)
+          (reference "R39") (unit 1)
         )
       )
       (project "Traction_Control_System"
@@ -2277,7 +2301,7 @@
           (reference "#PWR076") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/2f82735d-d185-44cc-bb86-fc399780134d"
-          (reference "#PWR087") (unit 1)
+          (reference "#PWR090") (unit 1)
         )
       )
       (project "Traction_Control_System"
@@ -2286,35 +2310,6 @@
         )
         (path "/f20670e0-69c0-4042-a790-cde4391abff4/00000000-0000-0000-0000-000061a904fc"
           (reference "#PWR?") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:R_Small") (at 111.76 111.76 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid e1b170eb-96c8-4047-a348-8022ab67fcae)
-    (property "Reference" "R26" (at 113.03 110.49 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "1R" (at 113.03 113.03 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "" (at 111.76 111.76 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 111.76 111.76 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 8be513b2-f4a0-4cef-b581-cc135bef47f3))
-    (pin "2" (uuid e3b92062-b696-4083-bea3-14716be6a0ef))
-    (instances
-      (project "rearbox"
-        (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/12f12a63-cabc-40cf-a64b-d1bd8b3dd459"
-          (reference "R26") (unit 1)
-        )
-        (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/2f82735d-d185-44cc-bb86-fc399780134d"
-          (reference "R41") (unit 1)
         )
       )
     )
@@ -2329,7 +2324,7 @@
     (property "Value" "10n" (at 123.19 113.0363 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 120.65 111.76 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 120.65 111.76 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 120.65 111.76 0)
@@ -2343,7 +2338,7 @@
           (reference "C31") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/2f82735d-d185-44cc-bb86-fc399780134d"
-          (reference "C33") (unit 1)
+          (reference "C34") (unit 1)
         )
       )
     )
@@ -2383,7 +2378,7 @@
           (reference "#PWR070") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/2f82735d-d185-44cc-bb86-fc399780134d"
-          (reference "#PWR081") (unit 1)
+          (reference "#PWR084") (unit 1)
         )
       )
       (project "Traction_Control_System"
@@ -2406,7 +2401,7 @@
     (property "Value" "10k" (at 78.74 85.09 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 73.66 86.36 0)
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 73.66 86.36 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 73.66 86.36 0)
@@ -2420,7 +2415,7 @@
           (reference "R20") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/2f82735d-d185-44cc-bb86-fc399780134d"
-          (reference "R35") (unit 1)
+          (reference "R30") (unit 1)
         )
       )
     )

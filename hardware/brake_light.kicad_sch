@@ -5,7 +5,8 @@
   (paper "A4")
 
   (title_block
-    (date "2023-09-20")
+    (title "Brake Light")
+    (date "2023-10-01")
     (rev "${REVISION}")
     (company "Author: I. Kajdan")
     (comment 1 "Reviewer:")
@@ -418,7 +419,7 @@
   (symbol (lib_id "power:GND") (at 152.4 116.84 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 5a10b50d-311e-468e-a0a0-1f31701d087e)
-    (property "Reference" "#PWR067" (at 152.4 123.19 0)
+    (property "Reference" "#PWR070" (at 152.4 123.19 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 152.4 121.92 0)
@@ -434,7 +435,7 @@
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/91248db3-ac16-4fb7-9cfe-25145bb94249"
-          (reference "#PWR067") (unit 1)
+          (reference "#PWR070") (unit 1)
         )
       )
     )
@@ -468,7 +469,7 @@
           (reference "R?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/91248db3-ac16-4fb7-9cfe-25145bb94249"
-          (reference "R18") (unit 1)
+          (reference "R13") (unit 1)
         )
       )
     )
@@ -477,7 +478,7 @@
   (symbol (lib_id "Device:R_Small") (at 152.4 97.79 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 7fc6cdf0-b7f6-47e7-bbfd-d0953becad01)
-    (property "Reference" "R19" (at 151.13 96.52 0)
+    (property "Reference" "R14" (at 151.13 96.52 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "0R" (at 151.13 99.06 0)
@@ -494,7 +495,7 @@
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/91248db3-ac16-4fb7-9cfe-25145bb94249"
-          (reference "R19") (unit 1)
+          (reference "R14") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45"
           (reference "R?") (unit 1)
@@ -551,7 +552,7 @@
           (reference "TP1") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/91248db3-ac16-4fb7-9cfe-25145bb94249"
-          (reference "TP14") (unit 1)
+          (reference "TP15") (unit 1)
         )
       )
     )
@@ -585,7 +586,7 @@
           (reference "R?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/91248db3-ac16-4fb7-9cfe-25145bb94249"
-          (reference "R17") (unit 1)
+          (reference "R12") (unit 1)
         )
       )
     )

@@ -532,10 +532,6 @@
       "Autosport"
     ],
     [
-      "1a71c66a-e6f2-4e7d-92f3-10826884049d",
-      "USB"
-    ],
-    [
       "38408e41-dfb1-4c27-acb0-3f1224cc8789",
       "CAN Transceivers"
     ],
@@ -574,6 +570,18 @@
     [
       "5d9671f9-6e77-4376-b4d6-afe9f66a07c2",
       "Safety Inputs"
+    ],
+    [
+      "8ac80362-77fc-4714-880f-ae50a2410210",
+      "Safety Input"
+    ],
+    [
+      "b7c91ead-4b3b-4f9d-bc11-db6a2b75cdbc",
+      "Safety Input 2"
+    ],
+    [
+      "3ca11c5d-1d97-4b8c-b940-a23614921b6c",
+      "Safety Input 3"
     ],
     [
       "264ec557-c33b-4d6e-8249-7c546f6f500a",
@@ -626,6 +634,10 @@
     [
       "748a5b35-762a-4e72-b9b9-898b09e1f3d2",
       "Suspension Potentiometer (Right)"
+    ],
+    [
+      "ae02a5e7-3434-4bcc-98d7-f72e76418900",
+      "Suspension Load Cells"
     ]
   ],
   "text_variables": {
