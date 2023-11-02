@@ -6,7 +6,7 @@
 
   (title_block
     (title "Suspension Load Cells")
-    (date "2023-10-01")
+    (date "2023-11-02")
     (rev "${REVISION}")
     (company "Author: I. Kajdan")
     (comment 1 "Reviewer:")
@@ -961,7 +961,7 @@
           (reference "C30") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/ae02a5e7-3434-4bcc-98d7-f72e76418900"
-          (reference "C76") (unit 1)
+          (reference "C75") (unit 1)
         )
       )
     )
@@ -970,7 +970,7 @@
   (symbol (lib_id "Device:R_Small") (at 185.42 83.82 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 03655829-507f-4e1a-af1b-ad4faef45c02)
-    (property "Reference" "R155" (at 185.42 81.28 90)
+    (property "Reference" "R129" (at 185.42 81.28 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "51R" (at 185.42 86.36 90)
@@ -987,7 +987,7 @@
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/ae02a5e7-3434-4bcc-98d7-f72e76418900"
-          (reference "R155") (unit 1)
+          (reference "R129") (unit 1)
         )
       )
       (project "suspension_tension_meter"
@@ -1001,7 +1001,7 @@
   (symbol (lib_id "Device:R_Small") (at 185.42 99.06 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 15a9a288-049e-4e91-a840-40cb6cf61eef)
-    (property "Reference" "R157" (at 185.42 96.52 90)
+    (property "Reference" "R131" (at 185.42 96.52 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "51R" (at 185.42 101.6 90)
@@ -1018,7 +1018,7 @@
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/ae02a5e7-3434-4bcc-98d7-f72e76418900"
-          (reference "R157") (unit 1)
+          (reference "R131") (unit 1)
         )
       )
       (project "suspension_tension_meter"
@@ -1032,7 +1032,7 @@
   (symbol (lib_id "Device:R_Small") (at 185.42 106.68 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 1751d065-a08f-4956-9d4b-a3eee83c6046)
-    (property "Reference" "R158" (at 185.42 104.14 90)
+    (property "Reference" "R132" (at 185.42 104.14 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "51R" (at 185.42 109.22 90)
@@ -1049,7 +1049,7 @@
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/ae02a5e7-3434-4bcc-98d7-f72e76418900"
-          (reference "R158") (unit 1)
+          (reference "R132") (unit 1)
         )
       )
       (project "suspension_tension_meter"
@@ -1122,7 +1122,7 @@
           (reference "#PWR012") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/ae02a5e7-3434-4bcc-98d7-f72e76418900"
-          (reference "#PWR0245") (unit 1)
+          (reference "#PWR0242") (unit 1)
         )
       )
     )
@@ -1144,16 +1144,16 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 7081efd0-97cb-4976-be1c-1e04d0a1b232))
-    (pin "2" (uuid 8ea2310f-183f-4e07-933a-1b596aac9009))
-    (pin "5" (uuid 87d5509c-1a14-43ed-8e73-6e3e970d6bf4))
-    (pin "2" (uuid 8ea2310f-183f-4e07-933a-1b596aac9009))
+    (pin "2" (uuid 8ea2310f-183f-4e07-933a-1b596aac903f))
+    (pin "5" (uuid 87d5509c-1a14-43ed-8e73-6e3e970d6c2a))
+    (pin "2" (uuid 8ea2310f-183f-4e07-933a-1b596aac903f))
     (pin "3" (uuid bc4daaee-2252-4a4a-8ca3-719bab3a21bd))
-    (pin "5" (uuid 87d5509c-1a14-43ed-8e73-6e3e970d6bf4))
-    (pin "2" (uuid 8ea2310f-183f-4e07-933a-1b596aac9009))
+    (pin "5" (uuid 87d5509c-1a14-43ed-8e73-6e3e970d6c2a))
+    (pin "2" (uuid 8ea2310f-183f-4e07-933a-1b596aac903f))
     (pin "4" (uuid df3d9068-0327-435d-ac0a-7104fc2e0629))
-    (pin "5" (uuid 87d5509c-1a14-43ed-8e73-6e3e970d6bf4))
-    (pin "2" (uuid 8ea2310f-183f-4e07-933a-1b596aac9009))
-    (pin "5" (uuid 87d5509c-1a14-43ed-8e73-6e3e970d6bf4))
+    (pin "5" (uuid 87d5509c-1a14-43ed-8e73-6e3e970d6c2a))
+    (pin "2" (uuid 8ea2310f-183f-4e07-933a-1b596aac903f))
+    (pin "5" (uuid 87d5509c-1a14-43ed-8e73-6e3e970d6c2a))
     (pin "6" (uuid a1b9f538-c774-4c96-aa35-3c647f275f0f))
     (instances
       (project "rearbox"
@@ -1190,7 +1190,7 @@
           (reference "R151") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/ae02a5e7-3434-4bcc-98d7-f72e76418900"
-          (reference "R154") (unit 1)
+          (reference "R128") (unit 1)
         )
       )
     )
@@ -1199,7 +1199,7 @@
   (symbol (lib_id "power:GND") (at 172.72 128.27 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 55225620-2e41-4bb8-b0a8-6a93360d2902)
-    (property "Reference" "#PWR0249" (at 172.72 134.62 0)
+    (property "Reference" "#PWR0246" (at 172.72 134.62 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 172.72 133.35 0)
@@ -1215,7 +1215,7 @@
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/ae02a5e7-3434-4bcc-98d7-f72e76418900"
-          (reference "#PWR0249") (unit 1)
+          (reference "#PWR0246") (unit 1)
         )
       )
       (project "suspension_tension_meter"
@@ -1229,7 +1229,7 @@
   (symbol (lib_id "power:GND") (at 207.01 113.03 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 5692eaac-380a-4684-bb9b-d605ec5ddf61)
-    (property "Reference" "#PWR0253" (at 207.01 119.38 0)
+    (property "Reference" "#PWR0250" (at 207.01 119.38 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 207.01 118.11 0)
@@ -1245,7 +1245,7 @@
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/ae02a5e7-3434-4bcc-98d7-f72e76418900"
-          (reference "#PWR0253") (unit 1)
+          (reference "#PWR0250") (unit 1)
         )
       )
       (project "suspension_tension_meter"
@@ -1256,32 +1256,32 @@
     )
   )
 
-  (symbol (lib_id "CPDT6-5V4-HF:CPDT6-5V4-HF") (at 220.98 99.06 0) (unit 2)
+  (symbol (lib_id "CPDT6-5V4-HF:CPDT6-5V4-HF") (at 193.04 113.03 0) (unit 2)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 57e612a0-9e96-4f74-8ace-8c2f1d49ac7f)
-    (property "Reference" "D24" (at 218.44 102.87 90)
+    (property "Reference" "D24" (at 190.5 116.84 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "CPDT6-5V4" (at 223.52 99.06 90)
+    (property "Value" "CPDT6-5V4" (at 195.58 114.3 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Package_TO_SOT_SMD:SOT-23-6" (at 220.98 113.03 0)
+    (property "Footprint" "Package_TO_SOT_SMD:SOT-23-6" (at 193.04 127 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "https://www.comchiptech.com/admin/files/product/CPDT6-5V4-HF%20RevC831377.pdf" (at 220.98 115.57 0)
+    (property "Datasheet" "https://www.comchiptech.com/admin/files/product/CPDT6-5V4-HF%20RevC831377.pdf" (at 193.04 129.54 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 130f3e3f-090e-4435-a932-687be971967a))
-    (pin "2" (uuid f111790d-d100-483e-81d0-e373fbeae9b0))
-    (pin "5" (uuid 36bce172-9b5e-44b3-85da-1cf3706ce74f))
-    (pin "2" (uuid f111790d-d100-483e-81d0-e373fbeae9b0))
+    (pin "2" (uuid f111790d-d100-483e-81d0-e373fbeae9e6))
+    (pin "5" (uuid 36bce172-9b5e-44b3-85da-1cf3706ce785))
+    (pin "2" (uuid f111790d-d100-483e-81d0-e373fbeae9e6))
     (pin "3" (uuid f53c0df6-c776-4800-bf25-e6156086e8d8))
-    (pin "5" (uuid 36bce172-9b5e-44b3-85da-1cf3706ce74f))
-    (pin "2" (uuid f111790d-d100-483e-81d0-e373fbeae9b0))
+    (pin "5" (uuid 36bce172-9b5e-44b3-85da-1cf3706ce785))
+    (pin "2" (uuid f111790d-d100-483e-81d0-e373fbeae9e6))
     (pin "4" (uuid 328370bb-18bb-4b11-8b6d-abd834e43a07))
-    (pin "5" (uuid 36bce172-9b5e-44b3-85da-1cf3706ce74f))
-    (pin "2" (uuid f111790d-d100-483e-81d0-e373fbeae9b0))
-    (pin "5" (uuid 36bce172-9b5e-44b3-85da-1cf3706ce74f))
+    (pin "5" (uuid 36bce172-9b5e-44b3-85da-1cf3706ce785))
+    (pin "2" (uuid f111790d-d100-483e-81d0-e373fbeae9e6))
+    (pin "5" (uuid 36bce172-9b5e-44b3-85da-1cf3706ce785))
     (pin "6" (uuid 17b676c9-51cd-4454-b46b-9e4619030a9b))
     (instances
       (project "rearbox"
@@ -1318,7 +1318,7 @@
           (reference "R151") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/ae02a5e7-3434-4bcc-98d7-f72e76418900"
-          (reference "R152") (unit 1)
+          (reference "R126") (unit 1)
         )
       )
     )
@@ -1327,7 +1327,7 @@
   (symbol (lib_id "power:GND") (at 179.07 128.27 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 63e651e0-cd4c-417b-8e6c-e6cef3636e6f)
-    (property "Reference" "#PWR0251" (at 179.07 134.62 0)
+    (property "Reference" "#PWR0248" (at 179.07 134.62 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 179.07 133.35 0)
@@ -1343,7 +1343,7 @@
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/ae02a5e7-3434-4bcc-98d7-f72e76418900"
-          (reference "#PWR0251") (unit 1)
+          (reference "#PWR0248") (unit 1)
         )
       )
       (project "suspension_tension_meter"
@@ -1382,7 +1382,7 @@
           (reference "#PWR065") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/ae02a5e7-3434-4bcc-98d7-f72e76418900"
-          (reference "#PWR0246") (unit 1)
+          (reference "#PWR0243") (unit 1)
         )
       )
     )
@@ -1417,7 +1417,7 @@
           (reference "C30") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/ae02a5e7-3434-4bcc-98d7-f72e76418900"
-          (reference "C75") (unit 1)
+          (reference "C74") (unit 1)
         )
       )
     )
@@ -1426,7 +1426,7 @@
   (symbol (lib_id "power:GND") (at 220.98 105.41 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 7667886b-5f86-4970-9d08-afb07a5f5cec)
-    (property "Reference" "#PWR0254" (at 220.98 111.76 0)
+    (property "Reference" "#PWR0251" (at 220.98 111.76 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 220.98 110.49 0)
@@ -1442,7 +1442,7 @@
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/ae02a5e7-3434-4bcc-98d7-f72e76418900"
-          (reference "#PWR0254") (unit 1)
+          (reference "#PWR0251") (unit 1)
         )
       )
       (project "suspension_tension_meter"
@@ -1453,32 +1453,32 @@
     )
   )
 
-  (symbol (lib_id "CPDT6-5V4-HF:CPDT6-5V4-HF") (at 193.04 113.03 0) (unit 4)
+  (symbol (lib_id "CPDT6-5V4-HF:CPDT6-5V4-HF") (at 220.98 99.06 0) (unit 4)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 7799d8c0-3241-448f-a0f9-6555c96037bc)
-    (property "Reference" "D24" (at 190.5 115.57 90)
+    (property "Reference" "D24" (at 218.44 101.6 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "CPDT6-5V4" (at 195.58 114.3 90)
+    (property "Value" "CPDT6-5V4" (at 223.52 100.33 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Package_TO_SOT_SMD:SOT-23-6" (at 193.04 127 0)
+    (property "Footprint" "Package_TO_SOT_SMD:SOT-23-6" (at 220.98 113.03 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "https://www.comchiptech.com/admin/files/product/CPDT6-5V4-HF%20RevC831377.pdf" (at 193.04 129.54 0)
+    (property "Datasheet" "https://www.comchiptech.com/admin/files/product/CPDT6-5V4-HF%20RevC831377.pdf" (at 220.98 115.57 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid c0aaff53-add6-4686-b948-2dbed157de70))
-    (pin "2" (uuid 869251ea-048d-494c-a157-9837247c8086))
-    (pin "5" (uuid 9e82f7eb-ec41-4edb-ab31-17a0ae9365fd))
-    (pin "2" (uuid 869251ea-048d-494c-a157-9837247c8086))
+    (pin "2" (uuid 869251ea-048d-494c-a157-9837247c80bc))
+    (pin "5" (uuid 9e82f7eb-ec41-4edb-ab31-17a0ae936633))
+    (pin "2" (uuid 869251ea-048d-494c-a157-9837247c80bc))
     (pin "3" (uuid f42978e8-e92a-4818-837d-bdf90446fc78))
-    (pin "5" (uuid 9e82f7eb-ec41-4edb-ab31-17a0ae9365fd))
-    (pin "2" (uuid 869251ea-048d-494c-a157-9837247c8086))
+    (pin "5" (uuid 9e82f7eb-ec41-4edb-ab31-17a0ae936633))
+    (pin "2" (uuid 869251ea-048d-494c-a157-9837247c80bc))
     (pin "4" (uuid 47873731-a7e0-44e8-861f-7a34dacc0c23))
-    (pin "5" (uuid 9e82f7eb-ec41-4edb-ab31-17a0ae9365fd))
-    (pin "2" (uuid 869251ea-048d-494c-a157-9837247c8086))
-    (pin "5" (uuid 9e82f7eb-ec41-4edb-ab31-17a0ae9365fd))
+    (pin "5" (uuid 9e82f7eb-ec41-4edb-ab31-17a0ae936633))
+    (pin "2" (uuid 869251ea-048d-494c-a157-9837247c80bc))
+    (pin "5" (uuid 9e82f7eb-ec41-4edb-ab31-17a0ae936633))
     (pin "6" (uuid 9cc695f2-2fc3-4938-892e-3e1a845ae8e9))
     (instances
       (project "rearbox"
@@ -1492,7 +1492,7 @@
   (symbol (lib_id "Device:C_Small") (at 172.72 102.87 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 7c14584b-a352-4119-b848-c41928a08d46)
-    (property "Reference" "C79" (at 175.26 101.6062 0)
+    (property "Reference" "C78" (at 175.26 101.6062 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100n" (at 175.26 104.1462 0)
@@ -1509,7 +1509,7 @@
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/ae02a5e7-3434-4bcc-98d7-f72e76418900"
-          (reference "C79") (unit 1)
+          (reference "C78") (unit 1)
         )
       )
       (project "suspension_tension_meter"
@@ -1554,7 +1554,7 @@
   (symbol (lib_id "power:GND") (at 193.04 119.38 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 9961493d-104b-49aa-a4d0-44f35edc889e)
-    (property "Reference" "#PWR0252" (at 193.04 125.73 0)
+    (property "Reference" "#PWR0249" (at 193.04 125.73 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 193.04 124.46 0)
@@ -1570,7 +1570,7 @@
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/ae02a5e7-3434-4bcc-98d7-f72e76418900"
-          (reference "#PWR0252") (unit 1)
+          (reference "#PWR0249") (unit 1)
         )
       )
       (project "suspension_tension_meter"
@@ -1584,7 +1584,7 @@
   (symbol (lib_id "Device:C_Small") (at 163.83 124.46 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 9bdeeaf7-045e-46e8-9c37-ab7643f072f4)
-    (property "Reference" "C77" (at 166.37 123.1962 0)
+    (property "Reference" "C76" (at 166.37 123.1962 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100n" (at 166.37 125.7362 0)
@@ -1601,7 +1601,7 @@
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/ae02a5e7-3434-4bcc-98d7-f72e76418900"
-          (reference "C77") (unit 1)
+          (reference "C76") (unit 1)
         )
       )
       (project "suspension_tension_meter"
@@ -1628,16 +1628,16 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 9c96f6b0-87a0-452a-8934-776aedae7e5a))
-    (pin "2" (uuid 5536e2cc-a4df-4d56-9239-e844a4a92a2d))
-    (pin "5" (uuid a58e1e0a-dce2-48dc-9b43-c8eb09da808d))
-    (pin "2" (uuid 5536e2cc-a4df-4d56-9239-e844a4a92a2d))
+    (pin "2" (uuid 5536e2cc-a4df-4d56-9239-e844a4a92a63))
+    (pin "5" (uuid a58e1e0a-dce2-48dc-9b43-c8eb09da80c3))
+    (pin "2" (uuid 5536e2cc-a4df-4d56-9239-e844a4a92a63))
     (pin "3" (uuid 2a4113b1-2ac3-456a-b718-1055ec54807e))
-    (pin "5" (uuid a58e1e0a-dce2-48dc-9b43-c8eb09da808d))
-    (pin "2" (uuid 5536e2cc-a4df-4d56-9239-e844a4a92a2d))
+    (pin "5" (uuid a58e1e0a-dce2-48dc-9b43-c8eb09da80c3))
+    (pin "2" (uuid 5536e2cc-a4df-4d56-9239-e844a4a92a63))
     (pin "4" (uuid 9a971f6b-da19-4033-ae2f-324f326f725b))
-    (pin "5" (uuid a58e1e0a-dce2-48dc-9b43-c8eb09da808d))
-    (pin "2" (uuid 5536e2cc-a4df-4d56-9239-e844a4a92a2d))
-    (pin "5" (uuid a58e1e0a-dce2-48dc-9b43-c8eb09da808d))
+    (pin "5" (uuid a58e1e0a-dce2-48dc-9b43-c8eb09da80c3))
+    (pin "2" (uuid 5536e2cc-a4df-4d56-9239-e844a4a92a63))
+    (pin "5" (uuid a58e1e0a-dce2-48dc-9b43-c8eb09da80c3))
     (pin "6" (uuid 155aedb8-b272-4fd9-a375-572a5f351627))
     (instances
       (project "rearbox"
@@ -1651,7 +1651,7 @@
   (symbol (lib_id "Device:C_Small") (at 179.07 121.92 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid b2b6196a-4174-480a-86a8-92c852e89111)
-    (property "Reference" "C80" (at 181.61 120.65 0)
+    (property "Reference" "C79" (at 181.61 120.65 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1u" (at 181.61 123.19 0)
@@ -1668,7 +1668,7 @@
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/ae02a5e7-3434-4bcc-98d7-f72e76418900"
-          (reference "C80") (unit 1)
+          (reference "C79") (unit 1)
         )
       )
       (project "suspension_tension_meter"
@@ -1717,7 +1717,7 @@
   (symbol (lib_id "Device:R_Small") (at 185.42 91.44 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid bf42a4ef-0df8-4f9b-ad91-fc57af9b7d1b)
-    (property "Reference" "R156" (at 185.42 88.9 90)
+    (property "Reference" "R130" (at 185.42 88.9 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "51R" (at 185.42 93.98 90)
@@ -1734,7 +1734,7 @@
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/ae02a5e7-3434-4bcc-98d7-f72e76418900"
-          (reference "R156") (unit 1)
+          (reference "R130") (unit 1)
         )
       )
       (project "suspension_tension_meter"
@@ -1748,7 +1748,7 @@
   (symbol (lib_id "power:GND") (at 163.83 128.27 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid c64e128f-300c-4c0e-b9c4-11a7d0577128)
-    (property "Reference" "#PWR0248" (at 163.83 134.62 0)
+    (property "Reference" "#PWR0245" (at 163.83 134.62 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 163.83 133.35 0)
@@ -1764,7 +1764,7 @@
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/ae02a5e7-3434-4bcc-98d7-f72e76418900"
-          (reference "#PWR0248") (unit 1)
+          (reference "#PWR0245") (unit 1)
         )
       )
       (project "suspension_tension_meter"
@@ -1800,7 +1800,7 @@
           (reference "#PWR0107") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/ae02a5e7-3434-4bcc-98d7-f72e76418900"
-          (reference "#PWR0247") (unit 1)
+          (reference "#PWR0244") (unit 1)
         )
       )
     )
@@ -1832,7 +1832,7 @@
           (reference "R151") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/ae02a5e7-3434-4bcc-98d7-f72e76418900"
-          (reference "R153") (unit 1)
+          (reference "R127") (unit 1)
         )
       )
     )
@@ -1860,7 +1860,7 @@
           (reference "PWR01") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/ae02a5e7-3434-4bcc-98d7-f72e76418900"
-          (reference "#PWR0250") (unit 1)
+          (reference "#PWR0247") (unit 1)
         )
       )
     )
@@ -1869,7 +1869,7 @@
   (symbol (lib_id "Device:C_Small") (at 172.72 87.63 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid fb64567d-b34a-4642-8062-71593e78c62a)
-    (property "Reference" "C78" (at 175.26 86.3662 0)
+    (property "Reference" "C77" (at 175.26 86.3662 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100n" (at 175.26 88.9062 0)
@@ -1886,7 +1886,7 @@
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/ae02a5e7-3434-4bcc-98d7-f72e76418900"
-          (reference "C78") (unit 1)
+          (reference "C77") (unit 1)
         )
       )
       (project "suspension_tension_meter"
@@ -1900,7 +1900,7 @@
   (symbol (lib_id "power:GND") (at 234.95 97.79 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid fe1a63e0-6175-472f-b151-68209596e1b1)
-    (property "Reference" "#PWR0255" (at 234.95 104.14 0)
+    (property "Reference" "#PWR0252" (at 234.95 104.14 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 234.95 102.87 0)
@@ -1916,7 +1916,7 @@
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/ae02a5e7-3434-4bcc-98d7-f72e76418900"
-          (reference "#PWR0255") (unit 1)
+          (reference "#PWR0252") (unit 1)
         )
       )
       (project "suspension_tension_meter"

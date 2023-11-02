@@ -6,7 +6,7 @@
 
   (title_block
     (title "LEDs")
-    (date "2023-10-01")
+    (date "2023-11-02")
     (rev "${REVISION}")
     (company "Author: I. Kajdan")
     (comment 1 "Reviewer:")
@@ -538,7 +538,7 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/6999686b-4026-4ea7-9227-634603a79198"
-          (reference "#PWR098") (unit 1)
+          (reference "#PWR095") (unit 1)
         )
       )
       (project "suspension_tension_meter"
@@ -571,7 +571,7 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/6999686b-4026-4ea7-9227-634603a79198"
-          (reference "#PWR099") (unit 1)
+          (reference "#PWR096") (unit 1)
         )
       )
     )
@@ -602,7 +602,7 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/6999686b-4026-4ea7-9227-634603a79198"
-          (reference "#PWR0106") (unit 1)
+          (reference "#PWR0103") (unit 1)
         )
       )
     )
@@ -660,7 +660,7 @@
           (reference "R?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/6999686b-4026-4ea7-9227-634603a79198"
-          (reference "R61") (unit 1)
+          (reference "R35") (unit 1)
         )
       )
       (project "suspension_tension_meter"
@@ -674,11 +674,11 @@
   (symbol (lib_id "Device:R_Small") (at 186.69 76.2 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 46d27df9-f49a-467b-9eac-f5416d04347c)
-    (property "Reference" "R?" (at 194.31 74.93 0)
-      (effects (font (size 1.27 1.27)) (justify left))
+    (property "Reference" "R?" (at 189.23 74.93 0)
+      (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Value" "270R" (at 194.31 77.47 0)
-      (effects (font (size 1.27 1.27)) (justify left))
+    (property "Value" "270R" (at 189.23 77.47 0)
+      (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 186.69 76.2 0)
       (effects (font (size 1.27 1.27)) hide)
@@ -694,7 +694,7 @@
           (reference "R?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/6999686b-4026-4ea7-9227-634603a79198"
-          (reference "R66") (unit 1)
+          (reference "R40") (unit 1)
         )
       )
     )
@@ -735,7 +735,7 @@
     (property "Reference" "D?" (at 114.3 120.65 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "Yellow" (at 114.3 123.19 90)
+    (property "Value" "Red" (at 114.3 123.19 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "LED_SMD:LED_0603_1608Metric" (at 111.76 121.92 90)
@@ -761,11 +761,11 @@
   (symbol (lib_id "Device:R_Small") (at 110.49 76.2 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 6086a959-c63a-4214-bce7-129e1e6840db)
-    (property "Reference" "R?" (at 118.11 74.93 0)
-      (effects (font (size 1.27 1.27)) (justify left))
+    (property "Reference" "R?" (at 113.03 74.93 0)
+      (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Value" "82R" (at 116.84 77.47 0)
-      (effects (font (size 1.27 1.27)) (justify left))
+    (property "Value" "82R" (at 113.03 77.47 0)
+      (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 110.49 76.2 0)
       (effects (font (size 1.27 1.27)) hide)
@@ -781,7 +781,7 @@
           (reference "R?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/6999686b-4026-4ea7-9227-634603a79198"
-          (reference "R60") (unit 1)
+          (reference "R34") (unit 1)
         )
       )
     )
@@ -809,7 +809,7 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/6999686b-4026-4ea7-9227-634603a79198"
-          (reference "#PWR096") (unit 1)
+          (reference "#PWR093") (unit 1)
         )
       )
     )
@@ -818,11 +818,11 @@
   (symbol (lib_id "Device:R_Small") (at 135.89 76.2 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 6558b4c0-6dbf-487d-a90d-44e770342bc5)
-    (property "Reference" "R?" (at 143.51 74.93 0)
-      (effects (font (size 1.27 1.27)) (justify left))
+    (property "Reference" "R?" (at 138.43 74.93 0)
+      (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Value" "270R" (at 143.51 77.47 0)
-      (effects (font (size 1.27 1.27)) (justify left))
+    (property "Value" "270R" (at 138.43 77.47 0)
+      (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 135.89 76.2 0)
       (effects (font (size 1.27 1.27)) hide)
@@ -838,7 +838,7 @@
           (reference "R?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/6999686b-4026-4ea7-9227-634603a79198"
-          (reference "R62") (unit 1)
+          (reference "R36") (unit 1)
         )
       )
     )
@@ -866,7 +866,7 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/6999686b-4026-4ea7-9227-634603a79198"
-          (reference "#PWR0107") (unit 1)
+          (reference "#PWR0104") (unit 1)
         )
       )
       (project "suspension_tension_meter"
@@ -899,7 +899,7 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/6999686b-4026-4ea7-9227-634603a79198"
-          (reference "#PWR0101") (unit 1)
+          (reference "#PWR098") (unit 1)
         )
       )
       (project "suspension_tension_meter"
@@ -964,7 +964,7 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/6999686b-4026-4ea7-9227-634603a79198"
-          (reference "#PWR097") (unit 1)
+          (reference "#PWR094") (unit 1)
         )
       )
     )
@@ -993,7 +993,7 @@
           (reference "R?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/6999686b-4026-4ea7-9227-634603a79198"
-          (reference "R67") (unit 1)
+          (reference "R41") (unit 1)
         )
       )
       (project "suspension_tension_meter"
@@ -1027,7 +1027,7 @@
           (reference "R?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/6999686b-4026-4ea7-9227-634603a79198"
-          (reference "R63") (unit 1)
+          (reference "R37") (unit 1)
         )
       )
       (project "suspension_tension_meter"
@@ -1061,7 +1061,7 @@
           (reference "R?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/6999686b-4026-4ea7-9227-634603a79198"
-          (reference "R65") (unit 1)
+          (reference "R39") (unit 1)
         )
       )
       (project "suspension_tension_meter"
@@ -1075,7 +1075,7 @@
   (symbol (lib_id "Power_Ports:+3V_EXT") (at 161.29 72.39 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 993754c8-9546-4535-b0f6-113f61a15a39)
-    (property "Reference" "#PWR0102" (at 167.64 72.39 0)
+    (property "Reference" "#PWR099" (at 167.64 72.39 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V_EXT" (at 161.29 67.31 0)
@@ -1091,7 +1091,7 @@
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/6999686b-4026-4ea7-9227-634603a79198"
-          (reference "#PWR0102") (unit 1)
+          (reference "#PWR099") (unit 1)
         )
       )
     )
@@ -1177,7 +1177,7 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/6999686b-4026-4ea7-9227-634603a79198"
-          (reference "#PWR0104") (unit 1)
+          (reference "#PWR0101") (unit 1)
         )
       )
       (project "suspension_tension_meter"
@@ -1191,11 +1191,11 @@
   (symbol (lib_id "Device:R_Small") (at 161.29 76.2 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid b9742bea-6b2f-43fc-99b4-58875e5a5d0d)
-    (property "Reference" "R?" (at 168.91 74.93 0)
-      (effects (font (size 1.27 1.27)) (justify left))
+    (property "Reference" "R?" (at 163.83 74.93 0)
+      (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Value" "82R" (at 167.64 77.47 0)
-      (effects (font (size 1.27 1.27)) (justify left))
+    (property "Value" "82R" (at 163.83 77.47 0)
+      (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 161.29 76.2 0)
       (effects (font (size 1.27 1.27)) hide)
@@ -1211,7 +1211,7 @@
           (reference "R?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/6999686b-4026-4ea7-9227-634603a79198"
-          (reference "R64") (unit 1)
+          (reference "R38") (unit 1)
         )
       )
     )
@@ -1238,14 +1238,8 @@
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/cf65c657-8245-46fb-8929-d241bd579513"
           (reference "#PWR051") (unit 1)
         )
-        (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/620acd23-76d3-49a1-9dab-637cd753e552/d07b630f-4126-4aee-9634-5a26ef1ba4a0"
-          (reference "#PWR0221") (unit 1)
-        )
-        (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/620acd23-76d3-49a1-9dab-637cd753e552/748a5b35-762a-4e72-b9b9-898b09e1f3d2"
-          (reference "#PWR0232") (unit 1)
-        )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/6999686b-4026-4ea7-9227-634603a79198"
-          (reference "#PWR0105") (unit 1)
+          (reference "#PWR0102") (unit 1)
         )
       )
     )
@@ -1305,7 +1299,7 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/6999686b-4026-4ea7-9227-634603a79198"
-          (reference "#PWR0100") (unit 1)
+          (reference "#PWR097") (unit 1)
         )
       )
     )
@@ -1336,7 +1330,7 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/6999686b-4026-4ea7-9227-634603a79198"
-          (reference "#PWR0103") (unit 1)
+          (reference "#PWR0100") (unit 1)
         )
       )
     )

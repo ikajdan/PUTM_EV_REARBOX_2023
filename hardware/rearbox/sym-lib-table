@@ -7,4 +7,7 @@
   (lib (name "VND7020AJTR")(type "KiCad")(uri "${KIPRJMOD}/symbols/VND7020AJTR.kicad_sym")(options "")(descr ""))
   (lib (name "NAU7802SGI")(type "KiCad")(uri "${KIPRJMOD}/symbols/NAU7802SGI.kicad_sym")(options "")(descr ""))
   (lib (name "CPDT6-5V4-HF")(type "KiCad")(uri "${KIPRJMOD}/symbols/CPDT6-5V4-HF.kicad_sym")(options "")(descr ""))
+  (lib (name "BUK6D210")(type "KiCad")(uri "${KIPRJMOD}/symbols/BUK6D210.kicad_sym")(options "")(descr ""))
+  (lib (name "LM4040")(type "KiCad")(uri "${KIPRJMOD}/symbols/LM4040.kicad_sym")(options "")(descr ""))
+  (lib (name "STLINK-V3MINIE")(type "KiCad")(uri "${KIPRJMOD}/symbols/STLINK-V3MINIE.kicad_sym")(options "")(descr ""))
 )

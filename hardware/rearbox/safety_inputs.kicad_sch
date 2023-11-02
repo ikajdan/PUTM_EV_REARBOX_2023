@@ -6,7 +6,7 @@
 
   (title_block
     (title "Safety Inputs")
-    (date "2023-10-01")
+    (date "2023-11-02")
     (rev "${REVISION}")
     (company "Author: I. Kajdan")
     (comment 1 "Reviewer:")
@@ -207,7 +207,7 @@
       (property "Value" "TCA6416ARTWR" (at -7.62 -1.46 0)
         (effects (font (size 1.27 1.27)) (justify left bottom))
       )
-      (property "Footprint" "QFN50P400X400X80-25N" (at 0 -39.37 0)
+      (property "Footprint" "Local_Library:QFN50P400X400X80-25N" (at 0 -39.37 0)
         (effects (font (size 1.27 1.27)) (justify bottom) hide)
       )
       (property "Datasheet" "https://www.ti.com/lit/ds/symlink/tca6416a.pdf" (at 0 -41.91 0)
@@ -829,7 +829,7 @@
     (at 242.57 113.03 0) (size 29.21 5.08)
     (stroke (width -0.0001) (type default))
     (fill (type none))
-    (effects (font (size 1.27 1.27)) (justify left))
+    (effects (font (size 1.27 1.27)) (justify left top))
     (uuid 6258f5e5-ee2d-4546-9d69-3a4602693dac)
   )
 
@@ -1084,7 +1084,7 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "#PWR0111") (unit 1)
+          (reference "#PWR0108") (unit 1)
         )
       )
     )
@@ -1113,7 +1113,7 @@
           (reference "R15") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "R68") (unit 1)
+          (reference "R42") (unit 1)
         )
       )
     )
@@ -1141,7 +1141,7 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "#PWR0110") (unit 1)
+          (reference "#PWR0107") (unit 1)
         )
       )
     )
@@ -1170,7 +1170,7 @@
           (reference "R15") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "R70") (unit 1)
+          (reference "R44") (unit 1)
         )
       )
     )
@@ -1204,7 +1204,7 @@
           (reference "TP1") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "TP27") (unit 1)
+          (reference "TP24") (unit 1)
         )
       )
     )
@@ -1233,7 +1233,7 @@
           (reference "R15") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "R69") (unit 1)
+          (reference "R43") (unit 1)
         )
       )
     )
@@ -1270,7 +1270,7 @@
           (reference "#PWR0206") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "#PWR0109") (unit 1)
+          (reference "#PWR0106") (unit 1)
         )
       )
     )
@@ -1299,7 +1299,7 @@
           (reference "R?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "R72") (unit 1)
+          (reference "R46") (unit 1)
         )
       )
     )
@@ -1336,7 +1336,7 @@
           (reference "#PWR0205") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "#PWR0108") (unit 1)
+          (reference "#PWR0105") (unit 1)
         )
       )
     )
@@ -1365,7 +1365,7 @@
           (reference "R15") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "R71") (unit 1)
+          (reference "R45") (unit 1)
         )
       )
     )
@@ -1403,7 +1403,7 @@
           (reference "C67") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "C36") (unit 1)
+          (reference "C35") (unit 1)
         )
       )
     )
@@ -1441,7 +1441,7 @@
           (reference "C66") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "C35") (unit 1)
+          (reference "C34") (unit 1)
         )
       )
     )
@@ -1475,7 +1475,7 @@
           (reference "TP1") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "TP30") (unit 1)
+          (reference "TP27") (unit 1)
         )
       )
     )
@@ -1509,7 +1509,7 @@
           (reference "TP1") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "TP29") (unit 1)
+          (reference "TP26") (unit 1)
         )
       )
     )
@@ -1552,13 +1552,13 @@
   (symbol (lib_id "TCA6416ARTWR:TCA6416ARTWR") (at 138.43 99.06 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid d508c486-e2e5-4c3a-87d5-5b23d527e604)
-    (property "Reference" "U9" (at 128.27 74.93 0)
-      (effects (font (size 1.27 1.27)))
+    (property "Reference" "U9" (at 125.73 74.93 0)
+      (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "TCA6416ARTWR" (at 138.43 99.06 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "QFN50P400X400X80-25N" (at 138.43 99.06 0)
+    (property "Footprint" "Local_Library:QFN50P400X400X80-25N" (at 138.43 99.06 0)
       (effects (font (size 1.27 1.27)) (justify bottom) hide)
     )
     (property "Datasheet" "https://www.ti.com/lit/ds/symlink/tca6416a.pdf" (at 138.43 99.06 0)
@@ -1626,7 +1626,7 @@
           (reference "TP1") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "TP28") (unit 1)
+          (reference "TP25") (unit 1)
         )
       )
     )

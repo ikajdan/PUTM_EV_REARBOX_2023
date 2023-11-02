@@ -45,7 +45,7 @@
         "silk_text_thickness": 0.15,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.5
+          "min_clearance": 0.25
         }
       },
       "diff_pair_dimensions": [
@@ -600,40 +600,40 @@
       "Water Pressure Sensors"
     ],
     [
-      "11cc5ff4-99cc-4853-9d22-3407318a6be6",
-      "Water Pressure Sensor"
+      "15bcf889-76f3-4ad3-864a-ed430ff6925b",
+      "Analog Input 3"
     ],
     [
-      "5cbe8555-08c7-444e-ade6-12694b993d08",
-      "Water Pressure Sensor 2"
+      "ec489616-ebea-4da8-82fb-dd7cf9a46a24",
+      "Analog Input 4"
     ],
     [
       "51f74603-8853-4882-b7b4-9b70ddeac7c4",
       "Temperature Sensors"
     ],
     [
-      "bbf2356b-39e7-4843-a611-6965568db40a",
-      "Water Temperature Sensor"
+      "a01aece4-e076-4f59-a02d-ec50cfb445aa",
+      "Analog Input 5"
     ],
     [
-      "389a4886-cca6-4d53-87c9-d070d0aa8509",
-      "Water Temperature Sensor 2"
+      "ecab03c8-b663-4f2e-b6a7-722df39ecdd2",
+      "Analog Input 6"
     ],
     [
-      "f6ea7d10-0c05-48d9-9218-1c4a1227d4b0",
-      "Mono Temperature Sensor"
+      "69512f7a-f184-42ec-83b9-17af07567925",
+      "Analog Input 7"
     ],
     [
       "620acd23-76d3-49a1-9dab-637cd753e552",
       "Suspension Potentiometers"
     ],
     [
-      "d07b630f-4126-4aee-9634-5a26ef1ba4a0",
-      "Suspension Potentiometer (Left)"
+      "f100b46f-6459-47c3-aa99-e404a54be994",
+      "Analog Input 8"
     ],
     [
-      "748a5b35-762a-4e72-b9b9-898b09e1f3d2",
-      "Suspension Potentiometer (Right)"
+      "39d7f907-f5cf-4f4a-a666-cbf77b459a24",
+      "Analog Input 9"
     ],
     [
       "ae02a5e7-3434-4bcc-98d7-f72e76418900",

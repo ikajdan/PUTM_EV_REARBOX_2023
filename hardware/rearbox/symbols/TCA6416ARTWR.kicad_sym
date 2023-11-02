@@ -6,7 +6,7 @@
     (property "Value" "TCA6416ARTWR" (at -7.62 -1.46 0)
       (effects (font (size 1.27 1.27)) (justify left bottom))
     )
-    (property "Footprint" "QFN50P400X400X80-25N" (at 0 -39.37 0)
+    (property "Footprint" "Local_Library:QFN50P400X400X80-25N" (at 0 -39.37 0)
       (effects (font (size 1.27 1.27)) (justify bottom) hide)
     )
     (property "Datasheet" "https://www.ti.com/lit/ds/symlink/tca6416a.pdf" (at 0 -41.91 0)
