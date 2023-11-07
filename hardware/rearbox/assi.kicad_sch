@@ -1053,7 +1053,7 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/23ffbfb4-d932-48bb-a16b-e7ed705895f1"
-          (reference "#PWR088") (unit 1)
+          (reference "#PWR090") (unit 1)
         )
       )
       (project "Traction_Control_System"
@@ -1228,7 +1228,7 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/23ffbfb4-d932-48bb-a16b-e7ed705895f1"
-          (reference "#PWR089") (unit 1)
+          (reference "#PWR091") (unit 1)
         )
       )
       (project "Traction_Control_System"
@@ -1353,7 +1353,7 @@
           (reference "#PWR069") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/23ffbfb4-d932-48bb-a16b-e7ed705895f1"
-          (reference "#PWR091") (unit 1)
+          (reference "#PWR093") (unit 1)
         )
       )
       (project "Traction_Control_System"
@@ -1442,7 +1442,7 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/23ffbfb4-d932-48bb-a16b-e7ed705895f1"
-          (reference "#PWR090") (unit 1)
+          (reference "#PWR092") (unit 1)
         )
       )
       (project "Traction_Control_System"

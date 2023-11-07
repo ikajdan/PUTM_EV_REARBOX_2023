@@ -408,7 +408,7 @@
   (symbol (lib_id "power:GND") (at 152.4 115.57 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 5a10b50d-311e-468e-a0a0-1f31701d087e)
-    (property "Reference" "#PWR069" (at 152.4 121.92 0)
+    (property "Reference" "#PWR071" (at 152.4 121.92 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 152.4 120.65 0)
@@ -424,7 +424,7 @@
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/91248db3-ac16-4fb7-9cfe-25145bb94249"
-          (reference "#PWR069") (unit 1)
+          (reference "#PWR071") (unit 1)
         )
       )
     )

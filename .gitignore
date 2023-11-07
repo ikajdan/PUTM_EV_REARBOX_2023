@@ -3,6 +3,7 @@
 /firmware/Release/
 /firmware/Debug/
 /firmware/Drivers/
+/firmware/Middlewares/
 /firmware/*.launch
 
 # KiCad
@@ -12,8 +13,11 @@
 /hardware/*/\#auto_saved_files\#
 
 # Interactive HTML BOM
-/hardware/bom/
+/hardware/*/bom/
 
 # Fabrication Toolkit
-/hardware/production/
+/hardware/*/production/
+
+# Replicate Layout
+/hardware/*/replicate_layout.log
 
