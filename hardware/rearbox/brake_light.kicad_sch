@@ -541,7 +541,7 @@
     (property "Value" "BUK6D210" (at 154.94 106.68 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Package_DFN_QFN:Diodes_UDFN2020-6_Type-F" (at 151.13 118.11 0)
+    (property "Footprint" "Local_Library:Diodes_UDFN2020-6_Type-F" (at 151.13 118.11 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "https://www.mouser.pl/datasheet/2/916/BUK6D210_60E-1596115.pdf" (at 148.59 120.65 0)
