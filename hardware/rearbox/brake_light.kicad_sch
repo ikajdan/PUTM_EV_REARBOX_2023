@@ -6,7 +6,7 @@
 
   (title_block
     (title "Brake Light")
-    (date "2023-11-02")
+    (date "2023-11-17")
     (rev "${REVISION}")
     (company "Author: I. Kajdan")
     (comment 1 "Reviewer:")

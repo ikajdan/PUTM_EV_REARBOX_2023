@@ -6,7 +6,7 @@
 
   (title_block
     (title "CAN Transceiver")
-    (date "2023-11-02")
+    (date "2023-11-17")
     (rev "${REVISION}")
     (company "Author: I. Kajdan")
     (comment 1 "Reviewer:")
@@ -193,7 +193,7 @@
           (name "A2" (effects (font (size 1.27 1.27))))
           (number "2" (effects (font (size 1.27 1.27))))
         )
-        (pin input line (at 0 -3.81 90) (length 2.54)
+        (pin passive line (at 0 -3.81 90) (length 2.54)
           (name "common" (effects (font (size 1.27 1.27))))
           (number "3" (effects (font (size 1.27 1.27))))
         )
@@ -774,7 +774,7 @@
     (property "Footprint" "Package_TO_SOT_SMD:SOT-323_SC-70" (at 168.91 111.76 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "https://www.mouser.pl/datasheet/2/916/PESD2IVN24_U-1318740.pdf" (at 168.91 111.76 0)
+    (property "Datasheet" "~" (at 168.91 111.76 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid f74a2f1a-7367-47e8-989e-d63bd4b7c49c))
