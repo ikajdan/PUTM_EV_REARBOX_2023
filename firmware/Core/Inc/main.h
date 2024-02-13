@@ -31,7 +31,7 @@ extern "C" {
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "pwm.h"
 /* USER CODE END Includes */
 
 /* Exported types ------------------------------------------------------------*/
@@ -57,30 +57,32 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
-#define ASSI_LED_R_Pin GPIO_PIN_13
-#define ASSI_LED_R_GPIO_Port GPIOC
-#define ASSI_LED_G_Pin GPIO_PIN_14
-#define ASSI_LED_G_GPIO_Port GPIOC
-#define ASSI_LED_B_Pin GPIO_PIN_15
-#define ASSI_LED_B_GPIO_Port GPIOC
+#define BRAKE_LIGHT_Pin GPIO_PIN_13
+#define BRAKE_LIGHT_GPIO_Port GPIOC
+#define RTDS_Pin GPIO_PIN_14
+#define RTDS_GPIO_Port GPIOC
+#define ASSI_BUZZER_Pin GPIO_PIN_15
+#define ASSI_BUZZER_GPIO_Port GPIOC
 #define HSE_IN_Pin GPIO_PIN_0
 #define HSE_IN_GPIO_Port GPIOF
 #define HSE_OUT_Pin GPIO_PIN_1
 #define HSE_OUT_GPIO_Port GPIOF
-#define WATER_TEMPERATURE1_Pin GPIO_PIN_0
-#define WATER_TEMPERATURE1_GPIO_Port GPIOC
-#define WATER_TEMPERATURE2_Pin GPIO_PIN_1
-#define WATER_TEMPERATURE2_GPIO_Port GPIOC
+#define ASSI_LED_R_Pin GPIO_PIN_0
+#define ASSI_LED_R_GPIO_Port GPIOC
+#define ASSI_LED_G_Pin GPIO_PIN_1
+#define ASSI_LED_G_GPIO_Port GPIOC
 #define MONO_TEMPERATURE_Pin GPIO_PIN_2
 #define MONO_TEMPERATURE_GPIO_Port GPIOC
-#define WATER_PRESSURE1_Pin GPIO_PIN_3
-#define WATER_PRESSURE1_GPIO_Port GPIOC
-#define WATER_PRESSURE2_Pin GPIO_PIN_0
+#define WATER_TEMPERATURE1_Pin GPIO_PIN_3
+#define WATER_TEMPERATURE1_GPIO_Port GPIOC
+#define WATER_TEMPERATURE2_Pin GPIO_PIN_0
+#define WATER_TEMPERATURE2_GPIO_Port GPIOA
+#define WATER_PRESSURE1_Pin GPIO_PIN_1
+#define WATER_PRESSURE1_GPIO_Port GPIOA
+#define WATER_PRESSURE2_Pin GPIO_PIN_2
 #define WATER_PRESSURE2_GPIO_Port GPIOA
-#define POTENTIOMETER_L_Pin GPIO_PIN_1
-#define POTENTIOMETER_L_GPIO_Port GPIOA
-#define POTENTIOMETER_R_Pin GPIO_PIN_2
-#define POTENTIOMETER_R_GPIO_Port GPIOA
+#define ASSI_LED_B_Pin GPIO_PIN_3
+#define ASSI_LED_B_GPIO_Port GPIOA
 #define ANALOG_OFFSET1_Pin GPIO_PIN_4
 #define ANALOG_OFFSET1_GPIO_Port GPIOA
 #define ANALOG_OFFSET2_Pin GPIO_PIN_5
@@ -89,20 +91,24 @@ void Error_Handler(void);
 #define ANALOG_INPUT1_GPIO_Port GPIOA
 #define ANALOG_INPUT2_Pin GPIO_PIN_7
 #define ANALOG_INPUT2_GPIO_Port GPIOA
-#define SENSE_OUT_Pin GPIO_PIN_4
-#define SENSE_OUT_GPIO_Port GPIOC
-#define SENSE_ADDRESS_IN1_Pin GPIO_PIN_5
-#define SENSE_ADDRESS_IN1_GPIO_Port GPIOC
-#define SENSE_ADDRESS_IN0_Pin GPIO_PIN_0
+#define POTENTIOMETER_L_Pin GPIO_PIN_4
+#define POTENTIOMETER_L_GPIO_Port GPIOC
+#define POTENTIOMETER_R_Pin GPIO_PIN_5
+#define POTENTIOMETER_R_GPIO_Port GPIOC
+#define SENSE_OUT_Pin GPIO_PIN_0
+#define SENSE_OUT_GPIO_Port GPIOB
+#define SENSE_ADDRESS_IN0_Pin GPIO_PIN_1
 #define SENSE_ADDRESS_IN0_GPIO_Port GPIOB
-#define SENSE_ENABLE_PUMPS_Pin GPIO_PIN_1
-#define SENSE_ENABLE_PUMPS_GPIO_Port GPIOB
-#define SENSE_ENABLE_FANS_Pin GPIO_PIN_2
-#define SENSE_ENABLE_FANS_GPIO_Port GPIOB
+#define SENSE_ADDRESS_IN1_Pin GPIO_PIN_2
+#define SENSE_ADDRESS_IN1_GPIO_Port GPIOB
 #define PUMP2_Pin GPIO_PIN_10
 #define PUMP2_GPIO_Port GPIOB
-#define PUMP1_Pin GPIO_PIN_13
+#define PUMP1_Pin GPIO_PIN_11
 #define PUMP1_GPIO_Port GPIOB
+#define CAN2_RX_Pin GPIO_PIN_12
+#define CAN2_RX_GPIO_Port GPIOB
+#define CAN2_TX_Pin GPIO_PIN_13
+#define CAN2_TX_GPIO_Port GPIOB
 #define FAN_R_Pin GPIO_PIN_14
 #define FAN_R_GPIO_Port GPIOB
 #define FAN_L_Pin GPIO_PIN_15
@@ -121,10 +127,10 @@ void Error_Handler(void);
 #define LOAD_CELL_SCLK_GPIO_Port GPIOA
 #define LOAD_CELL_DRDY_Pin GPIO_PIN_10
 #define LOAD_CELL_DRDY_GPIO_Port GPIOA
-#define RTDS_Pin GPIO_PIN_11
-#define RTDS_GPIO_Port GPIOA
-#define ASSI_BUZZER_Pin GPIO_PIN_12
-#define ASSI_BUZZER_GPIO_Port GPIOA
+#define CAN_RX_Pin GPIO_PIN_11
+#define CAN_RX_GPIO_Port GPIOA
+#define CAN_TX_Pin GPIO_PIN_12
+#define CAN_TX_GPIO_Port GPIOA
 #define SWDIO_Pin GPIO_PIN_13
 #define SWDIO_GPIO_Port GPIOA
 #define SWCLK_Pin GPIO_PIN_14
@@ -137,25 +143,45 @@ void Error_Handler(void);
 #define UART_RX_GPIO_Port GPIOC
 #define SPI_MOSI_Pin GPIO_PIN_12
 #define SPI_MOSI_GPIO_Port GPIOC
-#define BRAKE_LIGHT_Pin GPIO_PIN_2
-#define BRAKE_LIGHT_GPIO_Port GPIOD
 #define SPI_SCLK_Pin GPIO_PIN_3
 #define SPI_SCLK_GPIO_Port GPIOB
 #define SPI_MISO_Pin GPIO_PIN_4
 #define SPI_MISO_GPIO_Port GPIOB
-#define CAN2_RX_Pin GPIO_PIN_5
-#define CAN2_RX_GPIO_Port GPIOB
-#define CAN2_TX_Pin GPIO_PIN_6
-#define CAN2_TX_GPIO_Port GPIOB
+#define SENSE_ENABLE_PUMPS_Pin GPIO_PIN_5
+#define SENSE_ENABLE_PUMPS_GPIO_Port GPIOB
+#define SENSE_ENABLE_FANS_Pin GPIO_PIN_6
+#define SENSE_ENABLE_FANS_GPIO_Port GPIOB
 #define I2C_SDA_Pin GPIO_PIN_7
 #define I2C_SDA_GPIO_Port GPIOB
-#define CAN_RX_Pin GPIO_PIN_8
-#define CAN_RX_GPIO_Port GPIOB
-#define CAN_TX_Pin GPIO_PIN_9
-#define CAN_TX_GPIO_Port GPIOB
 
 /* USER CODE BEGIN Private defines */
+/**
+ * @brief Human-friendly aliases
+ */
 
+// TIM2
+#define htim_pump htim2
+#define TIM_CHANNEL_PUMP1 TIM_CHANNEL_4
+#define TIM_CHANNEL_PUMP2 TIM_CHANNEL_3
+
+// TIM15
+#define htim_fan htim15
+#define TIM_CHANNEL_FAN_L TIM_CHANNEL_2
+#define TIM_CHANNEL_FAN_R TIM_CHANNEL_1
+
+// ADC1
+#define ADC_CHANNEL_MONO_TEMPERATURE 0
+#define ADC_CHANNEL_SENSE_OUT 1
+#define ADC_CHANNEL_WATER_PRESSURE1 2
+#define ADC_CHANNEL_WATER_PRESSURE2 3
+#define ADC_CHANNEL_WATER_TEMPERATURE1 4
+#define ADC_CHANNEL_WATER_TEMPERATURE2 5
+
+// ADC2
+#define ADC_CHANNEL_ANALOG_INPUT1 0
+#define ADC_CHANNEL_ANALOG_INPUT2 1
+#define ADC_CHANNEL_ANALOG_POTENTIOMETER_L 2
+#define ADC_CHANNEL_ANALOG_POTENTIOMETER_R 3
 /* USER CODE END Private defines */
 
 #ifdef __cplusplus
