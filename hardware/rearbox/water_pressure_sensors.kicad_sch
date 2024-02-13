@@ -3731,9 +3731,17 @@
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid 565a9892-fd6d-4a83-a1ca-42c1999fda1f)
   )
+  (text "G = 2.5\nR_{F} = 3k3\nR_{G} = 2k2" (at 207.01 73.66 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 72cde0bd-085c-4b59-93fd-30328a492a11)
+  )
   (text "0.5 to 1.3 V" (at 171.45 109.22 0)
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid b35643f9-943f-4abe-a09a-598ac151d190)
+  )
+  (text "G = 2.5\nR_{F} = 3k3\nR_{G} = 2k2" (at 207.01 127 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid fe290b1e-95f7-4246-99d7-55f5486020e9)
   )
 
   (hierarchical_label "IN2" (shape input) (at 180.34 107.95 180) (fields_autoplaced)
@@ -3756,7 +3764,7 @@
   (symbol (lib_id "power:GND") (at 185.42 137.16 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 2c4a9de4-566f-4ddd-8b2d-cdef5760fd19)
-    (property "Reference" "#PWR077" (at 185.42 143.51 0)
+    (property "Reference" "#PWR0169" (at 185.42 143.51 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 185.42 142.24 0)
@@ -3771,9 +3779,6 @@
     (pin "1" (uuid b6f62822-9e7f-42a7-a913-4fe51a7a7f23))
     (instances
       (project "rearbox"
-        (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/264ec557-c33b-4d6e-8249-7c546f6f500a"
-          (reference "#PWR077") (unit 1)
-        )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/a7dfb715-9f45-42ac-b5d4-81823a559192"
           (reference "#PWR0169") (unit 1)
         )
@@ -3815,7 +3820,7 @@
   (symbol (lib_id "Device:R_Small") (at 176.53 125.73 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 4764e81d-c517-42b9-8855-2b378060b21e)
-    (property "Reference" "R50" (at 173.99 121.92 0)
+    (property "Reference" "R80" (at 173.99 121.92 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "560R" (at 173.99 124.46 0)
@@ -3834,9 +3839,6 @@
     (pin "2" (uuid 8e61028c-9730-4cb8-b1ec-51ca0c220195))
     (instances
       (project "rearbox"
-        (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/264ec557-c33b-4d6e-8249-7c546f6f500a"
-          (reference "R50") (unit 1)
-        )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/a7dfb715-9f45-42ac-b5d4-81823a559192"
           (reference "R80") (unit 1)
         )
@@ -3852,7 +3854,7 @@
   (symbol (lib_id "power:GND") (at 176.53 83.82 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 5c882487-ad1a-453d-a33f-c22c61d3d194)
-    (property "Reference" "#PWR077" (at 176.53 90.17 0)
+    (property "Reference" "#PWR0165" (at 176.53 90.17 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 176.53 88.9 0)
@@ -3867,9 +3869,6 @@
     (pin "1" (uuid 731a85c2-ba2f-41a9-affb-f4ddf215fec9))
     (instances
       (project "rearbox"
-        (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/264ec557-c33b-4d6e-8249-7c546f6f500a"
-          (reference "#PWR077") (unit 1)
-        )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/a7dfb715-9f45-42ac-b5d4-81823a559192"
           (reference "#PWR0165") (unit 1)
         )
@@ -3911,7 +3910,7 @@
   (symbol (lib_id "power:+3.3VA") (at 176.53 121.92 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 7605692f-8f81-4fed-b1ad-cb476af0da97)
-    (property "Reference" "#PWR046" (at 176.53 125.73 0)
+    (property "Reference" "#PWR0166" (at 176.53 125.73 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3VA" (at 176.53 116.84 0)
@@ -3926,12 +3925,6 @@
     (pin "1" (uuid 77899a17-b5cd-4682-97c0-cc1b5a65c204))
     (instances
       (project "rearbox"
-        (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/7045152e-d7a2-42d7-9b15-138e7f2928ca"
-          (reference "#PWR046") (unit 1)
-        )
-        (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45"
-          (reference "#PWR?") (unit 1)
-        )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/a7dfb715-9f45-42ac-b5d4-81823a559192"
           (reference "#PWR0166") (unit 1)
         )
@@ -3942,7 +3935,7 @@
   (symbol (lib_id "power:GND") (at 185.42 83.82 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 8a6227c2-7f66-4199-bc76-b93a472c494f)
-    (property "Reference" "#PWR077" (at 185.42 90.17 0)
+    (property "Reference" "#PWR0168" (at 185.42 90.17 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 185.42 88.9 0)
@@ -3957,9 +3950,6 @@
     (pin "1" (uuid 0e2e659f-3592-421b-8be9-fdd4714c0ecf))
     (instances
       (project "rearbox"
-        (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/264ec557-c33b-4d6e-8249-7c546f6f500a"
-          (reference "#PWR077") (unit 1)
-        )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/a7dfb715-9f45-42ac-b5d4-81823a559192"
           (reference "#PWR0168") (unit 1)
         )
@@ -3975,7 +3965,7 @@
   (symbol (lib_id "power:GND") (at 176.53 137.16 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid a43c9d43-8313-4174-810f-a5067e9912cb)
-    (property "Reference" "#PWR077" (at 176.53 143.51 0)
+    (property "Reference" "#PWR0167" (at 176.53 143.51 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 176.53 142.24 0)
@@ -3990,9 +3980,6 @@
     (pin "1" (uuid bcecfbdc-a8fd-4ff2-bcd8-57b6367ec425))
     (instances
       (project "rearbox"
-        (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/264ec557-c33b-4d6e-8249-7c546f6f500a"
-          (reference "#PWR077") (unit 1)
-        )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/a7dfb715-9f45-42ac-b5d4-81823a559192"
           (reference "#PWR0167") (unit 1)
         )
@@ -4008,7 +3995,7 @@
   (symbol (lib_id "Device:R_Small") (at 176.53 80.01 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid b236250b-2920-45f5-9b4c-213c78284649)
-    (property "Reference" "R51" (at 173.99 78.74 0)
+    (property "Reference" "R79" (at 173.99 78.74 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100R" (at 173.99 81.28 0)
@@ -4027,9 +4014,6 @@
     (pin "2" (uuid 81207ac2-0ea5-4b81-82b2-ff5022f4f1d0))
     (instances
       (project "rearbox"
-        (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/264ec557-c33b-4d6e-8249-7c546f6f500a"
-          (reference "R51") (unit 1)
-        )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/a7dfb715-9f45-42ac-b5d4-81823a559192"
           (reference "R79") (unit 1)
         )
@@ -4045,7 +4029,7 @@
   (symbol (lib_id "Device:R_Small") (at 176.53 72.39 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid d1a9c63b-22c1-425d-914f-81719ac19799)
-    (property "Reference" "R50" (at 173.99 68.58 0)
+    (property "Reference" "R78" (at 173.99 68.58 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "560R" (at 173.99 71.12 0)
@@ -4064,9 +4048,6 @@
     (pin "2" (uuid 7d39867d-305d-4f7d-8daf-b0778038ed6f))
     (instances
       (project "rearbox"
-        (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/264ec557-c33b-4d6e-8249-7c546f6f500a"
-          (reference "R50") (unit 1)
-        )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/a7dfb715-9f45-42ac-b5d4-81823a559192"
           (reference "R78") (unit 1)
         )
@@ -4082,7 +4063,7 @@
   (symbol (lib_id "Device:R_Small") (at 176.53 133.35 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid eecca800-f346-4345-a9c8-db3f7f0cf5f5)
-    (property "Reference" "R51" (at 173.99 132.08 0)
+    (property "Reference" "R81" (at 173.99 132.08 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100R" (at 173.99 134.62 0)
@@ -4101,9 +4082,6 @@
     (pin "2" (uuid e037792b-7f03-426c-bec6-d656cd46ba78))
     (instances
       (project "rearbox"
-        (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/264ec557-c33b-4d6e-8249-7c546f6f500a"
-          (reference "R51") (unit 1)
-        )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/a7dfb715-9f45-42ac-b5d4-81823a559192"
           (reference "R81") (unit 1)
         )
@@ -4119,7 +4097,7 @@
   (symbol (lib_id "power:+3.3VA") (at 176.53 68.58 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid f6136d8b-ae0d-4a72-af04-b69f3cec615f)
-    (property "Reference" "#PWR046" (at 176.53 72.39 0)
+    (property "Reference" "#PWR0164" (at 176.53 72.39 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3VA" (at 176.53 63.5 0)
@@ -4134,12 +4112,6 @@
     (pin "1" (uuid b1973974-f127-48af-bfa1-0739e3c0cd75))
     (instances
       (project "rearbox"
-        (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/7045152e-d7a2-42d7-9b15-138e7f2928ca"
-          (reference "#PWR046") (unit 1)
-        )
-        (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45"
-          (reference "#PWR?") (unit 1)
-        )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/a7dfb715-9f45-42ac-b5d4-81823a559192"
           (reference "#PWR0164") (unit 1)
         )

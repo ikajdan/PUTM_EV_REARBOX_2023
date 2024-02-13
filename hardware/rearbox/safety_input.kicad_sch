@@ -567,7 +567,7 @@
   (symbol (lib_id "Device:R_Small") (at 124.46 111.76 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 076ed4ea-81e4-450b-ae52-829ae05cb548)
-    (property "Reference" "R?" (at 126.365 109.855 0)
+    (property "Reference" "R49" (at 126.365 109.855 0)
       (effects (font (size 1.27 1.27)) (justify right bottom))
     )
     (property "Value" "10k" (at 126.365 112.395 0)
@@ -583,12 +583,6 @@
     (pin "2" (uuid d080fc37-72d2-425c-9930-7fae1d98fbe0))
     (instances
       (project "rearbox"
-        (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45"
-          (reference "R?") (unit 1)
-        )
-        (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "R75") (unit 1)
-        )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2/8ac80362-77fc-4714-880f-ae50a2410210"
           (reference "R49") (unit 1)
         )
@@ -605,7 +599,7 @@
   (symbol (lib_id "Isolator:TLP291-4") (at 115.57 82.55 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 230d206b-e95a-4720-b041-68cb00f99705)
-    (property "Reference" "U9" (at 115.57 73.66 0)
+    (property "Reference" "U10" (at 115.57 73.66 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "TLP291-4" (at 115.57 76.2 0)
@@ -635,9 +629,6 @@
     (pin "9" (uuid 0161722b-15b8-40e4-af66-0ca4688e3b74))
     (instances
       (project "rearbox"
-        (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "U9") (unit 1)
-        )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2/8ac80362-77fc-4714-880f-ae50a2410210"
           (reference "U10") (unit 1)
         )
@@ -654,7 +645,7 @@
   (symbol (lib_id "Device:R_Small") (at 170.18 115.57 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 23f6fece-feef-4651-8cca-7567dafdc9d9)
-    (property "Reference" "R?" (at 170.18 113.03 90)
+    (property "Reference" "R51" (at 170.18 113.03 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "2k" (at 170.18 118.11 90)
@@ -670,12 +661,6 @@
     (pin "2" (uuid be6eab0d-0e07-46d5-89cb-da4ed49aff17))
     (instances
       (project "rearbox"
-        (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45"
-          (reference "R?") (unit 1)
-        )
-        (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "R78") (unit 1)
-        )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2/8ac80362-77fc-4714-880f-ae50a2410210"
           (reference "R51") (unit 1)
         )
@@ -692,7 +677,7 @@
   (symbol (lib_id "Device:R_Small") (at 190.5 76.2 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 2dace87b-5312-42c3-90f3-06f0a78f07d4)
-    (property "Reference" "R?" (at 192.405 74.295 0)
+    (property "Reference" "R52" (at 192.405 74.295 0)
       (effects (font (size 1.27 1.27)) (justify right bottom))
     )
     (property "Value" "10k" (at 192.405 76.835 0)
@@ -708,12 +693,6 @@
     (pin "2" (uuid 5725d17e-8765-4f0a-be48-8a36213ba5ba))
     (instances
       (project "rearbox"
-        (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45"
-          (reference "R?") (unit 1)
-        )
-        (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "R79") (unit 1)
-        )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2/8ac80362-77fc-4714-880f-ae50a2410210"
           (reference "R52") (unit 1)
         )
@@ -730,7 +709,7 @@
   (symbol (lib_id "power:GND") (at 172.72 121.92 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 35a8778a-456b-470f-a555-2256ad07d949)
-    (property "Reference" "#PWR?" (at 172.72 128.27 0)
+    (property "Reference" "#PWR0117" (at 172.72 128.27 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 172.72 127 0)
@@ -745,12 +724,6 @@
     (pin "1" (uuid 2f170fc7-69e6-4bb4-b79c-f5d72311c927))
     (instances
       (project "rearbox"
-        (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "#PWR0111") (unit 1)
-        )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2/8ac80362-77fc-4714-880f-ae50a2410210"
           (reference "#PWR0117") (unit 1)
         )
@@ -767,7 +740,7 @@
   (symbol (lib_id "power:GND") (at 190.5 121.92 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 572d06e7-3206-42d0-af10-72b76a344cba)
-    (property "Reference" "#PWR?" (at 190.5 128.27 0)
+    (property "Reference" "#PWR0121" (at 190.5 128.27 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 190.5 127 0)
@@ -782,12 +755,6 @@
     (pin "1" (uuid eea06111-a359-48ec-b94b-76a776031242))
     (instances
       (project "rearbox"
-        (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "#PWR0115") (unit 1)
-        )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2/8ac80362-77fc-4714-880f-ae50a2410210"
           (reference "#PWR0121") (unit 1)
         )
@@ -804,7 +771,7 @@
   (symbol (lib_id "power:GND") (at 124.46 86.36 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 5a6e7b83-2c0d-4242-b96d-687940beaee6)
-    (property "Reference" "#PWR?" (at 124.46 92.71 0)
+    (property "Reference" "#PWR0113" (at 124.46 92.71 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 124.46 91.44 0)
@@ -819,12 +786,6 @@
     (pin "1" (uuid 9925aec4-138e-46c8-89f7-3d90e1fd8be9))
     (instances
       (project "rearbox"
-        (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "#PWR0103") (unit 1)
-        )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2/8ac80362-77fc-4714-880f-ae50a2410210"
           (reference "#PWR0113") (unit 1)
         )
@@ -841,7 +802,7 @@
   (symbol (lib_id "Isolator:TLP291-4") (at 115.57 118.11 0) (unit 2)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 5e552eae-0b9b-45cc-b24d-aaa418848688)
-    (property "Reference" "U9" (at 115.57 109.22 0)
+    (property "Reference" "U10" (at 115.57 109.22 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "TLP291-4" (at 115.57 111.76 0)
@@ -871,9 +832,6 @@
     (pin "9" (uuid c91f4b36-451f-4ca8-b944-c49bb4c8d139))
     (instances
       (project "rearbox"
-        (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "U9") (unit 2)
-        )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2/8ac80362-77fc-4714-880f-ae50a2410210"
           (reference "U10") (unit 2)
         )
@@ -890,7 +848,7 @@
   (symbol (lib_id "power:GND") (at 124.46 121.92 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 693c25fa-763c-4ab5-8975-6eca730faf93)
-    (property "Reference" "#PWR?" (at 124.46 128.27 0)
+    (property "Reference" "#PWR0115" (at 124.46 128.27 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 124.46 127 0)
@@ -905,12 +863,6 @@
     (pin "1" (uuid 777b0fc5-412b-4bbb-913a-9978ea648a73))
     (instances
       (project "rearbox"
-        (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "#PWR0105") (unit 1)
-        )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2/8ac80362-77fc-4714-880f-ae50a2410210"
           (reference "#PWR0115") (unit 1)
         )
@@ -927,7 +879,7 @@
   (symbol (lib_id "power:+3.3V") (at 190.5 107.95 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 6d6d574a-1ac9-494f-82cb-9034a0b90c62)
-    (property "Reference" "#PWR?" (at 190.5 111.76 0)
+    (property "Reference" "#PWR0120" (at 190.5 111.76 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 190.5 102.87 0)
@@ -942,12 +894,6 @@
     (pin "1" (uuid 2a3c9285-28bb-474d-b425-0c40f1a38755))
     (instances
       (project "rearbox"
-        (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "#PWR0114") (unit 1)
-        )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2/8ac80362-77fc-4714-880f-ae50a2410210"
           (reference "#PWR0120") (unit 1)
         )
@@ -964,7 +910,7 @@
   (symbol (lib_id "power:+3.3V") (at 124.46 107.95 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 74380d2d-ce5c-49a4-95af-f5112137dc5a)
-    (property "Reference" "#PWR?" (at 124.46 111.76 0)
+    (property "Reference" "#PWR0114" (at 124.46 111.76 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 124.46 102.87 0)
@@ -979,12 +925,6 @@
     (pin "1" (uuid bd35bb43-d7d9-44e9-9e8a-bffbd7fe70fc))
     (instances
       (project "rearbox"
-        (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "#PWR0104") (unit 1)
-        )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2/8ac80362-77fc-4714-880f-ae50a2410210"
           (reference "#PWR0114") (unit 1)
         )
@@ -1001,7 +941,7 @@
   (symbol (lib_id "power:GND") (at 106.68 86.36 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 7a068029-4625-4a11-89ef-08bac1fff4d9)
-    (property "Reference" "#PWR?" (at 106.68 92.71 0)
+    (property "Reference" "#PWR0110" (at 106.68 92.71 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 106.68 91.44 0)
@@ -1016,12 +956,6 @@
     (pin "1" (uuid 2661bf45-4af0-472c-86bb-0558be4a6675))
     (instances
       (project "rearbox"
-        (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "#PWR0100") (unit 1)
-        )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2/8ac80362-77fc-4714-880f-ae50a2410210"
           (reference "#PWR0110") (unit 1)
         )
@@ -1038,7 +972,7 @@
   (symbol (lib_id "Isolator:TLP291-4") (at 181.61 118.11 0) (unit 4)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 8f8dc06c-b2ba-430e-88d1-b82da4da915e)
-    (property "Reference" "U9" (at 181.61 109.22 0)
+    (property "Reference" "U10" (at 181.61 109.22 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "TLP291-4" (at 181.61 111.76 0)
@@ -1068,9 +1002,6 @@
     (pin "9" (uuid 2469956f-020e-4754-b4e1-6ee95aa08d81))
     (instances
       (project "rearbox"
-        (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "U9") (unit 4)
-        )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2/8ac80362-77fc-4714-880f-ae50a2410210"
           (reference "U10") (unit 4)
         )
@@ -1087,7 +1018,7 @@
   (symbol (lib_id "Device:R_Small") (at 124.46 76.2 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 93ac2dac-e58e-4d79-ae0a-f8da3cb38c05)
-    (property "Reference" "R?" (at 126.365 74.295 0)
+    (property "Reference" "R48" (at 126.365 74.295 0)
       (effects (font (size 1.27 1.27)) (justify right bottom))
     )
     (property "Value" "10k" (at 126.365 76.835 0)
@@ -1103,12 +1034,6 @@
     (pin "2" (uuid cf3c9cd1-a3d2-4018-b8b1-6c11cc53fcc8))
     (instances
       (project "rearbox"
-        (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45"
-          (reference "R?") (unit 1)
-        )
-        (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "R74") (unit 1)
-        )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2/8ac80362-77fc-4714-880f-ae50a2410210"
           (reference "R48") (unit 1)
         )
@@ -1125,7 +1050,7 @@
   (symbol (lib_id "power:GND") (at 190.5 86.36 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 9e114ca3-027b-4793-ab01-18465bf06b50)
-    (property "Reference" "#PWR?" (at 190.5 92.71 0)
+    (property "Reference" "#PWR0119" (at 190.5 92.71 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 190.5 91.44 0)
@@ -1140,12 +1065,6 @@
     (pin "1" (uuid 4f02b0c7-c622-46ab-864f-9ce0e21ccc91))
     (instances
       (project "rearbox"
-        (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "#PWR0113") (unit 1)
-        )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2/8ac80362-77fc-4714-880f-ae50a2410210"
           (reference "#PWR0119") (unit 1)
         )
@@ -1162,7 +1081,7 @@
   (symbol (lib_id "Device:R_Small") (at 104.14 80.01 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 9f894dc9-dc59-43e0-8f03-1bfa8e20101e)
-    (property "Reference" "R?" (at 104.14 77.47 90)
+    (property "Reference" "R46" (at 104.14 77.47 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "2k" (at 104.14 82.55 90)
@@ -1178,12 +1097,6 @@
     (pin "2" (uuid f6590a81-67f7-4e99-8d0f-a4e5d6924cf3))
     (instances
       (project "rearbox"
-        (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45"
-          (reference "R?") (unit 1)
-        )
-        (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "R72") (unit 1)
-        )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2/8ac80362-77fc-4714-880f-ae50a2410210"
           (reference "R46") (unit 1)
         )
@@ -1200,7 +1113,7 @@
   (symbol (lib_id "Isolator:TLP291-4") (at 181.61 82.55 0) (unit 3)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 9faf1349-4b81-446f-bc92-9ad58d957061)
-    (property "Reference" "U9" (at 181.61 73.66 0)
+    (property "Reference" "U10" (at 181.61 73.66 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "TLP291-4" (at 181.61 76.2 0)
@@ -1230,9 +1143,6 @@
     (pin "9" (uuid a0a5f300-1957-439c-8e5b-7e97dae2f784))
     (instances
       (project "rearbox"
-        (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "U9") (unit 3)
-        )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2/8ac80362-77fc-4714-880f-ae50a2410210"
           (reference "U10") (unit 3)
         )
@@ -1249,7 +1159,7 @@
   (symbol (lib_id "power:GND") (at 106.68 121.92 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid a1ffe34c-df38-46f8-bcd6-1cd2fa5b42d3)
-    (property "Reference" "#PWR?" (at 106.68 128.27 0)
+    (property "Reference" "#PWR0111" (at 106.68 128.27 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 106.68 127 0)
@@ -1264,12 +1174,6 @@
     (pin "1" (uuid b91d8c63-95dd-4e94-a957-9293bfe6c3b0))
     (instances
       (project "rearbox"
-        (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "#PWR0101") (unit 1)
-        )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2/8ac80362-77fc-4714-880f-ae50a2410210"
           (reference "#PWR0111") (unit 1)
         )
@@ -1286,7 +1190,7 @@
   (symbol (lib_id "Device:R_Small") (at 104.14 115.57 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid a8c278a1-250a-40b6-85d5-fb44a5aa34b6)
-    (property "Reference" "R?" (at 104.14 113.03 90)
+    (property "Reference" "R47" (at 104.14 113.03 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "2k" (at 104.14 118.11 90)
@@ -1302,12 +1206,6 @@
     (pin "2" (uuid 4d3242ca-0261-4084-822a-ac4ba597ac5d))
     (instances
       (project "rearbox"
-        (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45"
-          (reference "R?") (unit 1)
-        )
-        (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "R73") (unit 1)
-        )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2/8ac80362-77fc-4714-880f-ae50a2410210"
           (reference "R47") (unit 1)
         )
@@ -1324,7 +1222,7 @@
   (symbol (lib_id "power:+3.3V") (at 124.46 72.39 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid ab6103ac-0ab9-4eb1-a9a4-9057b94d74c6)
-    (property "Reference" "#PWR?" (at 124.46 76.2 0)
+    (property "Reference" "#PWR0112" (at 124.46 76.2 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 124.46 67.31 0)
@@ -1339,12 +1237,6 @@
     (pin "1" (uuid c40fb0e1-63d2-4317-9f6b-870a4d6be754))
     (instances
       (project "rearbox"
-        (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "#PWR0102") (unit 1)
-        )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2/8ac80362-77fc-4714-880f-ae50a2410210"
           (reference "#PWR0112") (unit 1)
         )
@@ -1361,7 +1253,7 @@
   (symbol (lib_id "power:+3.3V") (at 190.5 72.39 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid b0b3b4b0-6d47-4cb2-afc6-7bc82e1f3b7f)
-    (property "Reference" "#PWR?" (at 190.5 76.2 0)
+    (property "Reference" "#PWR0118" (at 190.5 76.2 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 190.5 67.31 0)
@@ -1376,12 +1268,6 @@
     (pin "1" (uuid 8faac778-34fa-4443-b29c-ce83f03f752e))
     (instances
       (project "rearbox"
-        (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "#PWR0112") (unit 1)
-        )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2/8ac80362-77fc-4714-880f-ae50a2410210"
           (reference "#PWR0118") (unit 1)
         )
@@ -1398,7 +1284,7 @@
   (symbol (lib_id "Device:R_Small") (at 190.5 111.76 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid b72b63da-5ee2-4937-a808-66a78d98d793)
-    (property "Reference" "R?" (at 192.405 109.855 0)
+    (property "Reference" "R53" (at 192.405 109.855 0)
       (effects (font (size 1.27 1.27)) (justify right bottom))
     )
     (property "Value" "10k" (at 192.405 112.395 0)
@@ -1414,12 +1300,6 @@
     (pin "2" (uuid 14c2fa3c-3086-438c-aa79-b2e0a87bdfbe))
     (instances
       (project "rearbox"
-        (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45"
-          (reference "R?") (unit 1)
-        )
-        (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "R80") (unit 1)
-        )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2/8ac80362-77fc-4714-880f-ae50a2410210"
           (reference "R53") (unit 1)
         )
@@ -1436,7 +1316,7 @@
   (symbol (lib_id "power:GND") (at 172.72 86.36 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid c33bdf43-b0b2-4ca1-a4d1-bbbf3e71d6b6)
-    (property "Reference" "#PWR?" (at 172.72 92.71 0)
+    (property "Reference" "#PWR0116" (at 172.72 92.71 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 172.72 91.44 0)
@@ -1451,12 +1331,6 @@
     (pin "1" (uuid 8cc476c3-150e-4c6e-877f-4fbd3c82f1f8))
     (instances
       (project "rearbox"
-        (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "#PWR0110") (unit 1)
-        )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2/8ac80362-77fc-4714-880f-ae50a2410210"
           (reference "#PWR0116") (unit 1)
         )
@@ -1473,7 +1347,7 @@
   (symbol (lib_id "Device:R_Small") (at 170.18 80.01 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid f1d2c7ad-95e9-499b-a0e5-5a69de2cda40)
-    (property "Reference" "R?" (at 170.18 77.47 90)
+    (property "Reference" "R50" (at 170.18 77.47 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "2k" (at 170.18 82.55 90)
@@ -1489,12 +1363,6 @@
     (pin "2" (uuid 1f123413-aee3-4765-aabf-ba9348257675))
     (instances
       (project "rearbox"
-        (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45"
-          (reference "R?") (unit 1)
-        )
-        (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "R77") (unit 1)
-        )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2/8ac80362-77fc-4714-880f-ae50a2410210"
           (reference "R50") (unit 1)
         )

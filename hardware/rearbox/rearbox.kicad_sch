@@ -3317,13 +3317,6 @@
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
-  (global_label "SAFETY_IN_RFU1" (shape input) (at 227.33 53.34 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right))
-    (uuid 20ee72ee-6f5b-42e1-8f31-32348b8a2018)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 209.0632 53.34 0)
-      (effects (font (size 1.27 1.27)) (justify right) hide)
-    )
-  )
   (global_label "CAN-" (shape bidirectional) (at 181.61 45.72 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 2fadc425-c11e-4ae5-9027-ab71b37f4288)
@@ -3429,10 +3422,10 @@
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
-  (global_label "SAFETY_IN_RFU2" (shape input) (at 227.33 55.88 180) (fields_autoplaced)
+  (global_label "SAFETY_IN_RFU" (shape input) (at 227.33 55.88 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid 6a3cd5cc-1a77-4e01-a1b3-4e8e635db177)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 209.0632 55.88 0)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 210.1933 55.88 0)
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
@@ -3482,6 +3475,13 @@
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid 8648b779-d824-4a06-ae3d-d9738589bc01)
     (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 52.7928 85.09 0)
+      (effects (font (size 1.27 1.27)) (justify right) hide)
+    )
+  )
+  (global_label "SAFETY_IN_AS_TS_ON" (shape input) (at 227.33 53.34 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27) (color 179 0 27 1)) (justify right))
+    (uuid 87063b82-93be-4c77-a432-8e6d253d0023)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 204.811 53.34 0)
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
@@ -3749,7 +3749,7 @@
   (symbol (lib_id "Device:FerriteBead_Small") (at 64.77 173.99 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 22623cfe-5735-455e-aafb-3a103174502b)
-    (property "Reference" "FB?" (at 64.77 170.18 90)
+    (property "Reference" "FB1" (at 64.77 170.18 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "470R" (at 64.77 177.8 90)
@@ -3765,18 +3765,6 @@
     (pin "2" (uuid 8c250722-6679-4ae6-b1db-f846a6ddfadb))
     (instances
       (project "rearbox"
-        (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/38408e41-dfb1-4c27-acb0-3f1224cc8789"
-          (reference "FB?") (unit 1)
-        )
-        (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/38408e41-dfb1-4c27-acb0-3f1224cc8789/eec2c93a-0fce-4d3a-ab43-9e1e0481c06c"
-          (reference "FB3") (unit 1)
-        )
-        (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/38408e41-dfb1-4c27-acb0-3f1224cc8789/f1ed15a3-9302-436f-b25a-713477aeadf3"
-          (reference "FB1") (unit 1)
-        )
-        (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/5d9671f9-6e77-4376-b4d6-afe9f66a07c2"
-          (reference "FB5") (unit 1)
-        )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45"
           (reference "FB1") (unit 1)
         )
@@ -3913,7 +3901,7 @@
   (symbol (lib_id "power:+5V") (at 24.13 27.94 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 36785a8e-a27f-4778-9d00-e7b00a691ab5)
-    (property "Reference" "#PWR041" (at 24.13 31.75 0)
+    (property "Reference" "#PWR05" (at 24.13 31.75 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 24.13 22.86 0)
@@ -3928,9 +3916,6 @@
     (pin "1" (uuid 64820346-dd03-473e-b1e6-80ea9a3f25c5))
     (instances
       (project "rearbox"
-        (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/7045152e-d7a2-42d7-9b15-138e7f2928ca"
-          (reference "#PWR041") (unit 1)
-        )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45"
           (reference "#PWR05") (unit 1)
         )
@@ -3971,7 +3956,7 @@
   (symbol (lib_id "Device:C_Small") (at 137.16 179.07 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 430f1d40-ea80-462c-9bb9-6f9794050d56)
-    (property "Reference" "C?" (at 139.7 177.8 0)
+    (property "Reference" "C8" (at 139.7 177.8 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1u" (at 139.7 181.61 0)
@@ -3987,9 +3972,6 @@
     (pin "2" (uuid 42bb4fbf-f69a-4b1d-9a42-8eaa36440e0a))
     (instances
       (project "rearbox"
-        (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/7045152e-d7a2-42d7-9b15-138e7f2928ca"
-          (reference "C?") (unit 1)
-        )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45"
           (reference "C8") (unit 1)
         )
@@ -4138,7 +4120,7 @@
   (symbol (lib_id "Connector:TestPoint_Small") (at 146.05 173.99 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 5f50c458-ab16-4885-9006-eac55cfed7cb)
-    (property "Reference" "TP?" (at 142.24 172.72 0)
+    (property "Reference" "TP3" (at 142.24 172.72 0)
       (effects (font (size 1 1)) (justify left))
     )
     (property "Value" "TestPoint_Small" (at 147.32 175.895 0)
@@ -4153,18 +4135,6 @@
     (pin "1" (uuid 56370e95-843e-4e79-b7ca-ca61a40751dc))
     (instances
       (project "rearbox"
-        (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/38408e41-dfb1-4c27-acb0-3f1224cc8789"
-          (reference "TP?") (unit 1)
-        )
-        (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/38408e41-dfb1-4c27-acb0-3f1224cc8789/eec2c93a-0fce-4d3a-ab43-9e1e0481c06c"
-          (reference "TP3") (unit 1)
-        )
-        (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/38408e41-dfb1-4c27-acb0-3f1224cc8789/f1ed15a3-9302-436f-b25a-713477aeadf3"
-          (reference "TP1") (unit 1)
-        )
-        (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/562e38ba-d94a-4627-8fa0-e9eb7b5e4e9a"
-          (reference "TP49") (unit 1)
-        )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45"
           (reference "TP3") (unit 1)
         )
@@ -4416,7 +4386,7 @@
   (symbol (lib_id "Device:C_Small") (at 146.05 179.07 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 87e47c9f-739c-42d2-84a6-0967e9dcfb80)
-    (property "Reference" "C?" (at 148.59 177.8 0)
+    (property "Reference" "C9" (at 148.59 177.8 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100n" (at 148.59 181.61 0)
@@ -4432,9 +4402,6 @@
     (pin "2" (uuid 2269feec-5415-429b-a911-9f88bd6cedc3))
     (instances
       (project "rearbox"
-        (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/7045152e-d7a2-42d7-9b15-138e7f2928ca"
-          (reference "C?") (unit 1)
-        )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45"
           (reference "C9") (unit 1)
         )
@@ -4668,7 +4635,7 @@
   (symbol (lib_id "Connector:TestPoint_Small") (at 97.79 173.99 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid bb7db791-0407-4adb-ba86-c5face8fa0ef)
-    (property "Reference" "TP?" (at 93.98 172.72 0)
+    (property "Reference" "TP2" (at 93.98 172.72 0)
       (effects (font (size 1 1)) (justify left))
     )
     (property "Value" "TestPoint_Small" (at 99.06 175.895 0)
@@ -4683,18 +4650,6 @@
     (pin "1" (uuid 7b753d52-9649-45bc-af92-30580fea0cea))
     (instances
       (project "rearbox"
-        (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/38408e41-dfb1-4c27-acb0-3f1224cc8789"
-          (reference "TP?") (unit 1)
-        )
-        (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/38408e41-dfb1-4c27-acb0-3f1224cc8789/eec2c93a-0fce-4d3a-ab43-9e1e0481c06c"
-          (reference "TP3") (unit 1)
-        )
-        (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/38408e41-dfb1-4c27-acb0-3f1224cc8789/f1ed15a3-9302-436f-b25a-713477aeadf3"
-          (reference "TP1") (unit 1)
-        )
-        (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/562e38ba-d94a-4627-8fa0-e9eb7b5e4e9a"
-          (reference "TP49") (unit 1)
-        )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45"
           (reference "TP2") (unit 1)
         )
@@ -4992,7 +4947,7 @@
   (symbol (lib_id "Connector:TestPoint_Small") (at 24.13 35.56 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid f30140b3-6a22-44e6-8cc4-a2639248da7a)
-    (property "Reference" "TP?" (at 20.32 35.56 0)
+    (property "Reference" "TP1" (at 20.32 35.56 0)
       (effects (font (size 1 1)) (justify left))
     )
     (property "Value" "TestPoint_Small" (at 25.4 37.465 0)
@@ -5007,18 +4962,6 @@
     (pin "1" (uuid c5c636be-1b35-4234-ab42-8fd45c1d7294))
     (instances
       (project "rearbox"
-        (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/38408e41-dfb1-4c27-acb0-3f1224cc8789"
-          (reference "TP?") (unit 1)
-        )
-        (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/38408e41-dfb1-4c27-acb0-3f1224cc8789/eec2c93a-0fce-4d3a-ab43-9e1e0481c06c"
-          (reference "TP3") (unit 1)
-        )
-        (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/38408e41-dfb1-4c27-acb0-3f1224cc8789/f1ed15a3-9302-436f-b25a-713477aeadf3"
-          (reference "TP1") (unit 1)
-        )
-        (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/562e38ba-d94a-4627-8fa0-e9eb7b5e4e9a"
-          (reference "TP49") (unit 1)
-        )
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45"
           (reference "TP1") (unit 1)
         )
@@ -5376,7 +5319,7 @@
       (effects (font (size 1.27 1.27)) (justify left))
       (uuid 32602d41-310a-41eb-94c1-8795fab05fd4)
     )
-    (pin "IN_RFU2" input (at 228.6 55.88 180)
+    (pin "IN_RFU" input (at 228.6 55.88 180)
       (effects (font (size 1.27 1.27)) (justify left))
       (uuid 71f25895-0a2c-494c-9e7d-8c087351b38e)
     )
@@ -5384,7 +5327,7 @@
       (effects (font (size 1.27 1.27)) (justify left))
       (uuid 342a389b-2f76-4660-8185-939c8876f7c4)
     )
-    (pin "IN_RFU1" input (at 228.6 53.34 180)
+    (pin "IN_AS_TS_ON" input (at 228.6 53.34 180)
       (effects (font (size 1.27 1.27)) (justify left))
       (uuid 93724df4-994d-493c-9920-eaa463c51ed0)
     )
