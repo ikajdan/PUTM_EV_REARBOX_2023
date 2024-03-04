@@ -33,6 +33,7 @@
 #include "pwm.h"
 #include "ain.h"
 #include "fsm.h"
+#include "tca6416a.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -111,22 +112,23 @@ int main(void)
     /* USER CODE BEGIN 2 */
     HAL_ADCEx_Calibration_Start(&hadc1, ADC_SINGLE_ENDED);
     HAL_ADCEx_Calibration_Start(&hadc2, ADC_SINGLE_ENDED);
-    HAL_ADC_Start_DMA(&hadc1, (uint32_t*)AIN_ADC1_REGISTER, AIN_ADC1_SAMPLES);
-    HAL_ADC_Start_DMA(&hadc2, (uint32_t*)AIN_ADC2_REGISTER, AIN_ADC2_SAMPLES);
+    HAL_ADC_Start_DMA(&hadc1, (uint32_t*)AIN_ADC1_REGISTER, AIN_ADC1_CHANNELS);
+    HAL_ADC_Start_DMA(&hadc2, (uint32_t*)AIN_ADC2_REGISTER, AIN_ADC2_CHANNELS);
 
     HAL_TIM_PWM_Start(&htim_pump, TIM_CHANNEL_PUMP1); // 10 kHz
     HAL_TIM_PWM_Start(&htim_pump, TIM_CHANNEL_PUMP2); // 10 kHz
     HAL_TIM_PWM_Start(&htim_fan, TIM_CHANNEL_FAN_L); // 10 kHz
     HAL_TIM_PWM_Start(&htim_fan, TIM_CHANNEL_FAN_R); // 10 kHz
+
     /* USER CODE END 2 */
 
     /* Infinite loop */
     /* USER CODE BEGIN WHILE */
-    while(1) {
+    while(1)
+    {
         /* USER CODE END WHILE */
 
         /* USER CODE BEGIN 3 */
-
     }
     /* USER CODE END 3 */
 }

@@ -15,40 +15,14 @@
 
 /* Public defines ------------------------------------------------------------*/
 /**
- * @brief RTD's nominal resistance
+ * @brief Number of ADC1 channels
  */
-#define AIN_R0 100
+#define AIN_ADC1_CHANNELS 6
 
 /**
- * @brief Wheatstone bridge resistor values
- *
- *
- *       ┌───[ R3 ]──(Vout+)──[ Rx ]───┐
- *       │                             │
- * VIN ──┤                             ├── GND
- *       │                             │
- *       └───[ R1 ]──(Vout-)──[ R2 ]───┘
- *
+ * @brief Number of ADC2 channels
  */
-#define AIN_R1 1000
-#define AIN_R2 100
-#define AIN_R3 1000
-
-/**
- * @brief Wheatstone bridge reference voltage
- */
-#define AIN_VIN 3.3f
-
-/**
- * @brief Instrumentation amplifier gain
- */
-#define AIN_GAIN 6
-
-/**
- * @brief The number of samples to be averaged when measuring the temperature
- */
-#define AIN_ADC1_SAMPLES 6
-#define AIN_ADC2_SAMPLES 4
+#define AIN_ADC2_CHANNELS 4
 
 /* Public macros -------------------------------------------------------------*/
 

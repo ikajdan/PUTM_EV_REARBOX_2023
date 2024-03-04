@@ -29,7 +29,7 @@ VND7020AJ_Device VND7020AJ_ActiveDevice = VND7020AJ_DISABLE;
 /* Private functions ---------------------------------------------------------*/
 
 /* Public functions ----------------------------------------------------------*/
-void VND7020AJ_SenseSetActive(VND7020AJ_Device device) {
+void VND7020AJ_SetActive(VND7020AJ_Device device) {
     if(VND7020AJ_ActiveDevice == device) {
         return;
     }
@@ -95,11 +95,11 @@ void VND7020AJ_SenseSetActive(VND7020AJ_Device device) {
     }
 }
 
-VND7020AJ_Device VND7020AJ_SenseGetActive() {
+VND7020AJ_Device VND7020AJ_GetActive() {
     return VND7020AJ_ActiveDevice;
 }
 
-float VND7020AJ_SenseGetCurrent() {
+float VND7020AJ_GetCurrent() {
     float v_sense = AIN_ADC1_REGISTER[ADC_CHANNEL_SENSE_OUT] * (3.3f / 4095);
     float i_out = VND7020AJ_MULTISENSE_K * v_sense / VND7020AJ_MULTISENSE_R;
 

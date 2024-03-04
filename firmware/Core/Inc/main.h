@@ -117,6 +117,7 @@ void Error_Handler(void);
 #define SAFETY_RESET_GPIO_Port GPIOC
 #define SAFETY_INT_Pin GPIO_PIN_7
 #define SAFETY_INT_GPIO_Port GPIOC
+#define SAFETY_INT_EXTI_IRQn EXTI9_5_IRQn
 #define SAFETY_SCL_Pin GPIO_PIN_8
 #define SAFETY_SCL_GPIO_Port GPIOC
 #define SAFETY_SDA_Pin GPIO_PIN_9
@@ -153,6 +154,8 @@ void Error_Handler(void);
 #define SENSE_ENABLE_FANS_GPIO_Port GPIOB
 #define I2C_SDA_Pin GPIO_PIN_7
 #define I2C_SDA_GPIO_Port GPIOB
+#define BOOT_SELECT_Pin GPIO_PIN_8
+#define BOOT_SELECT_GPIO_Port GPIOB
 
 /* USER CODE BEGIN Private defines */
 /**

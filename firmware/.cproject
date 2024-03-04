@@ -51,6 +51,7 @@
 									<listOptionValue builtIn="false" value="../Components/PWM/Inc"/>
 									<listOptionValue builtIn="false" value="../Components/FSM/Inc"/>
 									<listOptionValue builtIn="false" value="../Components/AIN/Inc"/>
+									<listOptionValue builtIn="false" value="../Components/TCA6416A/Inc"/>
 									<listOptionValue builtIn="false" value="../Components/VND7020AJ/Inc"/>
 								</option>
 								<option id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.option.languagestandard.1937668114" name="Language standard" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.option.languagestandard" useByScannerDiscovery="true" value="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.option.languagestandard.value.gnu18" valueType="enumerated"/>
@@ -164,6 +165,7 @@
 									<listOptionValue builtIn="false" value="../Components/PWM/Inc"/>
 									<listOptionValue builtIn="false" value="../Components/FSM/Inc"/>
 									<listOptionValue builtIn="false" value="../Components/AIN/Inc"/>
+									<listOptionValue builtIn="false" value="../Components/TCA6416A/Inc"/>
 									<listOptionValue builtIn="false" value="../Components/VND7020AJ/Inc"/>
 								</option>
 								<option id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.option.languagestandard.1204684055" name="Language standard" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.option.languagestandard" useByScannerDiscovery="true" value="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.option.languagestandard.value.gnu18" valueType="enumerated"/>

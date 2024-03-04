@@ -31,6 +31,7 @@ typedef struct {
 
 /* Public variables ----------------------------------------------------------*/
 extern FSM_Handle_TypeDef hfsm;
+
 /* Public function prototypes ------------------------------------------------*/
 
 #endif /* __FSM_H__ */

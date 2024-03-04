@@ -33,7 +33,7 @@ typedef enum {
  *
  * @param device The device
  */
-void VND7020AJ_SenseSetActive(VND7020AJ_Device device);
+void VND7020AJ_SetActive(VND7020AJ_Device device);
 
 /**
  * @brief Get the active MultiSense device.
@@ -41,13 +41,13 @@ void VND7020AJ_SenseSetActive(VND7020AJ_Device device);
  * @return The active device
 
  */
-VND7020AJ_Device VND7020AJ_SenseGetActive();
+VND7020AJ_Device VND7020AJ_GetActive();
 
 /**
  * @brief Get the current value of the currently selected channel.
  *
  * @return The reading of current value
  */
-float VND7020AJ_SenseGetCurrent();
+float VND7020AJ_GetCurrent();
 
 #endif /* __VND7020AJ_H__ */
