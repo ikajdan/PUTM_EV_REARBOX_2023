@@ -185,6 +185,23 @@ void Error_Handler(void);
 #define ADC_CHANNEL_ANALOG_INPUT2 1
 #define ADC_CHANNEL_ANALOG_POTENTIOMETER_L 2
 #define ADC_CHANNEL_ANALOG_POTENTIOMETER_R 3
+
+// GPIO
+#define PIN_ERROR_LED 8
+#define PIN_SAFETY_LED 9
+#define PIN_FUSE_LED 10
+#define PIN_RFU2 0
+#define PIN_RFU1 1
+#define PIN_ASMS 2
+#define PIN_FW 3
+#define PIN_HV 4
+#define PIN_RES 5
+#define PIN_HVD 6
+#define PIN_INV 7
+#define PIN_WHEEL_FL 14
+#define PIN_WHEEL_FR 15
+#define PIN_WHEEL_RL 16
+#define PIN_WHEEL_RR 17
 /* USER CODE END Private defines */
 
 #ifdef __cplusplus

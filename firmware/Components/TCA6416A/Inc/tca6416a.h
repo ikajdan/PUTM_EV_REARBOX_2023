@@ -16,39 +16,38 @@
 
 /* Public typedefs -----------------------------------------------------------*/
 typedef struct {
+    I2C_HandleTypeDef *hi2c;
     uint8_t i2caddr;
-    I2C_HandleTypeDef *hi2c_;
     uint16_t pinState;
     uint16_t pinModes;
-} TCA6416A;
+} TCA6416A_Handle_TypeDef;
 
 /* Public defines ------------------------------------------------------------*/
-#define HIGH 1
-#define LOW 0
-#define INPUT 0
-#define OUTPUT 1
-#define TCAREG_INPUT0 0x00
-#define TCAREG_INPUT1 0x01
-#define TCAREG_OUTPUT0 0x02
-#define TCAREG_OUTPUT1 0x03
-#define TCAREG_CONFIG0 0x06
-#define TCAREG_CONFIG1 0x07
+#define TCA_PIN_SET 1
+#define TCA_PIN_RESET 0
+#define TCA_PIN_INPUT 0
+#define TCA_PIN_OUTPUT 1
+
+#define TCA_REG_INPUT0 0x00
+#define TCA_REG_INPUT1 0x01
+#define TCA_REG_OUTPUT0 0x02
+#define TCA_REG_OUTPUT1 0x03
+#define TCA_REG_CONFIG0 0x06
+#define TCA_REG_CONFIG1 0x07
 
 /* Public macros -------------------------------------------------------------*/
 
 /* Public variables ----------------------------------------------------------*/
+extern TCA6416A_Handle_TypeDef htca;
 
 /* Public function prototypes ------------------------------------------------*/
-bool TCA6416A_begin(TCA6416A *tca, uint8_t addr_bit, I2C_HandleTypeDef *hi2c);
-
-void TCA6416A_pin_mode(TCA6416A *tca, uint8_t pinNum, int mode);
-uint16_t TCA6416A_mode_read(TCA6416A *tca);
-void TCA6416A_mode_write(TCA6416A *tca, uint16_t modes);
-
-int TCA6416A_pin_read(TCA6416A *tca, uint8_t pinNum);
-void TCA6416A_pin_write(TCA6416A *tca, uint8_t pinNum, uint8_t level);
-
-uint16_t TCA6416A_port_read(TCA6416A *tca);
-void TCA6416A_port_write(TCA6416A *tca, uint16_t i2cportval);
+bool TCA6416A_Init(TCA6416A_Handle_TypeDef *tca, I2C_HandleTypeDef *hi2c, uint8_t addr_bit);
+void TCA6416A_SetPinMode(TCA6416A_Handle_TypeDef *tca, uint8_t pin_num, int mode);
+uint16_t TCA6416A_ReadMode(TCA6416A_Handle_TypeDef *tca);
+void TCA6416A_WriteMode(TCA6416A_Handle_TypeDef *tca, uint16_t modes);
+int TCA6416A_ReadPin(TCA6416A_Handle_TypeDef *tca, uint8_t pin_number);
+void TCA6416A_WritePin(TCA6416A_Handle_TypeDef *tca, uint8_t pin_number, uint8_t level);
+uint16_t TCA6416A_ReadPort(TCA6416A_Handle_TypeDef *tca);
+void TCA6416A_WritePort(TCA6416A_Handle_TypeDef *tca, uint16_t i2cportval);
 
 #endif /* __TCA6416A_H__ */

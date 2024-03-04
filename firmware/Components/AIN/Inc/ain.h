@@ -46,5 +46,8 @@ extern volatile uint32_t AIN_ADC2_REGISTER[AIN_ADC2_CHANNELS];
 
 /* Public function prototypes ------------------------------------------------*/
 float AIN_GetReading(AIN_Handle_TypeDef *handle);
+uint8_t AIN_ReadTemperature(AIN_Handle_TypeDef *handle);
+uint8_t AIN_ReadPressure(AIN_Handle_TypeDef *handle);
+uint8_t AIN_ReadVoltage(AIN_Handle_TypeDef *handle);
 
 #endif /* __AIN_H__ */
