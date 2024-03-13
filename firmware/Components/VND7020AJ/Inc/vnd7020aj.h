@@ -30,22 +30,18 @@ typedef enum {
 /* Public function prototypes ------------------------------------------------*/
 /**
  * @brief Set the current sensing mode for the given device.
- *
  * @param device The device
  */
 void VND7020AJ_SetActive(VND7020AJ_Device device);
 
 /**
  * @brief Get the active MultiSense device.
- *
  * @return The active device
-
  */
 VND7020AJ_Device VND7020AJ_GetActive();
 
 /**
  * @brief Get the current value of the currently selected channel.
- *
  * @return The reading of current value
  */
 float VND7020AJ_GetCurrent();

@@ -186,16 +186,16 @@ int main(void)
         if(hfsm.send_data) {
             hfsm.send_data = false;
 
-            hfsm.mono_temperature = AIN_ReadTemperature(&hain_mono_temperature);
-            hfsm.sense_out = AIN_ReadTemperature(&hain_sense_out);
-            hfsm.water_pressure1 = AIN_ReadPressure(&hain_water_pressure1);
-            hfsm.water_pressure2 = AIN_ReadPressure(&hain_water_pressure2);
-            hfsm.water_temperature1 = AIN_ReadTemperature(&hain_water_temperature1);
-            hfsm.water_temperature2 = AIN_ReadTemperature(&hain_water_temperature2);
-            hfsm.analog_input1 = AIN_ReadVoltage(&hain_analog_input1);
-            hfsm.analog_input2 = AIN_ReadVoltage(&hain_analog_input2);
-            hfsm.analog_potentiometer_l = AIN_ReadVoltage(&hain_analog_potentiometer_l);
-            hfsm.analog_potentiometer_r = AIN_ReadVoltage(&hain_analog_potentiometer_r);
+            hfsm.mono_temperature = AIN_GetTemperature(&hain_mono_temperature);
+            hfsm.sense_out = AIN_GetTemperature(&hain_sense_out);
+            hfsm.water_pressure1 = AIN_GetPressure(&hain_water_pressure1);
+            hfsm.water_pressure2 = AIN_GetPressure(&hain_water_pressure2);
+            hfsm.water_temperature1 = AIN_GetTemperature(&hain_water_temperature1);
+            hfsm.water_temperature2 = AIN_GetTemperature(&hain_water_temperature2);
+            hfsm.analog_input1 = AIN_GetResistance(&hain_analog_input1);
+            hfsm.analog_input2 = AIN_GetResistance(&hain_analog_input2);
+            hfsm.analog_potentiometer_l = AIN_GetResistance(&hain_analog_potentiometer_l);
+            hfsm.analog_potentiometer_r = AIN_GetResistance(&hain_analog_potentiometer_r);
 
             // TODO: Send data
         }
