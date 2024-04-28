@@ -81,7 +81,7 @@
         "items_not_allowed": "error",
         "length_out_of_range": "error",
         "lib_footprint_issues": "warning",
-        "lib_footprint_mismatch": "warning",
+        "lib_footprint_mismatch": "ignore",
         "malformed_courtyard": "error",
         "microvia_drill_out_of_range": "error",
         "missing_courtyard": "warning",
@@ -611,7 +611,7 @@
     ],
     [
       "264ec557-c33b-4d6e-8249-7c546f6f500a",
-      "Analog Inputs"
+      "Oil Temperature Sensors"
     ],
     [
       "2ebbc597-c328-4a79-a9b9-9ad195d56b16",
@@ -623,7 +623,7 @@
     ],
     [
       "a7dfb715-9f45-42ac-b5d4-81823a559192",
-      "Water Pressure Sensors"
+      "Coolant Pressure Sensors"
     ],
     [
       "15bcf889-76f3-4ad3-864a-ed430ff6925b",
@@ -667,6 +667,6 @@
     ]
   ],
   "text_variables": {
-    "REVISION": "1.0"
+    "REVISION": "1.1"
   }
 }

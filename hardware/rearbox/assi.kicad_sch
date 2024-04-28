@@ -6,7 +6,7 @@
 
   (title_block
     (title "Autonomous System Status Indicator")
-    (date "2023-11-17")
+    (date "2024-04-28")
     (rev "${REVISION}")
     (company "Author: I. Kajdan")
     (comment 1 "Reviewer:")
@@ -800,7 +800,7 @@
       )
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/23ffbfb4-d932-48bb-a16b-e7ed705895f1"
-          (reference "R29") (unit 1)
+          (reference "R30") (unit 1)
         )
       )
     )
@@ -863,7 +863,7 @@
       )
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/23ffbfb4-d932-48bb-a16b-e7ed705895f1"
-          (reference "R28") (unit 1)
+          (reference "R29") (unit 1)
         )
       )
     )
@@ -894,7 +894,7 @@
       )
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/23ffbfb4-d932-48bb-a16b-e7ed705895f1"
-          (reference "R25") (unit 1)
+          (reference "R26") (unit 1)
         )
       )
     )
@@ -925,7 +925,7 @@
       )
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/23ffbfb4-d932-48bb-a16b-e7ed705895f1"
-          (reference "R27") (unit 1)
+          (reference "R28") (unit 1)
         )
       )
     )
@@ -959,7 +959,7 @@
   (symbol (lib_id "power:GND") (at 57.15 118.11 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 8daa44f1-5469-4311-a823-32791cddbd35)
-    (property "Reference" "#PWR090" (at 57.15 124.46 0)
+    (property "Reference" "#PWR091" (at 57.15 124.46 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 57.15 123.19 0)
@@ -975,7 +975,7 @@
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/23ffbfb4-d932-48bb-a16b-e7ed705895f1"
-          (reference "#PWR090") (unit 1)
+          (reference "#PWR091") (unit 1)
         )
       )
       (project "Traction_Control_System"
@@ -1024,7 +1024,7 @@
   (symbol (lib_id "Device:R_Small") (at 224.79 107.95 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid b00dd03d-f6f1-4cee-8322-05d2814af237)
-    (property "Reference" "R30" (at 224.79 105.41 90)
+    (property "Reference" "R31" (at 224.79 105.41 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "100R" (at 224.79 110.49 90)
@@ -1041,7 +1041,7 @@
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/23ffbfb4-d932-48bb-a16b-e7ed705895f1"
-          (reference "R30") (unit 1)
+          (reference "R31") (unit 1)
         )
       )
       (project "Traction_Control_System"
@@ -1080,7 +1080,7 @@
       )
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/23ffbfb4-d932-48bb-a16b-e7ed705895f1"
-          (reference "R24") (unit 1)
+          (reference "R25") (unit 1)
         )
       )
     )
@@ -1089,7 +1089,7 @@
   (symbol (lib_id "power:GND") (at 116.84 118.11 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid b774267a-a4d2-47a6-83bb-146b745e03c4)
-    (property "Reference" "#PWR091" (at 116.84 124.46 0)
+    (property "Reference" "#PWR092" (at 116.84 124.46 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 116.84 123.19 0)
@@ -1105,7 +1105,7 @@
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/23ffbfb4-d932-48bb-a16b-e7ed705895f1"
-          (reference "#PWR091") (unit 1)
+          (reference "#PWR092") (unit 1)
         )
       )
       (project "Traction_Control_System"
@@ -1169,7 +1169,7 @@
       )
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/23ffbfb4-d932-48bb-a16b-e7ed705895f1"
-          (reference "R31") (unit 1)
+          (reference "R32") (unit 1)
         )
       )
     )
@@ -1178,7 +1178,7 @@
   (symbol (lib_id "power:GND") (at 240.03 118.11 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid e560e48f-4926-43a8-aca3-5d48b251c2f7)
-    (property "Reference" "#PWR093" (at 240.03 124.46 0)
+    (property "Reference" "#PWR094" (at 240.03 124.46 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 240.03 123.19 0)
@@ -1194,7 +1194,7 @@
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/23ffbfb4-d932-48bb-a16b-e7ed705895f1"
-          (reference "#PWR093") (unit 1)
+          (reference "#PWR094") (unit 1)
         )
       )
       (project "Traction_Control_System"
@@ -1243,7 +1243,7 @@
   (symbol (lib_id "power:GND") (at 176.53 118.11 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid eee9ec5a-7c2d-4bb5-bf6e-d95a86050434)
-    (property "Reference" "#PWR092" (at 176.53 124.46 0)
+    (property "Reference" "#PWR093" (at 176.53 124.46 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 176.53 123.19 0)
@@ -1259,7 +1259,7 @@
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/23ffbfb4-d932-48bb-a16b-e7ed705895f1"
-          (reference "#PWR092") (unit 1)
+          (reference "#PWR093") (unit 1)
         )
       )
       (project "Traction_Control_System"
@@ -1298,7 +1298,7 @@
       )
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/23ffbfb4-d932-48bb-a16b-e7ed705895f1"
-          (reference "R26") (unit 1)
+          (reference "R27") (unit 1)
         )
       )
     )

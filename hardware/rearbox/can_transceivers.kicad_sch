@@ -6,7 +6,7 @@
 
   (title_block
     (title "CAN Transceivers")
-    (date "2023-11-17")
+    (date "2024-04-28")
     (rev "${REVISION}")
     (company "Author: I. Kajdan")
     (comment 1 "Reviewer:")
@@ -113,7 +113,6 @@
         (path "/d29c2854-1cff-48df-9335-a3932490d817" (page "4"))
       )
       (project "rearbox"
-        (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45" (page "8"))
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/38408e41-dfb1-4c27-acb0-3f1224cc8789" (page "5"))
       )
     )
@@ -150,7 +149,6 @@
         (path "/d29c2854-1cff-48df-9335-a3932490d817" (page "4"))
       )
       (project "rearbox"
-        (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45" (page "9"))
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/38408e41-dfb1-4c27-acb0-3f1224cc8789" (page "6"))
       )
     )

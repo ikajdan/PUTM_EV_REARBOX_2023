@@ -6,7 +6,7 @@
 
   (title_block
     (title "LEDs")
-    (date "2023-11-17")
+    (date "2024-04-28")
     (rev "${REVISION}")
     (company "Author: I. Kajdan")
     (comment 1 "Reviewer:")
@@ -499,7 +499,7 @@
   (symbol (lib_id "power:+5V") (at 135.89 72.39 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 0ee15cf5-101b-47d0-9678-9b38073fe9d5)
-    (property "Reference" "#PWR098" (at 135.89 76.2 0)
+    (property "Reference" "#PWR099" (at 135.89 76.2 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 135.89 67.31 0)
@@ -515,7 +515,7 @@
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/6999686b-4026-4ea7-9227-634603a79198"
-          (reference "#PWR098") (unit 1)
+          (reference "#PWR099") (unit 1)
         )
       )
     )
@@ -524,7 +524,7 @@
   (symbol (lib_id "power:GND") (at 186.69 86.36 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 1c1885f3-eb8e-4c95-bd6e-20a0ceeb4669)
-    (property "Reference" "#PWR0105" (at 186.69 92.71 0)
+    (property "Reference" "#PWR0106" (at 186.69 92.71 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 186.69 91.44 0)
@@ -540,7 +540,7 @@
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/6999686b-4026-4ea7-9227-634603a79198"
-          (reference "#PWR0105") (unit 1)
+          (reference "#PWR0106") (unit 1)
         )
       )
     )
@@ -575,7 +575,7 @@
   (symbol (lib_id "Device:R_Small") (at 186.69 76.2 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 46d27df9-f49a-467b-9eac-f5416d04347c)
-    (property "Reference" "R40" (at 189.23 74.93 0)
+    (property "Reference" "R41" (at 189.23 74.93 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "270R" (at 189.23 77.47 0)
@@ -592,7 +592,7 @@
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/6999686b-4026-4ea7-9227-634603a79198"
-          (reference "R40") (unit 1)
+          (reference "R41") (unit 1)
         )
       )
     )
@@ -627,7 +627,7 @@
   (symbol (lib_id "Device:R_Small") (at 110.49 76.2 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 6086a959-c63a-4214-bce7-129e1e6840db)
-    (property "Reference" "R34" (at 113.03 74.93 0)
+    (property "Reference" "R35" (at 113.03 74.93 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "82R" (at 113.03 77.47 0)
@@ -644,7 +644,7 @@
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/6999686b-4026-4ea7-9227-634603a79198"
-          (reference "R34") (unit 1)
+          (reference "R35") (unit 1)
         )
       )
     )
@@ -653,7 +653,7 @@
   (symbol (lib_id "power:+3.3V") (at 110.49 72.39 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 63e08707-f805-4f5d-898d-021705f84a82)
-    (property "Reference" "#PWR095" (at 110.49 76.2 0)
+    (property "Reference" "#PWR096" (at 110.49 76.2 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 110.49 67.31 0)
@@ -669,7 +669,7 @@
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/6999686b-4026-4ea7-9227-634603a79198"
-          (reference "#PWR095") (unit 1)
+          (reference "#PWR096") (unit 1)
         )
       )
     )
@@ -678,7 +678,7 @@
   (symbol (lib_id "Device:R_Small") (at 135.89 76.2 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 6558b4c0-6dbf-487d-a90d-44e770342bc5)
-    (property "Reference" "R36" (at 138.43 74.93 0)
+    (property "Reference" "R37" (at 138.43 74.93 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "270R" (at 138.43 77.47 0)
@@ -695,7 +695,7 @@
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/6999686b-4026-4ea7-9227-634603a79198"
-          (reference "R36") (unit 1)
+          (reference "R37") (unit 1)
         )
       )
     )
@@ -704,7 +704,7 @@
   (symbol (lib_id "power:GND") (at 176.53 125.73 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 665130b9-9b3f-49ad-ba7b-3bfaee79d659)
-    (property "Reference" "#PWR0103" (at 176.53 132.08 0)
+    (property "Reference" "#PWR0104" (at 176.53 132.08 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 176.53 130.81 0)
@@ -720,7 +720,7 @@
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/6999686b-4026-4ea7-9227-634603a79198"
-          (reference "#PWR0103") (unit 1)
+          (reference "#PWR0104") (unit 1)
         )
       )
       (project "suspension_tension_meter"
@@ -734,7 +734,7 @@
   (symbol (lib_id "power:GND") (at 125.73 125.73 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 6d99d122-37e9-47fb-8cdd-5e6b396620a2)
-    (property "Reference" "#PWR097" (at 125.73 132.08 0)
+    (property "Reference" "#PWR098" (at 125.73 132.08 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 125.73 130.81 0)
@@ -750,7 +750,7 @@
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/6999686b-4026-4ea7-9227-634603a79198"
-          (reference "#PWR097") (unit 1)
+          (reference "#PWR098") (unit 1)
         )
       )
       (project "suspension_tension_meter"
@@ -790,7 +790,7 @@
   (symbol (lib_id "power:GND") (at 110.49 86.36 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 8b8dc9ba-4a10-4d01-a53b-589c61bf334c)
-    (property "Reference" "#PWR096" (at 110.49 92.71 0)
+    (property "Reference" "#PWR097" (at 110.49 92.71 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 110.49 91.44 0)
@@ -806,7 +806,7 @@
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/6999686b-4026-4ea7-9227-634603a79198"
-          (reference "#PWR096") (unit 1)
+          (reference "#PWR097") (unit 1)
         )
       )
     )
@@ -815,7 +815,7 @@
   (symbol (lib_id "Device:R_Small") (at 176.53 115.57 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 8e345896-bbfc-4226-aba2-a80e38e370c0)
-    (property "Reference" "R39" (at 179.07 114.3 0)
+    (property "Reference" "R40" (at 179.07 114.3 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "120R" (at 179.07 116.84 0)
@@ -832,7 +832,7 @@
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/6999686b-4026-4ea7-9227-634603a79198"
-          (reference "R39") (unit 1)
+          (reference "R40") (unit 1)
         )
       )
       (project "suspension_tension_meter"
@@ -846,7 +846,7 @@
   (symbol (lib_id "Device:R_Small") (at 125.73 115.57 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 96af197f-3e3a-4ee6-8c7e-353dd011be5c)
-    (property "Reference" "R35" (at 128.27 114.3 0)
+    (property "Reference" "R36" (at 128.27 114.3 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "120R" (at 128.27 116.84 0)
@@ -863,7 +863,7 @@
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/6999686b-4026-4ea7-9227-634603a79198"
-          (reference "R35") (unit 1)
+          (reference "R36") (unit 1)
         )
       )
       (project "suspension_tension_meter"
@@ -877,7 +877,7 @@
   (symbol (lib_id "Device:R_Small") (at 151.13 115.57 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 97dfd650-648b-4818-a18b-47a6130ff920)
-    (property "Reference" "R37" (at 153.67 114.3 0)
+    (property "Reference" "R38" (at 153.67 114.3 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "120R" (at 153.67 116.84 0)
@@ -894,7 +894,7 @@
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/6999686b-4026-4ea7-9227-634603a79198"
-          (reference "R37") (unit 1)
+          (reference "R38") (unit 1)
         )
       )
       (project "suspension_tension_meter"
@@ -908,7 +908,7 @@
   (symbol (lib_id "Power_Ports:+3V_EXT") (at 161.29 72.39 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 993754c8-9546-4535-b0f6-113f61a15a39)
-    (property "Reference" "#PWR0101" (at 167.64 72.39 0)
+    (property "Reference" "#PWR0102" (at 167.64 72.39 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V_EXT" (at 161.29 67.31 0)
@@ -924,7 +924,7 @@
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/6999686b-4026-4ea7-9227-634603a79198"
-          (reference "#PWR0101") (unit 1)
+          (reference "#PWR0102") (unit 1)
         )
       )
     )
@@ -985,7 +985,7 @@
   (symbol (lib_id "power:GND") (at 151.13 125.73 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid b8bbf0c2-cd51-44f3-b3d6-0500f0e0336d)
-    (property "Reference" "#PWR0100" (at 151.13 132.08 0)
+    (property "Reference" "#PWR0101" (at 151.13 132.08 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 151.13 130.81 0)
@@ -1001,7 +1001,7 @@
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/6999686b-4026-4ea7-9227-634603a79198"
-          (reference "#PWR0100") (unit 1)
+          (reference "#PWR0101") (unit 1)
         )
       )
       (project "suspension_tension_meter"
@@ -1015,7 +1015,7 @@
   (symbol (lib_id "Device:R_Small") (at 161.29 76.2 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid b9742bea-6b2f-43fc-99b4-58875e5a5d0d)
-    (property "Reference" "R38" (at 163.83 74.93 0)
+    (property "Reference" "R39" (at 163.83 74.93 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "82R" (at 163.83 77.47 0)
@@ -1032,7 +1032,7 @@
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/6999686b-4026-4ea7-9227-634603a79198"
-          (reference "R38") (unit 1)
+          (reference "R39") (unit 1)
         )
       )
     )
@@ -1041,7 +1041,7 @@
   (symbol (lib_id "Power_Ports:+5V_EXT") (at 186.69 72.39 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid bc6c47ed-816f-4397-abde-50fe19ac5645)
-    (property "Reference" "#PWR0104" (at 186.69 76.2 0)
+    (property "Reference" "#PWR0105" (at 186.69 76.2 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V_EXT" (at 186.69 67.31 0)
@@ -1057,7 +1057,7 @@
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/6999686b-4026-4ea7-9227-634603a79198"
-          (reference "#PWR0104") (unit 1)
+          (reference "#PWR0105") (unit 1)
         )
       )
     )
@@ -1092,7 +1092,7 @@
   (symbol (lib_id "power:GND") (at 135.89 86.36 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid de41b37c-fc26-4128-bb6a-92e295a7396d)
-    (property "Reference" "#PWR099" (at 135.89 92.71 0)
+    (property "Reference" "#PWR0100" (at 135.89 92.71 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 135.89 91.44 0)
@@ -1108,7 +1108,7 @@
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/6999686b-4026-4ea7-9227-634603a79198"
-          (reference "#PWR099") (unit 1)
+          (reference "#PWR0100") (unit 1)
         )
       )
     )
@@ -1117,7 +1117,7 @@
   (symbol (lib_id "power:GND") (at 161.29 86.36 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid e03662d8-58c0-4728-a40b-fb38d42dfa2d)
-    (property "Reference" "#PWR0102" (at 161.29 92.71 0)
+    (property "Reference" "#PWR0103" (at 161.29 92.71 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 161.29 91.44 0)
@@ -1133,7 +1133,7 @@
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/6999686b-4026-4ea7-9227-634603a79198"
-          (reference "#PWR0102") (unit 1)
+          (reference "#PWR0103") (unit 1)
         )
       )
     )

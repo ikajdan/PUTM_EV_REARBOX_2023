@@ -6,7 +6,7 @@
 
   (title_block
     (title "Ready to Drive Sound")
-    (date "2023-11-17")
+    (date "2024-04-28")
     (rev "${REVISION}")
     (company "Author: I. Kajdan")
     (comment 1 "Reviewer:")
@@ -430,7 +430,7 @@
       )
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/562e38ba-d94a-4627-8fa0-e9eb7b5e4e9a"
-          (reference "R33") (unit 1)
+          (reference "R34") (unit 1)
         )
       )
     )
@@ -471,7 +471,7 @@
   (symbol (lib_id "Device:R_Small") (at 133.35 107.95 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 8eedff48-e912-44d9-8e28-e23813876d9c)
-    (property "Reference" "R32" (at 133.35 105.41 90)
+    (property "Reference" "R33" (at 133.35 105.41 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "100R" (at 133.35 110.49 90)
@@ -488,7 +488,7 @@
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/562e38ba-d94a-4627-8fa0-e9eb7b5e4e9a"
-          (reference "R32") (unit 1)
+          (reference "R33") (unit 1)
         )
       )
       (project "Traction_Control_System"
@@ -505,7 +505,7 @@
   (symbol (lib_id "power:GND") (at 148.59 118.11 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid a2671da1-75d9-4cd9-b900-097009644ea7)
-    (property "Reference" "#PWR094" (at 148.59 124.46 0)
+    (property "Reference" "#PWR095" (at 148.59 124.46 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 148.59 123.19 0)
@@ -521,7 +521,7 @@
     (instances
       (project "rearbox"
         (path "/b652b05a-4e3d-4ad1-b032-18886abe7d45/562e38ba-d94a-4627-8fa0-e9eb7b5e4e9a"
-          (reference "#PWR094") (unit 1)
+          (reference "#PWR095") (unit 1)
         )
       )
       (project "Traction_Control_System"
