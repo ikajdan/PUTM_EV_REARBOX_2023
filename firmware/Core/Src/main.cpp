@@ -35,7 +35,8 @@
 #include "ain.h"
 #include "fsm.h"
 #include "tca6416a.h"
-#include "vnd7020aj.h"
+//#include "vnd7020aj.h"
+#include "PUTM_EV_CAN_LIBRARY/lib/can_interface.hpp"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -75,7 +76,8 @@ void SystemClock_Config(void);
  * @retval int
  */
 int main(void)
-{
+        {
+
     /* USER CODE BEGIN 1 */
 
     /* USER CODE END 1 */
@@ -123,16 +125,16 @@ int main(void)
     HAL_TIM_Base_Start_IT(&htim1); // (10 Hz) Control loop
     HAL_TIM_Base_Start_IT(&htim3); // (3.53 Hz) ASSI light
 
-    HAL_TIM_PWM_Start(&htim_pump, TIM_CHANNEL_PUMP1); // (10 kHz) Pump 1 PWM
-    HAL_TIM_PWM_Start(&htim_pump, TIM_CHANNEL_PUMP2); // (10 kHz) Pump 2 PWM
-    HAL_TIM_PWM_Start(&htim_fan, TIM_CHANNEL_FAN_L); // (10 kHz) Left fan PWM
-    HAL_TIM_PWM_Start(&htim_fan, TIM_CHANNEL_FAN_R); // (10 kHz) Right fan PWM
+//    HAL_TIM_PWM_Start(&htim_pump, TIM_CHANNEL_PUMP1); // (10 kHz) Pump 1 PWM
+//    HAL_TIM_PWM_Start(&htim_pump, TIM_CHANNEL_PUMP2); // (10 kHz) Pump 2 PWM
+//    HAL_TIM_PWM_Start(&htim_fan, TIM_CHANNEL_FAN_L); // (10 kHz) Left fan PWM
+//    HAL_TIM_PWM_Start(&htim_fan, TIM_CHANNEL_FAN_R); // (10 kHz) Right fan PWM
 
-    // Turn on pumps and fans
-    PWM_SetDutyCycle(&htim_pump, TIM_CHANNEL_PUMP1, 70);
-    PWM_SetDutyCycle(&htim_pump, TIM_CHANNEL_PUMP2, 70);
-    PWM_SetDutyCycle(&htim_fan, TIM_CHANNEL_FAN_L, 70);
-    PWM_SetDutyCycle(&htim_fan, TIM_CHANNEL_FAN_R, 70);
+//    // Turn on pumps and fans
+//    PWM_SetDutyCycle(&htim_pump, TIM_CHANNEL_PUMP1, 70);
+//    PWM_SetDutyCycle(&htim_pump, TIM_CHANNEL_PUMP2, 70);
+//    PWM_SetDutyCycle(&htim_fan, TIM_CHANNEL_FAN_L, 70);
+//    PWM_SetDutyCycle(&htim_fan, TIM_CHANNEL_FAN_R, 70);
 
     TCA6416A_Init(&htca, &hi2c3, 0x20);
     TCA6416A_SetPinMode(&htca, PIN_RFU2, TCA_PIN_INPUT);
@@ -157,47 +159,62 @@ int main(void)
     TCA6416A_WritePin(&htca, PIN_SAFETY_LED, TCA_PIN_SET);
     TCA6416A_WritePin(&htca, PIN_FUSE_LED, TCA_PIN_SET);
 
-    AIN_Handle_TypeDef hain_mono_temperature = { 1000, 3000, 1000, 2000, 4.09f,
-            AIN_ADC1_REGISTER[ADC_CHANNEL_MONO_TEMPERATURE] };
-    AIN_Handle_TypeDef hain_sense_out = { 1000, 3000, 1000, 2000, 4.09f,
-            AIN_ADC1_REGISTER[ADC_CHANNEL_SENSE_OUT] };
-    AIN_Handle_TypeDef hain_water_pressure1 = { 1000, 3000, 1000, 2000, 4.09f,
-            AIN_ADC1_REGISTER[ADC_CHANNEL_WATER_PRESSURE1] };
-    AIN_Handle_TypeDef hain_water_pressure2 = { 1000, 3000, 1000, 2000, 4.09f,
-            AIN_ADC1_REGISTER[ADC_CHANNEL_WATER_PRESSURE2] };
-    AIN_Handle_TypeDef hain_water_temperature1 = { 1000, 3000, 1000, 2000, 4.09f,
-            AIN_ADC1_REGISTER[ADC_CHANNEL_WATER_TEMPERATURE1] };
-    AIN_Handle_TypeDef hain_water_temperature2 = { 1000, 3000, 1000, 2000, 4.09f,
-            AIN_ADC1_REGISTER[ADC_CHANNEL_WATER_TEMPERATURE2] };
-    AIN_Handle_TypeDef hain_analog_input1 = { 1000, 3000, 1000, 2000, 4.09f,
-            AIN_ADC2_REGISTER[ADC_CHANNEL_ANALOG_INPUT1] };
-    AIN_Handle_TypeDef hain_analog_input2 = { 1000, 3000, 1000, 2000, 4.09f,
-            AIN_ADC2_REGISTER[ADC_CHANNEL_ANALOG_INPUT2] };
-    AIN_Handle_TypeDef hain_analog_potentiometer_l = { 1000, 3000, 1000, 2000, 4.09f,
-            AIN_ADC2_REGISTER[ADC_CHANNEL_ANALOG_POTENTIOMETER_L] };
-    AIN_Handle_TypeDef hain_analog_potentiometer_r = { 1000, 3000, 1000, 2000, 4.09f,
-            AIN_ADC2_REGISTER[ADC_CHANNEL_ANALOG_POTENTIOMETER_R] };
+//    AIN_Handle_TypeDef hain_mono_temperature = { 1000, 3000, 1000, 2000, 4.09f,
+//            AIN_ADC1_REGISTER[ADC_CHANNEL_MONO_TEMPERATURE] };
+//    AIN_Handle_TypeDef hain_sense_out = { 1000, 3000, 1000, 2000, 4.09f,
+//            AIN_ADC1_REGISTER[ADC_CHANNEL_SENSE_OUT] };
+//    AIN_Handle_TypeDef hain_water_pressure1 = { 1000, 3000, 1000, 2000, 4.09f,
+//            AIN_ADC1_REGISTER[ADC_CHANNEL_WATER_PRESSURE1] };
+//    AIN_Handle_TypeDef hain_water_pressure2 = { 1000, 3000, 1000, 2000, 4.09f,
+//            AIN_ADC1_REGISTER[ADC_CHANNEL_WATER_PRESSURE2] };
+//    AIN_Handle_TypeDef hain_water_temperature1 = { 1000, 3000, 1000, 2000, 4.09f,
+//            AIN_ADC1_REGISTER[ADC_CHANNEL_WATER_TEMPERATURE1] };
+//    AIN_Handle_TypeDef hain_water_temperature2 = { 1000, 3000, 1000, 2000, 4.09f,
+//            AIN_ADC1_REGISTER[ADC_CHANNEL_WATER_TEMPERATURE2] };
+//    AIN_Handle_TypeDef hain_analog_input1 = { 1000, 3000, 1000, 2000, 4.09f,
+//            AIN_ADC2_REGISTER[ADC_CHANNEL_ANALOG_INPUT1] };
+//    AIN_Handle_TypeDef hain_analog_input2 = { 1000, 3000, 1000, 2000, 4.09f,
+//            AIN_ADC2_REGISTER[ADC_CHANNEL_ANALOG_INPUT2] };
+//    AIN_Handle_TypeDef hain_analog_potentiometer_l = { 1000, 3000, 1000, 2000, 4.09f,
+//            AIN_ADC2_REGISTER[ADC_CHANNEL_ANALOG_POTENTIOMETER_L] };
+//    AIN_Handle_TypeDef hain_analog_potentiometer_r = { 1000, 3000, 1000, 2000, 4.09f,
+//            AIN_ADC2_REGISTER[ADC_CHANNEL_ANALOG_POTENTIOMETER_R] };
     /* USER CODE END 2 */
 
     /* Infinite loop */
     /* USER CODE BEGIN WHILE */
-    while(1)
-    {
+    while(1) {
         if(hfsm.send_data) {
             hfsm.send_data = false;
 
-            hfsm.mono_temperature = AIN_GetTemperature(&hain_mono_temperature);
-            hfsm.sense_out = AIN_GetTemperature(&hain_sense_out);
-            hfsm.water_pressure1 = AIN_GetPressure(&hain_water_pressure1);
-            hfsm.water_pressure2 = AIN_GetPressure(&hain_water_pressure2);
-            hfsm.water_temperature1 = AIN_GetTemperature(&hain_water_temperature1);
-            hfsm.water_temperature2 = AIN_GetTemperature(&hain_water_temperature2);
-            hfsm.analog_input1 = AIN_GetResistance(&hain_analog_input1);
-            hfsm.analog_input2 = AIN_GetResistance(&hain_analog_input2);
-            hfsm.analog_potentiometer_l = AIN_GetResistance(&hain_analog_potentiometer_l);
-            hfsm.analog_potentiometer_r = AIN_GetResistance(&hain_analog_potentiometer_r);
+//            hfsm.mono_temperature = AIN_GetTemperature(&hain_mono_temperature);
+//            hfsm.sense_out = AIN_GetTemperature(&hain_sense_out);
+//            hfsm.water_pressure1 = AIN_GetPressure(&hain_water_pressure1);
+//            hfsm.water_pressure2 = AIN_GetPressure(&hain_water_pressure2);
+//            hfsm.water_temperature1 = AIN_GetTemperature(&hain_water_temperature1);
+//            hfsm.water_temperature2 = AIN_GetTemperature(&hain_water_temperature2);
+//            hfsm.analog_input1 = AIN_GetResistance(&hain_analog_input1);
+//            hfsm.analog_input2 = AIN_GetResistance(&hain_analog_input2);
+//            hfsm.analog_potentiometer_l = AIN_GetResistance(&hain_analog_potentiometer_l);
+//            hfsm.analog_potentiometer_r = AIN_GetResistance(&hain_analog_potentiometer_r);W
 
-            // TODO: Send data
+            PUTM_CAN::RearboxMain
+            main = {
+                    .safety_rfu1 = hfsm.rfu1_safety,
+                    .safety_rfu2 = hfsm.rfu2_safety,
+                    .safety_asms = hfsm.asms_safety,
+                    .safety_fw = hfsm.fw_safety,
+                    .safety_hv = hfsm.hv_safety,
+                    .safety_res = hfsm.res_safety,
+                    .safety_hvd = hfsm.hvd_safety,
+                    .safety_inv = hfsm.inv_safety,
+                    .safety_wheel_fl = hfsm.wheel_fl_safety,
+                    .safety_wheel_fr = hfsm.wheel_fr_safety,
+                    .safety_wheel_rl = hfsm.wheel_rl_safety,
+                    .safety_wheel_rr = hfsm.wheel_rr_safety,
+            };
+            auto frame = PUTM_CAN::Can_tx_message<PUTM_CAN::RearboxMain>(main, PUTM_CAN::can_tx_header_REARBOX_MAIN);
+            frame.send(hfdcan1);
         }
 
         if(hfsm.data_received) {
@@ -224,8 +241,7 @@ int main(void)
  * @brief System Clock Configuration
  * @retval None
  */
-void SystemClock_Config(void)
-{
+void SystemClock_Config(void) {
     RCC_OscInitTypeDef RCC_OscInitStruct = { 0 };
     RCC_ClkInitTypeDef RCC_ClkInitStruct = { 0 };
 
@@ -241,8 +257,8 @@ void SystemClock_Config(void)
     RCC_OscInitStruct.LSIState = RCC_LSI_ON;
     RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;
     RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSE;
-    RCC_OscInitStruct.PLL.PLLM = RCC_PLLM_DIV12;
-    RCC_OscInitStruct.PLL.PLLN = 85;
+    RCC_OscInitStruct.PLL.PLLM = RCC_PLLM_DIV3;
+    RCC_OscInitStruct.PLL.PLLN = 20;
     RCC_OscInitStruct.PLL.PLLP = RCC_PLLP_DIV2;
     RCC_OscInitStruct.PLL.PLLQ = RCC_PLLQ_DIV8;
     RCC_OscInitStruct.PLL.PLLR = RCC_PLLR_DIV2;
@@ -272,8 +288,7 @@ void SystemClock_Config(void)
  * @param  htim: TIM handle
  * @retval None
  */
-void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
-{
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim) {
     if(htim == &htim1) {
         if(hfsm.state == FSM_RUNNING) {
             hfsm.send_data = true;
@@ -306,8 +321,7 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
  * @param  GPIO_Pin: Specifies the pins connected EXTI line
  * @retval None
  */
-void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
-{
+void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin) {
     if(GPIO_Pin == SAFETY_INT_Pin) {
         hfsm.rfu1_safety = TCA6416A_ReadPin(&htca, PIN_RFU1);
         hfsm.rfu2_safety = TCA6416A_ReadPin(&htca, PIN_RFU2);
@@ -329,8 +343,7 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
  * @brief  This function is executed in case of error occurrence.
  * @retval None
  */
-void Error_Handler(void)
-{
+void Error_Handler(void) {
     /* USER CODE BEGIN Error_Handler_Debug */
     /* User can add his own implementation to report the HAL error return state */
     __disable_irq();
@@ -349,8 +362,7 @@ void Error_Handler(void)
  * @param  line: assert_param error line source number
  * @retval None
  */
-void assert_failed(uint8_t *file, uint32_t line)
-{
+void assert_failed(uint8_t *file, uint32_t line) {
     /* USER CODE BEGIN 6 */
     // printf("Wrong parameters value: file %s on line %lu\r\n", file, line);
     /* USER CODE END 6 */

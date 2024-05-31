@@ -40,6 +40,10 @@ typedef struct {
 /* Public variables ----------------------------------------------------------*/
 extern TCA6416A_Handle_TypeDef htca;
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 /* Public function prototypes ------------------------------------------------*/
 /**
  * @brief  Initialize TCA6416A
@@ -105,5 +109,9 @@ uint16_t TCA6416A_ReadPort(TCA6416A_Handle_TypeDef *tca);
  * @retval None
  */
 void TCA6416A_WritePort(TCA6416A_Handle_TypeDef *tca, uint16_t i2cportval);
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif /* __TCA6416A_H__ */
