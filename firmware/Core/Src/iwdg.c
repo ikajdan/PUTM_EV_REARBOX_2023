@@ -27,8 +27,7 @@
 IWDG_HandleTypeDef hiwdg;
 
 /* IWDG init function */
-void MX_IWDG_Init(void)
-{
+void MX_IWDG_Init(void) {
 
     /* USER CODE BEGIN IWDG_Init 0 */
 
@@ -41,14 +40,12 @@ void MX_IWDG_Init(void)
     hiwdg.Init.Prescaler = IWDG_PRESCALER_16;
     hiwdg.Init.Window = 4095;
     hiwdg.Init.Reload = 4095;
-    if(HAL_IWDG_Init(&hiwdg) != HAL_OK)
-            {
+    if(HAL_IWDG_Init(&hiwdg) != HAL_OK) {
         Error_Handler();
     }
     /* USER CODE BEGIN IWDG_Init 2 */
 
     /* USER CODE END IWDG_Init 2 */
-
 }
 
 /* USER CODE BEGIN 1 */

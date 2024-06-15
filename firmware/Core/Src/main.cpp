@@ -19,6 +19,7 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "adc.h"
+#include "cmsis_os.h"
 #include "dac.h"
 #include "dma.h"
 #include "fdcan.h"
@@ -57,13 +58,18 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
-
+#ifdef __cplusplus
+extern "C" {
+#endif
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
+void MX_FREERTOS_Init(void);
 /* USER CODE BEGIN PFP */
-
+#ifdef __cplusplus
+}
+#endif
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -81,11 +87,9 @@ int main(void) {
 
     /* USER CODE END 1 */
 
-    /* MCU
-     * Configuration--------------------------------------------------------*/
+    /* MCU Configuration--------------------------------------------------------*/
 
-    /* Reset of all peripherals, Initializes the Flash interface and the
-     * Systick. */
+    /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
     HAL_Init();
 
     /* USER CODE BEGIN Init */
@@ -191,6 +195,17 @@ int main(void) {
     //    2000, 4.09f,
     //            AIN_ADC2_REGISTER[ADC_CHANNEL_ANALOG_POTENTIOMETER_R] };
     /* USER CODE END 2 */
+
+    /* Init scheduler */
+    osKernelInitialize();
+
+    /* Call init function for freertos objects (in cmsis_os2.c) */
+    MX_FREERTOS_Init();
+
+    /* Start scheduler */
+    osKernelStart();
+
+    /* We should never get here as control is now taken by the scheduler */
 
     /* Infinite loop */
     /* USER CODE BEGIN WHILE */
@@ -298,13 +313,45 @@ void SystemClock_Config(void) {
     }
 }
 
-/* USER CODE BEGIN 4 */
 /**
- * @brief  Period elapsed callback in non-blocking mode
- * @param  htim: TIM handle
+ * @brief  EXTI line detection callbacks
+ * @param  GPIO_Pin: Specifies the pins connected EXTI line
+ * @retval None
+ */
+void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin) {
+    if(GPIO_Pin == SAFETY_INT_Pin) {
+        hfsm.rfu1_safety = TCA6416A_ReadPin(&htca, PIN_RFU1);
+        hfsm.rfu2_safety = TCA6416A_ReadPin(&htca, PIN_RFU2);
+        hfsm.asms_safety = TCA6416A_ReadPin(&htca, PIN_ASMS);
+        hfsm.fw_safety = TCA6416A_ReadPin(&htca, PIN_FW);
+        hfsm.hv_safety = TCA6416A_ReadPin(&htca, PIN_HV);
+        hfsm.res_safety = TCA6416A_ReadPin(&htca, PIN_RES);
+        hfsm.hvd_safety = TCA6416A_ReadPin(&htca, PIN_HVD);
+        hfsm.inv_safety = TCA6416A_ReadPin(&htca, PIN_INV);
+        hfsm.wheel_fl_safety = TCA6416A_ReadPin(&htca, PIN_WHEEL_FL);
+        hfsm.wheel_fr_safety = TCA6416A_ReadPin(&htca, PIN_WHEEL_FR);
+        hfsm.wheel_rl_safety = TCA6416A_ReadPin(&htca, PIN_WHEEL_RL);
+        hfsm.wheel_rr_safety = TCA6416A_ReadPin(&htca, PIN_WHEEL_RR);
+    }
+}
+/* USER CODE END 4 */
+
+/**
+ * @brief  Period elapsed callback in non blocking mode
+ * @note   This function is called  when TIM6 interrupt took place, inside
+ * HAL_TIM_IRQHandler(). It makes a direct call to HAL_IncTick() to increment
+ * a global variable "uwTick" used as application time base.
+ * @param  htim : TIM handle
  * @retval None
  */
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef* htim) {
+    /* USER CODE BEGIN Callback 0 */
+
+    /* USER CODE END Callback 0 */
+    if(htim->Instance == TIM6) {
+        HAL_IncTick();
+    }
+    /* USER CODE BEGIN Callback 1 */
     if(htim == &htim1) {
         if(hfsm.state == FSM_RUNNING) {
             hfsm.send_data = true;
@@ -330,30 +377,8 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef* htim) {
             HAL_GPIO_WritePin(ASSI_LED_G_GPIO_Port, ASSI_LED_G_Pin, GPIO_PIN_RESET);
         }
     }
+    /* USER CODE END Callback 1 */
 }
-
-/**
- * @brief  EXTI line detection callbacks
- * @param  GPIO_Pin: Specifies the pins connected EXTI line
- * @retval None
- */
-void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin) {
-    if(GPIO_Pin == SAFETY_INT_Pin) {
-        hfsm.rfu1_safety = TCA6416A_ReadPin(&htca, PIN_RFU1);
-        hfsm.rfu2_safety = TCA6416A_ReadPin(&htca, PIN_RFU2);
-        hfsm.asms_safety = TCA6416A_ReadPin(&htca, PIN_ASMS);
-        hfsm.fw_safety = TCA6416A_ReadPin(&htca, PIN_FW);
-        hfsm.hv_safety = TCA6416A_ReadPin(&htca, PIN_HV);
-        hfsm.res_safety = TCA6416A_ReadPin(&htca, PIN_RES);
-        hfsm.hvd_safety = TCA6416A_ReadPin(&htca, PIN_HVD);
-        hfsm.inv_safety = TCA6416A_ReadPin(&htca, PIN_INV);
-        hfsm.wheel_fl_safety = TCA6416A_ReadPin(&htca, PIN_WHEEL_FL);
-        hfsm.wheel_fr_safety = TCA6416A_ReadPin(&htca, PIN_WHEEL_FR);
-        hfsm.wheel_rl_safety = TCA6416A_ReadPin(&htca, PIN_WHEEL_RL);
-        hfsm.wheel_rr_safety = TCA6416A_ReadPin(&htca, PIN_WHEEL_RR);
-    }
-}
-/* USER CODE END 4 */
 
 /**
  * @brief  This function is executed in case of error occurrence.

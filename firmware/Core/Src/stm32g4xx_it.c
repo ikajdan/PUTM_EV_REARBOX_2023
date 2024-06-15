@@ -18,8 +18,8 @@
 /* USER CODE END Header */
 
 /* Includes ------------------------------------------------------------------*/
-#include "main.h"
 #include "stm32g4xx_it.h"
+#include "main.h"
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 /* USER CODE END Includes */
@@ -57,9 +57,12 @@
 /* External variables --------------------------------------------------------*/
 extern DMA_HandleTypeDef hdma_adc1;
 extern DMA_HandleTypeDef hdma_adc2;
+extern DAC_HandleTypeDef hdac1;
 extern FDCAN_HandleTypeDef hfdcan1;
 extern TIM_HandleTypeDef htim1;
 extern TIM_HandleTypeDef htim3;
+extern TIM_HandleTypeDef htim6;
+
 /* USER CODE BEGIN EV */
 
 /* USER CODE END EV */
@@ -70,8 +73,7 @@ extern TIM_HandleTypeDef htim3;
 /**
  * @brief This function handles Non maskable interrupt.
  */
-void NMI_Handler(void)
-{
+void NMI_Handler(void) {
     /* USER CODE BEGIN NonMaskableInt_IRQn 0 */
 
     /* USER CODE END NonMaskableInt_IRQn 0 */
@@ -84,13 +86,11 @@ void NMI_Handler(void)
 /**
  * @brief This function handles Hard fault interrupt.
  */
-void HardFault_Handler(void)
-{
+void HardFault_Handler(void) {
     /* USER CODE BEGIN HardFault_IRQn 0 */
 
     /* USER CODE END HardFault_IRQn 0 */
-    while(1)
-    {
+    while(1) {
         /* USER CODE BEGIN W1_HardFault_IRQn 0 */
         /* USER CODE END W1_HardFault_IRQn 0 */
     }
@@ -99,13 +99,11 @@ void HardFault_Handler(void)
 /**
  * @brief This function handles Memory management fault.
  */
-void MemManage_Handler(void)
-{
+void MemManage_Handler(void) {
     /* USER CODE BEGIN MemoryManagement_IRQn 0 */
 
     /* USER CODE END MemoryManagement_IRQn 0 */
-    while(1)
-    {
+    while(1) {
         /* USER CODE BEGIN W1_MemoryManagement_IRQn 0 */
         /* USER CODE END W1_MemoryManagement_IRQn 0 */
     }
@@ -114,13 +112,11 @@ void MemManage_Handler(void)
 /**
  * @brief This function handles Prefetch fault, memory access fault.
  */
-void BusFault_Handler(void)
-{
+void BusFault_Handler(void) {
     /* USER CODE BEGIN BusFault_IRQn 0 */
 
     /* USER CODE END BusFault_IRQn 0 */
-    while(1)
-    {
+    while(1) {
         /* USER CODE BEGIN W1_BusFault_IRQn 0 */
         /* USER CODE END W1_BusFault_IRQn 0 */
     }
@@ -129,69 +125,26 @@ void BusFault_Handler(void)
 /**
  * @brief This function handles Undefined instruction or illegal state.
  */
-void UsageFault_Handler(void)
-{
+void UsageFault_Handler(void) {
     /* USER CODE BEGIN UsageFault_IRQn 0 */
 
     /* USER CODE END UsageFault_IRQn 0 */
-    while(1)
-    {
+    while(1) {
         /* USER CODE BEGIN W1_UsageFault_IRQn 0 */
         /* USER CODE END W1_UsageFault_IRQn 0 */
     }
 }
 
 /**
- * @brief This function handles System service call via SWI instruction.
- */
-void SVC_Handler(void)
-{
-    /* USER CODE BEGIN SVCall_IRQn 0 */
-
-    /* USER CODE END SVCall_IRQn 0 */
-    /* USER CODE BEGIN SVCall_IRQn 1 */
-
-    /* USER CODE END SVCall_IRQn 1 */
-}
-
-/**
  * @brief This function handles Debug monitor.
  */
-void DebugMon_Handler(void)
-{
+void DebugMon_Handler(void) {
     /* USER CODE BEGIN DebugMonitor_IRQn 0 */
 
     /* USER CODE END DebugMonitor_IRQn 0 */
     /* USER CODE BEGIN DebugMonitor_IRQn 1 */
 
     /* USER CODE END DebugMonitor_IRQn 1 */
-}
-
-/**
- * @brief This function handles Pendable request for system service.
- */
-void PendSV_Handler(void)
-{
-    /* USER CODE BEGIN PendSV_IRQn 0 */
-
-    /* USER CODE END PendSV_IRQn 0 */
-    /* USER CODE BEGIN PendSV_IRQn 1 */
-
-    /* USER CODE END PendSV_IRQn 1 */
-}
-
-/**
- * @brief This function handles System tick timer.
- */
-void SysTick_Handler(void)
-{
-    /* USER CODE BEGIN SysTick_IRQn 0 */
-
-    /* USER CODE END SysTick_IRQn 0 */
-    HAL_IncTick();
-    /* USER CODE BEGIN SysTick_IRQn 1 */
-
-    /* USER CODE END SysTick_IRQn 1 */
 }
 
 /******************************************************************************/
@@ -204,8 +157,7 @@ void SysTick_Handler(void)
 /**
  * @brief This function handles DMA1 channel1 global interrupt.
  */
-void DMA1_Channel1_IRQHandler(void)
-{
+void DMA1_Channel1_IRQHandler(void) {
     /* USER CODE BEGIN DMA1_Channel1_IRQn 0 */
 
     /* USER CODE END DMA1_Channel1_IRQn 0 */
@@ -218,8 +170,7 @@ void DMA1_Channel1_IRQHandler(void)
 /**
  * @brief This function handles FDCAN1 interrupt 0.
  */
-void FDCAN1_IT0_IRQHandler(void)
-{
+void FDCAN1_IT0_IRQHandler(void) {
     /* USER CODE BEGIN FDCAN1_IT0_IRQn 0 */
 
     /* USER CODE END FDCAN1_IT0_IRQn 0 */
@@ -232,8 +183,7 @@ void FDCAN1_IT0_IRQHandler(void)
 /**
  * @brief This function handles FDCAN1 interrupt 1.
  */
-void FDCAN1_IT1_IRQHandler(void)
-{
+void FDCAN1_IT1_IRQHandler(void) {
     /* USER CODE BEGIN FDCAN1_IT1_IRQn 0 */
 
     /* USER CODE END FDCAN1_IT1_IRQn 0 */
@@ -246,8 +196,7 @@ void FDCAN1_IT1_IRQHandler(void)
 /**
  * @brief This function handles EXTI line[9:5] interrupts.
  */
-void EXTI9_5_IRQHandler(void)
-{
+void EXTI9_5_IRQHandler(void) {
     /* USER CODE BEGIN EXTI9_5_IRQn 0 */
 
     /* USER CODE END EXTI9_5_IRQn 0 */
@@ -260,8 +209,7 @@ void EXTI9_5_IRQHandler(void)
 /**
  * @brief This function handles TIM1 update interrupt and TIM16 global interrupt.
  */
-void TIM1_UP_TIM16_IRQHandler(void)
-{
+void TIM1_UP_TIM16_IRQHandler(void) {
     /* USER CODE BEGIN TIM1_UP_TIM16_IRQn 0 */
 
     /* USER CODE END TIM1_UP_TIM16_IRQn 0 */
@@ -274,8 +222,7 @@ void TIM1_UP_TIM16_IRQHandler(void)
 /**
  * @brief This function handles TIM3 global interrupt.
  */
-void TIM3_IRQHandler(void)
-{
+void TIM3_IRQHandler(void) {
     /* USER CODE BEGIN TIM3_IRQn 0 */
 
     /* USER CODE END TIM3_IRQn 0 */
@@ -286,10 +233,23 @@ void TIM3_IRQHandler(void)
 }
 
 /**
+ * @brief This function handles TIM6 global interrupt, DAC1 and DAC3 channel underrun error interrupts.
+ */
+void TIM6_DAC_IRQHandler(void) {
+    /* USER CODE BEGIN TIM6_DAC_IRQn 0 */
+
+    /* USER CODE END TIM6_DAC_IRQn 0 */
+    HAL_TIM_IRQHandler(&htim6);
+    HAL_DAC_IRQHandler(&hdac1);
+    /* USER CODE BEGIN TIM6_DAC_IRQn 1 */
+
+    /* USER CODE END TIM6_DAC_IRQn 1 */
+}
+
+/**
  * @brief This function handles DMA2 channel2 global interrupt.
  */
-void DMA2_Channel2_IRQHandler(void)
-{
+void DMA2_Channel2_IRQHandler(void) {
     /* USER CODE BEGIN DMA2_Channel2_IRQn 0 */
 
     /* USER CODE END DMA2_Channel2_IRQn 0 */

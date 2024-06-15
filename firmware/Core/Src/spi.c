@@ -27,8 +27,7 @@
 SPI_HandleTypeDef hspi3;
 
 /* SPI3 init function */
-void MX_SPI3_Init(void)
-{
+void MX_SPI3_Init(void) {
 
     /* USER CODE BEGIN SPI3_Init 0 */
 
@@ -51,22 +50,18 @@ void MX_SPI3_Init(void)
     hspi3.Init.CRCPolynomial = 7;
     hspi3.Init.CRCLength = SPI_CRC_LENGTH_DATASIZE;
     hspi3.Init.NSSPMode = SPI_NSS_PULSE_ENABLE;
-    if(HAL_SPI_Init(&hspi3) != HAL_OK)
-            {
+    if(HAL_SPI_Init(&hspi3) != HAL_OK) {
         Error_Handler();
     }
     /* USER CODE BEGIN SPI3_Init 2 */
 
     /* USER CODE END SPI3_Init 2 */
-
 }
 
-void HAL_SPI_MspInit(SPI_HandleTypeDef *spiHandle)
-{
+void HAL_SPI_MspInit(SPI_HandleTypeDef* spiHandle) {
 
-    GPIO_InitTypeDef GPIO_InitStruct = { 0 };
-    if(spiHandle->Instance == SPI3)
-    {
+    GPIO_InitTypeDef GPIO_InitStruct = {0};
+    if(spiHandle->Instance == SPI3) {
         /* USER CODE BEGIN SPI3_MspInit 0 */
 
         /* USER CODE END SPI3_MspInit 0 */
@@ -76,10 +71,10 @@ void HAL_SPI_MspInit(SPI_HandleTypeDef *spiHandle)
         __HAL_RCC_GPIOC_CLK_ENABLE();
         __HAL_RCC_GPIOB_CLK_ENABLE();
         /**SPI3 GPIO Configuration
-         PC12     ------> SPI3_MOSI
-         PB3     ------> SPI3_SCK
-         PB4     ------> SPI3_MISO
-         */
+        PC12     ------> SPI3_MOSI
+        PB3     ------> SPI3_SCK
+        PB4     ------> SPI3_MISO
+        */
         GPIO_InitStruct.Pin = SPI_MOSI_Pin;
         GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
         GPIO_InitStruct.Pull = GPIO_NOPULL;
@@ -100,11 +95,9 @@ void HAL_SPI_MspInit(SPI_HandleTypeDef *spiHandle)
     }
 }
 
-void HAL_SPI_MspDeInit(SPI_HandleTypeDef *spiHandle)
-{
+void HAL_SPI_MspDeInit(SPI_HandleTypeDef* spiHandle) {
 
-    if(spiHandle->Instance == SPI3)
-    {
+    if(spiHandle->Instance == SPI3) {
         /* USER CODE BEGIN SPI3_MspDeInit 0 */
 
         /* USER CODE END SPI3_MspDeInit 0 */
@@ -112,10 +105,10 @@ void HAL_SPI_MspDeInit(SPI_HandleTypeDef *spiHandle)
         __HAL_RCC_SPI3_CLK_DISABLE();
 
         /**SPI3 GPIO Configuration
-         PC12     ------> SPI3_MOSI
-         PB3     ------> SPI3_SCK
-         PB4     ------> SPI3_MISO
-         */
+        PC12     ------> SPI3_MOSI
+        PB3     ------> SPI3_SCK
+        PB4     ------> SPI3_MISO
+        */
         HAL_GPIO_DeInit(SPI_MOSI_GPIO_Port, SPI_MOSI_Pin);
 
         HAL_GPIO_DeInit(GPIOB, SPI_SCLK_Pin | SPI_MISO_Pin);

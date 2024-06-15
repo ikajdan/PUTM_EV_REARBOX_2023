@@ -30,15 +30,14 @@ DMA_HandleTypeDef hdma_adc1;
 DMA_HandleTypeDef hdma_adc2;
 
 /* ADC1 init function */
-void MX_ADC1_Init(void)
-{
+void MX_ADC1_Init(void) {
 
     /* USER CODE BEGIN ADC1_Init 0 */
 
     /* USER CODE END ADC1_Init 0 */
 
-    ADC_MultiModeTypeDef multimode = { 0 };
-    ADC_ChannelConfTypeDef sConfig = { 0 };
+    ADC_MultiModeTypeDef multimode = {0};
+    ADC_ChannelConfTypeDef sConfig = {0};
 
     /* USER CODE BEGIN ADC1_Init 1 */
 
@@ -62,16 +61,14 @@ void MX_ADC1_Init(void)
     hadc1.Init.DMAContinuousRequests = ENABLE;
     hadc1.Init.Overrun = ADC_OVR_DATA_OVERWRITTEN;
     hadc1.Init.OversamplingMode = DISABLE;
-    if(HAL_ADC_Init(&hadc1) != HAL_OK)
-            {
+    if(HAL_ADC_Init(&hadc1) != HAL_OK) {
         Error_Handler();
     }
 
     /** Configure the ADC multi-mode
      */
     multimode.Mode = ADC_MODE_INDEPENDENT;
-    if(HAL_ADCEx_MultiModeConfigChannel(&hadc1, &multimode) != HAL_OK)
-            {
+    if(HAL_ADCEx_MultiModeConfigChannel(&hadc1, &multimode) != HAL_OK) {
         Error_Handler();
     }
 
@@ -83,8 +80,7 @@ void MX_ADC1_Init(void)
     sConfig.SingleDiff = ADC_SINGLE_ENDED;
     sConfig.OffsetNumber = ADC_OFFSET_NONE;
     sConfig.Offset = 0;
-    if(HAL_ADC_ConfigChannel(&hadc1, &sConfig) != HAL_OK)
-            {
+    if(HAL_ADC_ConfigChannel(&hadc1, &sConfig) != HAL_OK) {
         Error_Handler();
     }
 
@@ -92,8 +88,7 @@ void MX_ADC1_Init(void)
      */
     sConfig.Channel = ADC_CHANNEL_15;
     sConfig.Rank = ADC_REGULAR_RANK_2;
-    if(HAL_ADC_ConfigChannel(&hadc1, &sConfig) != HAL_OK)
-            {
+    if(HAL_ADC_ConfigChannel(&hadc1, &sConfig) != HAL_OK) {
         Error_Handler();
     }
 
@@ -101,8 +96,7 @@ void MX_ADC1_Init(void)
      */
     sConfig.Channel = ADC_CHANNEL_2;
     sConfig.Rank = ADC_REGULAR_RANK_3;
-    if(HAL_ADC_ConfigChannel(&hadc1, &sConfig) != HAL_OK)
-            {
+    if(HAL_ADC_ConfigChannel(&hadc1, &sConfig) != HAL_OK) {
         Error_Handler();
     }
 
@@ -110,8 +104,7 @@ void MX_ADC1_Init(void)
      */
     sConfig.Channel = ADC_CHANNEL_3;
     sConfig.Rank = ADC_REGULAR_RANK_4;
-    if(HAL_ADC_ConfigChannel(&hadc1, &sConfig) != HAL_OK)
-            {
+    if(HAL_ADC_ConfigChannel(&hadc1, &sConfig) != HAL_OK) {
         Error_Handler();
     }
 
@@ -119,8 +112,7 @@ void MX_ADC1_Init(void)
      */
     sConfig.Channel = ADC_CHANNEL_9;
     sConfig.Rank = ADC_REGULAR_RANK_5;
-    if(HAL_ADC_ConfigChannel(&hadc1, &sConfig) != HAL_OK)
-            {
+    if(HAL_ADC_ConfigChannel(&hadc1, &sConfig) != HAL_OK) {
         Error_Handler();
     }
 
@@ -128,24 +120,21 @@ void MX_ADC1_Init(void)
      */
     sConfig.Channel = ADC_CHANNEL_1;
     sConfig.Rank = ADC_REGULAR_RANK_6;
-    if(HAL_ADC_ConfigChannel(&hadc1, &sConfig) != HAL_OK)
-            {
+    if(HAL_ADC_ConfigChannel(&hadc1, &sConfig) != HAL_OK) {
         Error_Handler();
     }
     /* USER CODE BEGIN ADC1_Init 2 */
 
     /* USER CODE END ADC1_Init 2 */
-
 }
 /* ADC2 init function */
-void MX_ADC2_Init(void)
-{
+void MX_ADC2_Init(void) {
 
     /* USER CODE BEGIN ADC2_Init 0 */
 
     /* USER CODE END ADC2_Init 0 */
 
-    ADC_ChannelConfTypeDef sConfig = { 0 };
+    ADC_ChannelConfTypeDef sConfig = {0};
 
     /* USER CODE BEGIN ADC2_Init 1 */
 
@@ -169,8 +158,7 @@ void MX_ADC2_Init(void)
     hadc2.Init.DMAContinuousRequests = ENABLE;
     hadc2.Init.Overrun = ADC_OVR_DATA_OVERWRITTEN;
     hadc2.Init.OversamplingMode = DISABLE;
-    if(HAL_ADC_Init(&hadc2) != HAL_OK)
-            {
+    if(HAL_ADC_Init(&hadc2) != HAL_OK) {
         Error_Handler();
     }
 
@@ -182,8 +170,7 @@ void MX_ADC2_Init(void)
     sConfig.SingleDiff = ADC_SINGLE_ENDED;
     sConfig.OffsetNumber = ADC_OFFSET_NONE;
     sConfig.Offset = 0;
-    if(HAL_ADC_ConfigChannel(&hadc2, &sConfig) != HAL_OK)
-            {
+    if(HAL_ADC_ConfigChannel(&hadc2, &sConfig) != HAL_OK) {
         Error_Handler();
     }
 
@@ -191,8 +178,7 @@ void MX_ADC2_Init(void)
      */
     sConfig.Channel = ADC_CHANNEL_4;
     sConfig.Rank = ADC_REGULAR_RANK_2;
-    if(HAL_ADC_ConfigChannel(&hadc2, &sConfig) != HAL_OK)
-            {
+    if(HAL_ADC_ConfigChannel(&hadc2, &sConfig) != HAL_OK) {
         Error_Handler();
     }
 
@@ -200,8 +186,7 @@ void MX_ADC2_Init(void)
      */
     sConfig.Channel = ADC_CHANNEL_5;
     sConfig.Rank = ADC_REGULAR_RANK_3;
-    if(HAL_ADC_ConfigChannel(&hadc2, &sConfig) != HAL_OK)
-            {
+    if(HAL_ADC_ConfigChannel(&hadc2, &sConfig) != HAL_OK) {
         Error_Handler();
     }
 
@@ -209,25 +194,21 @@ void MX_ADC2_Init(void)
      */
     sConfig.Channel = ADC_CHANNEL_11;
     sConfig.Rank = ADC_REGULAR_RANK_4;
-    if(HAL_ADC_ConfigChannel(&hadc2, &sConfig) != HAL_OK)
-            {
+    if(HAL_ADC_ConfigChannel(&hadc2, &sConfig) != HAL_OK) {
         Error_Handler();
     }
     /* USER CODE BEGIN ADC2_Init 2 */
 
     /* USER CODE END ADC2_Init 2 */
-
 }
 
 static uint32_t HAL_RCC_ADC12_CLK_ENABLED = 0;
 
-void HAL_ADC_MspInit(ADC_HandleTypeDef *adcHandle)
-{
+void HAL_ADC_MspInit(ADC_HandleTypeDef* adcHandle) {
 
-    GPIO_InitTypeDef GPIO_InitStruct = { 0 };
-    RCC_PeriphCLKInitTypeDef PeriphClkInit = { 0 };
-    if(adcHandle->Instance == ADC1)
-    {
+    GPIO_InitTypeDef GPIO_InitStruct = {0};
+    RCC_PeriphCLKInitTypeDef PeriphClkInit = {0};
+    if(adcHandle->Instance == ADC1) {
         /* USER CODE BEGIN ADC1_MspInit 0 */
 
         /* USER CODE END ADC1_MspInit 0 */
@@ -236,8 +217,7 @@ void HAL_ADC_MspInit(ADC_HandleTypeDef *adcHandle)
          */
         PeriphClkInit.PeriphClockSelection = RCC_PERIPHCLK_ADC12;
         PeriphClkInit.Adc12ClockSelection = RCC_ADC12CLKSOURCE_SYSCLK;
-        if(HAL_RCCEx_PeriphCLKConfig(&PeriphClkInit) != HAL_OK)
-                {
+        if(HAL_RCCEx_PeriphCLKConfig(&PeriphClkInit) != HAL_OK) {
             Error_Handler();
         }
 
@@ -251,13 +231,13 @@ void HAL_ADC_MspInit(ADC_HandleTypeDef *adcHandle)
         __HAL_RCC_GPIOA_CLK_ENABLE();
         __HAL_RCC_GPIOB_CLK_ENABLE();
         /**ADC1 GPIO Configuration
-         PC2     ------> ADC1_IN8
-         PC3     ------> ADC1_IN9
-         PA0     ------> ADC1_IN1
-         PA1     ------> ADC1_IN2
-         PA2     ------> ADC1_IN3
-         PB0     ------> ADC1_IN15
-         */
+        PC2     ------> ADC1_IN8
+        PC3     ------> ADC1_IN9
+        PA0     ------> ADC1_IN1
+        PA1     ------> ADC1_IN2
+        PA2     ------> ADC1_IN3
+        PB0     ------> ADC1_IN15
+        */
         GPIO_InitStruct.Pin = MONO_TEMPERATURE_Pin | WATER_TEMPERATURE1_Pin;
         GPIO_InitStruct.Mode = GPIO_MODE_ANALOG;
         GPIO_InitStruct.Pull = GPIO_NOPULL;
@@ -284,8 +264,7 @@ void HAL_ADC_MspInit(ADC_HandleTypeDef *adcHandle)
         hdma_adc1.Init.MemDataAlignment = DMA_MDATAALIGN_HALFWORD;
         hdma_adc1.Init.Mode = DMA_CIRCULAR;
         hdma_adc1.Init.Priority = DMA_PRIORITY_LOW;
-        if(HAL_DMA_Init(&hdma_adc1) != HAL_OK)
-                {
+        if(HAL_DMA_Init(&hdma_adc1) != HAL_OK) {
             Error_Handler();
         }
 
@@ -294,9 +273,7 @@ void HAL_ADC_MspInit(ADC_HandleTypeDef *adcHandle)
         /* USER CODE BEGIN ADC1_MspInit 1 */
 
         /* USER CODE END ADC1_MspInit 1 */
-    }
-    else if(adcHandle->Instance == ADC2)
-    {
+    } else if(adcHandle->Instance == ADC2) {
         /* USER CODE BEGIN ADC2_MspInit 0 */
 
         /* USER CODE END ADC2_MspInit 0 */
@@ -305,8 +282,7 @@ void HAL_ADC_MspInit(ADC_HandleTypeDef *adcHandle)
          */
         PeriphClkInit.PeriphClockSelection = RCC_PERIPHCLK_ADC12;
         PeriphClkInit.Adc12ClockSelection = RCC_ADC12CLKSOURCE_SYSCLK;
-        if(HAL_RCCEx_PeriphCLKConfig(&PeriphClkInit) != HAL_OK)
-                {
+        if(HAL_RCCEx_PeriphCLKConfig(&PeriphClkInit) != HAL_OK) {
             Error_Handler();
         }
 
@@ -319,11 +295,11 @@ void HAL_ADC_MspInit(ADC_HandleTypeDef *adcHandle)
         __HAL_RCC_GPIOA_CLK_ENABLE();
         __HAL_RCC_GPIOC_CLK_ENABLE();
         /**ADC2 GPIO Configuration
-         PA6     ------> ADC2_IN3
-         PA7     ------> ADC2_IN4
-         PC4     ------> ADC2_IN5
-         PC5     ------> ADC2_IN11
-         */
+        PA6     ------> ADC2_IN3
+        PA7     ------> ADC2_IN4
+        PC4     ------> ADC2_IN5
+        PC5     ------> ADC2_IN11
+        */
         GPIO_InitStruct.Pin = ANALOG_INPUT1_Pin | ANALOG_INPUT2_Pin;
         GPIO_InitStruct.Mode = GPIO_MODE_ANALOG;
         GPIO_InitStruct.Pull = GPIO_NOPULL;
@@ -345,8 +321,7 @@ void HAL_ADC_MspInit(ADC_HandleTypeDef *adcHandle)
         hdma_adc2.Init.MemDataAlignment = DMA_MDATAALIGN_HALFWORD;
         hdma_adc2.Init.Mode = DMA_CIRCULAR;
         hdma_adc2.Init.Priority = DMA_PRIORITY_LOW;
-        if(HAL_DMA_Init(&hdma_adc2) != HAL_OK)
-                {
+        if(HAL_DMA_Init(&hdma_adc2) != HAL_OK) {
             Error_Handler();
         }
 
@@ -358,11 +333,9 @@ void HAL_ADC_MspInit(ADC_HandleTypeDef *adcHandle)
     }
 }
 
-void HAL_ADC_MspDeInit(ADC_HandleTypeDef *adcHandle)
-{
+void HAL_ADC_MspDeInit(ADC_HandleTypeDef* adcHandle) {
 
-    if(adcHandle->Instance == ADC1)
-    {
+    if(adcHandle->Instance == ADC1) {
         /* USER CODE BEGIN ADC1_MspDeInit 0 */
 
         /* USER CODE END ADC1_MspDeInit 0 */
@@ -373,13 +346,13 @@ void HAL_ADC_MspDeInit(ADC_HandleTypeDef *adcHandle)
         }
 
         /**ADC1 GPIO Configuration
-         PC2     ------> ADC1_IN8
-         PC3     ------> ADC1_IN9
-         PA0     ------> ADC1_IN1
-         PA1     ------> ADC1_IN2
-         PA2     ------> ADC1_IN3
-         PB0     ------> ADC1_IN15
-         */
+        PC2     ------> ADC1_IN8
+        PC3     ------> ADC1_IN9
+        PA0     ------> ADC1_IN1
+        PA1     ------> ADC1_IN2
+        PA2     ------> ADC1_IN3
+        PB0     ------> ADC1_IN15
+        */
         HAL_GPIO_DeInit(GPIOC, MONO_TEMPERATURE_Pin | WATER_TEMPERATURE1_Pin);
 
         HAL_GPIO_DeInit(GPIOA, WATER_TEMPERATURE2_Pin | WATER_PRESSURE1_Pin | WATER_PRESSURE2_Pin);
@@ -391,9 +364,7 @@ void HAL_ADC_MspDeInit(ADC_HandleTypeDef *adcHandle)
         /* USER CODE BEGIN ADC1_MspDeInit 1 */
 
         /* USER CODE END ADC1_MspDeInit 1 */
-    }
-    else if(adcHandle->Instance == ADC2)
-    {
+    } else if(adcHandle->Instance == ADC2) {
         /* USER CODE BEGIN ADC2_MspDeInit 0 */
 
         /* USER CODE END ADC2_MspDeInit 0 */
@@ -404,11 +375,11 @@ void HAL_ADC_MspDeInit(ADC_HandleTypeDef *adcHandle)
         }
 
         /**ADC2 GPIO Configuration
-         PA6     ------> ADC2_IN3
-         PA7     ------> ADC2_IN4
-         PC4     ------> ADC2_IN5
-         PC5     ------> ADC2_IN11
-         */
+        PA6     ------> ADC2_IN3
+        PA7     ------> ADC2_IN4
+        PC4     ------> ADC2_IN5
+        PC5     ------> ADC2_IN11
+        */
         HAL_GPIO_DeInit(GPIOA, ANALOG_INPUT1_Pin | ANALOG_INPUT2_Pin);
 
         HAL_GPIO_DeInit(GPIOC, POTENTIOMETER_L_Pin | POTENTIOMETER_R_Pin);
