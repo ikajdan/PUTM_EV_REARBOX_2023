@@ -6,7 +6,7 @@
  ******************************************************************************
  * @attention
  *
- * Copyright (c) 2023 STMicroelectronics.
+ * Copyright (c) 2024 STMicroelectronics.
  * All rights reserved.
  *
  * This software is licensed under terms that can be found in the LICENSE file
@@ -27,17 +27,14 @@
 #include "i2c.h"
 #include "iwdg.h"
 #include "spi.h"
-#include "tim.h"
 #include "usart.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include "ain.h"
-#include "fsm.h"
-#include "pwm.h"
-#include "tca6416a.h"
-// #include "vnd7020aj.h"
 #include "PUTM_EV_CAN_LIBRARY/lib/can_interface.hpp"
+#include "ain.h"
+#include "data.h"
+#include "tca6416a.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -58,6 +55,8 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
+extern Safety_TypeDef safety;
+
 #ifdef __cplusplus
 extern "C" {
 #endif
@@ -107,7 +106,6 @@ int main(void) {
     MX_GPIO_Init();
     MX_DMA_Init();
     MX_FDCAN1_Init();
-    MX_FDCAN2_Init();
     MX_I2C3_Init();
     MX_USART3_UART_Init();
     MX_I2C2_Init();
@@ -115,32 +113,13 @@ int main(void) {
     MX_SPI3_Init();
     MX_ADC1_Init();
     MX_ADC2_Init();
-    MX_TIM2_Init();
-    MX_TIM15_Init();
     MX_I2C1_Init();
     MX_IWDG_Init();
-    MX_TIM1_Init();
-    MX_TIM3_Init();
     /* USER CODE BEGIN 2 */
     HAL_ADCEx_Calibration_Start(&hadc1, ADC_SINGLE_ENDED);
     HAL_ADCEx_Calibration_Start(&hadc2, ADC_SINGLE_ENDED);
-    HAL_ADC_Start_DMA(&hadc1, (uint32_t*)AIN_ADC1_REGISTER, AIN_ADC1_CHANNELS);
-    HAL_ADC_Start_DMA(&hadc2, (uint32_t*)AIN_ADC2_REGISTER, AIN_ADC2_CHANNELS);
-
-    HAL_TIM_Base_Start_IT(&htim1);  // (10 Hz) Control loop
-    HAL_TIM_Base_Start_IT(&htim3);  // (3.53 Hz) ASSI light
-
-    //    HAL_TIM_PWM_Start(&htim_pump, TIM_CHANNEL_PUMP1); // (10 kHz) Pump 1
-    //    PWM HAL_TIM_PWM_Start(&htim_pump, TIM_CHANNEL_PUMP2); // (10 kHz) Pump
-    //    2 PWM HAL_TIM_PWM_Start(&htim_fan, TIM_CHANNEL_FAN_L); // (10 kHz)
-    //    Left fan PWM HAL_TIM_PWM_Start(&htim_fan, TIM_CHANNEL_FAN_R); // (10
-    //    kHz) Right fan PWM
-
-    //    // Turn on pumps and fans
-    //    PWM_SetDutyCycle(&htim_pump, TIM_CHANNEL_PUMP1, 70);
-    //    PWM_SetDutyCycle(&htim_pump, TIM_CHANNEL_PUMP2, 70);
-    //    PWM_SetDutyCycle(&htim_fan, TIM_CHANNEL_FAN_L, 70);
-    //    PWM_SetDutyCycle(&htim_fan, TIM_CHANNEL_FAN_R, 70);
+    // HAL_ADC_Start_DMA(&hadc1, (uint32_t*)AIN_ADC1_REGISTER, AIN_ADC1_CHANNELS);
+    // HAL_ADC_Start_DMA(&hadc2, (uint32_t*)AIN_ADC2_REGISTER, AIN_ADC2_CHANNELS);
 
     TCA6416A_Init(&htca, &hi2c3, 0x20);
     TCA6416A_SetPinMode(&htca, PIN_RFU2, TCA_PIN_INPUT);
@@ -164,36 +143,6 @@ int main(void) {
     TCA6416A_WritePin(&htca, PIN_ERROR_LED, TCA_PIN_SET);
     TCA6416A_WritePin(&htca, PIN_SAFETY_LED, TCA_PIN_SET);
     TCA6416A_WritePin(&htca, PIN_FUSE_LED, TCA_PIN_SET);
-
-    //    AIN_Handle_TypeDef hain_mono_temperature = { 1000, 3000, 1000,
-    //    2000, 4.09f,
-    //            AIN_ADC1_REGISTER[ADC_CHANNEL_MONO_TEMPERATURE] };
-    //    AIN_Handle_TypeDef hain_sense_out = { 1000, 3000, 1000, 2000, 4.09f,
-    //            AIN_ADC1_REGISTER[ADC_CHANNEL_SENSE_OUT] };
-    //    AIN_Handle_TypeDef hain_water_pressure1 = { 1000, 3000, 1000,
-    //    2000, 4.09f,
-    //            AIN_ADC1_REGISTER[ADC_CHANNEL_WATER_PRESSURE1] };
-    //    AIN_Handle_TypeDef hain_water_pressure2 = { 1000, 3000, 1000,
-    //    2000, 4.09f,
-    //            AIN_ADC1_REGISTER[ADC_CHANNEL_WATER_PRESSURE2] };
-    //    AIN_Handle_TypeDef hain_water_temperature1 = { 1000, 3000, 1000,
-    //    2000, 4.09f,
-    //            AIN_ADC1_REGISTER[ADC_CHANNEL_WATER_TEMPERATURE1] };
-    //    AIN_Handle_TypeDef hain_water_temperature2 = { 1000, 3000, 1000,
-    //    2000, 4.09f,
-    //            AIN_ADC1_REGISTER[ADC_CHANNEL_WATER_TEMPERATURE2] };
-    //    AIN_Handle_TypeDef hain_analog_input1 = { 1000, 3000, 1000,
-    //    2000, 4.09f,
-    //            AIN_ADC2_REGISTER[ADC_CHANNEL_ANALOG_INPUT1] };
-    //    AIN_Handle_TypeDef hain_analog_input2 = { 1000, 3000, 1000,
-    //    2000, 4.09f,
-    //            AIN_ADC2_REGISTER[ADC_CHANNEL_ANALOG_INPUT2] };
-    //    AIN_Handle_TypeDef hain_analog_potentiometer_l = { 1000, 3000, 1000,
-    //    2000, 4.09f,
-    //            AIN_ADC2_REGISTER[ADC_CHANNEL_ANALOG_POTENTIOMETER_L] };
-    //    AIN_Handle_TypeDef hain_analog_potentiometer_r = { 1000, 3000, 1000,
-    //    2000, 4.09f,
-    //            AIN_ADC2_REGISTER[ADC_CHANNEL_ANALOG_POTENTIOMETER_R] };
     /* USER CODE END 2 */
 
     /* Init scheduler */
@@ -210,60 +159,6 @@ int main(void) {
     /* Infinite loop */
     /* USER CODE BEGIN WHILE */
     while(1) {
-        if(hfsm.send_data) {
-            hfsm.send_data = false;
-
-            //            hfsm.mono_temperature =
-            //            AIN_GetTemperature(&hain_mono_temperature);
-            //            hfsm.sense_out = AIN_GetTemperature(&hain_sense_out);
-            //            hfsm.water_pressure1 =
-            //            AIN_GetPressure(&hain_water_pressure1);
-            //            hfsm.water_pressure2 =
-            //            AIN_GetPressure(&hain_water_pressure2);
-            //            hfsm.water_temperature1 =
-            //            AIN_GetTemperature(&hain_water_temperature1);
-            //            hfsm.water_temperature2 =
-            //            AIN_GetTemperature(&hain_water_temperature2);
-            //            hfsm.analog_input1 =
-            //            AIN_GetResistance(&hain_analog_input1);
-            //            hfsm.analog_input2 =
-            //            AIN_GetResistance(&hain_analog_input2);
-            //            hfsm.analog_potentiometer_l =
-            //            AIN_GetResistance(&hain_analog_potentiometer_l);
-            //            hfsm.analog_potentiometer_r =
-            //            AIN_GetResistance(&hain_analog_potentiometer_r);W
-
-            PUTM_CAN::RearboxMain main = {
-                .safety_rfu1 = hfsm.rfu1_safety,
-                .safety_rfu2 = hfsm.rfu2_safety,
-                .safety_asms = hfsm.asms_safety,
-                .safety_fw = hfsm.fw_safety,
-                .safety_hv = hfsm.hv_safety,
-                .safety_res = hfsm.res_safety,
-                .safety_hvd = hfsm.hvd_safety,
-                .safety_inv = hfsm.inv_safety,
-                .safety_wheel_fl = hfsm.wheel_fl_safety,
-                .safety_wheel_fr = hfsm.wheel_fr_safety,
-                .safety_wheel_rl = hfsm.wheel_rl_safety,
-                .safety_wheel_rr = hfsm.wheel_rr_safety,
-            };
-            auto frame = PUTM_CAN::Can_tx_message<PUTM_CAN::RearboxMain>(main, PUTM_CAN::can_tx_header_REARBOX_MAIN);
-            frame.send(hfdcan1);
-        }
-
-        if(hfsm.data_received) {
-            hfsm.data_received = false;
-            // TODO: Process received data
-
-            PWM_SetDutyCycle(&htim_pump, TIM_CHANNEL_PUMP1, hfsm.pump1);
-            PWM_SetDutyCycle(&htim_pump, TIM_CHANNEL_PUMP2, hfsm.pump2);
-            PWM_SetDutyCycle(&htim_fan, TIM_CHANNEL_FAN_L, hfsm.fan_l);
-            PWM_SetDutyCycle(&htim_fan, TIM_CHANNEL_FAN_R, hfsm.fan_r);
-
-            HAL_GPIO_WritePin(ASSI_BUZZER_GPIO_Port, ASSI_BUZZER_Pin, hfsm.assi_buzzer ? GPIO_PIN_SET : GPIO_PIN_RESET);
-            HAL_GPIO_WritePin(RTDS_GPIO_Port, RTDS_Pin, hfsm.rtds ? GPIO_PIN_SET : GPIO_PIN_RESET);
-            HAL_GPIO_WritePin(BRAKE_LIGHT_GPIO_Port, BRAKE_LIGHT_Pin, hfsm.brake_light ? GPIO_PIN_SET : GPIO_PIN_RESET);
-        }
         /* USER CODE END WHILE */
 
         /* USER CODE BEGIN 3 */
@@ -313,6 +208,7 @@ void SystemClock_Config(void) {
     }
 }
 
+/* USER CODE BEGIN 4 */
 /**
  * @brief  EXTI line detection callbacks
  * @param  GPIO_Pin: Specifies the pins connected EXTI line
@@ -320,18 +216,18 @@ void SystemClock_Config(void) {
  */
 void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin) {
     if(GPIO_Pin == SAFETY_INT_Pin) {
-        hfsm.rfu1_safety = TCA6416A_ReadPin(&htca, PIN_RFU1);
-        hfsm.rfu2_safety = TCA6416A_ReadPin(&htca, PIN_RFU2);
-        hfsm.asms_safety = TCA6416A_ReadPin(&htca, PIN_ASMS);
-        hfsm.fw_safety = TCA6416A_ReadPin(&htca, PIN_FW);
-        hfsm.hv_safety = TCA6416A_ReadPin(&htca, PIN_HV);
-        hfsm.res_safety = TCA6416A_ReadPin(&htca, PIN_RES);
-        hfsm.hvd_safety = TCA6416A_ReadPin(&htca, PIN_HVD);
-        hfsm.inv_safety = TCA6416A_ReadPin(&htca, PIN_INV);
-        hfsm.wheel_fl_safety = TCA6416A_ReadPin(&htca, PIN_WHEEL_FL);
-        hfsm.wheel_fr_safety = TCA6416A_ReadPin(&htca, PIN_WHEEL_FR);
-        hfsm.wheel_rl_safety = TCA6416A_ReadPin(&htca, PIN_WHEEL_RL);
-        hfsm.wheel_rr_safety = TCA6416A_ReadPin(&htca, PIN_WHEEL_RR);
+        safety.rfu1 = TCA6416A_ReadPin(&htca, PIN_RFU1);
+        safety.rfu2 = TCA6416A_ReadPin(&htca, PIN_RFU2);
+        safety.asms = TCA6416A_ReadPin(&htca, PIN_ASMS);
+        safety.fw = TCA6416A_ReadPin(&htca, PIN_FW);
+        safety.hv = TCA6416A_ReadPin(&htca, PIN_HV);
+        safety.res = TCA6416A_ReadPin(&htca, PIN_RES);
+        safety.hvd = TCA6416A_ReadPin(&htca, PIN_HVD);
+        safety.inv = TCA6416A_ReadPin(&htca, PIN_INV);
+        safety.wheel_fl = TCA6416A_ReadPin(&htca, PIN_WHEEL_FL);
+        safety.wheel_fr = TCA6416A_ReadPin(&htca, PIN_WHEEL_FR);
+        safety.wheel_rl = TCA6416A_ReadPin(&htca, PIN_WHEEL_RL);
+        safety.wheel_rr = TCA6416A_ReadPin(&htca, PIN_WHEEL_RR);
     }
 }
 /* USER CODE END 4 */
@@ -352,31 +248,7 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef* htim) {
         HAL_IncTick();
     }
     /* USER CODE BEGIN Callback 1 */
-    if(htim == &htim1) {
-        if(hfsm.state == FSM_RUNNING) {
-            hfsm.send_data = true;
-        } else {
-            if(HAL_GetTick() > STARTUP_DELAY) {
-                if(hfsm.state == FSM_STARTUP) {
-                    hfsm.state = FSM_RUNNING;
 
-                    TCA6416A_WritePin(&htca, PIN_ERROR_LED, TCA_PIN_RESET);
-                    TCA6416A_WritePin(&htca, PIN_SAFETY_LED, TCA_PIN_RESET);
-                    TCA6416A_WritePin(&htca, PIN_FUSE_LED, TCA_PIN_RESET);
-                }
-            }
-        }
-
-        HAL_IWDG_Refresh(&hiwdg);  // 2 seconds timeout
-    } else if(htim == &htim3) {
-        if(hfsm.assi) {
-            HAL_GPIO_WritePin(ASSI_LED_R_GPIO_Port, ASSI_LED_R_Pin, GPIO_PIN_SET);
-            HAL_GPIO_WritePin(ASSI_LED_G_GPIO_Port, ASSI_LED_G_Pin, GPIO_PIN_SET);
-        } else {
-            HAL_GPIO_WritePin(ASSI_LED_R_GPIO_Port, ASSI_LED_R_Pin, GPIO_PIN_RESET);
-            HAL_GPIO_WritePin(ASSI_LED_G_GPIO_Port, ASSI_LED_G_Pin, GPIO_PIN_RESET);
-        }
-    }
     /* USER CODE END Callback 1 */
 }
 
@@ -386,12 +258,10 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef* htim) {
  */
 void Error_Handler(void) {
     /* USER CODE BEGIN Error_Handler_Debug */
-    /* User can add his own implementation to report the HAL error return state
-     */
+    /* User can add his own implementation to report the HAL error return state */
+    TCA6416A_WritePin(&htca, PIN_ERROR_LED, TCA_PIN_SET);
     __disable_irq();
     while(1) {
-        hfsm.state = FSM_ERROR;
-        TCA6416A_WritePin(&htca, PIN_ERROR_LED, TCA_PIN_SET);
     }
     /* USER CODE END Error_Handler_Debug */
 }

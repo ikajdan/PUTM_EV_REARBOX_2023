@@ -1,14 +1,13 @@
 /**
  ******************************************************************************
- * @file           : pwm.c
- * @brief          : PWM library
+ * @file           : data.c
+ * @brief          : Rearbox data
  *
  ******************************************************************************
  */
 
 /* Includes ------------------------------------------------------------------*/
-#include "pwm.h"
-#include "stm32g4xx_hal.h"
+#include "data.h"
 
 /* Typedefs ------------------------------------------------------------------*/
 
@@ -19,25 +18,44 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* Public variables ----------------------------------------------------------*/
+Data_TypeDef data = {
+        .brake_light = false,
+        .rtds = false,
+        .assi = false,
+        .assi_buzzer = false,
+        .coolant_pressure_in = 0,
+        .coolant_pressure_out = 0,
+        .suspension_l = 0,
+        .suspension_r = 0,
+};
+
+Safety_TypeDef safety = {
+        .rfu1 = false,
+        .rfu2 = false,
+        .asms = false,
+        .fw = false,
+        .hv = false,
+        .res = false,
+        .hvd = false,
+        .inv = false,
+        .wheel_fl = false,
+        .wheel_fr = false,
+        .wheel_rl = false,
+        .wheel_rr = false,
+};
+
+Temperature_TypeDef temperature = {
+        .mono = 0,
+        .coolant_in = 0,
+        .coolant_out = 0,
+        .oil_l = 0,
+        .oil_r = 0,
+};
 
 /* Private function prototypes -----------------------------------------------*/
 
 /* Public function prototypes ------------------------------------------------*/
 
 /* Private functions ---------------------------------------------------------*/
-static float clamp(float value, float min, float max) {
-    if(value < min) {
-        return min;
-    } else if(value > max) {
-        return max;
-    } else {
-        return value;
-    }
-}
 
 /* Public functions ----------------------------------------------------------*/
-void PWM_SetDutyCycle(TIM_HandleTypeDef *const htim, const uint32_t channel, float duty_cycle) {
-    duty_cycle = clamp(duty_cycle, 0.0f, 100.0f);
-    uint32_t compare = (duty_cycle * (__HAL_TIM_GET_AUTORELOAD(htim) + 1)) / 100;
-    __HAL_TIM_SET_COMPARE(htim, channel, compare);
-}

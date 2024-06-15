@@ -33,14 +33,20 @@
 /* USER CODE END 1 */
 
 /** Configure pins as
- * Analog
- * Input
- * Output
- * EVENT_OUT
- * EXTI
- * Free pins are configured automatically as Analog (this feature is enabled through
- * the Code Generation settings)
- */
+        * Analog
+        * Input
+        * Output
+        * EVENT_OUT
+        * EXTI
+        * Free pins are configured automatically as Analog (this feature is enabled through
+        * the Code Generation settings)
+     PB10   ------> S_TIM2_CH3
+     PB11   ------> S_TIM2_CH4
+     PB12   ------> FDCAN2_RX
+     PB13   ------> FDCAN2_TX
+     PB14   ------> S_TIM15_CH1
+     PB15   ------> S_TIM15_CH2
+*/
 void MX_GPIO_Init(void) {
 
     GPIO_InitTypeDef GPIO_InitStruct = {0};
@@ -92,6 +98,30 @@ void MX_GPIO_Init(void) {
     GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
     GPIO_InitStruct.Pull = GPIO_NOPULL;
     GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+    HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
+
+    /*Configure GPIO pins : PBPin PBPin */
+    GPIO_InitStruct.Pin = PUMP2_Pin | PUMP1_Pin;
+    GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
+    GPIO_InitStruct.Pull = GPIO_NOPULL;
+    GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+    GPIO_InitStruct.Alternate = GPIO_AF1_TIM2;
+    HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
+
+    /*Configure GPIO pins : PBPin PBPin */
+    GPIO_InitStruct.Pin = CAN2_RX_Pin | CAN2_TX_Pin;
+    GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
+    GPIO_InitStruct.Pull = GPIO_NOPULL;
+    GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+    GPIO_InitStruct.Alternate = GPIO_AF9_FDCAN2;
+    HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
+
+    /*Configure GPIO pins : PBPin PBPin */
+    GPIO_InitStruct.Pin = FAN_R_Pin | FAN_L_Pin;
+    GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
+    GPIO_InitStruct.Pull = GPIO_NOPULL;
+    GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+    GPIO_InitStruct.Alternate = GPIO_AF1_TIM15;
     HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
     /*Configure GPIO pin : PtPin */

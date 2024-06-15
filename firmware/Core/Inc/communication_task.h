@@ -1,30 +1,28 @@
 /**
  ******************************************************************************
- * @file           : vnd7020aj_conf.h
- * @brief          : VND7020AJ library configuration file
+ * @file           : communication_task.h
+ * @brief          : CAN communication task
  *
  ******************************************************************************
  */
 
-#ifndef __VND7020AJ_CONFIG_H__
-#define __VND7020AJ_CONFIG_H__
+#ifndef __COMMUNICATION_TASK_H__
+#define __COMMUNICATION_TASK_H__
 
 /* Public includes -----------------------------------------------------------*/
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+void Communication_Task(void *argument);
+
+#ifdef __cplusplus
+}
+#endif
 
 /* Public typedefs -----------------------------------------------------------*/
 
 /* Public defines ------------------------------------------------------------*/
-/**
- * @brief MultiSense resistor value
- */
-#define VND7020AJ_MULTISENSE_R 2000
-
-/**
- * @brief MultiSense K-factor
- *
- * See the datasheet for more information.
- */
-#define VND7020AJ_MULTISENSE_K 2755
 
 /* Public macros -------------------------------------------------------------*/
 
@@ -32,4 +30,4 @@
 
 /* Public function prototypes ------------------------------------------------*/
 
-#endif /* __VND7020AJ_CONFIG_H__ */
+#endif /* __COMMUNICATION_TASK_H__ */

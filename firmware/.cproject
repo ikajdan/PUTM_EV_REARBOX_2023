@@ -48,11 +48,8 @@
 									<listOptionValue builtIn="false" value="../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy"/>
 									<listOptionValue builtIn="false" value="../Drivers/CMSIS/Device/ST/STM32G4xx/Include"/>
 									<listOptionValue builtIn="false" value="../Drivers/CMSIS/Include"/>
-									<listOptionValue builtIn="false" value="../Components/PWM/Inc"/>
-									<listOptionValue builtIn="false" value="../Components/FSM/Inc"/>
 									<listOptionValue builtIn="false" value="../Components/AIN/Inc"/>
 									<listOptionValue builtIn="false" value="../Components/TCA6416A/Inc"/>
-									<listOptionValue builtIn="false" value="../Components/VND7020AJ/Inc"/>
 									<listOptionValue builtIn="false" value="../Middlewares/Third_Party/FreeRTOS/Source/include"/>
 									<listOptionValue builtIn="false" value="../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2"/>
 									<listOptionValue builtIn="false" value="../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F"/>
@@ -174,11 +171,8 @@
 									<listOptionValue builtIn="false" value="../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy"/>
 									<listOptionValue builtIn="false" value="../Drivers/CMSIS/Device/ST/STM32G4xx/Include"/>
 									<listOptionValue builtIn="false" value="../Drivers/CMSIS/Include"/>
-									<listOptionValue builtIn="false" value="../Components/PWM/Inc"/>
-									<listOptionValue builtIn="false" value="../Components/FSM/Inc"/>
 									<listOptionValue builtIn="false" value="../Components/AIN/Inc"/>
 									<listOptionValue builtIn="false" value="../Components/TCA6416A/Inc"/>
-									<listOptionValue builtIn="false" value="../Components/VND7020AJ/Inc"/>
 									<listOptionValue builtIn="false" value="../Middlewares/Third_Party/FreeRTOS/Source/include"/>
 									<listOptionValue builtIn="false" value="../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2"/>
 									<listOptionValue builtIn="false" value="../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F"/>
