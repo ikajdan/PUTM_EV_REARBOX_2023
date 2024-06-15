@@ -25,7 +25,8 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "communication_task.h"
+#include "interface_task.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -49,7 +50,13 @@
 /* USER CODE END Variables */
 /* Definitions for communicationTask */
 osThreadId_t communicationTaskHandle;
-const osThreadAttr_t communicationTask_attributes = {.name = "communicationTask", .priority = (osPriority_t)osPriorityNormal, .stack_size = 512 * 4};
+const osThreadAttr_t communicationTask_attributes = {.name = "communicationTask", .priority = (osPriority_t)osPriorityNormal, .stack_size = 256 * 4};
+/* Definitions for interfaceTask */
+osThreadId_t interfaceTaskHandle;
+const osThreadAttr_t interfaceTask_attributes = {.name = "interfaceTask", .priority = (osPriority_t)osPriorityLow, .stack_size = 128 * 4};
+/* Definitions for dataMutex */
+osMutexId_t dataMutexHandle;
+const osMutexAttr_t dataMutex_attributes = {.name = "dataMutex"};
 
 /* Private function prototypes -----------------------------------------------*/
 /* USER CODE BEGIN FunctionPrototypes */
@@ -57,6 +64,7 @@ const osThreadAttr_t communicationTask_attributes = {.name = "communicationTask"
 /* USER CODE END FunctionPrototypes */
 
 void StartCommunicationTask(void* argument);
+void StartInterfaceTask(void* argument);
 
 void MX_FREERTOS_Init(void); /* (MISRA C 2004 rule 8.1) */
 
@@ -69,6 +77,9 @@ void MX_FREERTOS_Init(void) {
     /* USER CODE BEGIN Init */
 
     /* USER CODE END Init */
+    /* Create the mutex(es) */
+    /* creation of dataMutex */
+    dataMutexHandle = osMutexNew(&dataMutex_attributes);
 
     /* USER CODE BEGIN RTOS_MUTEX */
     /* add mutexes, ... */
@@ -89,6 +100,9 @@ void MX_FREERTOS_Init(void) {
     /* Create the thread(s) */
     /* creation of communicationTask */
     communicationTaskHandle = osThreadNew(StartCommunicationTask, NULL, &communicationTask_attributes);
+
+    /* creation of interfaceTask */
+    interfaceTaskHandle = osThreadNew(StartInterfaceTask, NULL, &interfaceTask_attributes);
 
     /* USER CODE BEGIN RTOS_THREADS */
     /* add threads, ... */
@@ -113,6 +127,22 @@ __weak void StartCommunicationTask(void* argument) {
         osDelay(1);
     }
     /* USER CODE END StartCommunicationTask */
+}
+
+/* USER CODE BEGIN Header_StartInterfaceTask */
+/**
+ * @brief Function implementing the interfaceTask thread.
+ * @param argument: Not used
+ * @retval None
+ */
+/* USER CODE END Header_StartInterfaceTask */
+__weak void StartInterfaceTask(void* argument) {
+    /* USER CODE BEGIN StartInterfaceTask */
+    /* Infinite loop */
+    for(;;) {
+        osDelay(1);
+    }
+    /* USER CODE END StartInterfaceTask */
 }
 
 /* Private application code --------------------------------------------------*/

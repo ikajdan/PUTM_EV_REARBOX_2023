@@ -16,7 +16,8 @@
 /* Public typedefs -----------------------------------------------------------*/
 typedef struct {
     bool brake_light;
-    bool rtds;
+    bool rtd;
+    bool rtd_buzzer;
     bool assi;
     bool assi_buzzer;
     uint8_t coolant_pressure_in;
