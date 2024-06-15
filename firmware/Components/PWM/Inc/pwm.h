@@ -10,8 +10,8 @@
 #define __PWM_H__
 
 /* Public includes -----------------------------------------------------------*/
-#include "stm32g4xx_hal.h"
 #include "stdint.h"
+#include "stm32g4xx_hal.h"
 
 /* Public typedefs -----------------------------------------------------------*/
 
@@ -29,6 +29,6 @@
  * @param  duty_cycle: The desired duty cycle
  * @retval None
  */
-void PWM_SetDutyCycle(TIM_HandleTypeDef *const htim, const uint32_t channel, float duty_cycle);
+void PWM_SetDutyCycle(TIM_HandleTypeDef* const htim, const uint32_t channel, float duty_cycle);
 
 #endif /* __PWM_H__ */
