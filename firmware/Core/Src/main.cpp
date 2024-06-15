@@ -31,7 +31,6 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include "PUTM_EV_CAN_LIBRARY/lib/can_interface.hpp"
 #include "ain.h"
 #include "data.h"
 #include "tca6416a.h"
@@ -120,6 +119,25 @@ int main(void) {
     HAL_ADCEx_Calibration_Start(&hadc2, ADC_SINGLE_ENDED);
     // HAL_ADC_Start_DMA(&hadc1, (uint32_t*)AIN_ADC1_REGISTER, AIN_ADC1_CHANNELS);
     // HAL_ADC_Start_DMA(&hadc2, (uint32_t*)AIN_ADC2_REGISTER, AIN_ADC2_CHANNELS);
+
+    FDCAN_FilterTypeDef filter_config;
+    filter_config.IdType = FDCAN_STANDARD_ID;
+    filter_config.FilterIndex = 0;
+    filter_config.FilterType = FDCAN_FILTER_MASK;
+    filter_config.FilterConfig = FDCAN_FILTER_TO_RXFIFO0;
+    filter_config.FilterID1 = 0;
+    filter_config.FilterID2 = 0;
+    if(HAL_FDCAN_ConfigFilter(&hfdcan1, &filter_config) != HAL_OK) {
+        Error_Handler();
+    }
+
+    if(HAL_FDCAN_ActivateNotification(&hfdcan1, FDCAN_IT_GROUP_RX_FIFO0, 0) != HAL_OK) {
+        Error_Handler();
+    }
+
+    if(HAL_FDCAN_Start(&hfdcan1) != HAL_OK) {
+        Error_Handler();
+    }
 
     TCA6416A_Init(&htca, &hi2c3, 0x20);
     TCA6416A_SetPinMode(&htca, PIN_RFU2, TCA_PIN_INPUT);

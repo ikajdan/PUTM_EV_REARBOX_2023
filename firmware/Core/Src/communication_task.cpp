@@ -7,11 +7,11 @@
  */
 
 /* Includes ------------------------------------------------------------------*/
-#include "data.h"
-// #include "PUTM_EV_CAN_LIBRARY/lib/can_interface.hpp"
-#include "cmsis_os2.h"
 #include "communication_task.h"
+#include "cmsis_os2.h"
+#include "data.h"
 #include "fdcan.h"
+#include <can_interface.hpp>
 
 /* Typedefs ------------------------------------------------------------------*/
 
@@ -23,7 +23,7 @@
 
 /* Public variables ----------------------------------------------------------*/
 // extern osMutexId_t sharedDataMutexHandle;
-extern Data_TypeDef sharedData;
+extern Data_TypeDef data;
 
 /* Private function prototypes -----------------------------------------------*/
 
