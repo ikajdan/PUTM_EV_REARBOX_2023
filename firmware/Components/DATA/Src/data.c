@@ -21,6 +21,7 @@
 Data_TypeDef data = {
     .brake_light = false,
     .rtd = false,
+    .rtd_prev = false,
     .rtd_buzzer = false,
     .assi = false,
     .assi_buzzer = false,

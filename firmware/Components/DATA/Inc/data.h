@@ -17,6 +17,7 @@
 typedef struct {
     bool brake_light;
     bool rtd;
+    bool rtd_prev;
     bool rtd_buzzer;
     bool assi;
     bool assi_buzzer;

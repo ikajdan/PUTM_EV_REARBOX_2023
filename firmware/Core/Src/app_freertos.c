@@ -63,8 +63,8 @@ const osMutexAttr_t dataMutex_attributes = {.name = "dataMutex"};
 
 /* USER CODE END FunctionPrototypes */
 
-void StartCommunicationTask(void* argument);
-void StartInterfaceTask(void* argument);
+void Communication_Task(void* argument);
+void Interface_Task(void* argument);
 
 void MX_FREERTOS_Init(void); /* (MISRA C 2004 rule 8.1) */
 
@@ -99,10 +99,10 @@ void MX_FREERTOS_Init(void) {
 
     /* Create the thread(s) */
     /* creation of communicationTask */
-    communicationTaskHandle = osThreadNew(StartCommunicationTask, NULL, &communicationTask_attributes);
+    communicationTaskHandle = osThreadNew(Communication_Task, NULL, &communicationTask_attributes);
 
     /* creation of interfaceTask */
-    interfaceTaskHandle = osThreadNew(StartInterfaceTask, NULL, &interfaceTask_attributes);
+    interfaceTaskHandle = osThreadNew(Interface_Task, NULL, &interfaceTask_attributes);
 
     /* USER CODE BEGIN RTOS_THREADS */
     /* add threads, ... */
@@ -113,36 +113,36 @@ void MX_FREERTOS_Init(void) {
     /* USER CODE END RTOS_EVENTS */
 }
 
-/* USER CODE BEGIN Header_StartCommunicationTask */
+/* USER CODE BEGIN Header_Communication_Task */
 /**
  * @brief  Function implementing the communicationTask thread.
  * @param  argument: Not used
  * @retval None
  */
-/* USER CODE END Header_StartCommunicationTask */
-__weak void StartCommunicationTask(void* argument) {
-    /* USER CODE BEGIN StartCommunicationTask */
+/* USER CODE END Header_Communication_Task */
+__weak void Communication_Task(void* argument) {
+    /* USER CODE BEGIN Communication_Task */
     /* Infinite loop */
     for(;;) {
         osDelay(1);
     }
-    /* USER CODE END StartCommunicationTask */
+    /* USER CODE END Communication_Task */
 }
 
-/* USER CODE BEGIN Header_StartInterfaceTask */
+/* USER CODE BEGIN Header_Interface_Task */
 /**
  * @brief Function implementing the interfaceTask thread.
  * @param argument: Not used
  * @retval None
  */
-/* USER CODE END Header_StartInterfaceTask */
-__weak void StartInterfaceTask(void* argument) {
-    /* USER CODE BEGIN StartInterfaceTask */
+/* USER CODE END Header_Interface_Task */
+__weak void Interface_Task(void* argument) {
+    /* USER CODE BEGIN Interface_Task */
     /* Infinite loop */
     for(;;) {
         osDelay(1);
     }
-    /* USER CODE END StartInterfaceTask */
+    /* USER CODE END Interface_Task */
 }
 
 /* Private application code --------------------------------------------------*/

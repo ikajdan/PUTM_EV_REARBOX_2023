@@ -8,11 +8,11 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include "communication_task.h"
+#include "can_interface.hpp"
 #include "cmsis_os2.h"
 #include "data.h"
 #include "fdcan.h"
 #include "iwdg.h"
-#include <can_interface.hpp>
 
 /* Typedefs ------------------------------------------------------------------*/
 

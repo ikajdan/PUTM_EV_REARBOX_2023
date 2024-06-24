@@ -52,8 +52,9 @@
 									<listOptionValue builtIn="false" value="../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2"/>
 									<listOptionValue builtIn="false" value="../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F"/>
 									<listOptionValue builtIn="false" value="../Components/AIN/Inc"/>
-									<listOptionValue builtIn="false" value="../Components/PUTM_EV_CAN_LIBRARY/lib"/>
+									<listOptionValue builtIn="false" value="../Components/DATA/Inc"/>
 									<listOptionValue builtIn="false" value="../Components/TCA6416A/Inc"/>
+									<listOptionValue builtIn="false" value="../Components/PUTM_EV_CAN_LIBRARY/lib"/>
 									<listOptionValue builtIn="false" value="../Tasks/Inc"/>
 								</option>
 								<option id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.option.languagestandard.1937668114" name="Language standard" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.option.languagestandard" useByScannerDiscovery="true" value="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.option.languagestandard.value.gnu18" valueType="enumerated"/>
@@ -86,8 +87,9 @@
 									<listOptionValue builtIn="false" value="../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2"/>
 									<listOptionValue builtIn="false" value="../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F"/>
 									<listOptionValue builtIn="false" value="../Components/AIN/Inc"/>
-									<listOptionValue builtIn="false" value="../Components/PUTM_EV_CAN_LIBRARY/lib"/>
+									<listOptionValue builtIn="false" value="../Components/DATA/Inc"/>
 									<listOptionValue builtIn="false" value="../Components/TCA6416A/Inc"/>
+									<listOptionValue builtIn="false" value="../Components/PUTM_EV_CAN_LIBRARY/lib"/>
 									<listOptionValue builtIn="false" value="../Tasks/Inc"/>
 								</option>
 								<option id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.cpp.compiler.option.languagestandard.714630317" name="Language standard" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.cpp.compiler.option.languagestandard" useByScannerDiscovery="true" value="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.cpp.compiler.option.languagestandard.value.gnupp20" valueType="enumerated"/>
@@ -177,8 +179,9 @@
 									<listOptionValue builtIn="false" value="../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2"/>
 									<listOptionValue builtIn="false" value="../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F"/>
 									<listOptionValue builtIn="false" value="../Components/AIN/Inc"/>
-									<listOptionValue builtIn="false" value="../Components/PUTM_EV_CAN_LIBRARY/lib"/>
+									<listOptionValue builtIn="false" value="../Components/DATA/Inc"/>
 									<listOptionValue builtIn="false" value="../Components/TCA6416A/Inc"/>
+									<listOptionValue builtIn="false" value="../Components/PUTM_EV_CAN_LIBRARY/lib"/>
 									<listOptionValue builtIn="false" value="../Tasks/Inc"/>
 								</option>
 								<option id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.option.languagestandard.1204684055" name="Language standard" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.option.languagestandard" useByScannerDiscovery="true" value="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.option.languagestandard.value.gnu18" valueType="enumerated"/>
@@ -210,9 +213,10 @@
 									<listOptionValue builtIn="false" value="../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2"/>
 									<listOptionValue builtIn="false" value="../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F"/>
 									<listOptionValue builtIn="false" value="../Components/AIN/Inc"/>
+									<listOptionValue builtIn="false" value="../Components/DATA/Inc"/>
 									<listOptionValue builtIn="false" value="../Components/TCA6416A/Inc"/>
-									<listOptionValue builtIn="false" value="../Tasks/Inc"/>
 									<listOptionValue builtIn="false" value="../Components/PUTM_EV_CAN_LIBRARY/lib"/>
+									<listOptionValue builtIn="false" value="../Tasks/Inc"/>
 								</option>
 								<option id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.cpp.compiler.option.languagestandard.289716593" name="Language standard" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.cpp.compiler.option.languagestandard" useByScannerDiscovery="true" value="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.cpp.compiler.option.languagestandard.value.gnupp20" valueType="enumerated"/>
 								<option id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.cpp.compiler.option.warnings.extra.458583920" name="Enable extra warning flags (-Wextra)" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.cpp.compiler.option.warnings.extra" useByScannerDiscovery="false" value="true" valueType="boolean"/>
