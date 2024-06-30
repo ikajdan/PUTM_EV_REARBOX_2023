@@ -21,6 +21,7 @@ typedef struct {
     bool rtd_buzzer;
     bool assi;
     bool assi_buzzer;
+    uint32_t rtd_on_time;
     uint8_t coolant_pressure_in;
     uint8_t coolant_pressure_out;
     uint8_t suspension_l;

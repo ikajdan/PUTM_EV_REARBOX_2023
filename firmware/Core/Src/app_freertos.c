@@ -48,12 +48,15 @@
 /* USER CODE BEGIN Variables */
 
 /* USER CODE END Variables */
-/* Definitions for communicationTask */
-osThreadId_t communicationTaskHandle;
-const osThreadAttr_t communicationTask_attributes = {.name = "communicationTask", .priority = (osPriority_t)osPriorityNormal, .stack_size = 256 * 4};
+/* Definitions for defaultTask */
+osThreadId_t defaultTaskHandle;
+const osThreadAttr_t defaultTask_attributes = {.name = "defaultTask", .priority = (osPriority_t)osPriorityNormal, .stack_size = 128 * 4};
 /* Definitions for interfaceTask */
 osThreadId_t interfaceTaskHandle;
 const osThreadAttr_t interfaceTask_attributes = {.name = "interfaceTask", .priority = (osPriority_t)osPriorityLow, .stack_size = 128 * 4};
+/* Definitions for communicationTask */
+osThreadId_t communicationTaskHandle;
+const osThreadAttr_t communicationTask_attributes = {.name = "communicationTask", .priority = (osPriority_t)osPriorityNormal, .stack_size = 256 * 4};
 /* Definitions for dataMutex */
 osMutexId_t dataMutexHandle;
 const osMutexAttr_t dataMutex_attributes = {.name = "dataMutex"};
@@ -63,8 +66,9 @@ const osMutexAttr_t dataMutex_attributes = {.name = "dataMutex"};
 
 /* USER CODE END FunctionPrototypes */
 
-void Communication_Task(void* argument);
-void Interface_Task(void* argument);
+void Default_Task(void* argument);
+extern void Interface_Task(void* argument);
+extern void Communication_Task(void* argument);
 
 void MX_FREERTOS_Init(void); /* (MISRA C 2004 rule 8.1) */
 
@@ -98,11 +102,14 @@ void MX_FREERTOS_Init(void) {
     /* USER CODE END RTOS_QUEUES */
 
     /* Create the thread(s) */
-    /* creation of communicationTask */
-    communicationTaskHandle = osThreadNew(Communication_Task, NULL, &communicationTask_attributes);
+    /* creation of defaultTask */
+    defaultTaskHandle = osThreadNew(Default_Task, NULL, &defaultTask_attributes);
 
     /* creation of interfaceTask */
     interfaceTaskHandle = osThreadNew(Interface_Task, NULL, &interfaceTask_attributes);
+
+    /* creation of communicationTask */
+    communicationTaskHandle = osThreadNew(Communication_Task, NULL, &communicationTask_attributes);
 
     /* USER CODE BEGIN RTOS_THREADS */
     /* add threads, ... */
@@ -113,36 +120,20 @@ void MX_FREERTOS_Init(void) {
     /* USER CODE END RTOS_EVENTS */
 }
 
-/* USER CODE BEGIN Header_Communication_Task */
+/* USER CODE BEGIN Header_Default_Task */
 /**
- * @brief  Function implementing the communicationTask thread.
+ * @brief  Function implementing the defaultTask thread.
  * @param  argument: Not used
  * @retval None
  */
-/* USER CODE END Header_Communication_Task */
-__weak void Communication_Task(void* argument) {
-    /* USER CODE BEGIN Communication_Task */
+/* USER CODE END Header_Default_Task */
+void Default_Task(void* argument) {
+    /* USER CODE BEGIN Default_Task */
     /* Infinite loop */
     for(;;) {
         osDelay(1);
     }
-    /* USER CODE END Communication_Task */
-}
-
-/* USER CODE BEGIN Header_Interface_Task */
-/**
- * @brief Function implementing the interfaceTask thread.
- * @param argument: Not used
- * @retval None
- */
-/* USER CODE END Header_Interface_Task */
-__weak void Interface_Task(void* argument) {
-    /* USER CODE BEGIN Interface_Task */
-    /* Infinite loop */
-    for(;;) {
-        osDelay(1);
-    }
-    /* USER CODE END Interface_Task */
+    /* USER CODE END Default_Task */
 }
 
 /* Private application code --------------------------------------------------*/

@@ -23,7 +23,7 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* Public variables ----------------------------------------------------------*/
-extern osMutexId_t dataMutex;
+extern osMutexId_t dataMutexHandle;
 extern Data_TypeDef data;
 
 /* Private function prototypes -----------------------------------------------*/
@@ -38,9 +38,22 @@ void Communication_Task(void* argument) {
         // Receive
         if(PUTM_CAN::can.get_pc_new_data()) {
             auto pc_data = PUTM_CAN::can.get_pc_main_data();
-            if(osMutexAcquire(dataMutex, osWaitForever) == osOK) {
+            if(osMutexAcquire(dataMutexHandle, osWaitForever) == osOK) {
                 data.rtd = pc_data.rtd;
-                osMutexRelease(dataMutex);
+                osMutexRelease(dataMutexHandle);
+            }
+        }
+
+        if(PUTM_CAN::can.get_front_data_main_new_data()) {
+            auto front_data = PUTM_CAN::can.get_front_data_main_data();
+            if(osMutexAcquire(dataMutexHandle, osWaitForever) == osOK) {
+                if(front_data.is_braking) {
+                    data.brake_light = true;
+                } else {
+                    data.brake_light = false;
+                }
+
+                osMutexRelease(dataMutexHandle);
             }
         }
 

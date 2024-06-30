@@ -117,8 +117,9 @@ int main(void) {
     /* USER CODE BEGIN 2 */
     HAL_ADCEx_Calibration_Start(&hadc1, ADC_SINGLE_ENDED);
     HAL_ADCEx_Calibration_Start(&hadc2, ADC_SINGLE_ENDED);
-    // HAL_ADC_Start_DMA(&hadc1, (uint32_t*)AIN_ADC1_REGISTER, AIN_ADC1_CHANNELS);
-    // HAL_ADC_Start_DMA(&hadc2, (uint32_t*)AIN_ADC2_REGISTER, AIN_ADC2_CHANNELS);
+    // HAL_ADC_Start_DMA(&hadc1, (uint32_t*)AIN_ADC1_REGISTER,
+    // AIN_ADC1_CHANNELS); HAL_ADC_Start_DMA(&hadc2,
+    // (uint32_t*)AIN_ADC2_REGISTER, AIN_ADC2_CHANNELS);
 
     FDCAN_FilterTypeDef filter_config;
     filter_config.IdType = FDCAN_STANDARD_ID;
@@ -156,6 +157,19 @@ int main(void) {
     TCA6416A_SetPinMode(&htca, PIN_ERROR_LED, TCA_PIN_OUTPUT);
     TCA6416A_SetPinMode(&htca, PIN_SAFETY_LED, TCA_PIN_OUTPUT);
     TCA6416A_SetPinMode(&htca, PIN_FUSE_LED, TCA_PIN_OUTPUT);
+
+    safety.rfu1 = TCA6416A_ReadPin(&htca, PIN_RFU1);
+    safety.rfu2 = TCA6416A_ReadPin(&htca, PIN_RFU2);
+    safety.asms = TCA6416A_ReadPin(&htca, PIN_ASMS);
+    safety.fw = TCA6416A_ReadPin(&htca, PIN_FW);
+    safety.hv = TCA6416A_ReadPin(&htca, PIN_HV);
+    safety.res = TCA6416A_ReadPin(&htca, PIN_RES);
+    safety.hvd = TCA6416A_ReadPin(&htca, PIN_HVD);
+    safety.inv = TCA6416A_ReadPin(&htca, PIN_INV);
+    safety.wheel_fl = TCA6416A_ReadPin(&htca, PIN_WHEEL_FL);
+    safety.wheel_fr = TCA6416A_ReadPin(&htca, PIN_WHEEL_FR);
+    safety.wheel_rl = TCA6416A_ReadPin(&htca, PIN_WHEEL_RL);
+    safety.wheel_rr = TCA6416A_ReadPin(&htca, PIN_WHEEL_RR);
 
     // Turn on all LEDs
     TCA6416A_WritePin(&htca, PIN_ERROR_LED, TCA_PIN_SET);
@@ -276,7 +290,6 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef* htim) {
  */
 void Error_Handler(void) {
     /* USER CODE BEGIN Error_Handler_Debug */
-    /* User can add his own implementation to report the HAL error return state */
     TCA6416A_WritePin(&htca, PIN_ERROR_LED, TCA_PIN_SET);
     __disable_irq();
     while(1) {

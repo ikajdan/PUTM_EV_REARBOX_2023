@@ -25,6 +25,7 @@ Data_TypeDef data = {
     .rtd_buzzer = false,
     .assi = false,
     .assi_buzzer = false,
+    .rtd_on_time = 0,
     .coolant_pressure_in = 0,
     .coolant_pressure_out = 0,
     .suspension_l = 0,
