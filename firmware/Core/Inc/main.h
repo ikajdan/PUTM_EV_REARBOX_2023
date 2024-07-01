@@ -117,7 +117,6 @@ void Error_Handler(void);
 #define SAFETY_RESET_GPIO_Port GPIOC
 #define SAFETY_INT_Pin GPIO_PIN_7
 #define SAFETY_INT_GPIO_Port GPIOC
-#define SAFETY_INT_EXTI_IRQn EXTI9_5_IRQn
 #define SAFETY_SCL_Pin GPIO_PIN_8
 #define SAFETY_SCL_GPIO_Port GPIOC
 #define SAFETY_SDA_Pin GPIO_PIN_9

@@ -28,12 +28,12 @@
  */
 
 typedef struct {
-    const int r0;  // Nominal resistance
-    const int r1;  // Wheatstone bridge resistor values
+    const int r0; // Nominal resistance
+    const int r1; // Wheatstone bridge resistor values
     const int r2;
     const int r3;
-    const float gain;         // Instrumentation amplifier gain
-    const uint32_t* adc_raw;  // ADC register pointer
+    const float gain;        // Instrumentation amplifier gain
+    const uint32_t* adc_raw; // ADC register pointer
 } AIN_Handle_TypeDef;
 
 /* Public defines ------------------------------------------------------------*/

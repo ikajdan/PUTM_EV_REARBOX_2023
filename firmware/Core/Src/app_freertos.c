@@ -27,6 +27,7 @@
 /* USER CODE BEGIN Includes */
 #include "communication_task.h"
 #include "interface_task.h"
+#include "safety_task.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -56,10 +57,16 @@ osThreadId_t interfaceTaskHandle;
 const osThreadAttr_t interfaceTask_attributes = {.name = "interfaceTask", .priority = (osPriority_t)osPriorityLow, .stack_size = 128 * 4};
 /* Definitions for communicationTask */
 osThreadId_t communicationTaskHandle;
-const osThreadAttr_t communicationTask_attributes = {.name = "communicationTask", .priority = (osPriority_t)osPriorityNormal, .stack_size = 256 * 4};
+const osThreadAttr_t communicationTask_attributes = {.name = "communicationTask", .priority = (osPriority_t)osPriorityNormal, .stack_size = 128 * 4};
+/* Definitions for safetyTask */
+osThreadId_t safetyTaskHandle;
+const osThreadAttr_t safetyTask_attributes = {.name = "safetyTask", .priority = (osPriority_t)osPriorityAboveNormal, .stack_size = 128 * 4};
 /* Definitions for dataMutex */
 osMutexId_t dataMutexHandle;
 const osMutexAttr_t dataMutex_attributes = {.name = "dataMutex"};
+/* Definitions for safetyMutex */
+osMutexId_t safetyMutexHandle;
+const osMutexAttr_t safetyMutex_attributes = {.name = "safetyMutex"};
 
 /* Private function prototypes -----------------------------------------------*/
 /* USER CODE BEGIN FunctionPrototypes */
@@ -69,6 +76,7 @@ const osMutexAttr_t dataMutex_attributes = {.name = "dataMutex"};
 void Default_Task(void* argument);
 extern void Interface_Task(void* argument);
 extern void Communication_Task(void* argument);
+extern void Safety_Task(void* argument);
 
 void MX_FREERTOS_Init(void); /* (MISRA C 2004 rule 8.1) */
 
@@ -84,6 +92,9 @@ void MX_FREERTOS_Init(void) {
     /* Create the mutex(es) */
     /* creation of dataMutex */
     dataMutexHandle = osMutexNew(&dataMutex_attributes);
+
+    /* creation of safetyMutex */
+    safetyMutexHandle = osMutexNew(&safetyMutex_attributes);
 
     /* USER CODE BEGIN RTOS_MUTEX */
     /* add mutexes, ... */
@@ -110,6 +121,9 @@ void MX_FREERTOS_Init(void) {
 
     /* creation of communicationTask */
     communicationTaskHandle = osThreadNew(Communication_Task, NULL, &communicationTask_attributes);
+
+    /* creation of safetyTask */
+    safetyTaskHandle = osThreadNew(Safety_Task, NULL, &safetyTask_attributes);
 
     /* USER CODE BEGIN RTOS_THREADS */
     /* add threads, ... */

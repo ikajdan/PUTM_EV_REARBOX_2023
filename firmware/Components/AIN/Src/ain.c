@@ -54,7 +54,7 @@ uint8_t AIN_GetTemperature(AIN_Handle_TypeDef* handle) {
 uint8_t AIN_GetPressure(AIN_Handle_TypeDef* handle) {
     float v_out = (*handle->adc_raw * 3.3f) / 4095 / handle->gain;
     float pressure = 0.5f + (v_out - 0.5f) * 1000.0f / 4.0f;
-    pressure /= 100.0f;  // Convert to bars
+    pressure /= 100.0f; // Convert to bars
 
     return pressure;
 }

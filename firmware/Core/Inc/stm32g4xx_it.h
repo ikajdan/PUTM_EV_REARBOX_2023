@@ -55,7 +55,6 @@ void DebugMon_Handler(void);
 void DMA1_Channel1_IRQHandler(void);
 void FDCAN1_IT0_IRQHandler(void);
 void FDCAN1_IT1_IRQHandler(void);
-void EXTI9_5_IRQHandler(void);
 void TIM6_DAC_IRQHandler(void);
 void DMA2_Channel2_IRQHandler(void);
 /* USER CODE BEGIN EFP */

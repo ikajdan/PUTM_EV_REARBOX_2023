@@ -141,6 +141,7 @@ int main(void) {
     }
 
     TCA6416A_Init(&htca, &hi2c3, 0x20);
+
     TCA6416A_SetPinMode(&htca, PIN_RFU2, TCA_PIN_INPUT);
     TCA6416A_SetPinMode(&htca, PIN_RFU1, TCA_PIN_INPUT);
     TCA6416A_SetPinMode(&htca, PIN_ASMS, TCA_PIN_INPUT);
@@ -157,19 +158,6 @@ int main(void) {
     TCA6416A_SetPinMode(&htca, PIN_ERROR_LED, TCA_PIN_OUTPUT);
     TCA6416A_SetPinMode(&htca, PIN_SAFETY_LED, TCA_PIN_OUTPUT);
     TCA6416A_SetPinMode(&htca, PIN_FUSE_LED, TCA_PIN_OUTPUT);
-
-    safety.rfu1 = TCA6416A_ReadPin(&htca, PIN_RFU1);
-    safety.rfu2 = TCA6416A_ReadPin(&htca, PIN_RFU2);
-    safety.asms = TCA6416A_ReadPin(&htca, PIN_ASMS);
-    safety.fw = TCA6416A_ReadPin(&htca, PIN_FW);
-    safety.hv = TCA6416A_ReadPin(&htca, PIN_HV);
-    safety.res = TCA6416A_ReadPin(&htca, PIN_RES);
-    safety.hvd = TCA6416A_ReadPin(&htca, PIN_HVD);
-    safety.inv = TCA6416A_ReadPin(&htca, PIN_INV);
-    safety.wheel_fl = TCA6416A_ReadPin(&htca, PIN_WHEEL_FL);
-    safety.wheel_fr = TCA6416A_ReadPin(&htca, PIN_WHEEL_FR);
-    safety.wheel_rl = TCA6416A_ReadPin(&htca, PIN_WHEEL_RL);
-    safety.wheel_rr = TCA6416A_ReadPin(&htca, PIN_WHEEL_RR);
 
     // Turn on all LEDs
     TCA6416A_WritePin(&htca, PIN_ERROR_LED, TCA_PIN_SET);
@@ -241,27 +229,7 @@ void SystemClock_Config(void) {
 }
 
 /* USER CODE BEGIN 4 */
-/**
- * @brief  EXTI line detection callbacks
- * @param  GPIO_Pin: Specifies the pins connected EXTI line
- * @retval None
- */
-void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin) {
-    if(GPIO_Pin == SAFETY_INT_Pin) {
-        safety.rfu1 = TCA6416A_ReadPin(&htca, PIN_RFU1);
-        safety.rfu2 = TCA6416A_ReadPin(&htca, PIN_RFU2);
-        safety.asms = TCA6416A_ReadPin(&htca, PIN_ASMS);
-        safety.fw = TCA6416A_ReadPin(&htca, PIN_FW);
-        safety.hv = TCA6416A_ReadPin(&htca, PIN_HV);
-        safety.res = TCA6416A_ReadPin(&htca, PIN_RES);
-        safety.hvd = TCA6416A_ReadPin(&htca, PIN_HVD);
-        safety.inv = TCA6416A_ReadPin(&htca, PIN_INV);
-        safety.wheel_fl = TCA6416A_ReadPin(&htca, PIN_WHEEL_FL);
-        safety.wheel_fr = TCA6416A_ReadPin(&htca, PIN_WHEEL_FR);
-        safety.wheel_rl = TCA6416A_ReadPin(&htca, PIN_WHEEL_RL);
-        safety.wheel_rr = TCA6416A_ReadPin(&htca, PIN_WHEEL_RR);
-    }
-}
+
 /* USER CODE END 4 */
 
 /**
