@@ -132,7 +132,7 @@ int main(void) {
         Error_Handler();
     }
 
-    if(HAL_FDCAN_ActivateNotification(&hfdcan1, FDCAN_IT_GROUP_RX_FIFO0, 0) != HAL_OK) {
+    if(HAL_FDCAN_ActivateNotification(&hfdcan1, FDCAN_IT_RX_FIFO0_NEW_MESSAGE, 0) != HAL_OK) {
         Error_Handler();
     }
 
