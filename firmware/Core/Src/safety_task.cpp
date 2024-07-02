@@ -22,8 +22,8 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* Public variables ----------------------------------------------------------*/
-extern osMutexId_t safetyMutexHandle;
 extern Safety_TypeDef safety;
+extern osMutexId_t safetyMutexHandle;
 
 /* Private function prototypes -----------------------------------------------*/
 
@@ -47,6 +47,9 @@ void Safety_Task(void* argument) {
             safety.wheel_fr = TCA6416A_ReadPin(&htca, PIN_WHEEL_FR);
             safety.wheel_rl = TCA6416A_ReadPin(&htca, PIN_WHEEL_RL);
             safety.wheel_rr = TCA6416A_ReadPin(&htca, PIN_WHEEL_RR);
+
+            safety.tripped = safety.rfu1 || safety.rfu2 || safety.asms || safety.fw || safety.hv || safety.res || safety.hvd || safety.inv || safety.wheel_fl ||
+                             safety.wheel_fr || safety.wheel_rl || safety.wheel_rr;
 
             osMutexRelease(safetyMutexHandle);
         }

@@ -1,12 +1,15 @@
 /**
  ******************************************************************************
- * @file           : data.c
- * @brief          : Rearbox data
+ * @file           : led_test_task.cpp
+ * @brief          : LED test task
  *
  ******************************************************************************
  */
 
 /* Includes ------------------------------------------------------------------*/
+#include "led_test_task.h"
+#include "FreeRTOS.h"
+#include "cmsis_os2.h"
 #include "data.h"
 
 /* Typedefs ------------------------------------------------------------------*/
@@ -18,47 +21,8 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* Public variables ----------------------------------------------------------*/
-Data_TypeDef data = {
-    .led_test = true,
-    .error_led = false,
-    .safety_led = false,
-    .fuse_led = false,
-    .brake_light = false,
-    .rtd = false,
-    .rtd_prev = false,
-    .rtd_buzzer = false,
-    .assi = false,
-    .assi_buzzer = false,
-    .rtd_on_time = 0,
-    .coolant_pressure_in = 0,
-    .coolant_pressure_out = 0,
-    .suspension_l = 0,
-    .suspension_r = 0,
-};
-
-Safety_TypeDef safety = {
-    .tripped = false,
-    .rfu1 = false,
-    .rfu2 = false,
-    .asms = false,
-    .fw = false,
-    .hv = false,
-    .res = false,
-    .hvd = false,
-    .inv = false,
-    .wheel_fl = false,
-    .wheel_fr = false,
-    .wheel_rl = false,
-    .wheel_rr = false,
-};
-
-Temperature_TypeDef temperature = {
-    .mono = 0,
-    .coolant_in = 0,
-    .coolant_out = 0,
-    .oil_l = 0,
-    .oil_r = 0,
-};
+extern Data_TypeDef data;
+extern osMutexId_t dataMutexHandle;
 
 /* Private function prototypes -----------------------------------------------*/
 
@@ -67,3 +31,16 @@ Temperature_TypeDef temperature = {
 /* Private functions ---------------------------------------------------------*/
 
 /* Public functions ----------------------------------------------------------*/
+void Led_Test_Task(void* argument) {
+    for(;;) {
+        if(osMutexAcquire(dataMutexHandle, osWaitForever) == osOK) {
+            osDelay(pdMS_TO_TICKS(3000));
+
+            data.led_test = false;
+
+            osMutexRelease(dataMutexHandle);
+
+            osThreadTerminate(osThreadGetId());
+        }
+    }
+}

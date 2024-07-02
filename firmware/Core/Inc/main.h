@@ -199,8 +199,8 @@ void Error_Handler(void);
 #define PIN_INV 7
 #define PIN_WHEEL_FL 14
 #define PIN_WHEEL_FR 15
-#define PIN_WHEEL_RL 16
-#define PIN_WHEEL_RR 17
+#define PIN_WHEEL_RL 12
+#define PIN_WHEEL_RR 13
 /* USER CODE END Private defines */
 
 #ifdef __cplusplus

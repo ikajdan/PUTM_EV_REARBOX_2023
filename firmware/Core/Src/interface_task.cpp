@@ -8,9 +8,11 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include "interface_task.h"
+#include "data.h"
+#include "tca6416a.h"
+
 #include "FreeRTOS.h"
 #include "cmsis_os2.h"
-#include "data.h"
 #include "gpio.h"
 #include "main.h"
 #include "portable.h"
@@ -25,8 +27,9 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* Public variables ----------------------------------------------------------*/
-extern osMutexId_t dataMutexHandle;
 extern Data_TypeDef data;
+extern osMutexId_t dataMutexHandle;
+extern Safety_TypeDef safety;
 
 /* Private function prototypes -----------------------------------------------*/
 
@@ -38,6 +41,26 @@ extern Data_TypeDef data;
 void Interface_Task(void* argument) {
     for(;;) {
         if(osMutexAcquire(dataMutexHandle, osWaitForever) == osOK) {
+            data.safety_led = safety.tripped;
+
+            if(data.error_led || data.led_test) {
+                TCA6416A_WritePin(&htca, PIN_ERROR_LED, TCA_PIN_SET);
+            } else {
+                TCA6416A_WritePin(&htca, PIN_ERROR_LED, TCA_PIN_RESET);
+            }
+
+            if(data.safety_led || data.led_test) {
+                TCA6416A_WritePin(&htca, PIN_SAFETY_LED, TCA_PIN_SET);
+            } else {
+                TCA6416A_WritePin(&htca, PIN_SAFETY_LED, TCA_PIN_RESET);
+            }
+
+            if(data.fuse_led || data.led_test) {
+                TCA6416A_WritePin(&htca, PIN_FUSE_LED, TCA_PIN_SET);
+            } else {
+                TCA6416A_WritePin(&htca, PIN_FUSE_LED, TCA_PIN_RESET);
+            }
+
             if(data.rtd != data.rtd_prev) {
                 if(data.rtd) {
                     HAL_GPIO_WritePin(RTDS_GPIO_Port, RTDS_Pin, GPIO_PIN_SET);
@@ -49,17 +72,17 @@ void Interface_Task(void* argument) {
                 data.rtd_prev = data.rtd;
             }
 
-            // Turn off RTD after 2 seconds
-            if(data.rtd) {
-                if(xTaskGetTickCount() * portTICK_PERIOD_MS - data.rtd_on_time > 2000) {
-                    data.rtd = 0;
-                }
-            }
-
             if(data.brake_light) {
                 HAL_GPIO_WritePin(BRAKE_LIGHT_GPIO_Port, BRAKE_LIGHT_Pin, GPIO_PIN_SET);
             } else {
                 HAL_GPIO_WritePin(BRAKE_LIGHT_GPIO_Port, BRAKE_LIGHT_Pin, GPIO_PIN_RESET);
+            }
+
+            // Turn off RTD after 2 seconds
+            if(data.rtd) {
+                if(xTaskGetTickCount() * portTICK_PERIOD_MS - data.rtd_on_time > 2000) {
+                    data.rtd = false;
+                }
             }
 
             osMutexRelease(dataMutexHandle);

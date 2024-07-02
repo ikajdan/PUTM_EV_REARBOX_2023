@@ -15,6 +15,10 @@
 
 /* Public typedefs -----------------------------------------------------------*/
 typedef struct {
+    bool led_test;
+    bool error_led;
+    bool safety_led;
+    bool fuse_led;
     bool brake_light;
     bool rtd;
     bool rtd_prev;
@@ -29,6 +33,7 @@ typedef struct {
 } Data_TypeDef;
 
 typedef struct {
+    bool tripped;
     bool rfu1;
     bool rfu2;
     bool asms;
