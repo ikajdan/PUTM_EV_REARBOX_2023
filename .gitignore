@@ -12,6 +12,9 @@
 /hardware/*/fp-info-cache
 /hardware/*/\#auto_saved_files\#
 
+# FreeCAD
+/hardware/mechanical_parts/*.FCBak
+
 # Interactive HTML BOM
 /hardware/*/bom/
 
@@ -20,4 +23,3 @@
 
 # Replicate Layout
 /hardware/*/replicate_layout.log
-
