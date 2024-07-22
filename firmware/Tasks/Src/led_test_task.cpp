@@ -33,13 +33,11 @@ extern osMutexId_t dataMutexHandle;
 /* Public functions ----------------------------------------------------------*/
 void Led_Test_Task(void* argument) {
     for(;;) {
+        osDelay(pdMS_TO_TICKS(3000));
+
         if(osMutexAcquire(dataMutexHandle, osWaitForever) == osOK) {
-            osDelay(pdMS_TO_TICKS(3000));
-
             data.led_test = false;
-
             osMutexRelease(dataMutexHandle);
-
             osThreadTerminate(osThreadGetId());
         }
     }
