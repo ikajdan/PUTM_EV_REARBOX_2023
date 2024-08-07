@@ -54,8 +54,6 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
-extern Safety_TypeDef safety;
-
 #ifdef __cplusplus
 extern "C" {
 #endif
@@ -117,9 +115,8 @@ int main(void) {
     /* USER CODE BEGIN 2 */
     HAL_ADCEx_Calibration_Start(&hadc1, ADC_SINGLE_ENDED);
     HAL_ADCEx_Calibration_Start(&hadc2, ADC_SINGLE_ENDED);
-    // HAL_ADC_Start_DMA(&hadc1, (uint32_t*)AIN_ADC1_REGISTER,
-    // AIN_ADC1_CHANNELS); HAL_ADC_Start_DMA(&hadc2,
-    // (uint32_t*)AIN_ADC2_REGISTER, AIN_ADC2_CHANNELS);
+    HAL_ADC_Start_DMA(&hadc1, (uint32_t*)AIN_ADC1_REGISTER, AIN_ADC1_CHANNELS);
+    HAL_ADC_Start_DMA(&hadc2, (uint32_t*)AIN_ADC2_REGISTER, AIN_ADC2_CHANNELS);
 
     FDCAN_FilterTypeDef filter_config;
     filter_config.IdType = FDCAN_STANDARD_ID;
@@ -128,6 +125,7 @@ int main(void) {
     filter_config.FilterConfig = FDCAN_FILTER_TO_RXFIFO0;
     filter_config.FilterID1 = 0;
     filter_config.FilterID2 = 0;
+
     if(HAL_FDCAN_ConfigFilter(&hfdcan1, &filter_config) != HAL_OK) {
         Error_Handler();
     }
@@ -141,7 +139,6 @@ int main(void) {
     }
 
     TCA6416A_Init(&htca, &hi2c3, 0x20);
-
     TCA6416A_SetPinMode(&htca, PIN_RFU2, TCA_PIN_INPUT);
     TCA6416A_SetPinMode(&htca, PIN_RFU1, TCA_PIN_INPUT);
     TCA6416A_SetPinMode(&htca, PIN_ASMS, TCA_PIN_INPUT);
@@ -154,7 +151,6 @@ int main(void) {
     TCA6416A_SetPinMode(&htca, PIN_WHEEL_FR, TCA_PIN_INPUT);
     TCA6416A_SetPinMode(&htca, PIN_WHEEL_RL, TCA_PIN_INPUT);
     TCA6416A_SetPinMode(&htca, PIN_WHEEL_RR, TCA_PIN_INPUT);
-
     TCA6416A_SetPinMode(&htca, PIN_ERROR_LED, TCA_PIN_OUTPUT);
     TCA6416A_SetPinMode(&htca, PIN_SAFETY_LED, TCA_PIN_OUTPUT);
     TCA6416A_SetPinMode(&htca, PIN_FUSE_LED, TCA_PIN_OUTPUT);

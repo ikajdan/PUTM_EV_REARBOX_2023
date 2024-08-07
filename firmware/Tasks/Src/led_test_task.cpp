@@ -21,7 +21,6 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* Public variables ----------------------------------------------------------*/
-extern Data_TypeDef data;
 extern osMutexId_t dataMutexHandle;
 
 /* Private function prototypes -----------------------------------------------*/

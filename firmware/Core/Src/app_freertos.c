@@ -55,13 +55,13 @@ osThreadId_t defaultTaskHandle;
 const osThreadAttr_t defaultTask_attributes = {.name = "defaultTask", .priority = (osPriority_t)osPriorityNormal, .stack_size = 128 * 4};
 /* Definitions for interfaceTask */
 osThreadId_t interfaceTaskHandle;
-const osThreadAttr_t interfaceTask_attributes = {.name = "interfaceTask", .priority = (osPriority_t)osPriorityLow, .stack_size = 128 * 4};
+const osThreadAttr_t interfaceTask_attributes = {.name = "interfaceTask", .priority = (osPriority_t)osPriorityNormal, .stack_size = 256 * 4};
 /* Definitions for communicationTask */
 osThreadId_t communicationTaskHandle;
-const osThreadAttr_t communicationTask_attributes = {.name = "communicationTask", .priority = (osPriority_t)osPriorityNormal, .stack_size = 128 * 4};
+const osThreadAttr_t communicationTask_attributes = {.name = "communicationTask", .priority = (osPriority_t)osPriorityNormal, .stack_size = 256 * 4};
 /* Definitions for safetyTask */
 osThreadId_t safetyTaskHandle;
-const osThreadAttr_t safetyTask_attributes = {.name = "safetyTask", .priority = (osPriority_t)osPriorityAboveNormal, .stack_size = 128 * 4};
+const osThreadAttr_t safetyTask_attributes = {.name = "safetyTask", .priority = (osPriority_t)osPriorityAboveNormal, .stack_size = 256 * 4};
 /* Definitions for ledTestTask */
 osThreadId_t ledTestTaskHandle;
 const osThreadAttr_t ledTestTask_attributes = {.name = "ledTestTask", .priority = (osPriority_t)osPriorityLow, .stack_size = 128 * 4};

@@ -22,7 +22,6 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* Public variables ----------------------------------------------------------*/
-extern Safety_TypeDef safety;
 extern osMutexId_t safetyMutexHandle;
 
 /* Private function prototypes -----------------------------------------------*/

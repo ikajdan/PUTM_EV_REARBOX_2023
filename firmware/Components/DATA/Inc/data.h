@@ -59,8 +59,12 @@ typedef struct {
 /* Public defines ------------------------------------------------------------*/
 
 /* Public macros -------------------------------------------------------------*/
+#define RTD_SOUND_DURATION 2000
 
 /* Public variables ----------------------------------------------------------*/
+extern Data_TypeDef data;
+extern Safety_TypeDef safety;
+extern Temperature_TypeDef temperature;
 
 /* Public function prototypes ------------------------------------------------*/
 
