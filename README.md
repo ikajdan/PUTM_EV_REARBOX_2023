@@ -1,32 +1,49 @@
 # Rearbox
 
-This PCB combines components for the rear side of the vehicle.
+This PCB integrates all rear-side vehicle electronics, handling communication, power outputs, and sensor inputs in a compact form factor.
 
-## Features
+<br>
+<div align="center">
+  <img src="documentation/rearbox_layout.jpg" width=75%"></img>
+  <br><br>
+  <em>PCB layout.</em>
+</div>
+<br>
 
-Communication:
+## Communication Interfaces
 
-- 2 CAN transceivers
-- UART (internal only)
-- SPI (internal only)
-- I2C (internal only)
+* **2× CAN transceivers** (external)
+* **UART**, **SPI**, **I2C** (internal only)
 
-Outputs:
+## Power Outputs
 
-- 2 fan drivers
-- 2 pump drivers
-- ASSI driver
-- RTDS driver
-- brake light driver
+* 2× fan drivers
+* 2× pump drivers
+* ASSI driver
+* RTDS driver
+* Brake light driver
 
-Inputs:
+## Sensor & Signal Inputs
 
-- 12 digital safety inputs
-- 2 suspension load cell sensors
-- 2 suspension potentiometer sensors
-- 2 water pressure sensors
-- 2 water temperature sensors
-- monocoque temperature sensors
+* 12× digital safety inputs
+* 2× suspension load cell sensors
+* 2× suspension potentiometers
+* 2× water pressure sensors
+* 2× water temperature sensors
+* Monocoque temperature sensors
+
+## Overview
+
+<br>
+<div align="center">
+  <img src="documentation/rearbox_front.jpg" width="45%">
+&nbsp; &nbsp; &nbsp; &nbsp;
+  <img src="documentation/rearbox_back.jpg" width="45%">
+  <br><br>
+  <em>Front and back view of the PCB.</em>
+</div>
+<br>
+
 
 ## Firmware
 
@@ -51,3 +68,7 @@ Below are the changes that need to be made to the `stm32g4xx_hal_fdcan.c` file:
 ---
 >         if(RxLocation == 0) /* Rx element is assigned to the Rx FIFO 0 */
 ```
+
+## License
+
+This project is licensed under the GPLv3 License. See the [LICENSE](LICENSE.md) file for details.
